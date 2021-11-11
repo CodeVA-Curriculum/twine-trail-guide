@@ -12,6 +12,7 @@
     "@sveltejs/kit": "next",
     "@types/cookie": "^0.4.1",
     "bulma": "^0.9.3",
+    "mdsvex": "^0.9.8",
     "sass": "^1.43.4",
     "svelte": "^3.34.0",
     "svelte-check": "^2.2.6",

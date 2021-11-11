@@ -9,7 +9,7 @@
 	<title>Twine Trail Guide</title>
 </svelte:head>
 
-<section class='hero is-fullheight home has-text-centered'>
+<section class='hero is-fullheight-with-navbar'>
 	<div class='hero-head'>
 		<Nav />
 	</div>

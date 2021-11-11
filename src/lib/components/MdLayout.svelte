@@ -3,4 +3,6 @@
 </script>
 
 <Nav />
-<h1>about</h1>
+<div class='section content'>
+    <slot />
+</div>

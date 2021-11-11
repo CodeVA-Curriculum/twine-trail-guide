@@ -9,7 +9,7 @@
     }
 </script>
 
-<nav class='navbar is-primary'>
+<nav class='navbar'>
     <button on:click={toggleMenu} role="button" class="navbar-burger {burger.active ? 'is-active' : ''}" aria-label="menu" aria-expanded="{burger.active}" data-target="nav-menu">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>

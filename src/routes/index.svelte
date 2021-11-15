@@ -19,7 +19,7 @@
 			<h2 class='subtitle'>Trail Guide</h2>
 			<div class='buttons is-centered'>
 				<a href="{base}/trails" class='button is-primary'>Get Started</a>
-				<a href="{base}/map" class='button is-secondary'>View Map</a>
+				<a href="{base}/map" class='button is-secondary'>About the Guide</a>
 			</div>
 			
 		</div>

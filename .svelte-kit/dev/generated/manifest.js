@@ -7,10 +7,8 @@ const c = [
 	() => import("../../../src/routes/locations/start-a-story.md"),
 	() => import("../../../src/routes/trails/__layout.svelte"),
 	() => import("../../../src/routes/trails/index.svelte"),
-	() => import("../../../src/routes/trails/trail-demo.svelte"),
 	() => import("../../../src/routes/trails/[trail].svelte"),
-	() => import("../../../src/routes/about.md"),
-	() => import("../../../src/routes/map/index.svelte")
+	() => import("../../../src/routes/about.md")
 ];
 
 const d = decodeURIComponent;
@@ -33,19 +31,13 @@ export const routes = [
 	// src/routes/trails/index.svelte
 	[/^\/trails\/?$/, [c[0], c[6], c[7]], [c[1]]],
 
-	// src/routes/trails/trail-demo.svelte
-	[/^\/trails\/trail-demo\/?$/, [c[0], c[6], c[8]], [c[1]]],
-
 	// src/routes/trails/[trail].svelte
-	[/^\/trails\/([^/]+?)\/?$/, [c[0], c[6], c[9]], [c[1]], (m) => ({ trail: d(m[1])})],
+	[/^\/trails\/([^/]+?)\/?$/, [c[0], c[6], c[8]], [c[1]], (m) => ({ trail: d(m[1])})],
 
 	// src/routes/about.md
-	[/^\/about\/?$/, [c[0], c[10]], [c[1]]],
+	[/^\/about\/?$/, [c[0], c[9]], [c[1]]],
 
-	,
-
-	// src/routes/map/index.svelte
-	[/^\/map\/?$/, [c[0], c[11]], [c[1]]]
+	
 ];
 
 // we import the root layout/error components eagerly, so that

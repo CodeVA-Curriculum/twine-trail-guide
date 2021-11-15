@@ -32,8 +32,9 @@
             >
                 Trails
             </a>
+            <!-- TODO: link Padlet -->
             <a class="navbar-item"
-                href='{base}/map'
+                href='#' 
             >
                 Region Map
             </a>

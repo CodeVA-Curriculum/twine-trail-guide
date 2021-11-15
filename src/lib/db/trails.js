@@ -1,20 +1,20 @@
 // this is is a placeholder until the parser comes through
-
 const trails = [
     {
         "name": "Your First Story",
         "beginner": true,
+        "short": "Lorum ipsum",
         "description": "Lorum ipsum sit dolor amet",
-        "path": "your-first-story"
+        "path": "your-first-story",
+        "locations": [
+            "start-a-story",
+            "create-passage"
+        ]
     }
-]
-
-const locations = [
-
 ]
 
 const edges = [
 
 ]
 
-export {trails, locations, edges};
+export {trails, edges};

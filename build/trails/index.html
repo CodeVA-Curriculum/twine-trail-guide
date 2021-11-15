@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		
+
+		
+
+		<link rel="modulepreload" href="/_app/start-c15bff19.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-f9fc9992.js">
+		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-88b24d20.js">
+		<link rel="modulepreload" href="/_app/pages/trails/__layout.svelte-05814882.js">
+		<link rel="modulepreload" href="/_app/chunks/Nav-08b0eb70.js">
+		<link rel="modulepreload" href="/_app/pages/trails/index.svelte-17a2c02e.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/_app/assets/pages/trails/index.svelte-8473b8aa.css">
+
+		<script type="module">
+			import { start } from "/_app/start-c15bff19.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-88b24d20.js"),
+						import("/_app/pages/trails/__layout.svelte-05814882.js"),
+						import("/_app/pages/trails/index.svelte-17a2c02e.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Ftrails",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<nav class="navbar"><button role="button" class="navbar-burger " aria-label="menu" aria-expanded="false" data-target="nav-menu"><span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span></button>
+    <div id="nav-menu" class="navbar-menu "><div class="navbar-end"><a class="navbar-item" href="/">Home
+            </a>
+            <a class="navbar-item" href="/about">About the Guide
+            </a>
+            <a class="navbar-item" href="/trails">Trails
+            </a>
+            <a class="navbar-item" href="/map">Region Map
+            </a></div></div></nav>
+
+<div class="section"><div class="container"><h1 class="title">Trail Guide</h1>
+        <p class="block">Browse the list of trails below to explore different things to create with Twine. We&#39;ve marked the trails recommended for beginners with the ✨ icon.</p>
+        <hr></div></div>
+<div class="section"><div class="container">
+        <article class="card mx-1 my-5 trail"><div class="card-content p-3"><div class="media"><div class="media-left"><figure class="image is-hidden-touch"><img src="https://bulma.io/images/placeholders/128x128.png" alt="Placeholder image"></figure></div>
+            <div class="media-content"><h2 class="title is-size-4"><a class="svelte-cgrd7v">Your First Story ✨</a></h2>
+              <p class="block">Lorum ipsum sit dolor amet</p>
+                <a href="/trails/your-first-story" class="svelte-cgrd7v">Trail Demo</a></div></div></div>
+    
+</article></div>
+</div>
+
+
+
+			
+		</div>
+	</body>
+</html>

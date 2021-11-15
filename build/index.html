@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>Twine Trail Guide</title>
+
+		
+
+		<link rel="modulepreload" href="/_app/start-c15bff19.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-f9fc9992.js">
+		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-88b24d20.js">
+		<link rel="modulepreload" href="/_app/pages/index.svelte-f5fc8506.js">
+		<link rel="modulepreload" href="/_app/chunks/Nav-08b0eb70.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/_app/assets/pages/index.svelte-b1fd161b.css">
+
+		<script type="module">
+			import { start } from "/_app/start-c15bff19.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-88b24d20.js"),
+						import("/_app/pages/index.svelte-f5fc8506.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002F",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+
+
+<section class="hero is-fullheight-with-navbar svelte-udtavm"><div class="hero-head"><nav class="navbar"><button role="button" class="navbar-burger " aria-label="menu" aria-expanded="false" data-target="nav-menu"><span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span></button>
+    <div id="nav-menu" class="navbar-menu "><div class="navbar-end"><a class="navbar-item" href="/">Home
+            </a>
+            <a class="navbar-item" href="/about">About the Guide
+            </a>
+            <a class="navbar-item" href="/trails">Trails
+            </a>
+            <a class="navbar-item" href="/map">Region Map
+            </a></div></div></nav></div>
+	<div class="hero-body"><div class="container has-text-centered"><h1 class="title">Making Interactive Stories with Twine</h1>
+			<h2 class="subtitle">Trail Guide</h2>
+			<div class="buttons is-centered"><a href="/trails" class="button is-primary">Get Started</a>
+				<a href="/map" class="button is-secondary">View Map</a></div></div></div>
+	<div class="hero-foot p-4 disclaimer svelte-udtavm"><div class="columns is-mobile"><div class="column is-narrow"><img alt="The National Science Foundation logo." src="/_app/assets/NSFLogo-bdc22bb6.png" style="height: 4em;"></div>
+			<div class="column"><p class="is-tiny svelte-udtavm">The “Reaching Across the Hallway” project is funded by the National Science Foundation under Grant Award #2010256. Learn more about licenses for this site&#39;s content and source code <a href="/about">here</a>.</p></div></div></div>
+</section>
+
+
+
+			
+		</div>
+	</body>
+</html>

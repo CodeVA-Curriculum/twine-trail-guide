@@ -2,8 +2,7 @@
     import {base} from '$app/paths';
     export async function load({ fetch, page }) {
       const { trail } = page.params;
-      const res = await fetch(`${base}/api/${trail}`);
-  
+      const res = await fetch(`${base}/api/trails/${trail}`);
       if (res.ok) return { props: { trail: await res.json() } };
       return {
         status: res.status,
@@ -14,7 +13,10 @@
   
 <script>
     import TrailTimeline from "$lib/components/TrailTimeline.svelte";
+    import { onMount } from 'svelte';
     export let trail;
+
+    // console.log(trail);
 </script>
 
 <section class='section'>
@@ -24,7 +26,7 @@
 </section>
 
 <section class='section'>
-    <TrailTimeline />
+    <TrailTimeline locs={trail.locations} />
 </section>
 <section class='section'>
     <div class='container'>

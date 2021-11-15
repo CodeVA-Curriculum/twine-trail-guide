@@ -13,6 +13,8 @@ export async function get({ params }) {
         // : `https://avatars.dicebear.com/api/human/${lastName}.svg`,
         desc: obj.description,
         beginner : obj.beginner,
+        locations: obj.locations,
+        type: obj.type
         // email: faker.internet.email(),
       },
     };

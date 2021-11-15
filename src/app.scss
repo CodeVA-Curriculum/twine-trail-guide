@@ -1,21 +1,19 @@
-/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */ /* Import only what you need from Bulma */
 
-@import "bulma/sass/utilities/_all";
+@charset "utf-8";
 
-@import "bulma/sass/base/_all";
+// restore default behaviour
+$body-overflow-y: auto;
 
-@import "bulma/sass/elements/_all";
 
-@import "bulma/sass/form/_all";
+@import './src/lib/styles/variables.scss';
 
-@import "bulma/sass/components/_all";
 
-@import "bulma/sass/grid/_all";
-
-@import "bulma/sass/helpers/_all";
-
-@import "bulma/sass/layout/_all";
-
-@import "@fontsource/fira-mono";
-
-@import 'bulma-timeline/dist/css/bulma-timeline.sass';
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all";
+@import "../node_modules/bulma/sass/base/_all";
+@import "../node_modules/bulma/sass/elements/_all";
+@import "../node_modules/bulma/sass/form/_all";
+@import "../node_modules/bulma/sass/components/_all";
+@import "../node_modules/bulma/sass/grid/_all";
+@import "../node_modules/bulma/sass/helpers/_all";
+@import "../node_modules/bulma/sass/layout/_all";

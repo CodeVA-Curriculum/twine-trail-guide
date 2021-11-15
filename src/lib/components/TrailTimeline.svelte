@@ -1,24 +1,26 @@
 <script>
-    import LocationNode from '$lib/components/LocationNode.svelte'
-    const locations = [
-        {
-            title: "Start a Story",
-            description: "A brief description of the location"
-        },
-        {
-            title: 'Create a Passage',
-            description: "A brief description of the location"
-        },
-        {
-            title: "Link Passages together",
-            description: "A brief description of the location"
-        },
-        {
-            title: "Project",
-            description: "Lorum ipsum sit dolor amet",
-            icon: "project"
-        }
-    ];
+    import LocationNode from '$lib/components/LocationNode.svelte';
+    // import { locations } from '$lib/db/trails';
+    import { onMount } from 'svelte';
+    export let locations = [];
+    export let locs=[];
+
+    onMount(async () => {
+        // fetch location list rendered from available location routes
+        const url = `/locations/locations.json`;
+		const res = await fetch(url);
+		if (res.ok) {
+            let obj = await res.json()
+            // if the trail slug list includes a location in the object,
+            // add it to the timeline
+            for(let i=0;i<locs.length;i++) {
+                const post = obj.posts.find(post => post.slug == locs[i])
+                if(post) {
+                    locations[i] = post;
+                }
+            }
+		}
+    })
 </script>
 
 <section class="timeline">
@@ -31,7 +33,8 @@
                 title={location.title}
                 description={location.description}
                 position={i+1}
-                icon={location.icon}
+                type={location.type}
+                slug={location.slug}
         />
     {/each}
     

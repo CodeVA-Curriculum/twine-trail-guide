@@ -15,34 +15,22 @@ const config = {
       extensions: ['.svelte.md', '.md', '.svx'],
       layout: './src/lib/components/MdLayout.svelte'
     }),
-    preprocess({
-      scss: {
-        prependData: '@import "src/variables.scss";',
-      },
-    }),
+    preprocess(),
   ],
 
   kit: {
     adapter: adapter({
-      paths: {
-        base: dev ? '' : '/twine-trail-guide',
-      },
 			// default options are shown
 			pages: 'build',
 			assets: 'build',
 			fallback: null
 		}),
+    // paths: {
+    //   base: '/twine-trail-guide',
+    //   assets: '/twine-trail-guide'
+    // },
     // hydrate the <div id="svelte"> element in src/app.html
     target: "#svelte",
-    vite: {
-      css: {
-        preprocessorOptions: {
-          scss: {
-            additionalData: '@import "src/variables.scss";',
-          },
-        },
-      },
-    },
   },
 };
 

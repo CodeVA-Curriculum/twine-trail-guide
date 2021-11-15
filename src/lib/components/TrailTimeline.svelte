@@ -1,4 +1,5 @@
 <script>
+    import LocationNode from '$lib/components/LocationNode.svelte'
     const locations = [
         {
             title: "Start a Story",
@@ -11,6 +12,11 @@
         {
             title: "Link Passages together",
             description: "A brief description of the location"
+        },
+        {
+            title: "Project",
+            description: "Lorum ipsum sit dolor amet",
+            icon: "project"
         }
     ];
 </script>
@@ -21,30 +27,16 @@
         <span class="tag is-medium is-primary">Start</span>
     </header>
     {#each locations as location, i}
-    <div class="timeline-item location">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content card p-4 location-content">
-        <h3 class="heading">{i+1}. {location.title}</h3>
-        <p>{location.description}</p>
-        </div>
-    </div>
+        <LocationNode 
+                title={location.title}
+                description={location.description}
+                position={i+1}
+                icon={location.icon}
+        />
     {/each}
-    <div class='timeline-item location'>
-        <div class='timeline-marker is-warning is-icon'>
-            icon
-        </div>
-        <div class='timeline-content card p-4 location-content'>
-            <h3 class='heading'>Project Title</h3>
-            <p>Lorum ipsum sit dolor amet</p>
-        </div>
-    </div>
+    
     <div class="timeline-header">
         <span class="tag is-medium is-primary">End</span>
     </div>
 </section>
 
-<style>
-    .location > .location-content {
-        margin-left: 3rem;
-    }
-</style>

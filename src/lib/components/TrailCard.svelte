@@ -1,5 +1,10 @@
 <script>
     import {base} from '$app/paths';
+
+    export let name, desc, beginner, path;
+    let icon = '';
+
+    $: icon = beginner ? '✨' : '';
 </script>
 
 <article class='card mx-1 my-5 trail'>
@@ -11,9 +16,9 @@
               </figure>
             </div>
             <div class="media-content">
-              <a><h2 class='title is-size-4'>Your First Story ✨</h2></a>
-              <p class='block'>Do the thing! Provide a short description, with enough words that it fills up the space. Here's an example.</p>
-                <a href="{base}/trails/trail-demo">Trail Demo</a>
+              <h2 class='title is-size-4'><a>{name} {icon}</a></h2>
+              <p class='block'>{desc}</p>
+                <a href="{base}/trails/{path}">Trail Demo</a>
             </div>
           </div>
     </div>
@@ -21,3 +26,9 @@
         <img src='https://via.placeholder.com/400x300' />
     </div> -->
 </article>
+
+<style>
+  a {
+    color: black;
+  }
+</style>

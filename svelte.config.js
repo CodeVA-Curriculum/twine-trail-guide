@@ -1,4 +1,6 @@
 import preprocess from "svelte-preprocess";
+const dev = process.env.NODE_ENV === 'development';
+import adapter from '@sveltejs/adapter-static';
 import {mdsvex} from 'mdsvex';
 import { join } from "path";
 
@@ -21,6 +23,15 @@ const config = {
   ],
 
   kit: {
+    adapter: adapter({
+      paths: {
+        base: dev ? '' : '/twine-trail-guide',
+      },
+			// default options are shown
+			pages: 'build',
+			assets: 'build',
+			fallback: null
+		}),
     // hydrate the <div id="svelte"> element in src/app.html
     target: "#svelte",
     vite: {

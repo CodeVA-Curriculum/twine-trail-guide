@@ -1,7 +1,7 @@
 <script>
-    let trails = [0, 0, 0, 0, 0, 0, 0, 0]
     import {base} from '$app/paths';
-import TrailCard from '$lib/components/TrailCard.svelte';
+    import TrailCard from '$lib/components/TrailCard.svelte';
+    import { trails } from '$lib/db/trails';
 </script>
 
 <div class='section'>
@@ -15,7 +15,12 @@ import TrailCard from '$lib/components/TrailCard.svelte';
     <div class='container'>
     <!-- Trail Card-->
         {#each trails as trail}
-            <TrailCard />
+            <TrailCard
+                name={trail.name}
+                desc={trail.description}
+                beginner={trail.beginner}
+                path={trail.path}
+            />
         {/each}
     </div>
 </div>

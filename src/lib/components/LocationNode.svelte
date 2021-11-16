@@ -1,9 +1,16 @@
 <script>
     import {base} from '$app/paths';
+    import { goto } from '$app/navigation';
+    
     export let title, description, position, type, slug
+
+    function routeToPage() {
+    const replaceState = false;
+    goto(`${base}/locations/${slug}`, { replaceState }) 
+  }
 </script>
 
-<div class="timeline-item location">
+<article on:click={routeToPage} class="timeline-item location">
     {#if type=="project"}
         <div class='timeline-marker is-warning is-icon'>
             icon
@@ -15,7 +22,7 @@
         <h3 class="heading"><a href='{base}/locations/{slug}'>{position}. {title}</a></h3>
         <p>{description}</p>
     </div>
-</div>
+</article>
 
 <style>
     .location > .location-content {
@@ -23,5 +30,9 @@
     }
     .location > .location-content:hover {
         background-color: whitesmoke;
+        cursor: pointer;
+    }
+    .location {
+        max-width: 30rem;
     }
 </style>

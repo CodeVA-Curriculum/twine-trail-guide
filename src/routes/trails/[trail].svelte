@@ -26,7 +26,9 @@
 </section>
 
 <section class='section'>
-    <TrailTimeline locs={trail.locations} />
+    <div class='container'>
+        <TrailTimeline locs={trail.locations} />
+    </div>
 </section>
 <section class='section'>
     <div class='container'>

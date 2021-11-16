@@ -21,7 +21,7 @@
 
 <section class='section'>
     <div class='container'>
-    <h1 class='title block'>{trail.name}</h1>
+    <h1 class='title block'>{trail.name} {trail.beginner ? '✨' : ''}</h1>
     <p class='block'>{trail.desc}</p>
 </section>
 

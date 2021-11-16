@@ -8,7 +8,9 @@ const trails = [
         "path": "your-first-story",
         "locations": [
             "start-a-story",
-            "create-passage"
+            "create-passage",
+            "link-passages",
+            "story-with-multiple-endings"
         ]
     }
 ]

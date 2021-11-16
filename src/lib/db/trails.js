@@ -11,6 +11,12 @@ const trails = [
             "create-passage",
             "link-passages",
             "story-with-multiple-endings"
+        ],
+        "standards": [
+            {
+                "content_area": "Computer Science",
+                "standard_text": "Lorum ipsum sit dolor amet"
+            }
         ]
     }
 ]

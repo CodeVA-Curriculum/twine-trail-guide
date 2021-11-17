@@ -13,10 +13,43 @@
   
 <script>
     import TrailTimeline from "$lib/components/TrailTimeline.svelte";
+    import LocationNode from '$lib/components/LocationNode.svelte';
     import { onMount } from 'svelte';
     export let trail;
 
-    // console.log(trail);
+    let Sample;
+    let locationContent = [];
+    let locations = [];
+    let inlineLocations;
+
+    function step(i) {
+        console.log("scrolling to " + i)
+		inlineLocations.children[i].scrollIntoView({ behavior: 'smooth', block: 'center' });
+		//console.log(offset);
+	}
+
+    console.log(trail.locations);
+
+    onMount(async () => {
+        for(let i=0;i<trail.locations.length;i++) {
+            locationContent[i] = (await import(`../locations/${trail.locations[i]}.md`)).default;
+        }
+
+        // Get location objects
+        const url = `/locations/locations.json`;
+		const res = await fetch(url);
+		if (res.ok) {
+            let obj = await res.json()
+            // if the trail slug list includes a location in the object,
+            // add it to the timeline
+            for(let i=0;i<trail.locations.length;i++) {
+                const post = obj.posts.find(post => post.slug == trail.locations[i])
+                if(post) {
+                    locations[i] = post;
+                }
+            }
+		}
+    })
 </script>
 
 <section class='section'>
@@ -27,9 +60,31 @@
 
 <section class='section'>
     <div class='container'>
-        <TrailTimeline locs={trail.locations} />
+        <TrailTimeline>
+            {#each locations as location, i}
+            <LocationNode 
+                cl={() => step(i)}
+                title={location.title}
+                description={location.description}
+                position={i+1}
+                type={location.type}
+                slug={location.slug}
+            />
+            {/each}
+        </TrailTimeline>
     </div>
 </section>
+
+<section class='section content' bind:this="{inlineLocations}">
+    
+        {#each locationContent as component, i}
+        <div class='container my-5'>
+            <svelte:component this={component} position={i+1} />
+        </div>
+        {/each}
+   
+</section>
+
 <section class='section'>
     <div class='container'>
         <h2 class='title is-size-4'>Standards Alignment</h2>

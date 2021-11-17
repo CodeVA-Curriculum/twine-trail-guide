@@ -4,6 +4,7 @@ author: Jon Stapleton
 short: Lorum ipsum sit dolor amet
 description: Learn how to start the Twine editor in your browser and create a new story.
 type: tutorial
+layout: location
 ---
 
-# Start a Story
+Description

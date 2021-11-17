@@ -9,11 +9,14 @@ import { join } from "path";
 const config = {
   // Consult https://github.com/sveltejs/svelte-preprocess
   // for more information about preprocessors
-  extensions: ['.svelte', '.md', '.svelte.md'],
+  extensions: ['.svelte', '.md', '.svelte.md', '.svx'],
   preprocess: [
     mdsvex({
       extensions: ['.svelte.md', '.md', '.svx'],
-      layout: './src/lib/components/MdLayout.svelte'
+      layout: {
+        _: './src/lib/components/MdLayout.svelte',
+        location: './src/lib/components/Standalone.svelte'
+      }
     }),
     preprocess(),
   ],

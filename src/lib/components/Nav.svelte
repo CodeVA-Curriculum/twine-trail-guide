@@ -34,7 +34,7 @@
             </a>
             <!-- TODO: link Padlet -->
             <a class="navbar-item"
-                href='#' 
+                href='https://padlet.com/jonstapleton/kxfemonf8icwjm3l' 
             >
                 Region Map
             </a>

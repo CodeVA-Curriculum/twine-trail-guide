@@ -18,6 +18,7 @@ import { object_without_properties } from "svelte/internal";
 
 <script>
     import {onMount} from 'svelte'
+    import {base} from '$app/paths'
     import TrailCard from '$lib/components/TrailCard.svelte';
     export let locations
     
@@ -50,19 +51,22 @@ import { object_without_properties } from "svelte/internal";
 <section class='section'>
     <div class='container'>
         <h1 class='title'>Locations on the Map</h1>
-        <p class='block'>This is a big list of all the locations on the Region Map. You can use this page to search for videos or tutorials that you think might be useful, or just browse around to find something interesting. Each location has a short video and a text explanation of a particular concept, storytelling strategy, or feature of Twine. Check them out!</p>
-        <hr>
+        <p class='block'>This is a big list of all the locations in this guide. You can use this page to search for videos or tutorials that you think might be useful, or just browse around to find something interesting. You can also browse the Locations in this guide by exploring the <a href="{base}/map">Region Map</a>.</p>
+        <p class='block'>Each location includes a short video and a text explanation of a particular concept, storytelling strategy, or feature of Twine. You can also explore Locations by following <a href="{base}/trails">Trails</a>, which are collections of Locations organized around particular features or projects you can create with Twine. Check them out!</p>
+        
         <div class="field search">
             <div class="control">
                 <input bind:value="{searchTerm}" class="input" type="text" placeholder="Search in Location titles...">
             </div>
         </div>
+        <hr>
     </div>
     
 </section>
 
 <section class='section'>
     <div class='container'>
+        <!-- TODO: display list of Trails for each Location in the card -->
         {#each filteredList as location}
         <TrailCard
             name={location.title}

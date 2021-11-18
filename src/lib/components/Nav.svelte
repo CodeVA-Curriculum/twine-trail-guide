@@ -28,15 +28,19 @@
                 About the Guide
             </a>
             <a class="navbar-item"
+                href='https://padlet.com/jonstapleton/kxfemonf8icwjm3l' 
+            >
+                Region Map
+            </a>
+            <a class="navbar-item"
                 href='{base}/trails'
             >
                 Trails
             </a>
-            <!-- TODO: link Padlet -->
-            <a class="navbar-item"
-                href='https://padlet.com/jonstapleton/kxfemonf8icwjm3l' 
+            <a class='navbar-item'
+                href="{base}/locations"
             >
-                Region Map
+                Locations
             </a>
         </div>
     </div>

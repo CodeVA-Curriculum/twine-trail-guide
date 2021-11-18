@@ -25,7 +25,7 @@
 		</div>
 	</div>
 	<div class='hero-foot p-4 disclaimer'>
-		<div class='columns is-mobile'>
+		<div class='columns is-mobile is-vcentered'>
 			<div class='column is-narrow'>
 				<img alt="The National Science Foundation logo." src={NSFLogo} style="height: 4em;" />
 			</div>

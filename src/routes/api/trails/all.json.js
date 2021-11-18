@@ -2,7 +2,7 @@ const trails = [
     {
         "name": "Your First Story",
         "difficulty": 0,
-        "description": "Lorum ipsum sit dolor amet",
+        "description": "This trail is intended to introduce beginners to Twine, and help them create a simple interactive story. Follow this trail to learn the basics!",
         "path": "your-first-story",
         "locations": [
             "start-a-story",

@@ -86,12 +86,13 @@
    
 </section>
 
-<section class='section'>
+<!-- TODO: Add standards info -->
+<!-- <section class='section'>
     <div class='container'>
         <h2 class='title is-size-4'>Standards Alignment</h2>
         <p class='block'>Lorum ipsum sit dolor amet</p>
     </div>
-</section>
+</section> -->
     
     
     

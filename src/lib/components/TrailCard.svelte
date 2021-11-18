@@ -1,16 +1,16 @@
 <script>
     import {base} from '$app/paths';
 
-    export let name, desc, beginner, path;
+    export let name, desc, difficulty, path;
     let icon = '';
 
-    $: icon = beginner ? '✨' : '';
+    $: icon = difficulty == 0 ? '✨' : '';
 
     import { goto } from '$app/navigation';
 
   function routeToPage() {
     const replaceState = false;
-    goto(`${base}/trails/${path}`, { replaceState }) 
+    goto(`${base}/${path}`, { replaceState }) 
   }
 </script>
 

@@ -10,7 +10,9 @@ const trails = [
             "start-a-story",
             "create-passage",
             "link-passages",
-            "story-with-multiple-endings"
+            "branching-paths",
+            "story-with-multiple-endings",
+            
         ],
         "standards": [
             {

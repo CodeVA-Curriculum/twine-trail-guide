@@ -1,9 +1,13 @@
 
 @charset "utf-8";
 
+// Declare variables here
+
 // restore default behaviour
 $body-overflow-y: auto;
 
+// Section variables
+$container-max-width: 1152px;
 
 @import './src/lib/styles/variables.scss';
 

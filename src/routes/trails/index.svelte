@@ -1,7 +1,21 @@
-<script>
+<script context="module">
     import {base} from '$app/paths';
+    export async function load({ fetch, page }) {
+      const { trail } = page.params;
+      const res = await fetch(`${base}/api/trails/all.json`);
+      if (res.ok) return { props: { trails_res: await res.json() } };
+      return {
+        status: res.status,
+        error: new Error(),
+      };
+    }
+</script>
+
+<script>
     import TrailCard from '$lib/components/TrailCard.svelte';
-    import { trails } from '$lib/db/trails';
+    
+    export let trails_res;
+    let trails = trails_res.trails;
 </script>
 
 <div class='section'>
@@ -18,8 +32,8 @@
             <TrailCard
                 name={trail.name}
                 desc={trail.description}
-                beginner={trail.beginner}
-                path={trail.path}
+                difficulty={trail.difficulty}
+                path='trails/{trail.path}'
             />
         {/each}
     </div>

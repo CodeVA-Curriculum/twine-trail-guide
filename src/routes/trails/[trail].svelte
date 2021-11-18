@@ -2,7 +2,7 @@
     import {base} from '$app/paths';
     export async function load({ fetch, page }) {
       const { trail } = page.params;
-      const res = await fetch(`${base}/api/trails/${trail}`);
+      const res = await fetch(`/api/trails/${trail}`);
       if (res.ok) return { props: { trail: await res.json() } };
       return {
         status: res.status,
@@ -28,7 +28,7 @@
 		//console.log(offset);
 	}
 
-    console.log(trail.locations);
+    // console.log(trail.difficulty);
 
     onMount(async () => {
         for(let i=0;i<trail.locations.length;i++) {
@@ -36,10 +36,11 @@
         }
 
         // Get location objects
-        const url = `/locations/locations.json`;
+        const url = `${base}/api/locations/locations.json`;
 		const res = await fetch(url);
 		if (res.ok) {
             let obj = await res.json()
+            // console.log(obj);
             // if the trail slug list includes a location in the object,
             // add it to the timeline
             for(let i=0;i<trail.locations.length;i++) {
@@ -54,7 +55,7 @@
 
 <section class='section'>
     <div class='container'>
-    <h1 class='title block'>{trail.name} {trail.beginner ? '✨' : ''}</h1>
+    <h1 class='title block'>{trail.name} {trail.difficulty == 0 ? '✨' : ''}</h1>
     <p class='block'>{trail.desc}</p>
 </section>
 

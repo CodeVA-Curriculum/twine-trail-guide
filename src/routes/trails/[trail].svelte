@@ -65,7 +65,7 @@
 
 <section class='section'>
     <div class='container'>
-        <div class='columns is-desktop'>
+        <div class='columns'>
             <div class='column'>
                 <TrailTimeline>
                     {#each locations as location, i}
@@ -82,11 +82,11 @@
                 </TrailTimeline>
             </div>
             <!-- TODO: on desktop, and only show the selected location -->
-            <div class='column content is-hidden-touch'>
+            <div class='column is-hidden-touch content-wrapper'>
                 {#each locationContent as component, i}
                 {#if selected == i}
-                <div transition:fly="{{ y: 100, duration: 500 }}" class='container my-5 inline'>
-                    <svelte:component this={component} position={i+1} />
+                <div transition:fly="{{ y: 50, duration: 250 }}" class='el2'>
+                    <svelte:component this={component} position={i+1} compact={true} />
                 </div>
                 {/if}
                 {/each}
@@ -98,7 +98,7 @@
 </section>
 <!-- TODO: on mobile -->
 <!-- TODO: add "scroll to top" button on mobile -->
-<section class='section content is-hidden-desktop' bind:this="{inlineLocations}">
+<section class='section is-hidden-desktop' bind:this="{inlineLocations}">
     
         {#each locationContent as component, i}
             <div class='container my-5 inline'>
@@ -108,12 +108,6 @@
    
 </section>
 
-<style>
-    .inline {
-        position: absolute;
-    }
-</style>
-
 <!-- TODO: Add standards info -->
 <!-- <section class='section'>
     <div class='container'>
@@ -122,5 +116,15 @@
     </div>
 </section> -->
     
-    
+<style>
+    .content-wrapper {
+		display: grid;
+		align-items: start;
+		border-radius: 1rem;
+  }
+  .el2 {
+		grid-area: 1/1/2/2;
+		border-radius: 1rem;
+  }
+</style>
     

@@ -5,12 +5,12 @@ const trails = [
         "description": "This trail is intended to introduce beginners to Twine, and help them create a simple interactive story. Follow this trail to learn the basics!",
         "path": "your-first-story",
         "locations": [
+            // "your-first-story-trailhead",
             "start-a-story",
             "create-passage",
             "link-passages",
             "branching-paths",
-            "story-with-multiple-endings",
-            
+            "story-with-multiple-endings"
         ],
         // "standards": [
         //     {
@@ -38,31 +38,24 @@ const trails = [
     {
         "name": "Oral History",
         "difficulty": 1,
-        "description": "Create a story where the reader can listen to audio that you, as the author, create through interviews and field recordings.",
+        "description": "Pick a friend, family member, or community member and tell their story using audio recordings. Create a Twine story where the reader can explore the events and stories captured in your recordings.",
         "path": "audio-fiction",
-        "locations": [],
-    },
-    {
-        "name": "Historical Fiction",
-        "difficulty": 1,
-        "description": "Create a story based on a historical event or historical figure that lets the reader explore events from the past.",
-        "path": "historical-fiction",
         "locations": [],
     },
     {
         "name": "Museum Walk",
         "difficulty": 2,
-        "description": "Lorum ipsum",
+        "description": "Create a Twine story that lets the reader explore events from the past. Use images, recordings, and writing to help readers explore a place out of a different time.",
         "path": "museum-walk",
         "locations": []
     },
-    {
-        "name": "Diary",
-        "difficulty": 1,
-        "description": "Lorum ipsum",
-        "path": "diary",
-        "locations": []
-    },
+    // {
+    //     "name": "Diary",
+    //     "difficulty": 1,
+    //     "description": "Lorum ipsum",
+    //     "path": "diary",
+    //     "locations": []
+    // },
     // {
     //     "name": "Puzzle",
     //     "difficulty": 2,
@@ -87,9 +80,18 @@ const trails = [
     {
         "name": "Primary Documents",
         "difficulty": 1,
-        "description": "Lorum ipsum",
+        "description": "Create a Twine story that uses primary documents--pieces of writing or recordings made by people who experienced a particular event from the past--to help the reader explore the event associated with the documents.",
         "path": "primary-documents",
-        "locations": []
+        "locations": [
+            // "primary-documents-trailhead",
+            // "adding-images",
+            // "adding-recordings",
+            // "reveal-text",
+            "link-passages",
+            // "formatting-links",
+            "branching-paths",
+            // "primary-documents-landmark"
+        ]
     }
     
 ]

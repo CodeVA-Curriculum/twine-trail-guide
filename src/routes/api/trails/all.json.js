@@ -28,15 +28,15 @@ const trails = [
   
       ]
     },
+    // {
+    //     "name": "Dungeon Crawler",
+    //     "difficulty": 3,
+    //     "description": "Create a text-based game where the reader explores a labrynthine maze, avoiding dangers and solving puzzles to fulfill their quest.",
+    //     "path": "dungeon-crawler",
+    //     "locations": [],
+    // },
     {
-        "name": "Dungeon Crawler",
-        "difficulty": 3,
-        "description": "Create a text-based game where the reader explores a labrynthine maze, avoiding dangers and solving puzzles to fulfill their quest.",
-        "path": "dungeon-crawler",
-        "locations": [],
-    },
-    {
-        "name": "Audio Fiction",
+        "name": "Oral History",
         "difficulty": 1,
         "description": "Create a story where the reader can listen to audio that you, as the author, create through interviews and field recordings.",
         "path": "audio-fiction",
@@ -50,24 +50,45 @@ const trails = [
         "locations": [],
     },
     {
-        "name": "Puzzle",
+        "name": "Museum Walk",
         "difficulty": 2,
-        "description": "Use variables and conditional statements to create a story where the reader must solve a puzzle to move the plot forward.",
-        "path": "puzzle",
+        "description": "Lorum ipsum",
+        "path": "museum-walk",
         "locations": []
     },
     {
-        "name": "Time Traveler",
-        "difficulty": 2,
-        "description": "Create a story about a time traveler who changes the past by interfering in events. Be sure to include what happens to the future because of their actions!",
-        "path": 'time-traveler',
+        "name": "Diary",
+        "difficulty": 1,
+        "description": "Lorum ipsum",
+        "path": "diary",
         "locations": []
     },
+    // {
+    //     "name": "Puzzle",
+    //     "difficulty": 2,
+    //     "description": "Use variables and conditional statements to create a story where the reader must solve a puzzle to move the plot forward.",
+    //     "path": "puzzle",
+    //     "locations": []
+    // },
+    // {
+    //     "name": "Time Traveler",
+    //     "difficulty": 2,
+    //     "description": "Create a story about a time traveler who changes the past by interfering in events. Be sure to include what happens to the future because of their actions!",
+    //     "path": 'time-traveler',
+    //     "locations": []
+    // },
+    // {
+    //     "name": "Chutes & Ladders",
+    //     "difficulty": 2,
+    //     "description": "Create a story where the reader makes choices. Store information about their choices in variables and use that information to determine if the story ends well or badly.",
+    //     "path": "chutes-and-ladders",
+    //     "locations": []
+    // },
     {
-        "name": "Chutes & Ladders",
-        "difficulty": 2,
-        "description": "Create a story where the reader makes choices. Store information about their choices in variables and use that information to determine if the story ends well or badly.",
-        "path": "chutes-and-ladders",
+        "name": "Primary Documents",
+        "difficulty": 1,
+        "description": "Lorum ipsum",
+        "path": "primary-documents",
         "locations": []
     }
     

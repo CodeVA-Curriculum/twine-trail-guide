@@ -19,7 +19,7 @@ import { object_without_properties } from "svelte/internal";
 <script>
     import {onMount} from 'svelte'
     import {base} from '$app/paths'
-    import TrailCard from '$lib/components/TrailCard.svelte';
+import LocationCard from "$lib/components/LocationCard.svelte";
     export let locations
     
     let filteredList = [];
@@ -68,7 +68,7 @@ import { object_without_properties } from "svelte/internal";
     <div class='container'>
         <!-- TODO: display list of Trails for each Location in the card -->
         {#each filteredList as location}
-        <TrailCard
+        <LocationCard
             name={location.title}
             desc={location.description}
             path={location.slug}

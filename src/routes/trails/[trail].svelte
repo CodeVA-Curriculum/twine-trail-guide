@@ -15,6 +15,7 @@
     import TrailTimeline from "$lib/components/TrailTimeline.svelte";
     import LocationNode from '$lib/components/LocationNode.svelte';
     import { onMount } from 'svelte';
+    import { fade, fly } from 'svelte/transition';
     export let trail;
 
     let Sample;
@@ -22,7 +23,10 @@
     let locations = [];
     let inlineLocations;
 
+    let selected = 0;
+
     function step(i) {
+        selected = i; // transition desktop guy
         console.log("scrolling to " + i)
 		inlineLocations.children[i].scrollIntoView({ behavior: 'smooth', block: 'center' });
 		//console.log(offset);
@@ -72,16 +76,19 @@
                         position={i+1}
                         type={location.type}
                         slug={location.slug}
+                        selected={selected == i}
                     />
                     {/each}
                 </TrailTimeline>
             </div>
             <!-- TODO: on desktop, and only show the selected location -->
-            <div class='column content' bind:this="{inlineLocations}">
+            <div class='column content is-hidden-touch'>
                 {#each locationContent as component, i}
-                <div class='container my-5'>
+                {#if selected == i}
+                <div transition:fly="{{ y: 100, duration: 500 }}" class='container my-5 inline'>
                     <svelte:component this={component} position={i+1} />
                 </div>
+                {/if}
                 {/each}
             </div>
             
@@ -91,15 +98,21 @@
 </section>
 <!-- TODO: on mobile -->
 <!-- TODO: add "scroll to top" button on mobile -->
-<section class='section content' bind:this="{inlineLocations}">
+<section class='section content is-hidden-desktop' bind:this="{inlineLocations}">
     
         {#each locationContent as component, i}
-            <div class='container my-5'>
+            <div class='container my-5 inline'>
                 <svelte:component this={component} position={i+1} />
             </div>
         {/each}
    
 </section>
+
+<style>
+    .inline {
+        position: absolute;
+    }
+</style>
 
 <!-- TODO: Add standards info -->
 <!-- <section class='section'>

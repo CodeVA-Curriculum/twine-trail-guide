@@ -3,7 +3,8 @@
     import { goto } from '$app/navigation';
     import Fa from 'svelte-fa'
     import { faHammer } from '@fortawesome/free-solid-svg-icons'
-    export let title, description, position, type, slug, cl
+    export let title, description, position, type, slug, cl, selected
+
 
     function routeToPage() {
         const replaceState = false;
@@ -17,9 +18,9 @@
             <i><Fa icon={faHammer} /></i>
         </div>
     {:else}
-        <div class="timeline-marker"></div>
+        <div class="timeline-marker {selected ? 'is-info': ''}"></div>
     {/if}
-    <div class="timeline-content card location-content p-4">
+    <div class="timeline-content card location-content p-4 {selected ? 'is-selected' : 'not-selected'}">
             <!-- <div class='video mb-3'>
                 <iframe src="https://www.youtube.com/embed/AsURmcD_Z5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div> -->
@@ -32,12 +33,19 @@
     .location > .location-content {
         margin-left: 3rem;
     }
-    .location > .location-content:hover {
+    .not-selected:hover {
         background-color: whitesmoke;
         cursor: pointer;
     }
+    .is-selected {
+        background-color: lightblue;
+        cursor: pointer;
+    }
+    .is-selected:hover {
+        background-color: powderblue;
+    }
     .location {
-        width: 25rem;
+        max-width: 25rem;
     }
 
     .video {

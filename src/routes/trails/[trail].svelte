@@ -66,7 +66,7 @@
 <section class='section'>
     <div class='container'>
         <div class='columns'>
-            <div class='column'>
+            <div class='column is-4'>
                 <TrailTimeline>
                     {#each locations as location, i}
                     <LocationNode 

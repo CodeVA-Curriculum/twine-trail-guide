@@ -19,9 +19,12 @@
     {:else}
         <div class="timeline-marker"></div>
     {/if}
-    <div class="timeline-content card p-4 location-content">
-        <h3 class="heading is-small">{#if type!='project'}{position}.{/if} {title}</h3>
-        <p>{description}</p>
+    <div class="timeline-content card location-content p-4">
+            <!-- <div class='video mb-3'>
+                <iframe src="https://www.youtube.com/embed/AsURmcD_Z5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div> -->
+            <h3 class="heading is-small">{#if type!='project'}{position}.{/if} {title}</h3>
+            <p>{description}</p>
     </div>
 </article>
 
@@ -34,6 +37,23 @@
         cursor: pointer;
     }
     .location {
-        max-width: 30rem;
+        width: 25rem;
+    }
+
+    .video {
+        overflow: hidden;
+        /* 16:9 aspect ratio */
+        padding-top: 56.25%;
+        position: relative;
+    }
+
+    .video iframe {
+        border: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        border-radius: 12px;
     }
 </style>

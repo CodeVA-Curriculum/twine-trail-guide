@@ -61,27 +61,42 @@
 
 <section class='section'>
     <div class='container'>
-        <TrailTimeline>
-            {#each locations as location, i}
-            <LocationNode 
-                cl={() => step(i)}
-                title={location.title}
-                description={location.description}
-                position={i+1}
-                type={location.type}
-                slug={location.slug}
-            />
-            {/each}
-        </TrailTimeline>
+        <div class='columns is-desktop'>
+            <div class='column'>
+                <TrailTimeline>
+                    {#each locations as location, i}
+                    <LocationNode 
+                        cl={() => step(i)}
+                        title={location.title}
+                        description={location.description}
+                        position={i+1}
+                        type={location.type}
+                        slug={location.slug}
+                    />
+                    {/each}
+                </TrailTimeline>
+            </div>
+            <!-- TODO: on desktop, and only show the selected location -->
+            <div class='column content' bind:this="{inlineLocations}">
+                {#each locationContent as component, i}
+                <div class='container my-5'>
+                    <svelte:component this={component} position={i+1} />
+                </div>
+                {/each}
+            </div>
+            
+        </div>
+        
     </div>
 </section>
-
+<!-- TODO: on mobile -->
+<!-- TODO: add "scroll to top" button on mobile -->
 <section class='section content' bind:this="{inlineLocations}">
     
         {#each locationContent as component, i}
-        <div class='container my-5'>
-            <svelte:component this={component} position={i+1} />
-        </div>
+            <div class='container my-5'>
+                <svelte:component this={component} position={i+1} />
+            </div>
         {/each}
    
 </section>

@@ -12,7 +12,7 @@
 </script>
 
 <section class="timeline my-5">
-    <h2 class='title is-size-4'>Trail Blazes</h2>
+    <!-- <h2 class='title is-size-4'>Trail Blazes</h2> -->
     <header class="timeline-header">
         <span class="tag is-medium is-primary">Start</span>
     </header>

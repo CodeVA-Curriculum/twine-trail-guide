@@ -2,6 +2,7 @@
     import {base} from '$app/paths';
 
     export let name, desc, path;
+    export let video = 'https://www.youtube.com/embed/AsURmcD_Z5g'
     let icon = '';
 
     import { goto } from '$app/navigation';
@@ -18,7 +19,7 @@
         <!-- TODO: add tags for trails -->
         <div class="column is-4">
           <div class='video'>
-            <iframe src="https://www.youtube.com/embed/AsURmcD_Z5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="{video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
         <div class='column'>

@@ -3,7 +3,7 @@
     import { goto } from '$app/navigation';
     import Fa from 'svelte-fa'
     import { faHammer } from '@fortawesome/free-solid-svg-icons'
-    export let title, description, position, type, slug, cl, selected
+    export let title, short, position, type, slug, cl, selected
 
 
     function routeToPage() {
@@ -25,7 +25,7 @@
                 <iframe src="https://www.youtube.com/embed/AsURmcD_Z5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div> -->
             <h3 class="heading is-small">{#if type!='project'}{position}.{/if} {title}</h3>
-            <p>{description}</p>
+            <p>{short}</p>
     </div>
 </article>
 

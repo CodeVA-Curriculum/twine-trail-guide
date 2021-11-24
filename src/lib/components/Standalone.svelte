@@ -25,7 +25,7 @@
         </div>
         <hr>
     </section>
-    <section class='section content'>
+    <section class='section content post'>
         <slot />
     </section>
 </div>

@@ -61,6 +61,7 @@
     <div class='container'>
     <h1 class='title block'>{trail.name} {trail.difficulty == 0 ? '✨' : ''}</h1>
     <p class='block'>{trail.desc}</p>
+    <hr>
 </section>
 
 <section class='section'>
@@ -72,7 +73,7 @@
                     <LocationNode 
                         cl={() => step(i)}
                         title={location.title}
-                        description={location.description}
+                        short={location.short}
                         position={i+1}
                         type={location.type}
                         slug={location.slug}

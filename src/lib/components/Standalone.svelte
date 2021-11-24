@@ -32,8 +32,6 @@
 
 <style lang='scss'>
     .video {
-        // overflow: hidden;
-        /* 16:9 aspect ratio */
         padding-top: 56.25%;
         position: relative;
     }

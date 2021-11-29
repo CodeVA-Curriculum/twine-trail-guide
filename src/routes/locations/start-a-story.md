@@ -7,22 +7,6 @@ type: tutorial
 layout: location
 ---
 
-<script>
-    import home from '$lib/assets/twine-home.png'
-    import format from '$lib/assets/twine-format.png'
-    import chapbook from '$lib/assets/twine-chapbook.png'
-    import newStory from '$lib/assets/twine-new-story.png'
-    import addStory from '$lib/assets/twine-add-story.png'
-    import returnHome from '$lib/assets/twine-go-home.png'
-    import selectStory from '$lib/assets/twine-select-story.png'
-</script>
-
-<!-- <style>
-    img {
-        border-radius: 12px;
-    }
-</style> -->
-
 ## First, Visit Twine in Your Web Browser
 
 [Twine](https://twinery.org/) is a set of tools that help people write interactive stories and programs that run in a web browser. There are lots of ways to use these tools (including installing the tools on your computer so you can use them offline), but the *easiest* way is to just open Twine in your web browser.
@@ -30,7 +14,7 @@ layout: location
 1. Follow [this link](https://twinery.org/) to open the Twine website.
 2. Find the link that says `Use it online` on the right side of the screen (see the screenshot below). Click the link to open the Twine editor tool.
 
-![The twinery.org webpage, with the 'Use it online' link circled in red with arrows pointing at it.]({home} "Find the 'Use it online' link on twinery.org")
+![The twinery.org webpage, with the 'Use it online' link circled in red with arrows pointing at it.](/images/twine-home.png "Find the 'Use it online' link on twinery.org")
 
 ----
 
@@ -40,11 +24,11 @@ Twine **formats** control the appearance and style of the stories you create usi
 
 1. Click the `Formats` button in the area on the right side of the screen (see the screenshot below)
 
-![The Twine story editor, with the 'Formats' button circled in red.]({format} "Find the 'formats' button")
+![The Twine story editor, with the 'Formats' button circled in red.](/images/twine-format.png "Find the 'formats' button")
 
 2. Choose **Chapbook**, and then click the "x" to return to the main page.
 
-![The Twine 'formats' list, indicating that you should choose 'Chapbook' from the list]({chapbook} "Choose 'Chapbook' and return to the main page")
+![The Twine 'formats' list, indicating that you should choose 'Chapbook' from the list](/images/twine-chapbook.png "Choose 'Chapbook' and return to the main page")
 
 ----
 
@@ -52,18 +36,18 @@ Twine **formats** control the appearance and style of the stories you create usi
 
 1. Find the `+ Story` button in the area on the right side of the screen, and give it a click!
 
-![The Twine story editor, with the '+Story' button circled in red.]({newStory} "Click the 'New Story' button")
+![The Twine story editor, with the '+Story' button circled in red.](/images/twine-new-story.png "Click the 'New Story' button")
 
 2. Name your story whatever you'd like. If you can't think of a name, just name it `My First Story`. You can change it later if you'd like. Then, click `Add`.
 
-![The Twine 'new story' dialog box, with the '+Add' button circled in red.]({addStory} "Click the 'Add' button")
+![The Twine 'new story' dialog box, with the '+Add' button circled in red.](/images/twine-add-story.png "Click the 'Add' button")
 
 3. Twine will automatically open the editor after it creates your story. To see how to add to your story, check out the [next tutorial](#). To return to the main page, click the `Home` button shaped like a house in the bottom-left corner of the screen.
 
-![The Twine editor, with a red arrow indicating the location of the 'Home' button]({returnHome} "Return the main page by clicking the 'Home' button")
+![The Twine editor, with a red arrow indicating the location of the 'Home' button](/images/twine-go-home.png "Return the main page by clicking the 'Home' button")
 
 4. You can re-enter your story to make changes by clicking the story box from the main page.
 
-![The Twine story selection page, with a single story titled 'My First Story'.]({selectStory} "Edit your story by clicking on it from the home page.")
+![The Twine story selection page, with a single story titled 'My First Story'.](/images/twine-select-story.png "Edit your story by clicking on it from the home page.")
 
 ----

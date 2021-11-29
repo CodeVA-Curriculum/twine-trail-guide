@@ -13,8 +13,10 @@
 
 <script>
     import TrailCard from '$lib/components/TrailCard.svelte';
-    
+    import Fa from 'svelte-fa';
+    import {faChevronDown} from '@fortawesome/free-solid-svg-icons'
     export let trails_res;
+    let trailList;
     let trails = trails_res.trails;
 </script>
 
@@ -25,6 +27,7 @@
             
         <p class='block'>Some Trails are short, and some are longer and take more time to complete. We've marked the trails recommended for beginners with the ✨ icon. All the Trails in this guide have a "difficulty" rating that corresponds to how much time the Trail might take to complete.</p>
         <div class=''>
+            <!-- TODO: tiled layout by difficulty -->
             <ul class='list columns is-multiline is-desktop is-centered'>
                 <li class='list-item column is-flex'>
                     <div class='card'>
@@ -59,12 +62,16 @@
                     </div>
                 </li>
             </ul>
+            <div class='has-text-centered'>
+                <span class='scroll-link'><Fa icon={faChevronDown} size="3x" /></span>
+                <!-- <hr> -->
+            </div>
         </div>
-        <hr>
+        <!-- <hr> -->
     </div>
 </div>
 <div class='section'>
-    <div class='container trail-list'>
+    <div class='container trail-list' this:bind={trailList}>
     <!-- Trail Card-->
         {#each trails as trail}
             <TrailCard

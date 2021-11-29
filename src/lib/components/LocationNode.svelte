@@ -12,6 +12,8 @@
     }
 </script>
 
+
+<!-- TODO: add 'completed' checkbox for people on the timeline -->
 <article on:click={cl} class="timeline-item location">
     {#if type=="project"}
         <div class='timeline-marker is-warning is-icon'>
@@ -38,11 +40,11 @@
         cursor: pointer;
     }
     .is-selected {
-        background-color: lightblue;
+        background-color: white;
         cursor: pointer;
     }
     .is-selected:hover {
-        background-color: powderblue;
+        background-color: whitesmoke;
     }
     .location {
         max-width: 25rem;

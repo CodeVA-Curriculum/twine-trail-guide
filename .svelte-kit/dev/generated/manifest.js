@@ -12,7 +12,6 @@ const c = [
 	() => import("../../../src/routes/trails/__layout.svelte"),
 	() => import("../../../src/routes/trails/index.svelte"),
 	() => import("../../../src/routes/trails/your-first-story.md"),
-	() => import("../../../src/routes/trails/[trail].svelte"),
 	() => import("../../../src/routes/about.md")
 ];
 
@@ -46,13 +45,8 @@ export const routes = [
 	// src/routes/trails/your-first-story.md
 	[/^\/trails\/your-first-story\/?$/, [c[0], c[10], c[12]], [c[1]]],
 
-	// src/routes/trails/[trail].svelte
-	[/^\/trails\/([^/]+?)\/?$/, [c[0], c[10], c[13]], [c[1]], (m) => ({ trail: d(m[1])})],
-
 	// src/routes/about.md
-	[/^\/about\/?$/, [c[0], c[14]], [c[1]]],
-
-	,
+	[/^\/about\/?$/, [c[0], c[13]], [c[1]]],
 
 	,
 

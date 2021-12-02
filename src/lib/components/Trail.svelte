@@ -1,15 +1,3 @@
-<script context="module">
-    export async function load({ fetch, page }) {
-      const { trail } = page.params;
-      const res = await fetch(`/trails/${trail}`);
-      if (res.ok) return { props: { trail: await res.json() } };
-      return {
-        status: res.status,
-        error: new Error(),
-      };
-    }
-</script>
-
 <script>
     import TrailTimeline from "$lib/components/TrailTimeline.svelte";
     import LocationNode from '$lib/components/LocationNode.svelte';

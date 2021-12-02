@@ -1,23 +1,51 @@
 <script context="module">
-    import {base} from '$app/paths';
-    export async function load({ fetch, page }) {
-      const { trail } = page.params;
-      const res = await fetch(`${base}/api/trails/all.json`);
-      if (res.ok) return { props: { trails_res: await res.json() } };
-      return {
-        status: res.status,
-        error: new Error(),
-      };
-    }
-</script>
+        export async function load({ fetch, page }) {
+            const { trail } = page.params;
+            const res = await fetch(`/api/trails.json`);
+            if (res.ok) {
+                const obj = await res.json();
+                return { props: { trails: obj.posts } };
+            };
+          return {
+            status: res.status,
+            error: new Error(),
+          };
+        }
+    </script>
 
 <script>
     import TrailCard from '$lib/components/TrailCard.svelte';
     import Fa from 'svelte-fa';
     import {faChevronDown} from '@fortawesome/free-solid-svg-icons'
-    export let trails_res;
+    import { onMount } from 'svelte';
     let trailList;
-    let trails = trails_res.trails;
+    export let trails;
+
+    let filteredList = [];
+    let searchTerm ='';
+
+    onMount(() => {
+        if(trails) {
+            filteredList = trails;
+        }
+        console.log(trails)
+    })
+
+    let filter = (searchTerm) => {
+        let tempList = [];
+        for(let i=0; i<trails.length;i++) {
+            if(trails[i].title.toLowerCase().includes(searchTerm.toLowerCase())) {
+                tempList.push(trails[i]);
+            }
+        }
+        if(searchTerm.length > 0) {
+            return tempList;
+        } else {
+            return trails;
+        }
+    }
+
+    $: filteredList = filter(searchTerm);
 </script>
 
 <div class='section'>
@@ -62,6 +90,11 @@
                     </div>
                 </li>
             </ul>
+            <div class="field search">
+                <div class="control">
+                    <input bind:value="{searchTerm}" class="input" type="text" placeholder="Search in Trail titles...">
+                </div>
+            </div>
             <div class='has-text-centered'>
                 <span class='scroll-link'><Fa icon={faChevronDown} size="3x" /></span>
                 <!-- <hr> -->
@@ -70,10 +103,10 @@
         <!-- <hr> -->
     </div>
 </div>
-<div class='section'>
+<!-- <div class='section'>
     <div class='container trail-list' this:bind={trailList}>
     <!-- Trail Card-->
-        {#each trails as trail}
+        <!-- {#each trails as trail}
             <TrailCard
                 name={trail.name}
                 desc={trail.description}
@@ -82,7 +115,22 @@
             />
         {/each}
     </div>
-</div>
+</div> -->
+
+<section class='section'>
+    
+    <div class='container trail-list'>
+        
+        {#each filteredList as trail}
+        <TrailCard
+                name={trail.title}
+                desc={trail.description}
+                difficulty={trail.difficulty}
+                path='trails/{trail.slug}'
+        />
+        {/each}
+    </div>
+</section>
 
 <style>
     .trail {
@@ -95,3 +143,4 @@
         margin: 0.5rem;
     }
 </style>
+

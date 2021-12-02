@@ -4,7 +4,7 @@ import { object_without_properties } from "svelte/internal";
 
     export async function load({ fetch, page }) {
         const { trail } = page.params;
-        const res = await fetch(`/api/locations/locations.json`);
+        const res = await fetch(`/api/locations.json`);
         if (res.ok) {
             const obj = await res.json();
             return { props: { locations: obj.posts } };
@@ -19,7 +19,7 @@ import { object_without_properties } from "svelte/internal";
 <script>
     import {onMount} from 'svelte'
     import {base} from '$app/paths'
-import LocationCard from "$lib/components/LocationCard.svelte";
+    import LocationCard from "$lib/components/LocationCard.svelte";
     export let locations
     
     let filteredList = [];

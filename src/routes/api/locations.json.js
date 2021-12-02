@@ -5,7 +5,7 @@ import { basename } from "path"
 
 export async function get({ params }) {
 	// Import all .md files in the directory
-	const modules = import.meta.glob("../../locations/*.md")
+	const modules = import.meta.glob("../locations/*.md")
 
 	// Run a map over each module
 

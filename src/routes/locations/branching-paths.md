@@ -28,11 +28,9 @@ Once upon a time, a spider was looking for a place to spin thier web. They walke
 > [[The Rotten Log]]
 ```
 
-By adding a second link, you can create a *choice* for the reader. After adding a second link, return to the main story editor:
+By adding a second link, you can create a *choice* for the reader. After adding a second link, return to the main story editor. You'll notice that Twine automatically created a new passage with a name matching the one we created in the first passage: `The Rotten Log`. Nice!
 
-![The Twine story editor showing three passages connected to one another.](/images/branching-path.png)
-
-You'll notice that Twine automatically created a new passage with a name matching the one we created in the first passage: `The Rotten Log`. Nice!
+![The Twine story editor showing three passages connected to one another.](/branching-path.png)
 
 ----
 
@@ -51,7 +49,7 @@ My new passage needs some links! One of them will lead back to `The Clearing`, a
 
 Here's what my story editor looks like after adding the the links to my `Rotten Log` passage:
 
-![The Twine story editor, showing four passages connected together](/images/new-branch.png)
+![The Twine story editor, showing four passages connected together](/new-branch.png)
 
 ----
 

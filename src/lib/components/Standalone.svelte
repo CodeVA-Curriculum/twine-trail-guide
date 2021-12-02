@@ -1,3 +1,8 @@
+<script context="module">
+    import { img } from './components.js';
+    export { img };
+</script>
+
 <script>
     import {onMount} from 'svelte'
     import {base} from '$app/paths'

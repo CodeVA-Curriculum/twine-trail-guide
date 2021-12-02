@@ -23,7 +23,7 @@ First, you should think of a story to write. Your story should have a setting an
 
 Once you have an idea for your story, you can either start writing or plan out your passages and links in advance. I like using sticky notes to get an idea of my story before I start writing too much, but you can do whatever works best for you.
 
-![A large number of sticky notes representing scenes from a story about a sailor dealing with a sudden emergency at sea](/images/planning.png)
+![A large number of sticky notes representing scenes from a story about a sailor dealing with a sudden emergency at sea](/planning.png)
 
 Here are some tips to keep in mind as you work:
 
@@ -37,7 +37,7 @@ Here are some tips to keep in mind as you work:
 
 Twine saves your work in your browser, but that's not a very secure way to keep your story safe. To create a secure and permanent version of your story, click the name of your story in the bottom-left of the story editor and select `Publish to File`. The file that your computer saves when you click that button is a portable version of your story that you can send to other people and keep for yourself.
 
-![The Twine story editor showing the 'Publish to File' button that allows the author to download their story in HTML format](/images/publish.png)
+![The Twine story editor showing the 'Publish to File' button that allows the author to download their story in HTML format](/publish-to-file.png)
 
 Make sure you save your work!
 

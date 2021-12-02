@@ -13,9 +13,9 @@ Twine *passages* are like scenes in your story. They should be short and descrip
 
 Before you can create a link to a new passage, write a beginning scene for your story that can lead to a new scene. Here's an example:
 
-```
-Once upon a time, a spider was looking for a place to spin thier web. They walked into the forest alone, looking for a good spot to make their new home. Over the hill, they spotted a peaceful clearing.
-```
+> Once upon a time, a spider was looking for a place to spin thier web. They walked into the forest alone, looking for a good spot to make their new home. Over the hill, they spotted a peaceful clearing.
+
+![The Twine passage editor, showing a passage beginning a story](/intro-passage.png)
 
 Once you've written the first scene of your story, click the `X` in the top-right corner or click the dark background outside of the editor box to return to the main story editor page.
 
@@ -23,11 +23,15 @@ Once you've written the first scene of your story, click the `X` in the top-righ
 
 ## Create a Second Passage
 
-Next, create a new passage by clicking the `+ Passage` button in the bottom-right corner of the editor. Open the passage, and edit the title and contents. I've chosen to name my passage `The Clearing` because that's the topic of the scene, but you can name it whatever you want. The new passage should continue from where the first passage left off:
+Next, create a new passage by clicking the `+ Passage` button in the bottom-right corner of the editor. You'll see the two passages side-by-side in the story editor.
+
+![The Twine story editor showing two passages, one called Intro and one Untitled](/two-passages.png)
+
+Open the passage, and edit the title and contents. I've chosen to name my passage `The Clearing` because that's the topic of the scene, but you can name it whatever you want. The new passage should continue from where the first passage left off:
 
 > The spider explored the beautiful clearing, but all the trees were too far apart to support their web. They decided to keep exploring to see if they could find another place for their home.
 
-![The Twine passage editor, showing a passage named 'The Clearing'](/images/second-passage.png)
+![The Twine passage editor, showing a passage named 'The Clearing'](/second-passage.png)
 
 Once you're finished with your second passage, return to the main story editor page.
 
@@ -53,7 +57,7 @@ The `>`, `[[`, and `]]` all have to be exactly like in the example, but the *nam
 
 After adding the link, return to the main story editor. You'll see that your two passages are now connected visually.
 
-![The Twine story editor, showing two passages connected by a link](/images/linked-passages.png)
+![The Twine story editor, showing two passages connected by a link](/linked-passages.png)
 
 Test your story by pressing the `Play` button. You'll notice that you can click the link at the end of your first passage, and the screen changes to show the next passage!
 

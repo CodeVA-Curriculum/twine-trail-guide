@@ -11,10 +11,7 @@ const c = [
 	() => import("../../../src/routes/locations/start-a-story.md"),
 	() => import("../../../src/routes/trails/__layout.svelte"),
 	() => import("../../../src/routes/trails/index.svelte"),
-	() => import("../../../src/routes/trails/primary-documents.md"),
 	() => import("../../../src/routes/trails/your-first-story.md"),
-	() => import("../../../src/routes/trails/oral-history.md"),
-	() => import("../../../src/routes/trails/museum-walk.md"),
 	() => import("../../../src/routes/about.md")
 ];
 
@@ -45,20 +42,11 @@ export const routes = [
 	// src/routes/trails/index.svelte
 	[/^\/trails\/?$/, [c[0], c[10], c[11]], [c[1]]],
 
-	// src/routes/trails/primary-documents.md
-	[/^\/trails\/primary-documents\/?$/, [c[0], c[10], c[12]], [c[1]]],
-
 	// src/routes/trails/your-first-story.md
-	[/^\/trails\/your-first-story\/?$/, [c[0], c[10], c[13]], [c[1]]],
-
-	// src/routes/trails/oral-history.md
-	[/^\/trails\/oral-history\/?$/, [c[0], c[10], c[14]], [c[1]]],
-
-	// src/routes/trails/museum-walk.md
-	[/^\/trails\/museum-walk\/?$/, [c[0], c[10], c[15]], [c[1]]],
+	[/^\/trails\/your-first-story\/?$/, [c[0], c[10], c[12]], [c[1]]],
 
 	// src/routes/about.md
-	[/^\/about\/?$/, [c[0], c[16]], [c[1]]],
+	[/^\/about\/?$/, [c[0], c[13]], [c[1]]],
 
 	,
 

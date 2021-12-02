@@ -10,5 +10,3 @@ locations:
     - story-with-multiple-endings
 layout: trail
 ---
-
-Hello hello

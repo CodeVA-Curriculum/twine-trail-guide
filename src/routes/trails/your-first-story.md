@@ -10,3 +10,5 @@ locations:
     - story-with-multiple-endings
 layout: trail
 ---
+
+You don't need any prerequisite knowledge to get started with this trail. Many of the other [trails](/trails) in this guide will build on the skills you develop here.

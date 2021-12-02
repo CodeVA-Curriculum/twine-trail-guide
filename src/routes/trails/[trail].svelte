@@ -1,5 +1,4 @@
 <script context="module">
-    import {base} from '$app/paths';
     export async function load({ fetch, page }) {
       const { trail } = page.params;
       const res = await fetch(`/api/trails/${trail}`);
@@ -16,6 +15,7 @@
     import LocationNode from '$lib/components/LocationNode.svelte';
     import { onMount } from 'svelte';
     import { fade, fly } from 'svelte/transition';
+    import {base} from '$app/paths';
     export let trail;
 
     let Sample;

@@ -6,17 +6,6 @@
     export let compact = false;
     export let position = false;
     export let video = "https://www.youtube.com/embed/AsURmcD_Z5g"
-
-    let assets
-
-    onMount(async () => {
-        assets = {
-            addStory: (await import(`../assets/twine-add-story.png`)).default
-        }
-    })
-    
-
-    
 </script>
 
 <div class='container'>

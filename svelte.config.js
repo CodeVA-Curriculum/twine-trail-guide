@@ -15,7 +15,8 @@ const config = {
       extensions: ['.svelte.md', '.md', '.svx'],
       layout: {
         _: './src/lib/components/MdLayout.svelte',
-        location: './src/lib/components/Standalone.svelte'
+        location: './src/lib/components/Standalone.svelte',
+        trail: './src/lib/components/Trail.svelte'
       }
     }),
     preprocess(),

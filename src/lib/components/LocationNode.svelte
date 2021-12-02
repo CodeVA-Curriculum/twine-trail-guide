@@ -20,9 +20,9 @@
             <i><Fa icon={faHammer} /></i>
         </div>
     {:else}
-        <div class="timeline-marker {selected ? 'is-info': ''}"></div>
+        <div class="timeline-marker {selected ? '': ''}"></div>
     {/if}
-    <div class="timeline-content card location-content p-4 {selected ? 'is-selected' : 'not-selected'}">
+    <div class="timeline-content card location-content p-4 {selected ? 'not-selected' : 'not-selected'}">
             <!-- <div class='video mb-3'>
                 <iframe src="https://www.youtube.com/embed/AsURmcD_Z5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div> -->

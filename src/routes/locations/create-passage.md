@@ -3,6 +3,7 @@ title: Create a Passage
 author: Jon Stapleton
 short: Learn how to create a passage in Twine, telling a part of your story using text.
 description: Passages are where the action happens--they make up the parts of your story. This tutorial covers how to create a passage using the Twine editor, and how to add text to that passage to tell part of your story to the reader.
+video: https://youtube.com/embed/p91bou3cJuA
 type: tutorial
 layout: location
 ---

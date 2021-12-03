@@ -3,6 +3,7 @@ title: Link Passages
 author: Jon Stapleton
 short: Allow the reader to progress through the story step-by-step
 description: Each passage is like a scene in your story. Learn how to connect passages together with links, allowing the reader to move the story forward and uncover new scenes step-by-step.
+video: https://youtube.com/embed/33OQtxF7L8g
 type: tutorial
 layout: location
 ---

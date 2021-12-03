@@ -1,7 +1,9 @@
 <script>
     import {base} from '$app/paths';
+    import Fa from 'svelte-fa'
+    import {faHammer} from '@fortawesome/free-solid-svg-icons'
 
-    export let name, desc, path;
+    export let name, desc, path, type;
     export let video; // = 'https://www.youtube.com/embed/AsURmcD_Z5g'
     let icon = '';
 
@@ -25,7 +27,7 @@
         </div>
         {/if}
         <div class='column'>
-            <h2 class='title is-size-4 mb-3'><a href='{base}/trails/{path}'>{name} {icon}</a></h2>
+            <h2 class='title is-size-4 mb-3'><a href='{base}/trails/{path}'>{name}</a>{#if type=="project"}<span class='icon'><Fa icon={faHammer} size="0.75x" /></span>{/if}</h2>
             <p class='block'>{desc}</p>
         </div>
       </div>
@@ -59,5 +61,13 @@
         top: 0;
         width: 100%;
         border-radius: 12px;
+    }
+
+    .icon {
+      border-radius: 3rem;
+      margin-left: 1rem;
+      height: 2rem;
+      width: 2rem;
+      background-color: hsl(48, 100%, 67%);
     }
 </style>

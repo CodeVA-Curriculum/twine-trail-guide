@@ -67,12 +67,24 @@
                         {/each}
                     </TrailTimeline>
                 </div>
-                <div class='container' bind:this="{inlineLocations}">
+                <div class='container is-hidden-desktop' bind:this="{inlineLocations}">
                 {#each locationContent as component, i}
                     <div class='container my-5 inline'>
                         <svelte:component this={component.default} position={i+1} compact={true} />
                     </div>
                 {/each}
+                </div>
+                <div class='column is-hidden-touch content-wrapper'>
+                    {#each locationContent as component, i}
+                    {#if selected == i}
+                    <div transition:fly="{{ y: 50, duration: 250 }}" class='el2'>
+                        <svelte:component this={component.default} position={i+1} compact={true} />
+                    </div>
+                    <div class='has-text-centered'>
+                        <button on:click={top} class='button is-primary is-rounded'>Back to Top</button>
+                    </div>
+                    {/if}
+                    {/each}
                 </div>
             </div>
             <div class='column is-4 ml-5 is-hidden-touch'>
@@ -92,21 +104,11 @@
                     </TrailTimeline>
                 </div>
             </div>
-            <!-- <div class='column is-hidden-touch content-wrapper'>
-                {#each locationContent as component, i}
-                {#if selected == i}
-                <div transition:fly="{{ y: 50, duration: 250 }}" class='el2'>
-                    <svelte:component this={component.default} position={i+1} compact={true} />
-                </div>
-                {/if}
-                {/each}
-            </div> -->
-            
         </div>
         
     </div>
     {#if scrollPosition > 300}
-    <div class='back-to-top' transition:fade>
+    <div class='back-to-top is-hidden-desktop' transition:fade>
         <button on:click={top} class='button is-primary is-rounded'>Back to Top</button>
     </div>
     {/if}

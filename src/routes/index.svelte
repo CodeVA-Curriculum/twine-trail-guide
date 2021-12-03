@@ -1,6 +1,7 @@
 <script>
 	// import '../app.scss';
 	import NSFLogo from '$lib/assets/NSFLogo.png';
+	import CodeVA from '$lib/assets/CodeVALogo.png';
 	import {base} from '$app/paths';
 	import Nav from '$lib/components/Nav.svelte';
 </script>
@@ -29,8 +30,11 @@
 			<div class='column is-narrow'>
 				<img alt="The National Science Foundation logo." src={NSFLogo} style="height: 4em;" />
 			</div>
+			<div class='column is-narrow'>
+				<img alt="The CodeVA logo" src={CodeVA} style="height: 3.5rem;" />
+			</div>
 			<div class='column'>
-				<p class='is-tiny'>The “Reaching Across the Hallway” project is funded by the National Science Foundation under Grant Award #2010256. Learn more about licenses for this site's content and source code <a href='{base}/about'>here</a>.</p>
+				<p class='is-tiny'>The “Reaching Across the Hallway” project is created by <a href="https://codevirginia.org">CodeVA</a> and is funded by the National Science Foundation under Grant Award #2010256. Learn more about licenses for this site's content and source code <a href='{base}/about'>here</a>.</p>
 			</div>
 		</div>
 	</div>

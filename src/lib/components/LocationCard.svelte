@@ -11,7 +11,7 @@
 
   function routeToPage() {
     const replaceState = false;
-    goto(`${base}/locations/${path}`, { replaceState }) 
+    goto(`${base}/locations${path}`, { replaceState: false, noscroll: false }) 
   }
 </script>
 
@@ -27,7 +27,7 @@
         </div>
         {/if}
         <div class='column'>
-            <h2 class='title is-size-4 mb-3'><a href='{base}/trails/{path}'>{name}</a>{#if type=="project"}<span class='icon'><Fa icon={faHammer} size="0.75x" /></span>{/if}</h2>
+            <h2 class='title is-size-4 mb-3'><a href='{base}/locations{path}'>{name}</a>{#if type=="project"}<span class='icon'><Fa icon={faHammer} size="0.75x" /></span>{/if}</h2>
             <p class='block'>{desc}</p>
         </div>
       </div>

@@ -10,7 +10,7 @@
 
   function routeToPage() {
     const replaceState = false;
-    goto(`${base}/${path}`, { replaceState }) 
+    goto(base + "/trails" + path, { replaceState: false, noscroll: false }) 
   }
 
   function getDifficulty() {
@@ -40,7 +40,7 @@
         <div>
           <div class='columns is-mobile'>
             <div class='column'>
-              <h2 class='title is-size-4'><a href='{base}/trails/{path}'>{name} {icon}</a></h2>
+              <h2 class='title is-size-4'><a href='{base}/trails{path}'>{name} {icon}</a></h2>
             </div>
             <div class='column is-narrow'>
               <span class='heading is-size-5'>{getDifficulty()}</span>

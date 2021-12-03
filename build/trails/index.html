@@ -9,21 +9,26 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-c15bff19.js">
-		<link rel="modulepreload" href="/_app/chunks/vendor-f9fc9992.js">
-		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-88b24d20.js">
-		<link rel="modulepreload" href="/_app/pages/trails/__layout.svelte-05814882.js">
-		<link rel="modulepreload" href="/_app/chunks/Nav-08b0eb70.js">
-		<link rel="modulepreload" href="/_app/pages/trails/index.svelte-17a2c02e.js">
-		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
-		<link rel="stylesheet" href="/_app/assets/pages/trails/index.svelte-8473b8aa.css">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/start-b64affc7.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/chunks/vendor-7f52b8a8.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/chunks/preload-helper-b1093eef.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/chunks/singletons-12a22614.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/chunks/paths-28a87002.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/pages/__layout.svelte-8c31879f.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/pages/trails/__layout.svelte-f771d0b7.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/chunks/Nav-fbf9f809.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/pages/trails/index.svelte-7080c608.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/chunks/navigation-51f4a605.js">
+		<link rel="stylesheet" href="/twine-trail-guide/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/twine-trail-guide/_app/assets/vendor-ec9510ad.css">
+		<link rel="stylesheet" href="/twine-trail-guide/_app/assets/pages/__layout.svelte-3ae29d7b.css">
+		<link rel="stylesheet" href="/twine-trail-guide/_app/assets/pages/trails/index.svelte-ecbc8621.css">
 
 		<script type="module">
-			import { start } from "/_app/start-c15bff19.js";
+			import { start } from "/twine-trail-guide/_app/start-b64affc7.js";
 			start({
 				target: document.querySelector("#svelte"),
-				paths: {"base":"","assets":""},
+				paths: {"base":"/twine-trail-guide","assets":""},
 				session: {},
 				host: location.host,
 				route: true,
@@ -33,9 +38,9 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-88b24d20.js"),
-						import("/_app/pages/trails/__layout.svelte-05814882.js"),
-						import("/_app/pages/trails/index.svelte-17a2c02e.js")
+						import("/twine-trail-guide/_app/pages/__layout.svelte-8c31879f.js"),
+						import("/twine-trail-guide/_app/pages/trails/__layout.svelte-f771d0b7.js"),
+						import("/twine-trail-guide/_app/pages/trails/index.svelte-7080c608.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -51,29 +56,40 @@
 		<div id="svelte">
 
 
-<nav class="navbar"><button role="button" class="navbar-burger " aria-label="menu" aria-expanded="false" data-target="nav-menu"><span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span></button>
-    <div id="nav-menu" class="navbar-menu "><div class="navbar-end"><a class="navbar-item" href="/">Home
+<nav class="navbar"><div class="navbar-brand logo"><a class="navbar-item" href="/twine-trail-guide/"><img alt="The CodeVA Logo" src="/twine-trail-guide/_app/assets/CodeVALogo-cdf06ed4.png" height="28">
+            <p class="mx-3 heading is-size-5">+</p>
+            <img alt="The Twine Logo" src="/twine-trail-guide/_app/assets/twine-b352c7c6.svg" height="28">
+            <h1 class="heading is-size-5 ml-5 mt-1 is-hidden-mobile">Twine Trail Guide</h1></a>
+        <button role="button" class="navbar-burger " aria-label="menu" aria-expanded="false" data-target="nav-menu"><span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span></button></div>
+    <div id="nav-menu" class="navbar-menu "><div class="navbar-end"><a class="navbar-item" href="/twine-trail-guide/">Home
             </a>
-            <a class="navbar-item" href="/about">About the Guide
+            <a class="navbar-item" href="/twine-trail-guide/about">About the Guide
             </a>
-            <a class="navbar-item" href="/trails">Trails
+            <a class="navbar-item" href="https://padlet.com/jonstapleton/wvs5vb5ct1s5kqts">Region Map
             </a>
-            <a class="navbar-item" href="/map">Region Map
+            <a class="navbar-item" href="/twine-trail-guide/trails">Trails
+            </a>
+            <a class="navbar-item" href="/twine-trail-guide/locations">Locations
             </a></div></div></nav>
 
 <div class="section"><div class="container"><h1 class="title">Trail Guide</h1>
-        <p class="block">Browse the list of trails below to explore different things to create with Twine. We&#39;ve marked the trails recommended for beginners with the ✨ icon.</p>
-        <hr></div></div>
-<div class="section"><div class="container">
-        <article class="card mx-1 my-5 trail"><div class="card-content p-3"><div class="media"><div class="media-left"><figure class="image is-hidden-touch"><img src="https://bulma.io/images/placeholders/128x128.png" alt="Placeholder image"></figure></div>
-            <div class="media-content"><h2 class="title is-size-4"><a class="svelte-cgrd7v">Your First Story ✨</a></h2>
-              <p class="block">Lorum ipsum sit dolor amet</p>
-                <a href="/trails/your-first-story" class="svelte-cgrd7v">Trail Demo</a></div></div></div>
-    
+        <p class="block">Browse the list of trails below to explore different things to create with Twine. Each Trail is a set of short tutorials that will help you learn how to create a particular kind of story, or implement a feature into a story you&#39;ve already created.</p>
+            
+        <p class="block">Some Trails are short, and some are longer and take more time to complete. We&#39;ve marked the trails recommended for beginners with the ✨ icon. All the Trails in this guide have a &quot;difficulty&quot; rating that corresponds to how much time the Trail might take to complete (🔷 for Easy, 🔷🔷 for Moderate, 🔷🔷🔷 for Strenuous, and 🔷🔷🔷🔷 for Expert).</p>
+        </div></div>
+
+        
+
+<section class="section"><div class="container trail-list"><article class="card my-5 trail svelte-11jwfdi"><div class="card-content"><div class="media">
+        
+        <div><div class="columns is-mobile"><div class="column"><h2 class="title is-size-4"><a href="/twine-trail-guide/trails/your-first-story" class="svelte-11jwfdi">Your First Story ✨</a></h2></div>
+            <div class="column is-narrow"><span class="heading is-size-5">🔷</span></div></div>
+          
+          <p class="block">This trail is intended to introduce beginners to Twine, and help them create a simple interactive story. Follow this trail to learn the basics! You&#39;ll learn about how to use the Twine interface, how to write and test the different parts of your story, how to link scenes together, and how to create a simple choose-your-own-adventure-style story that offers choices for the reader than affect the outcome.</p></div></div></div>
 </article></div>
-</div>
+</section>
 
 
 

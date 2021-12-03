@@ -1,31 +1,58 @@
 <script context="module">
-import { object_without_properties } from "svelte/internal";
+    // import {base} from '$app/paths'
+    // export const prerender = true;
 
+    // export async function load({ fetch, page }) {
+    //     const { trail } = page.params;
+    //     const res = await fetch(`${base}/api/locations.json`);
+    //     if (res.ok) {
+    //         const obj = await res.json();
+    //         return { props: { locations: obj.posts } };
+    //     };
+    //   return {
+    //     status: res.status,
+    //     error: new Error(),
+    //   };
+    // }
+    const locations = import.meta.glob('./*.md')
 
-    export async function load({ fetch, page }) {
-        const { trail } = page.params;
-        const res = await fetch(`/api/locations.json`);
-        if (res.ok) {
-            const obj = await res.json();
-            return { props: { locations: obj.posts } };
+    let body = []
+    let slugs = []
+
+    for (const path in locations) {
+        slugs.push(path)
+        body.push(locations[path]().then(({metadata}) => metadata))
+    }
+    /**
+        * @type {import('@sveltejs/kit').Load}
+        */
+    export async function load({ page, fetch }) {
+        const locations = await Promise.all(body)
+        for(let i=0; i<locations.length; i++) {
+            if(locations[i]) {
+                let end = slugs[i].indexOf(".md");
+                locations[i].slug = slugs[i].substring(1, end);
+            }
+        }
+        return {
+            props: {
+                locations
+            }
         };
-      return {
-        status: res.status,
-        error: new Error(),
-      };
     }
 </script>
 
 <script>
     import {onMount} from 'svelte'
-    import {base} from '$app/paths'
     import LocationCard from "$lib/components/LocationCard.svelte";
+    import {base} from '$app/paths'
     export let locations
     
     let filteredList = [];
     let searchTerm ='';
 
     onMount(() => {
+        console.log(locations);
         if(locations) {
             filteredList = locations;
         }
@@ -51,7 +78,7 @@ import { object_without_properties } from "svelte/internal";
 <section class='section'>
     <div class='container'>
         <h1 class='title'>Locations on the Map</h1>
-        <p class='block'>This is a big list of all the locations in this guide. You can use this page to search for videos or tutorials that you think might be useful, or just browse around to find something interesting. You can also browse the Locations in this guide by exploring the <a href="{base}/map">Region Map</a>.</p>
+        <p class='block'>This is a big list of all the locations in this guide. You can use this page to search for videos or tutorials that you think might be useful, or just browse around to find something interesting. You can also browse the Locations in this guide by exploring the <a href="https://padlet.com/jonstapleton/wvs5vb5ct1s5kqts">Region Map</a>.</p>
         <p class='block'>Each location includes a short video and a text explanation of a particular concept, storytelling strategy, or feature of Twine. You can also explore Locations by following <a href="{base}/trails">Trails</a>, which are collections of Locations organized around particular features or projects you can create with Twine. Check them out!</p>
         
         <div class="field search">

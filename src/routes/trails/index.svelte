@@ -1,17 +1,46 @@
 <script context="module">
-        export async function load({ fetch, page }) {
-            const { trail } = page.params;
-            const res = await fetch(`/api/trails.json`);
-            if (res.ok) {
-                const obj = await res.json();
-                return { props: { trails: obj.posts } };
-            };
-          return {
-            status: res.status,
-            error: new Error(),
-          };
+    // export const prerender = true;
+    // import {base} from '$app/paths'
+    //     export async function load({ fetch, page }) {
+    //         const { trail } = page.params;
+    //         const res = await fetch(`${base}/api/trails.json`);
+    //         if (res.ok) {
+    //             const obj = await res.json();
+    //             return { props: { trails: obj.posts } };
+    //         };
+    //       return {
+    //         status: res.status,
+    //         error: new Error(),
+    //       };
+    //     }
+
+    const posts = import.meta.glob('./*.md')
+
+    let body = []
+    let paths = []
+  
+    for (const path in posts) {
+        paths.push(path);
+        body.push(posts[path]().then(({metadata}) => metadata))
+    }
+    /**
+        * @type {import('@sveltejs/kit').Load}
+        */
+    export async function load({ page, fetch }) {
+        const trails = await Promise.all(body)
+        for(let i=0; i<trails.length; i++) {
+            if(trails[i]) {
+                let end = paths[i].indexOf(".md");
+                trails[i].slug = paths[i].substring(1, end);
+            }
         }
-    </script>
+        return {
+        props: {
+            trails
+        }
+        };
+    }
+</script>
 
 <script>
     import TrailCard from '$lib/components/TrailCard.svelte';
@@ -80,7 +109,7 @@
                 name={trail.title}
                 desc={trail.description}
                 difficulty={trail.difficulty}
-                path='trails/{trail.slug}'
+                path='{trail.slug}'
         />
         {/each}
     </div>

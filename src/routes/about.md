@@ -19,7 +19,7 @@ We use the term "trail guide" to describe this resource because most of what you
 
 ### Using the Map
 
-The **Map** contains a bunch of short little lessons on how to do different things with **Twine**. You don't have to follow these lessons in any particular order; once you know a little bit about **Twine**, you will probably find it useful to just browse around and explore the things that you might want to learn about as you work on writing a story.
+The **[Region Map](https://padlet.com/jonstapleton/wvs5vb5ct1s5kqts)** contains a bunch of short little lessons on how to do different things with **Twine**. You don't have to follow these lessons in any particular order; once you know a little bit about **Twine**, you will probably find it useful to just browse around and explore the things that you might want to learn about as you work on writing a story.
 
 ### Following the Trails
 
@@ -38,7 +38,7 @@ This *Trail Guide* is a tool for you to use, one that is intended to help you cr
 
 1. If you're new to **Twine**, go check out the [trails]({base}/trails) and pick one to follow. We suggest the ["My First Story"](#) trail.
 2. Complete the mini-project at the end of your chosen trail. Bask in your achievement, and share your story with friends & family!
-3. Pick a new [trail]({base}/trails) that seems interesting to you, or go explore the [map]({base}/map). Add to your first story, or start a new one!
+3. Pick a new [trail]({base}/trails) that seems interesting to you, or go explore the [region map](https://padlet.com/jonstapleton/wvs5vb5ct1s5kqts). Add to your first story, or start a new one!
 4. Keep going--make stories!
 
 </div>

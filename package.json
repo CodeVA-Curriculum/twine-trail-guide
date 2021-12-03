@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev --host",
-    "build": "svelte-kit build",
+    "build": "rm -rf build && svelte-kit build && touch build/.nojekyll",
     "preview": "svelte-kit preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+    "deploy": "yarn build && npx gh-pages -d build -t true"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^1.0.0-next.21",

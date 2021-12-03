@@ -46,11 +46,7 @@ export const routes = [
 	[/^\/trails\/your-first-story\/?$/, [c[0], c[10], c[12]], [c[1]]],
 
 	// src/routes/about.md
-	[/^\/about\/?$/, [c[0], c[13]], [c[1]]],
-
-	,
-
-	
+	[/^\/about\/?$/, [c[0], c[13]], [c[1]]]
 ];
 
 // we import the root layout/error components eagerly, so that

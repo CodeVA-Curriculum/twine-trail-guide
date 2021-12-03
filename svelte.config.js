@@ -29,10 +29,10 @@ const config = {
 			assets: 'build',
 			fallback: null
 		}),
-    // paths: {
-    //   base: '/twine-trail-guide',
-    //   assets: '/twine-trail-guide'
-    // },
+    paths: {
+      base: '/twine-trail-guide',
+      // assets: '/twine-trail-guide'
+    },
     // hydrate the <div id="svelte"> element in src/app.html
     target: "#svelte",
   },

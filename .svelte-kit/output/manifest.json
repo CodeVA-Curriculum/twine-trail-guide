@@ -1,202 +1,266 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-c15bff19.js",
+    "file": "start-b64affc7.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-f9fc9992.js",
+      "_vendor-7f52b8a8.js",
+      "_preload-helper-b1093eef.js",
+      "_singletons-12a22614.js",
       "_paths-28a87002.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
-      ".svelte-kit/build/components/error.svelte",
+      "src/routes/__error.svelte",
       "src/routes/index.svelte",
+      "src/routes/locations/__layout.svelte",
       "src/routes/locations/index.svelte",
+      "src/routes/locations/story-with-multiple-endings.md",
+      "src/routes/locations/branching-paths.md",
       "src/routes/locations/create-passage.md",
+      "src/routes/locations/link-passages.md",
       "src/routes/locations/start-a-story.md",
       "src/routes/trails/__layout.svelte",
       "src/routes/trails/index.svelte",
-      "src/routes/trails/trail-demo.svelte",
-      "src/routes/trails/[trail].svelte",
-      "src/routes/about.md",
-      "src/routes/map/index.svelte"
+      "src/routes/trails/your-first-story.md",
+      "src/routes/about.md"
     ],
     "css": [
       "assets/start-61d1577b.css"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-88b24d20.js",
+    "file": "pages/__layout.svelte-8c31879f.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-f9fc9992.js"
+      "_vendor-7f52b8a8.js"
+    ],
+    "css": [
+      "assets/pages/__layout.svelte-3ae29d7b.css"
     ]
   },
-  ".svelte-kit/build/components/error.svelte": {
-    "file": "error.svelte-e1be5e71.js",
-    "src": ".svelte-kit/build/components/error.svelte",
+  "src/routes/__error.svelte": {
+    "file": "pages/__error.svelte-bfc5fcb1.js",
+    "src": "src/routes/__error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-f9fc9992.js"
+      "_vendor-7f52b8a8.js",
+      "_paths-28a87002.js"
+    ],
+    "assets": [
+      "assets/ConfusedCodie-cc6709da.png"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-f5fc8506.js",
+    "file": "pages/index.svelte-9db3bc97.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-f9fc9992.js",
-      "_paths-28a87002.js",
-      "_Nav-08b0eb70.js"
+      "_vendor-7f52b8a8.js",
+      "_Nav-fbf9f809.js",
+      "_paths-28a87002.js"
     ],
     "css": [
-      "assets/pages/index.svelte-b1fd161b.css"
+      "assets/pages/index.svelte-133c1041.css"
     ],
     "assets": [
-      "assets/NSFLogo-bdc22bb6.png",
-      "assets/fira-mono-cyrillic-ext-400-normal-b3140dd3.woff2",
-      "assets/fira-mono-all-400-normal-0d19eb5d.woff",
-      "assets/fira-mono-cyrillic-400-normal-046b609f.woff2",
-      "assets/fira-mono-greek-ext-400-normal-8659ae46.woff2",
-      "assets/fira-mono-greek-400-normal-1f8b3a07.woff2",
-      "assets/fira-mono-latin-ext-400-normal-b6331a25.woff2",
-      "assets/fira-mono-latin-400-normal-a2f9dbe8.woff2"
+      "assets/NSFLogo-bdc22bb6.png"
+    ]
+  },
+  "src/routes/locations/__layout.svelte": {
+    "file": "pages/locations/__layout.svelte-6144a5b1.js",
+    "src": "src/routes/locations/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-7f52b8a8.js",
+      "_Nav-fbf9f809.js",
+      "_paths-28a87002.js"
     ]
   },
   "src/routes/locations/index.svelte": {
-    "file": "pages/locations/index.svelte-9170025d.js",
+    "file": "pages/locations/index.svelte-f6d3ab12.js",
     "src": "src/routes/locations/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-f9fc9992.js"
+      "_preload-helper-b1093eef.js",
+      "_vendor-7f52b8a8.js",
+      "_paths-28a87002.js",
+      "_navigation-51f4a605.js",
+      "_singletons-12a22614.js"
+    ],
+    "dynamicImports": [
+      "src/routes/locations/branching-paths.md",
+      "src/routes/locations/create-passage.md",
+      "src/routes/locations/link-passages.md",
+      "src/routes/locations/start-a-story.md",
+      "src/routes/locations/story-with-multiple-endings.md"
+    ],
+    "css": [
+      "assets/pages/locations/index.svelte-9d04a8a6.css"
+    ]
+  },
+  "src/routes/locations/story-with-multiple-endings.md": {
+    "file": "pages/locations/story-with-multiple-endings.md-57cb084e.js",
+    "src": "src/routes/locations/story-with-multiple-endings.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-7f52b8a8.js",
+      "_Standalone-9fd73395.js",
+      "_paths-28a87002.js"
+    ]
+  },
+  "src/routes/locations/branching-paths.md": {
+    "file": "pages/locations/branching-paths.md-212a2057.js",
+    "src": "src/routes/locations/branching-paths.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-7f52b8a8.js",
+      "_Standalone-9fd73395.js",
+      "_paths-28a87002.js"
     ]
   },
   "src/routes/locations/create-passage.md": {
-    "file": "pages/locations/create-passage.md-06f1b5ca.js",
+    "file": "pages/locations/create-passage.md-da18b7b5.js",
     "src": "src/routes/locations/create-passage.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-f9fc9992.js",
-      "_MdLayout-5e19fcc0.js",
-      "_Nav-08b0eb70.js",
+      "_vendor-7f52b8a8.js",
+      "_Standalone-9fd73395.js",
+      "_paths-28a87002.js"
+    ]
+  },
+  "src/routes/locations/link-passages.md": {
+    "file": "pages/locations/link-passages.md-0570e611.js",
+    "src": "src/routes/locations/link-passages.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-7f52b8a8.js",
+      "_Standalone-9fd73395.js",
       "_paths-28a87002.js"
     ]
   },
   "src/routes/locations/start-a-story.md": {
-    "file": "pages/locations/start-a-story.md-4f406975.js",
+    "file": "pages/locations/start-a-story.md-61e0f53d.js",
     "src": "src/routes/locations/start-a-story.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-f9fc9992.js",
-      "_MdLayout-5e19fcc0.js",
-      "_Nav-08b0eb70.js",
+      "_vendor-7f52b8a8.js",
+      "_Standalone-9fd73395.js",
       "_paths-28a87002.js"
     ]
   },
   "src/routes/trails/__layout.svelte": {
-    "file": "pages/trails/__layout.svelte-05814882.js",
+    "file": "pages/trails/__layout.svelte-f771d0b7.js",
     "src": "src/routes/trails/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-f9fc9992.js",
-      "_Nav-08b0eb70.js",
+      "_vendor-7f52b8a8.js",
+      "_Nav-fbf9f809.js",
       "_paths-28a87002.js"
     ]
   },
   "src/routes/trails/index.svelte": {
-    "file": "pages/trails/index.svelte-17a2c02e.js",
+    "file": "pages/trails/index.svelte-7080c608.js",
     "src": "src/routes/trails/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-f9fc9992.js",
-      "_paths-28a87002.js"
+      "_preload-helper-b1093eef.js",
+      "_vendor-7f52b8a8.js",
+      "_paths-28a87002.js",
+      "_navigation-51f4a605.js",
+      "_singletons-12a22614.js"
+    ],
+    "dynamicImports": [
+      "src/routes/trails/your-first-story.md"
     ],
     "css": [
-      "assets/pages/trails/index.svelte-8473b8aa.css"
+      "assets/pages/trails/index.svelte-ecbc8621.css"
     ]
   },
-  "src/routes/trails/trail-demo.svelte": {
-    "file": "pages/trails/trail-demo.svelte-72397e14.js",
-    "src": "src/routes/trails/trail-demo.svelte",
+  "src/routes/trails/your-first-story.md": {
+    "file": "pages/trails/your-first-story.md-c0e84246.js",
+    "src": "src/routes/trails/your-first-story.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-f9fc9992.js",
-      "_TrailTimeline-5d71912c.js",
-      "_paths-28a87002.js"
-    ]
-  },
-  "src/routes/trails/[trail].svelte": {
-    "file": "pages/trails/[trail].svelte-59a54286.js",
-    "src": "src/routes/trails/[trail].svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_vendor-f9fc9992.js",
-      "_paths-28a87002.js",
-      "_TrailTimeline-5d71912c.js"
+      "_vendor-7f52b8a8.js",
+      "_preload-helper-b1093eef.js"
+    ],
+    "dynamicImports": [
+      "src/routes/locations/branching-paths.md",
+      "src/routes/locations/create-passage.md",
+      "src/routes/locations/link-passages.md",
+      "src/routes/locations/start-a-story.md",
+      "src/routes/locations/story-with-multiple-endings.md"
+    ],
+    "css": [
+      "assets/pages/trails/your-first-story.md-3fadfa43.css"
     ]
   },
   "src/routes/about.md": {
-    "file": "pages/about.md-11c5f605.js",
+    "file": "pages/about.md-c8491366.js",
     "src": "src/routes/about.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-f9fc9992.js",
-      "_MdLayout-5e19fcc0.js",
-      "_paths-28a87002.js",
-      "_Nav-08b0eb70.js"
-    ]
-  },
-  "src/routes/map/index.svelte": {
-    "file": "pages/map/index.svelte-a828a820.js",
-    "src": "src/routes/map/index.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_vendor-f9fc9992.js",
-      "_Nav-08b0eb70.js",
+      "_vendor-7f52b8a8.js",
+      "_Nav-fbf9f809.js",
       "_paths-28a87002.js"
     ]
   },
-  "_vendor-f9fc9992.js": {
-    "file": "chunks/vendor-f9fc9992.js"
+  "_vendor-7f52b8a8.js": {
+    "file": "chunks/vendor-7f52b8a8.js",
+    "css": [
+      "assets/vendor-ec9510ad.css"
+    ]
+  },
+  "_singletons-12a22614.js": {
+    "file": "chunks/singletons-12a22614.js"
   },
   "_paths-28a87002.js": {
     "file": "chunks/paths-28a87002.js"
   },
-  "_Nav-08b0eb70.js": {
-    "file": "chunks/Nav-08b0eb70.js",
+  "_preload-helper-b1093eef.js": {
+    "file": "chunks/preload-helper-b1093eef.js"
+  },
+  "_Nav-fbf9f809.js": {
+    "file": "chunks/Nav-fbf9f809.js",
     "imports": [
-      "_vendor-f9fc9992.js",
+      "_vendor-7f52b8a8.js",
       "_paths-28a87002.js"
+    ],
+    "assets": [
+      "assets/CodeVALogo-cdf06ed4.png",
+      "assets/twine-b352c7c6.svg"
     ]
   },
-  "_MdLayout-5e19fcc0.js": {
-    "file": "chunks/MdLayout-5e19fcc0.js",
+  "_navigation-51f4a605.js": {
+    "file": "chunks/navigation-51f4a605.js",
     "imports": [
-      "_vendor-f9fc9992.js",
-      "_Nav-08b0eb70.js"
+      "_singletons-12a22614.js"
     ]
   },
-  "_TrailTimeline-5d71912c.js": {
-    "file": "chunks/TrailTimeline-5d71912c.js",
+  "_Standalone-9fd73395.js": {
+    "file": "chunks/Standalone-9fd73395.js",
     "imports": [
-      "_vendor-f9fc9992.js",
+      "_vendor-7f52b8a8.js",
       "_paths-28a87002.js"
     ],
     "css": [
-      "assets/TrailTimeline-2a350e6f.css"
+      "assets/Standalone-f63679d0.css"
     ]
   }
 }

@@ -2,7 +2,7 @@
     import {base} from '$app/paths';
 
     export let name, desc, path;
-    export let video = 'https://www.youtube.com/embed/AsURmcD_Z5g'
+    export let video; // = 'https://www.youtube.com/embed/AsURmcD_Z5g'
     let icon = '';
 
     import { goto } from '$app/navigation';
@@ -17,11 +17,13 @@
     <div class='card-content'>
       <div class="columns is-mobile">
         <!-- TODO: add tags for trails -->
+        {#if video}
         <div class="column is-4">
           <div class='video'>
             <iframe src="{video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
+        {/if}
         <div class='column'>
             <h2 class='title is-size-4 mb-3'><a href='{base}/trails/{path}'>{name} {icon}</a></h2>
             <p class='block'>{desc}</p>

@@ -10,7 +10,7 @@
     export let title, type, description, author, layout, short
     export let compact = false;
     export let position = false;
-    export let video = "https://www.youtube.com/embed/AsURmcD_Z5g"
+    export let video; // = "https://www.youtube.com/embed/AsURmcD_Z5g"
 </script>
 
 <div class='container'>
@@ -23,11 +23,13 @@
                 <p class='block'>Watch the video to see someone demonstrate the basics, or read on to work through it on your own. This concept is a part of several project <a href='{base}/trails'>Trails</a>; check them out!</p>
                 <!-- <h2 class='heading'>Trails:</h2> -->
             </div>
+            {#if video}
             <div class='{ compact ? "" : "column"}'>
                 <div class='video'>
                     <iframe src="{video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
+            {/if}
         </div>
         <hr>
     </section>

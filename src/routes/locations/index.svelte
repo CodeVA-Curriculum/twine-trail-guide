@@ -72,6 +72,7 @@ import { object_without_properties } from "svelte/internal";
             name={location.title}
             desc={location.description}
             path={location.slug}
+            video={location.video}
         />
         {/each}
     </div>

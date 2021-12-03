@@ -23,6 +23,7 @@ export async function get({ params }) {
 				short: metadata.short,
 				description: metadata.description,
                 type: metadata.type,
+				video: metadata.video,
 				slug: basename(filename, ".md") // Generate a slug we can link to
 			}
 		}

@@ -20,7 +20,9 @@
                 <h1 class='title'>{#if position}{position}. {/if}{title}</h1>
                 <!-- TODO: add tags for trails -->
                 <p class='block'>{description}</p>
+                {#if video}
                 <p class='block'>Watch the video to see someone demonstrate the basics, or read on to work through it on your own. This concept is a part of several project <a href='{base}/trails'>Trails</a>; check them out!</p>
+                {/if}
                 <!-- <h2 class='heading'>Trails:</h2> -->
             </div>
             {#if video}

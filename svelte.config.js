@@ -30,7 +30,7 @@ const config = {
 			fallback: null
 		}),
     paths: {
-      base: '/twine-trail-guide',
+      // base: '/twine-trail-guide',
       // assets: '/twine-trail-guide'
     },
     // hydrate the <div id="svelte"> element in src/app.html

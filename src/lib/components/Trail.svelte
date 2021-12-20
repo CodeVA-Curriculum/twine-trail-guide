@@ -1,3 +1,8 @@
+<script context="module">
+    import { p, blockquote } from './components.js';
+    export { p, blockquote };
+</script>
+
 <script>
     import TrailTimeline from "$lib/components/TrailTimeline.svelte";
     import LocationNode from '$lib/components/LocationNode.svelte';
@@ -49,7 +54,7 @@
         <div class='columns'>
             <div class='column is-8'>
                 <h1 class='title block' bind:this={header}>{title} {difficulty == 0 ? '✨' : ''} </h1>
-                <p class='block'>{description}</p>
+                <!-- <p class='block'>{description}</p> -->
                 <slot />
                 <hr>
                 <div class='is-hidden-desktop'>
@@ -122,7 +127,7 @@
     </div>
 </section> -->
     
-<style>
+<style lang='scss'>
     .content-wrapper {
 		display: grid;
 		align-items: start;

@@ -14,14 +14,14 @@
     //     error: new Error(),
     //   };
     // }
-    const locations = import.meta.glob('./*.md')
+    const locs = import.meta.glob('./*.md')
 
     let body = []
     let slugs = []
 
-    for (const path in locations) {
+    for (const path in locs) {
         slugs.push(path)
-        body.push(locations[path]().then(({metadata}) => metadata))
+        body.push(locs[path]().then(({metadata}) => metadata))
     }
     /**
         * @type {import('@sveltejs/kit').Load}

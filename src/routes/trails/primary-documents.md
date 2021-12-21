@@ -19,7 +19,7 @@ layout: trail
 
 The goal of this trail is to create a Twine story that incorporates *primary documents*, telling a story about the past using materials from that history. In order to incorporate these primary documents, you'll need to learn how to [add images](/locations/adding-images) from the web to your stories. You'll also need to figure out some interesting ways of putting these images together by writing a story to go with them. 
 
-In the end, your reader should feel like they are investigating a mystery, pouring over these documents and imagining what it was like to live during the moments they describe.
+In the end, your reader should feel like they are investigating a mystery, poring over these documents and imagining what it was like to live during the moments they describe.
 
 <Aside>Before working on this trail, you should be at least a little bit familiar with the basics of Twine--how to make passages, link them together, and create branching paths to make a story with multiple possible endings. If you aren't sure, feel free to review the "Your First Story" trail before you start with this one.</Aside>
 

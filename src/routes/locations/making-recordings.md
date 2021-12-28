@@ -27,7 +27,7 @@ Audio recording can be pretty tricky, but you don't need to be perfect to be suc
 
 * Hold the microphone or device recording the audio at the height of the source of the sound. If you're sitting at a table interviewing someone using a smartphone, consider putting the phone between the two of you on a short stack of books to get the mic closer to head-level.
 * Don't hold the microphone too close--you don't want the mic to catch any strong gusts of breath. Unless you're using a fancy microphone, about 2 feet of distance is usually fine.
-* Record in a quiet room that doesn't echo too much. Bathrooms are particularly echo-y, while rooms with books on the walls are usually great. Recording outside is even better, if you can make sure there won't be too much noise from cars or animals.
+* Record in a quiet room that doesn't echo too much. Bathrooms are particularly echo-y, while rooms with books on the walls are usually great. Recording outside is even better, if you can make sure there won't be too much noise from cars, animals, or wind.
 
 You don't really need a nice microphone to record audio, especially if you're just recording someone's voice. A smartphone will work just fine for that. If you want to record music, sounds from the outdoors, or something like that, then you may find it useful to use a dedicated microphone to use with your [smartphone](TODO: find link) or [computer](TODO: find link). You don't *need* it, but it will make life a little easier.
 

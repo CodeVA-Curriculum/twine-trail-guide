@@ -4,11 +4,15 @@ difficulty: 2
 # TODO: parse description as markdown
 description: Create a Twine story that uses primary documents--pieces of writing or recordings made by people who experienced a particular event from the past--to help the reader discover information about an event from the past. This project makes use of the Library of Virginia's collections as a source of primary documents that tell stories about people from Virginia. You'll connect those documents together to tell a story.
 locations:
+    - create-passage 
     - adding-images
     - image-formatting
     - reveal-text
-    # // pre-requisite: linking passages TODO: add to the timeline to show branched prereqs
+    - linking passages 
+    # TODO: add to the timeline to show branched prereqs
+    # We need a way of putting these locations in CONTEXT of the project
     #  // prerequisite: branching paths
+    - branching-paths
     - primary-documents-landmark
 layout: trail
 ---

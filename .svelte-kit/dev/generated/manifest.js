@@ -17,6 +17,7 @@ const c = [
 	() => import("../../../src/routes/trails/index.svelte"),
 	() => import("../../../src/routes/trails/primary-documents.md"),
 	() => import("../../../src/routes/trails/your-first-story.md"),
+	() => import("../../../src/routes/trails/oral-history.md"),
 	() => import("../../../src/routes/about.md")
 ];
 
@@ -65,8 +66,11 @@ export const routes = [
 	// src/routes/trails/your-first-story.md
 	[/^\/trails\/your-first-story\/?$/, [c[0], c[14], c[17]], [c[1]]],
 
+	// src/routes/trails/oral-history.md
+	[/^\/trails\/oral-history\/?$/, [c[0], c[14], c[18]], [c[1]]],
+
 	// src/routes/about.md
-	[/^\/about\/?$/, [c[0], c[18]], [c[1]]]
+	[/^\/about\/?$/, [c[0], c[19]], [c[1]]]
 ];
 
 // we import the root layout/error components eagerly, so that

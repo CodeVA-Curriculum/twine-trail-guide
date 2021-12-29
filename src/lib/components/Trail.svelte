@@ -13,21 +13,14 @@
 
     let locationContent = [];
 
-    let scrollPosition = 0;
-
-    let selected = 0;
-
-    function getDist() {
-        return "-" + locations.length * 2 + "rem";
-    }
-
-
     onMount(async () => {
         for(let i=0;i<locations.length;i++) {
             locationContent[i] = (await import(`../../routes/locations/${locations[i]}.md`));
         }
     })
+
 </script>
+
 
 <div class='is-hidden-desktop'>
     <TrailMobile

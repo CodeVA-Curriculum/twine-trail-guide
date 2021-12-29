@@ -5,10 +5,10 @@ description: Pick a friend, family member, or community member and tell their st
 locations:
     - making-recordings
     - hosting-recordings
-    # - add-audio
-    # - delay-text
+    - add-audio
+    - delay-text
     - branching-paths
-    # - oral-history-landmark
+    - oral-history-landmark
 layout: trail
 ---
 

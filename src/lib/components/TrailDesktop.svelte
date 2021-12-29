@@ -14,8 +14,6 @@
 
     function step(i) {
         selected = i; // transition desktop guy
-        console.log("scrolling to " + i)
-		inlineLocations.children[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
 	}
 
     $: console.log(locations);
@@ -27,8 +25,7 @@
             <div class='column is-8'>
                 <h1 class='title block'>{title} {difficulty == 0 ? '✨' : ''} </h1>
                 <!-- <p class='block'>{description}</p> -->
-                <slot />
-
+                <slot></slot>
                 <hr>
                 <div class='column is-hidden-touch content-wrapper'>
                     {#each locations as component, i}

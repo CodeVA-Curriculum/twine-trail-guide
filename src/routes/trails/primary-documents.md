@@ -22,7 +22,7 @@ The goal of this trail is to create a Twine story that incorporates *primary doc
 
 In the end, your reader should feel like they are investigating a mystery, poring over these documents and imagining what it was like to live during the moments they describe.
 
-<!-- This works for all locations! -->
+<!-- This works for all trails! -->
 :::aside
 Before working on this trail, you should be at least a little bit familiar with the basics of Twine--how to make passages, link them together, and create branching paths to make a story with multiple possible endings. If you aren't sure, feel free to review the "Your First Story" trail before you start with this one.
 :::

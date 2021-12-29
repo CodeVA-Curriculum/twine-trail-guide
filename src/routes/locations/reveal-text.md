@@ -45,7 +45,7 @@ Ranier was walking home one night when they saw {reveal link: 'something strange
 
 You'll notice that I've changed `text` to say `passage` instead, and replaced the sentence describing the truck with the name of the new passage (`Abandoned Truck`). Test out your story!
 
-![A gif showing a Twine story with a link that reveals a new passage](/reveal-passage.gif)
+![A gif showing a Twine story with a link that reveals a new passage](TODO:)
 
 The "reveal" link, once clicked, inserts the text from the `Abandoned Truck` passage into the first passage. This is a little different than a normal link, because the text from the two passages appear *together* rather than separately.
 

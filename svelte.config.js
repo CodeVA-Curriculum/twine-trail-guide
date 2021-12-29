@@ -3,6 +3,10 @@ const dev = process.env.NODE_ENV === 'development';
 import adapter from '@sveltejs/adapter-static';
 import {mdsvex} from 'mdsvex';
 import { join } from "path";
+import remarkParse from 'remark-parse'
+import remarkDirective from 'remark-directive'
+import remarkDirectiveRehype from 'remark-directive-rehype'
+import remarkFrontmatter from 'remark-frontmatter'
 
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -17,7 +21,8 @@ const config = {
         _: './src/lib/components/MdLayout.svelte',
         location: './src/lib/components/Standalone.svelte',
         trail: './src/lib/components/Trail.svelte'
-      }
+      },
+      remarkPlugins: [remarkParse, remarkFrontmatter, remarkDirective, remarkDirectiveRehype]
     }),
     preprocess(),
   ],

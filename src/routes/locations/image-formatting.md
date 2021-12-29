@@ -15,7 +15,7 @@ layout: location
 
 To add CSS, go to the story editor and click on the "up" arrow near the name of the story in the bottom-left corner of your screen. Then, select `Edit Story Stylesheet`.
 
-![The Twine story menu with an arrow pointing to the option to edit the stylesheet](/edit-story-stylesheet.png)
+![The Twine story menu with an arrow pointing to the option to edit the stylesheet](TODO:)
 
 You can add as much CSS here as you want. For example, let's turn all the text red:
 
@@ -56,7 +56,7 @@ Here's what it looks like with the image taking up 100% of the page width:
 }
 ```
 
-![A Twine passage with an image taking up the whole page](/twine-image.png)
+![A Twine passage with an image taking up the whole page](TODO:)
 
 . . . and here's what it looks like when the image only takes up 50%:
 
@@ -66,7 +66,7 @@ Here's what it looks like with the image taking up 100% of the page width:
 }
 ```
 
-![A Twine passage with an image taking up half of the page](/twine-image-half.png)
+![A Twine passage with an image taking up half of the page](TODO:)
 
 
 ### Centering the Image
@@ -86,7 +86,7 @@ Because the CSS says to automatically set both the left and right margin automat
 
 Sometimes, you may want to display your image *next to* your passage text, with the image on one side and the text on the other like this:
 
-![A Twine passage with an image on the left side of the screen and the text on the right side](/twine-column.png)
+![A Twine passage with an image on the left side of the screen and the text on the right side](TODO:)
 
 To make this happen, you need to do two things: make the image small enough to leave room for your text, and then make the image stay on the left side of the page. Here's what the CSS looks like:
 

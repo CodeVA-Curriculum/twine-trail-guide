@@ -1,11 +1,15 @@
 import Image from './Image.svelte';
 import Pre from './Pre.svelte'
 import Paragraph from './Paragraph.svelte'
-import Aside from './Aside.svelte';
+import aside from './Aside.svelte';
+import Doc from './DocumentationPage.svelte';
+import trailmap from './TrailMap.svelte';
+import location from './MapLocation.svelte';
 
 const img = Image;
 const pre = Pre;
 const p = Paragraph;
-const blockquote = Aside;
+// const blockquote = Aside;
+const documentation = Doc;
 
-export { img, pre, p, blockquote };
+export { img, pre, p, aside, location, trailmap };

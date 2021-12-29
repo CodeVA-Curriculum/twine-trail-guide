@@ -24,7 +24,7 @@ Just make sure you have permission to use the image from the person who owns it!
 
 Once you've found an image you want to use on the internet, you'll need to get the link. The easiest way is to right-click the image and select `Copy image address`. This will copy the image's web location to your clipboard for later.
 
-![Unsplash.com, showing the contextual menu open highlighting the option to copy the image address](/twine-copy-image)
+![Unsplash.com, showing the contextual menu open highlighting the option to copy the image address](TODO:)
 
 After getting the image link, go ahead and open up the Twine story editor.
 
@@ -50,6 +50,6 @@ Click out of the passage editor and click "Play" on your passage:
 
 You should see your image in your Twine story!
 
-![A Twine story with an image of a moon](/passage-image)
+![A Twine story with an image of a moon](TODO:)
 
 ---

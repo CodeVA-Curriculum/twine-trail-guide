@@ -9,11 +9,15 @@ type: project
 layout: location
 ---
 
+<script>
+    import {base} from '$app/paths' // TODO: create link logic
+</script>
+
 ## About the Project
 
 The goal of this project is to create an interactive story based on the materials in the [Library of Virginia's](TODO:) collections. The [LoV](TODO:) has a *ton* of amazing documents from Virginia history, and all of them tell a story about things that happened in the past--things that shape our present moment.
 
-For this project, you'll create a Twine project using information from the [LoV](TODO:) archives. As the reader plays through your story, they should feel like they are investigating a mystery hidden in these documents. You should include pictures of the documents, as well as the people and places they document, in your Twine passages to help the reader understand the story. ["Reveal" links](/locations/reveal-text) are a great way of helping the reader feel like they are uncovering information about an artifact.
+For this project, you'll create a Twine project using information from the [LoV](TODO:) archives. As the reader plays through your story, they should feel like they are investigating a mystery hidden in these documents. You should include pictures of the documents, as well as the people and places they document, in your Twine passages to help the reader understand the story. ["Reveal" links]({base}/locations/reveal-text) are a great way of helping the reader feel like they are uncovering information about an artifact.
 
 At the end of your story, the reader should have learned something new about a person, place, or event from the past.
 
@@ -45,13 +49,13 @@ Finally, plan out your story. Here are some questions that it might be useful to
 
 You'll probably have to read the documents to get a good sense of how they fit together, and what information the reader might uncover as they play through your story. 
 
-<!-- TODO: You can play through a short example [here](TODO: write the example story) if you want to see one way of completing the project. -->
+<!-- You can play through a short example [here](TODO: write the example story) if you want to see one way of completing the project. -->
 
 Here are some guidelines to help you design your Twine story around your chosen primary documents:
 
 1. Create one passage for each document you want the reader to explore. Include an image of the document in that passage.
-2. Use [reveal links](TODO:) to show information about the document as the reader clicks around. Have them uncover more details as they click through different links.
-3. When the reader reveals information that leads to another document, create a [link](TODO:) to a new passage showing the next document.
+2. Use [reveal links]({base}/locations/reveal-text) to show information about the document as the reader clicks around. Have them uncover more details as they click through different links.
+3. When the reader reveals information that leads to another document, create a [link]({base}/locations/link-passages) to a new passage showing the next document.
 4. Be sure to build in links to at least two documents in each passage if you can!
 
 ----

@@ -30,8 +30,11 @@
     "@lukeed/uuid": "^2.0.0",
     "@sveltejs/svelte-scroller": "^2.0.7",
     "bulma-timeline": "^3.0.4",
-    "cookie": "^0.4.1",
     "p-map": "^5.3.0",
+    "remark-directive": "^2.0.1",
+    "remark-directive-rehype": "^0.4.0",
+    "remark-frontmatter": "^4.0.1",
+    "remark-parse": "^10.0.1",
     "svelte-fa": "^2.3.3"
   }
 }

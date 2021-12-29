@@ -18,11 +18,11 @@ While the process of creating and hosting recordings can be challenging, adding 
 
 ## Adding Ambient Sounds
 
-To add an ambient sound to your passage, you'll need to add some information about the sound--it's name and url--and then a line to activate the sound. Here's an example of a Twine passage that sets up an audio file called `TODO: audio file name`:
+To add an ambient sound to your passage, you'll need to add some information about the sound--it's name and url--and then a line to activate the sound. Here's an example of a Twine passage that sets up an audio file called `rainfall.mp3`:
 
 ```
-sound.ambient.forest.url: 'TODO: audio file.mp3'
-sound.ambient.forest.description: 'TODO: audio file description'
+sound.ambient.rainfall.url: 'rainfall.mp3'
+sound.ambient.rainfall.description: 'the sound of falling rain'
 --
 
 Here's some normal story text. Ambient sound is playing in the background.
@@ -32,31 +32,31 @@ I've written the passage above in two sections: the section *above* the `--`, an
 
 The text *above* the `--` will not appear in the passage--when I test out the passage I've created above, it looks like this:
 
-![A Twine story showing text that reads Here is some normal story text. Ambient sound is playing in the background](TODO:)
+![A Twine story showing text that reads Here is some normal story text. Ambient sound is playing in the background](/twine-audio-load.png)
 
 The text *below* the `--` appears as normal. The rules for writing above the `--` are different than the rules for below; it's very, very important to be precise in your spelling, your use of `'`, and the `:` on each line. Follow the example closely, or Twine will not know how to interpret your code.
 
 Right now, the example passage I've created doesn't make any sounds. It just loads the sound. To play it, I need to add another line:
 
 ```
-sound.ambient.forest.url: 'TODO: audio file.mp3'
-sound.ambient.forest.description: 'TODO: audio file description'
+sound.ambient.rainfall.url: 'rainfall.mp3'
+sound.ambient.rainfall.description: 'the sound of falling rain'
 --
-{ambient sound: 'TODO: audio file}
+{ambient sound: 'rainfall'}
 
 Here's some normal story text. Ambient sound is playing in the background.
 ```
 
-The line that activates the sound is related to the code above the `--`: the *name* of the sound after the `:` in the activation line should match the word that comes after `sound.ambient` in the code section. So if I wanted to activate a sound called `'rainfall'`, my code would look like this:
+The line that activates the sound is related to the code above the `--`: the *name* of the sound after the `:` in the activation line should match the word that comes after `sound.ambient` in the code section. So if I wanted to activate a sound called `'storm'`, my code would look like this:
 
 ```
-sound.ambient.rainfall.url: 'rainfall-audio-file.mp3'
-sound.ambient.rainfall.description: 'The sound of rain falling in a forest'
+sound.ambient.storm.url: 'storm-file.mp3'
+sound.ambient.storm.description: 'The sound of a storm'
 --
 
-{ambient sound: 'rainfall'}
+{ambient sound: 'storm'}
 
-You hear rain begin to fall.
+You hear wind and rain rushing toward you.
 ```
 
 Your `url` should match the link or filename for your sound, and the `name` in your activation line `{ambient sound: 'name'}` should match the code above the `--`: `sound.ambient.name.url` and `sound.ambient.name.description`.

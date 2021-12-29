@@ -8,24 +8,34 @@ locations:
     - adding-images
     - image-formatting
     - reveal-text
-    - linking passages 
-    # TODO: add to the timeline to show branched prereqs
-    # We need a way of putting these locations in CONTEXT of the project
-    #  // prerequisite: branching paths
+    - link-passages
     - branching-paths
     - primary-documents-landmark
 layout: trail
 ---
 
 <script>
-    import Aside from '$lib/components/Aside.svelte'
+    import {base} from '$app/paths'
 </script>
 
-The goal of this trail is to create a Twine story that incorporates *primary documents*, telling a story about the past using materials from that history. In order to incorporate these primary documents, you'll need to learn how to [add images](/locations/adding-images) from the web to your stories. You'll also need to figure out some interesting ways of putting these images together by writing a story to go with them. 
+<!-- TODO: finish consuming this markup convention -->
+<!-- ::::trailmap
+
+:::location{path="create-passage"}
+Slotted content
+:::
+
+:::location{path="add-images"}
+More slotted content
+:::
+
+:::: -->
+
+The goal of this trail is to create a Twine story that incorporates *primary documents*, telling a story about the past using materials from that history. In order to incorporate these primary documents, you'll need to learn how to [add images]({base}/locations/adding-images) from the web to your stories. You'll also need to figure out some interesting ways of putting these images together by writing a story to go with them. 
 
 In the end, your reader should feel like they are investigating a mystery, poring over these documents and imagining what it was like to live during the moments they describe.
 
-<Aside>Before working on this trail, you should be at least a little bit familiar with the basics of Twine--how to make passages, link them together, and create branching paths to make a story with multiple possible endings. If you aren't sure, feel free to review the "Your First Story" trail before you start with this one.</Aside>
-
-<!-- TODO: change from location metadata to markup tags for locations in the trail, allowing the writer of the trail to add context to the location. Something like this: -->
-<!-- <article title="Adding Images">For this tutorial, you'll want to use images from the [Library of Virginia](link) to practice. Browse through their [Strong Men and Women of Virginia]() collection to find pictures of primary documents to include in your story.</article> -->
+<!-- This works for all locations! -->
+:::aside
+Before working on this trail, you should be at least a little bit familiar with the basics of Twine--how to make passages, link them together, and create branching paths to make a story with multiple possible endings. If you aren't sure, feel free to review the "Your First Story" trail before you start with this one.
+:::

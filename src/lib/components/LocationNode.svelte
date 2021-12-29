@@ -27,7 +27,7 @@
                 <iframe src="https://www.youtube.com/embed/AsURmcD_Z5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div> -->
             <h3 class="heading is-small">{#if type!='project'}{position}.{/if} {title}</h3>
-            <p>{short}</p>
+            <slot><p>{short}</p></slot>
     </div>
 </article>
 

@@ -11,6 +11,10 @@ locations:
 layout: trail
 ---
 
-This trail is intended to introduce beginners to Twine, and help them create a simple interactive story. Follow this trail to learn the basics! You'll learn about how to use the Twine interface, how to write and test the different parts of your story, how to link scenes together, and how to create a simple choose-your-own-adventure-style story that offers choices for the reader than affect the outcome.
+<script>
+    import {base} from '$app/paths'
+</script>
 
-You don't need any prerequisite knowledge to get started with this trail. Many of the other [trails](/trails) in this guide will build on the skills you develop here.
+This trail is intended to introduce beginners to Twine, and help them create a simple interactive story. Follow this trail to learn the basics! You'll learn about how to use the Twine interface, how to write and test the different parts of your story, how to link scenes together, and how to create a simple choose-your-own-adventure-style story that offers choices for the reader that affect the outcome.
+
+You don't need any prerequisite knowledge to get started with this trail. Many of the other [trails]({base}/trails) in this guide will build on the skills you develop here.

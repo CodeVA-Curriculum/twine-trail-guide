@@ -7,7 +7,7 @@ locations:
     - hosting-recordings
     # - add-audio
     # - delay-text
-    # - branching-paths
+    - branching-paths
     # - oral-history-landmark
 layout: trail
 ---

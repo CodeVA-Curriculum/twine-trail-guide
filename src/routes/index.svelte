@@ -17,7 +17,7 @@
 	<div class='hero-body'>
 		<div class='container has-text-centered'>
 			<h1 class='title'>Making Interactive Stories with Twine</h1>
-			<h2 class='subtitle'>Trail Guide</h2>
+			<h2 class='subtitle'>Chapbook Trail Guide</h2>
 			<div class='buttons is-centered'>
 				<a href="{base}/trails" class='button is-primary'>Get Started</a>
 				<a href="{base}/about" class='button is-secondary'>About the Guide</a>

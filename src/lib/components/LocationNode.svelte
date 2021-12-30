@@ -3,19 +3,32 @@
     import { goto } from '$app/navigation';
     import Fa from 'svelte-fa'
     import { faHammer } from '@fortawesome/free-solid-svg-icons'
-    export let title, short, position, type, slug, cl, selected
+    import { onMount } from 'svelte';
+    import {selected} from '$lib/util/stores.js'
+    export let slug, position
 
-
+    let data;
     function routeToPage() {
         const replaceState = false;
         goto(`${base}/locations/${slug}`, { replaceState }) 
+    }
+
+    onMount(async () => {
+        if(slug) {
+            data = (await import(`../../routes/locations/${slug}.md`)).metadata;
+        }
+    })
+
+    function cl() {
+        selected.set(slug);
     }
 </script>
 
 
 <!-- TODO: add 'completed' checkbox for people on the timeline -->
 <article on:click={cl} class="timeline-item location">
-    {#if type=="project"}
+    {#if data}
+    {#if data.type=="project"}
         <div class='timeline-marker is-warning is-icon'>
             <i><Fa icon={faHammer} /></i>
         </div>
@@ -26,9 +39,10 @@
             <!-- <div class='video mb-3'>
                 <iframe src="https://www.youtube.com/embed/AsURmcD_Z5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div> -->
-            <h3 class="heading is-small">{#if type!='project'}{position}.{/if} {title}</h3>
-            <slot><p>{short}</p></slot>
+            <h3 class="heading is-small">{#if data.type!='project'}{position}.{/if} {data.title}</h3>
+            <slot><p>{data.short}</p></slot>
     </div>
+    {/if}
 </article>
 
 <style>

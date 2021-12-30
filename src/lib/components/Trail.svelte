@@ -1,7 +1,7 @@
 <script context="module">
-    import { p, aside, trailmap, location } from './components.js';
+    import { p, aside, trailmap, location, timeline } from './components.js';
 
-    export { p, aside, trailmap, location };
+    export { p, aside, trailmap, location, timeline };
 </script>
 
 <script>
@@ -31,7 +31,7 @@
             if(!loadedPaths.includes(locs[i])) {
                 // console.log("got new element!", loadedPaths, locs[i])
                 loadedPaths = [...loadedPaths, locs[i]]
-                locationContent = await loadLocationContent(locs[i], locationContent)
+                // locationContent = await loadLocationContent(locs[i], locationContent)
                 // console.log("Successfully loaded" + locs[i], loadedPaths)
             }
         }
@@ -39,7 +39,7 @@
 	});
 
     onMount(async () => {
-        locations.set([]);
+        // locations.set([]);
         return () => {
             locations.set([]);
         }
@@ -47,23 +47,11 @@
 
 </script>
 
-<!-- TODO: potentially optimize this to avoid having to render things twice. Very sloppy -->
-<div class='is-hidden-desktop'>
-    <TrailMobile
-        title={title}
-        difficulty={difficulty}
-        description={description}
-        locations={locationContent}
-    >
-        <slot />
-    </TrailMobile>
-</div>
-<div class='is-hidden-touch'>
+<div>
     <TrailDesktop
         title={title}
         difficulty={difficulty}
         description={description}
-        locations={locationContent}
     >
         <slot />
     </TrailDesktop>

@@ -6,18 +6,23 @@
 <script>
     import {onMount} from 'svelte'
     import {base} from '$app/paths'
+    import {locations} from '$lib/util/stores.js'
 
-    export let title, type, description, author, layout, short
+    export let title, type, description, author, layout, short, path
     export let compact = false;
-    export let position = false;
+    export let position;
     export let video; // = "https://www.youtube.com/embed/AsURmcD_Z5g"
+
+    let p
+    $: p = position > 0 ? position : false
+
 </script>
 
 <div class='container'>
     <section class='section'>
         <div class='{ compact ? "" : "columns"}'>
             <div class='{ compact ? "" : "column"} mb-5'>
-                <h1 class='title'>{#if position && type == "tutorial"}{position}. {/if}{title}</h1>
+                <h1 class='title'>{#if position && type == "tutorial"}{p}. {/if}{title}</h1>
                 <!-- TODO: add tags for trails -->
                 <p class='block'>{description}</p>
                 {#if video}

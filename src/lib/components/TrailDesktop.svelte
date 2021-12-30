@@ -3,8 +3,10 @@
     import LocationNode from '$lib/components/LocationNode.svelte';
     import { fade, fly } from 'svelte/transition';
     import {base} from '$app/paths';
+import { onMount } from "svelte";
+import {locations} from '$lib/util/stores.js'
 
-    export let title, difficulty, description, locations;
+    export let title, difficulty, description //, locations;
     let timeline, inlineLocations, scrollPosition;
 
     let selected = 0;
@@ -16,17 +18,31 @@
         selected = i; // transition desktop guy
 	}
 
+    let locationObjects = {}
+    let loadedLocations = []
+
+    // onMount(async () => {
+    //     locations.subscribe(async (locs) => {
+    //         loadedLocations = locs;
+    //         for(let i=0;i<locs.length;i++) {
+    //             if(!locationObjects[locs[i]]) {
+    //                 console.log("Getting metadata for ", locs[i])
+    //                 locationObjects[locs[i]] = (await import(`../../routes/locations/${locs[i]}.md`)).metadata;
+    //             }
+    //         }
+    //     })
+    // })
+
 </script>
 <svelte:window bind:scrollY={scrollPosition} />
 <section class='section'>
     <div class='container'>
         <div class='columns'>
             <div class='column is-8'>
-                <h1 class='title block'>{title} {difficulty == 0 ? '✨' : ''} </h1>
+                <h1 bind:this={timeline} class='title block'>{title} {difficulty == 0 ? '✨' : ''} </h1>
                 <!-- <p class='block'>{description}</p> -->
                 <slot></slot>
-                <hr>
-                <div class='column is-hidden-touch content-wrapper'>
+                <!-- <div class='column is-hidden-touch content-wrapper'>
                     {#each locations as component, i}
                     {#if selected == i}
                     <div transition:fly="{{ y: 50, duration: 250 }}" class='el2'>
@@ -37,31 +53,19 @@
                     </div>
                     {/if}
                     {/each}
+                </div> -->
+                <div class='back-to-top has-text-centered is-hidden-mobile' transition:fade>
+                    <button on:click={top} class='button is-primary is-rounded'>Back to Top</button>
                 </div>
             </div>
-            <div bind:this={timeline} class='column is-4 ml-5 is-hidden-touch'>
-                <!-- <div style="position: sticky; top: {getDist()};"> -->
-                    <div>
-                    <TrailTimeline>
-                        {#each locations as location, i}
-                        <LocationNode 
-                            cl={() => step(i)}
-                            title={location.metadata.title}
-                            short={location.metadata.short}
-                            position={i+1}
-                            type={location.metadata.type}
-                            slug={location.metadata.slug}
-                            selected={selected == i}
-                        />
-                        {/each}
-                    </TrailTimeline>
-                </div>
-            </div>
+            <!-- <div  class='column is-4 ml-5 is-hidden-touch'>
+                    <TrailTimeline></TrailTimeline>
+            </div> -->
         </div>
         
     </div>
     {#if scrollPosition > 300}
-    <div class='back-to-top has-text-right' transition:fade>
+    <div class='back-to-top has-text-centered is-hidden-desktop' transition:fade>
         <button on:click={top} class='button is-primary is-rounded'>Back to Top</button>
     </div>
     {/if}
@@ -80,5 +84,8 @@
   .back-to-top {
       position: sticky;
       bottom: 2rem;
+  }
+  section {
+      position: relative;
   }
 </style>

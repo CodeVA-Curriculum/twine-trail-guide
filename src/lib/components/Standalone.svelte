@@ -17,7 +17,7 @@
     <section class='section'>
         <div class='{ compact ? "" : "columns"}'>
             <div class='{ compact ? "" : "column"} mb-5'>
-                <h1 class='title'>{#if position}{position}. {/if}{title}</h1>
+                <h1 class='title'>{#if position && type == "tutorial"}{position}. {/if}{title}</h1>
                 <!-- TODO: add tags for trails -->
                 <p class='block'>{description}</p>
                 {#if video}

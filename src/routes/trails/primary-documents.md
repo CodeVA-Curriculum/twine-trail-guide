@@ -3,14 +3,6 @@ title: Primary Documents
 difficulty: 2
 # TODO: parse description as markdown
 description: Create a Twine story that uses primary documents--pieces of writing or recordings made by people who experienced a particular event from the past--to help the reader discover information about an event from the past. This project makes use of the Library of Virginia's collections as a source of primary documents that tell stories about people from Virginia. You'll connect those documents together to tell a story.
-locations:
-    - create-passage 
-    - adding-images
-    - image-formatting
-    - reveal-text
-    - link-passages
-    - branching-paths
-    - primary-documents-landmark
 layout: trail
 ---
 
@@ -29,14 +21,12 @@ Before working on this trail, you should be at least a little bit familiar with 
 
 <!-- TODO: finish consuming this markup convention -->
 <!-- Basically, these are the "inlined" location tutorials. The Trail is in charge of deciding which one to render based on the TrailTimeline UI -->
-<!-- ::::trailmap
+<!-- ::::trailmap -->
 
-:::location{path="create-passage"}
+:::location{position="1" path="create-passage"}
 Slotted content
 :::
 
-:::location{path="adding-images"}
+:::location{position="2" path="adding-images"}
 More slotted content
 :::
-
-:::: -->

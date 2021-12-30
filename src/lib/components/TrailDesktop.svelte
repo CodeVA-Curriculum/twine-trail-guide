@@ -16,7 +16,6 @@
         selected = i; // transition desktop guy
 	}
 
-    $: console.log(locations);
 </script>
 <svelte:window bind:scrollY={scrollPosition} />
 <section class='section'>

@@ -6,15 +6,29 @@
 <script>
     import {onMount} from 'svelte'
     import {base} from '$app/paths'
-    import {locations} from '$lib/util/stores.js'
+    import {locations, selected} from '$lib/util/stores.js'
 
     export let title, type, description, author, layout, short, path
-    export let compact = false;
+    export let compact, scrollable = false;
     export let position;
     export let video; // = "https://www.youtube.com/embed/AsURmcD_Z5g"
 
-    let p
+    let p, elem
     $: p = position > 0 ? position : false
+
+    selected.subscribe(loc => {
+        if(loc == path && scrollable) {
+            scrollToMe()
+        }
+    })
+
+    // TODO: scroll into view
+    function scrollToMe() {
+        if(elem) {
+            elem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        
+    }
 
 </script>
 
@@ -22,7 +36,7 @@
     <section class='section'>
         <div class='{ compact ? "" : "columns"}'>
             <div class='{ compact ? "" : "column"} mb-5'>
-                <h1 class='title'>{#if position && type == "tutorial"}{p}. {/if}{title}</h1>
+                <h1 bind:this={elem} class='title'>{#if position && type == "tutorial"}{p}. {/if}{title}</h1>
                 <!-- TODO: add tags for trails -->
                 <p class='block'>{description}</p>
                 {#if video}

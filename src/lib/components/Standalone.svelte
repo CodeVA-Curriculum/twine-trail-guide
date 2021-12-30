@@ -61,6 +61,9 @@
         border-radius: 12px;
         /* min-width: 10rem; */
     }
+    section {
+        position: relative;
+    }
 
 </style>
 

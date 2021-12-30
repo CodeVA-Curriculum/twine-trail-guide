@@ -58,9 +58,9 @@ import {locations} from '$lib/util/stores.js'
                     <button on:click={top} class='button is-primary is-rounded'>Back to Top</button>
                 </div>
             </div>
-            <div  class='column is-4 ml-5 is-hidden-touch'>
+            <!-- <div  class='column is-4 ml-5 is-hidden-touch'>
                     <TrailTimeline></TrailTimeline>
-            </div>
+            </div> -->
         </div>
         
     </div>
@@ -84,5 +84,8 @@ import {locations} from '$lib/util/stores.js'
   .back-to-top {
       position: sticky;
       bottom: 2rem;
+  }
+  section {
+      position: relative;
   }
 </style>

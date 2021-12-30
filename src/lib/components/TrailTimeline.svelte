@@ -10,7 +10,7 @@
 
 </script>
 
-<section class="timeline my-5 {mobile == "true" ? 'is-hidden-mobile' : ''}">
+<section class="timeline my-5">
     <!-- <h2 class='title is-size-4'>Trail Blazes</h2> -->
     <header class="timeline-header">
         <span class="tag is-medium is-primary">Start</span>
@@ -38,8 +38,22 @@
 </section>
 
 <style>
-    .timeline {
-
-    }
+    @media (min-width: 1024px) { 
+        .timeline {
+            position: absolute;
+            top: 0;
+            left: 41rem;
+            padding-left: auto;
+            padding-right: 0;
+        }
+     }
+     @media (max-width: 1023px) { 
+        .timeline {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+     }
+    
 </style>
 

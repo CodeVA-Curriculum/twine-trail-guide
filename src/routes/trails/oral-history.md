@@ -12,7 +12,7 @@ In the Twine project you create, the reader will play the part of the interviewe
 ---
 
 <!-- TODO: make this work better for responsiveness -->
-<!-- ::timeline{mobile="true"} -->
+::timeline
 
 ::location{path="making-recordings"}
 ::location{path="hosting-recordings"}

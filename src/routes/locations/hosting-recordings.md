@@ -14,7 +14,7 @@ layout: location
 
 Websites are made up of files, and when you visit a site online the server sends you the files you need. A lot of times, the server needs to send you *many* files for the webpage to load properly. There are HTML, CSS, and Javascript files which make up the webpage itself, but there are often also image, video, and audio files that you need to download in order to show the proper information on the webpage.
 
-<!-- ![Diagram of a webpage loading assets from different servers](TODO:) -->
+<!-- ![Diagram of a webpage loading assets from different servers]() -->
 
 When you make a website (like a Twine story) that includes audio recordings, you have two choices--either host your audio on its own server, or store the audio in the same location as your website. You can use either method with Twine; read the instructions below to learn how.
 
@@ -24,7 +24,7 @@ When you make a website (like a Twine story) that includes audio recordings, you
 
 When you host your audio locally, you will create two files: an audio file (like a `.mp3` or `.wav` file) and a `.html` file that includes the code from your story. As long as these two files are together on your computer, you'll be able to link the audio to your Twine story without any problems.
 
-<!-- ![A cartoon showing a webpage asking where an audio file is, and the audio file responding that it is right there](TODO:) -->
+<!-- ![A cartoon showing a webpage asking where an audio file is, and the audio file responding that it is right there]() -->
 
 Using local audio has a couple of advantages:
 
@@ -49,7 +49,7 @@ Using local images has a couple of downsides:
 
 [SoundCloud](https://soundcloud.com/) is a music streaming service. When you host your audio on [SoundCloud](https://soundcloud.com/), you will upload your audio file (`.mp3` or `.wav`) to SoundCloud's web servers. Then, you'll use a link to the SoundCloud hosting location in your Twine story so that when a reader opens your story, the webpage will download the audio from SoundCloud automatically.
 
-<!-- ![A cartoon showing a webpage asking a server to send it an audio file, with the server responding--sure!](TODO:) -->
+<!-- ![A cartoon showing a webpage asking a server to send it an audio file, with the server responding--sure!]() -->
 
 Using [SoundCloud](https://soundcloud.com/) to host your audio has a couple of advantages:
 

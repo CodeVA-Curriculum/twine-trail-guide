@@ -7,7 +7,7 @@
 <script>
     import TrailDesktop from '$lib/components/TrailDesktop.svelte';
     import TrailMobile from '$lib/components/TrailMobile.svelte';
-    import { locations } from '$lib/util/stores.js';
+    import { locations, selected } from '$lib/util/stores.js';
     import { onMount } from 'svelte';
     
     export let title, difficulty, description;
@@ -39,7 +39,7 @@
 	});
 
     onMount(async () => {
-        // locations.set([]);
+        // selected.set($locations[0])
         return () => {
             locations.set([]);
         }

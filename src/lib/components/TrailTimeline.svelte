@@ -4,9 +4,9 @@
     import { onMount } from 'svelte';
     import {locations, selected} from '$lib/util/stores.js'
     export let mobile = "false"
-    onMount(() => {
-        selected.set($locations[0])
-    })
+    // onMount(() => {
+    //     selected.set($locations[0])
+    // })
 
 </script>
 

@@ -15,9 +15,9 @@ layout: location
 
 ## About the Project
 
-The goal of this project is to create an interactive story based on the materials in the [Library of Virginia's](TODO:) collections. The [LoV](TODO:) has a *ton* of amazing documents from Virginia history, and all of them tell a story about things that happened in the past--things that shape our present moment.
+The goal of this project is to create an interactive story based on the materials in the [Library of Virginia's](https://edu.lva.virginia.gov/) collections. The [LoV](https://edu.lva.virginia.gov/) has a *ton* of amazing documents from Virginia history, and all of them tell a story about things that happened in the past--things that shape our present moment.
 
-For this project, you'll create a Twine project using information from the [LoV](TODO:) archives. As the reader plays through your story, they should feel like they are investigating a mystery hidden in these documents. You should include pictures of the documents, as well as the people and places they document, in your Twine passages to help the reader understand the story. ["Reveal" links]({base}/locations/reveal-text) are a great way of helping the reader feel like they are uncovering information about an artifact.
+For this project, you'll create a Twine project using information from the [LoV](https://edu.lva.virginia.gov/) archives. As the reader plays through your story, they should feel like they are investigating a mystery hidden in these documents. You should include pictures of the documents, as well as the people and places they document, in your Twine passages to help the reader understand the story. ["Reveal" links]({base}/locations/reveal-text) are a great way of helping the reader feel like they are uncovering information about an artifact.
 
 At the end of your story, the reader should have learned something new about a person, place, or event from the past.
 
@@ -25,7 +25,7 @@ At the end of your story, the reader should have learned something new about a p
 
 ## How To
 
-First, you should decide what your story will be about. Browse through the [Library of Virginia](TODO:) collections and find something interesting! There are a lot of things to try, so here are some suggestions to get you started:
+First, you should decide what your story will be about. Browse through the [Library of Virginia](https://edu.lva.virginia.gov/) collections and find something interesting! There are a lot of things to try, so here are some suggestions to get you started:
 
 * Pick a person to write about
 * Pick an event
@@ -35,11 +35,9 @@ Next, pick a few *primary documents* from the collection that you chose. Primary
 
 You might find it useful to start with some pre-made collections of documents instead of searching through the whole archive; here are some ideas:
 
-* TODO: idea
-* TODO: idea
-* TODO: idea
-* TODO: idea
-* TODO: idea
+* Search for a biography in the [Changemakers](https://edu.lva.virginia.gov/changemakers/items/browse?item_type=person) collections.
+* Tell a story from the [Virginia Women in History Digital Trails](https://edu.lva.virginia.gov/virginia-women-in-history/digitaltrails/)
+* Tell the story of the fight for Civil Rights in Virginia using resources from the [Library of Virginia Document Bank](https://edu.lva.virginia.gov/dbva/items/browse?tags=Reform+Movements).
 
 Finally, plan out your story. Here are some questions that it might be useful to ask yourself:
 
@@ -76,5 +74,6 @@ Make sure you save your work!
 * **Link Name Typos:** Whenever you make a link, the name has to match another passage in your story. If it doesn't Twine will create a *new* passage with the name of your mispelled link. Double-check your spelling to avoid confusion
 * **Not Testing Often:** You should test your code as *often as possible*. Testing your story frequently will help you catch errors before they pile up and become difficult to fix
 * **Spaces and Capitalization:** Twine keeps track of spacing and capitalization, so make sure you pay attention to it as well (especially with passage names)
+* **Image Problems:** Be sure to put your image link url inside `''`, and don't forget to include alt text as well! Follow the examples in the ["Adding Images"]({base}/locations/adding-images) tutorial if you have trouble.
 
 ---

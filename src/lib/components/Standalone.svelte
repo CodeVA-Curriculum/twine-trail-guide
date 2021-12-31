@@ -31,9 +31,8 @@
     }
 
 </script>
-
 <div class='container'>
-    <section class='section'>
+    <section class='wrapper'>
         <div class='{ compact ? "" : "columns"}'>
             <div class='{ compact ? "" : "column"} mb-5'>
                 <h1 bind:this={elem} class='title'>{#if position && type == "tutorial"}{p}. {/if}{title}</h1>
@@ -54,7 +53,7 @@
         </div>
         <hr>
     </section>
-    <section class='section content post'>
+    <section class='content post post-container'>
         <slot />
     </section>
 </div>
@@ -75,8 +74,13 @@
         border-radius: 12px;
         /* min-width: 10rem; */
     }
+    .wrapper {
+        margin-top: 4rem;
+    }
     section {
         position: relative;
+        // background-color: pink;
+        margin-bottom: 4rem;
     }
 
 </style>

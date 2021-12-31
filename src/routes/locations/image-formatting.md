@@ -15,7 +15,7 @@ layout: location
 
 To add CSS, go to the story editor and click on the "up" arrow near the name of the story in the bottom-left corner of your screen. Then, select `Edit Story Stylesheet`.
 
-![The Twine story menu with an arrow pointing to the option to edit the stylesheet](TODO:)
+![The Twine story menu with an arrow pointing to the option to edit the stylesheet](/twine-edit-stylesheet.png)
 
 You can add as much CSS here as you want. For example, let's turn all the text red:
 
@@ -25,6 +25,8 @@ p {
     color: red;
 }
 ```
+
+![A Twine story with all the text colored red](/twine-red-text-style.png)
 
 To see your changes start your story. To change it back, just delete your CSS from the stylesheet editor and restart your story.
 
@@ -37,7 +39,7 @@ You can do all sorts of things with CSS, but this tutorial is specifically about
 To get set up, start by writing this CSS code into your stylesheet editor:
 
 ```
-.page img {
+img {
 
 }
 ```
@@ -51,36 +53,22 @@ Depending on how you're writing your story, you might want to make your images a
 Here's what it looks like with the image taking up 100% of the page width:
 
 ```
-.page img {
+img {
     width: 100%;
 }
 ```
 
-![A Twine passage with an image taking up the whole page](TODO:)
+![A Twine passage with an image taking up the whole page](/twine-image-full.png)
 
 . . . and here's what it looks like when the image only takes up 50%:
 
 ```
-.page img {
+img {
     width: 50%;
 }
 ```
 
-![A Twine passage with an image taking up half of the page](TODO:)
-
-
-### Centering the Image
-
-The `margin` of your Twine images controls how much space should appear around your image. You can use the `margin` CSS selector to trick the browser into displaying your image in the center of the page:
-
-```
-.page img {
-    margin-left: auto;
-    margin-right: auto;
-}
-```
-
-Because the CSS says to automatically set both the left and right margin automatically, the margins will meet in the middle and force your image to the center!
+![A Twine passage with an image taking up half of the page](/twine-image-half.png)
 
 ### Columns
 
@@ -91,14 +79,15 @@ Sometimes, you may want to display your image *next to* your passage text, with 
 To make this happen, you need to do two things: make the image small enough to leave room for your text, and then make the image stay on the left side of the page. Here's what the CSS looks like:
 
 ```
-.page img {
+img {
     float: left;
     position: static;
     width: 50%;
+    margin-right: 50px;
 }
 ```
 
-You can make the image bigger or smaller by changing the `width` value. To put the image on the right side of the screen instead of the left, change `float: left` to `float: right`.
+You can make the image bigger or smaller by changing the `width` value. To put the image on the right side of the screen instead of the left, change `float: left` to `float: right`. The `margin-right: 50px;` line is there to put space between the text and the image.
 
 ---
 

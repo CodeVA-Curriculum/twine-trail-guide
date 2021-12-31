@@ -4,19 +4,19 @@
     import { fade, fly } from 'svelte/transition';
     import {base} from '$app/paths';
 import { onMount } from "svelte";
-import {locations} from '$lib/util/stores.js'
+import {locations, selected} from '$lib/util/stores.js'
 
     export let title, difficulty, description //, locations;
     let timeline, inlineLocations, scrollPosition;
 
-    let selected = 0;
+    // let selected = 0;
     function top() {
         timeline.scrollIntoView({behavior: 'smooth', block: 'start'});
     }
 
-    function step(i) {
-        selected = i; // transition desktop guy
-	}
+    // function step(i) {
+    //     selected = i; // transition desktop guy
+	// }
 
     let locationObjects = {}
     let loadedLocations = []
@@ -32,6 +32,13 @@ import {locations} from '$lib/util/stores.js'
     //         }
     //     })
     // })
+
+    onMount(() => {
+        selected.set($locations[0])
+        return () => {
+            locations.set([])
+        }
+    })
 
 </script>
 <svelte:window bind:scrollY={scrollPosition} />

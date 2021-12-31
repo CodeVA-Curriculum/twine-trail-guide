@@ -14,7 +14,7 @@ layout: location
 The first thing to do if you want to add an image to a Twine passage is to find a *link* to an image. All images on the web have a link to their location, and you can use that link to include the image in your story. Here are some options to check out:
 
 * Search for a stock image on [Unsplash](https://unsplash.com/)
-* Find an image from the [Library of Virginia](https://edu.lva.virginia.gov/about/) collections
+* Find an image from the [Library of Virginia](https://edu.lva.virginia.gov/dbva/) Document Bank
 
 Just make sure you have permission to use the image from the person who owns it! [Unsplash](https://unsplash.com/) only has stock photos, which means you can use them in your stories no problem. It's important to only use images that you have permission to use!
 
@@ -24,7 +24,13 @@ Just make sure you have permission to use the image from the person who owns it!
 
 Once you've found an image you want to use on the internet, you'll need to get the link. The easiest way is to right-click the image and select `Copy image address`. This will copy the image's web location to your clipboard for later.
 
-![Unsplash.com, showing the contextual menu open highlighting the option to copy the image address](TODO:)
+![A web browser showing the contextual menu open highlighting the option to copy the image address](/image-link.png)
+
+If you're getting an image from [Unsplash](https://unsplash.com/), you'll need to use the normal link, which you can access by clicking `Share`.
+
+![A screenshot of unsplash.com with an arrow pointing to the share button](/unsplash-share.png)
+
+![A screenshot of unsplash.com indicating the link inside the share menu to copy for your Twine story](/unsplash-link.png)
 
 After getting the image link, go ahead and open up the Twine story editor.
 
@@ -32,10 +38,12 @@ After getting the image link, go ahead and open up the Twine story editor.
 
 ## Add an Image to a Passage
 
-After you get the image link, open up a Twine passage and add a line like this one:
+After you get the image link, open up a Twine passage and add some code like this:
 
 ```
 {embed Unsplash image: 'https://unsplash.com/photos/Na0BbqKbfAo', alt: 'the moon'}
+
+You hear the howls of wolves in the distance.
 ```
 
 . . . but change a couple of things:
@@ -46,10 +54,10 @@ After you get the image link, open up a Twine passage and add a line like this o
 
 Click out of the passage editor and click "Play" on your passage:
 
-![The passage context menu in Twine](/passage-hover)
+![The passage context menu in Twine](/passage-hover.png)
 
 You should see your image in your Twine story!
 
-![A Twine story with an image of a moon](TODO:)
+![A Twine story with an image of a moon](/twine-image.png)
 
 ---

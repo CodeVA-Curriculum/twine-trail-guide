@@ -23,10 +23,16 @@ Before working on this trail, you should be at least a little bit familiar with 
 <!-- Basically, these are the "inlined" location tutorials. The Trail is in charge of deciding which one to render based on the TrailTimeline UI -->
 <!-- ::::trailmap -->
 
-:::location{position="1" path="create-passage"}
-Slotted content
-:::
+---
 
-:::location{position="2" path="adding-images"}
-More slotted content
-:::
+::timeline
+
+::location{path="create-passage"}
+
+::location{path="adding-images"}
+
+::location{path="image-formatting"}
+
+::location{path="reveal-text"}
+
+::location{path="primary-documents-landmark"}

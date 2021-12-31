@@ -13,6 +13,10 @@ This trail is intended to introduce beginners to Twine, and help them create a s
 
 You don't need any prerequisite knowledge to get started with this trail. Many of the other [trails]({base}/trails) in this guide will build on the skills you develop here.
 
+---
+
+::timeline
+
 ::location{path="start-a-story"}
 ::location{path="create-passage"}
 ::location{path="link-passages"}

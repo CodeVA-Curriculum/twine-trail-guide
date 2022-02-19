@@ -14,7 +14,7 @@ While the process of creating and hosting recordings can be challenging, adding 
 
 *Ambient* sounds are long audio clips that fade in and provide background ambiance to a passage. *Sound effects* are short sounds that play once. You can experiment with both options and see which one works best; if you choose *ambient*, you might want to add a couple of seconds of lead-in to any audio clips that include important information (like someone's voice).
 
---
+---
 
 ## Adding Ambient Sounds
 
@@ -61,7 +61,7 @@ You hear wind and rain rushing toward you.
 
 Your `url` should match the link or filename for your sound, and the `name` in your activation line `{ambient sound: 'name'}` should match the code above the `--`: `sound.ambient.name.url` and `sound.ambient.name.description`.
 
---
+---
 
 ## Adding Sound Effects
 
@@ -79,4 +79,4 @@ You hear something in the distance...
 
 Everything is basically the same as it is with ambient sounds, except you use `sound.effect` in your code instead of `sound.ambient`.
 
---
+---

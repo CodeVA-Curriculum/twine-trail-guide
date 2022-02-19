@@ -54,10 +54,12 @@
     let searchTerm ='';
 
     onMount(() => {
+        // sort by "sparkle"
+        // trails.sort(function (a,b) { return a.difficulty - b.difficulty})
         if(trails) {
             filteredList = trails;
         }
-        console.log(trails)
+        // console.log(trails)
     })
 
     let filter = (searchTerm) => {
@@ -70,6 +72,7 @@
         if(searchTerm.length > 0) {
             return tempList;
         } else {
+            trails.sort(function (a,b) { return a.difficulty-b.difficulty})
             return trails;
         }
     }

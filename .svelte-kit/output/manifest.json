@@ -1,11 +1,11 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-b64affc7.js",
+    "file": "start-732e6b3d.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-7f52b8a8.js",
-      "_preload-helper-b1093eef.js",
+      "_vendor-7717ecd8.js",
+      "_preload-helper-ec9aa979.js",
       "_singletons-12a22614.js",
       "_paths-28a87002.js"
     ],
@@ -16,13 +16,24 @@
       "src/routes/locations/__layout.svelte",
       "src/routes/locations/index.svelte",
       "src/routes/locations/story-with-multiple-endings.md",
+      "src/routes/locations/primary-documents-landmark.md",
+      "src/routes/locations/oral-history-landmark.md",
+      "src/routes/locations/hosting-recordings.md",
+      "src/routes/locations/making-recordings.md",
+      "src/routes/locations/image-formatting.md",
       "src/routes/locations/branching-paths.md",
       "src/routes/locations/create-passage.md",
+      "src/routes/locations/adding-images.md",
       "src/routes/locations/link-passages.md",
       "src/routes/locations/start-a-story.md",
+      "src/routes/locations/reveal-text.md",
+      "src/routes/locations/delay-text.md",
+      "src/routes/locations/add-audio.md",
       "src/routes/trails/__layout.svelte",
       "src/routes/trails/index.svelte",
+      "src/routes/trails/primary-documents.md",
       "src/routes/trails/your-first-story.md",
+      "src/routes/trails/oral-history.md",
       "src/routes/about.md"
     ],
     "css": [
@@ -30,24 +41,24 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-8c31879f.js",
+    "file": "pages/__layout.svelte-9179bb48.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-7f52b8a8.js"
+      "_vendor-7717ecd8.js"
     ],
     "css": [
       "assets/pages/__layout.svelte-3ae29d7b.css"
     ]
   },
   "src/routes/__error.svelte": {
-    "file": "pages/__error.svelte-bfc5fcb1.js",
+    "file": "pages/__error.svelte-34388c13.js",
     "src": "src/routes/__error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-7f52b8a8.js",
+      "_vendor-7717ecd8.js",
       "_paths-28a87002.js"
     ],
     "assets": [
@@ -55,13 +66,13 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-9db3bc97.js",
+    "file": "pages/index.svelte-c0982060.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-7f52b8a8.js",
-      "_Nav-fbf9f809.js",
+      "_vendor-7717ecd8.js",
+      "_Nav-dc8ee0c5.js",
       "_paths-28a87002.js"
     ],
     "css": [
@@ -72,32 +83,41 @@
     ]
   },
   "src/routes/locations/__layout.svelte": {
-    "file": "pages/locations/__layout.svelte-6144a5b1.js",
+    "file": "pages/locations/__layout.svelte-81df4b13.js",
     "src": "src/routes/locations/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-7f52b8a8.js",
-      "_Nav-fbf9f809.js",
+      "_vendor-7717ecd8.js",
+      "_Nav-dc8ee0c5.js",
       "_paths-28a87002.js"
     ]
   },
   "src/routes/locations/index.svelte": {
-    "file": "pages/locations/index.svelte-f6d3ab12.js",
+    "file": "pages/locations/index.svelte-4d52b0e3.js",
     "src": "src/routes/locations/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_preload-helper-b1093eef.js",
-      "_vendor-7f52b8a8.js",
+      "_preload-helper-ec9aa979.js",
+      "_vendor-7717ecd8.js",
       "_paths-28a87002.js",
       "_navigation-51f4a605.js",
       "_singletons-12a22614.js"
     ],
     "dynamicImports": [
+      "src/routes/locations/add-audio.md",
+      "src/routes/locations/adding-images.md",
       "src/routes/locations/branching-paths.md",
       "src/routes/locations/create-passage.md",
+      "src/routes/locations/delay-text.md",
+      "src/routes/locations/hosting-recordings.md",
+      "src/routes/locations/image-formatting.md",
       "src/routes/locations/link-passages.md",
+      "src/routes/locations/making-recordings.md",
+      "src/routes/locations/oral-history-landmark.md",
+      "src/routes/locations/primary-documents-landmark.md",
+      "src/routes/locations/reveal-text.md",
       "src/routes/locations/start-a-story.md",
       "src/routes/locations/story-with-multiple-endings.md"
     ],
@@ -106,123 +126,307 @@
     ]
   },
   "src/routes/locations/story-with-multiple-endings.md": {
-    "file": "pages/locations/story-with-multiple-endings.md-57cb084e.js",
+    "file": "pages/locations/story-with-multiple-endings.md-30701894.js",
     "src": "src/routes/locations/story-with-multiple-endings.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-7f52b8a8.js",
-      "_Standalone-9fd73395.js",
+      "_vendor-7717ecd8.js",
+      "_Standalone-3bb057b2.js",
+      "_components-7107bac2.js",
       "_paths-28a87002.js"
+    ],
+    "css": [
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
+    ]
+  },
+  "src/routes/locations/primary-documents-landmark.md": {
+    "file": "pages/locations/primary-documents-landmark.md-6f9a8bc9.js",
+    "src": "src/routes/locations/primary-documents-landmark.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-7717ecd8.js",
+      "_Standalone-3bb057b2.js",
+      "_paths-28a87002.js",
+      "_components-7107bac2.js"
+    ],
+    "css": [
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
+    ]
+  },
+  "src/routes/locations/oral-history-landmark.md": {
+    "file": "pages/locations/oral-history-landmark.md-60a4ce56.js",
+    "src": "src/routes/locations/oral-history-landmark.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-7717ecd8.js",
+      "_Standalone-3bb057b2.js",
+      "_paths-28a87002.js",
+      "_components-7107bac2.js"
+    ],
+    "css": [
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
+    ]
+  },
+  "src/routes/locations/hosting-recordings.md": {
+    "file": "pages/locations/hosting-recordings.md-00d348e3.js",
+    "src": "src/routes/locations/hosting-recordings.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-7717ecd8.js",
+      "_Standalone-3bb057b2.js",
+      "_components-7107bac2.js",
+      "_paths-28a87002.js"
+    ],
+    "css": [
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
+    ]
+  },
+  "src/routes/locations/making-recordings.md": {
+    "file": "pages/locations/making-recordings.md-1452dead.js",
+    "src": "src/routes/locations/making-recordings.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-7717ecd8.js",
+      "_Standalone-3bb057b2.js",
+      "_paths-28a87002.js"
+    ],
+    "css": [
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
+    ]
+  },
+  "src/routes/locations/image-formatting.md": {
+    "file": "pages/locations/image-formatting.md-edaae63f.js",
+    "src": "src/routes/locations/image-formatting.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-7717ecd8.js",
+      "_Standalone-3bb057b2.js",
+      "_components-7107bac2.js",
+      "_paths-28a87002.js"
+    ],
+    "css": [
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
     ]
   },
   "src/routes/locations/branching-paths.md": {
-    "file": "pages/locations/branching-paths.md-212a2057.js",
+    "file": "pages/locations/branching-paths.md-603ee54f.js",
     "src": "src/routes/locations/branching-paths.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-7f52b8a8.js",
-      "_Standalone-9fd73395.js",
+      "_vendor-7717ecd8.js",
+      "_Standalone-3bb057b2.js",
+      "_components-7107bac2.js",
       "_paths-28a87002.js"
+    ],
+    "css": [
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
     ]
   },
   "src/routes/locations/create-passage.md": {
-    "file": "pages/locations/create-passage.md-da18b7b5.js",
+    "file": "pages/locations/create-passage.md-1b93ecdf.js",
     "src": "src/routes/locations/create-passage.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-7f52b8a8.js",
-      "_Standalone-9fd73395.js",
+      "_vendor-7717ecd8.js",
+      "_Standalone-3bb057b2.js",
+      "_components-7107bac2.js",
       "_paths-28a87002.js"
+    ],
+    "css": [
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
+    ]
+  },
+  "src/routes/locations/adding-images.md": {
+    "file": "pages/locations/adding-images.md-d9f544ae.js",
+    "src": "src/routes/locations/adding-images.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-7717ecd8.js",
+      "_Standalone-3bb057b2.js",
+      "_components-7107bac2.js",
+      "_paths-28a87002.js"
+    ],
+    "css": [
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
     ]
   },
   "src/routes/locations/link-passages.md": {
-    "file": "pages/locations/link-passages.md-0570e611.js",
+    "file": "pages/locations/link-passages.md-f4d5bb96.js",
     "src": "src/routes/locations/link-passages.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-7f52b8a8.js",
-      "_Standalone-9fd73395.js",
+      "_vendor-7717ecd8.js",
+      "_Standalone-3bb057b2.js",
+      "_components-7107bac2.js",
       "_paths-28a87002.js"
+    ],
+    "css": [
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
     ]
   },
   "src/routes/locations/start-a-story.md": {
-    "file": "pages/locations/start-a-story.md-61e0f53d.js",
+    "file": "pages/locations/start-a-story.md-24fa0d78.js",
     "src": "src/routes/locations/start-a-story.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-7f52b8a8.js",
-      "_Standalone-9fd73395.js",
+      "_vendor-7717ecd8.js",
+      "_Standalone-3bb057b2.js",
+      "_components-7107bac2.js",
       "_paths-28a87002.js"
+    ],
+    "css": [
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
+    ]
+  },
+  "src/routes/locations/reveal-text.md": {
+    "file": "pages/locations/reveal-text.md-d761c931.js",
+    "src": "src/routes/locations/reveal-text.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-7717ecd8.js",
+      "_Standalone-3bb057b2.js",
+      "_components-7107bac2.js",
+      "_paths-28a87002.js"
+    ],
+    "css": [
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
+    ]
+  },
+  "src/routes/locations/delay-text.md": {
+    "file": "pages/locations/delay-text.md-6f811c9e.js",
+    "src": "src/routes/locations/delay-text.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-7717ecd8.js",
+      "_Standalone-3bb057b2.js",
+      "_components-7107bac2.js",
+      "_paths-28a87002.js"
+    ],
+    "css": [
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
+    ]
+  },
+  "src/routes/locations/add-audio.md": {
+    "file": "pages/locations/add-audio.md-551a8804.js",
+    "src": "src/routes/locations/add-audio.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-7717ecd8.js",
+      "_Standalone-3bb057b2.js",
+      "_components-7107bac2.js",
+      "_paths-28a87002.js"
+    ],
+    "css": [
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
     ]
   },
   "src/routes/trails/__layout.svelte": {
-    "file": "pages/trails/__layout.svelte-f771d0b7.js",
+    "file": "pages/trails/__layout.svelte-26e81ed8.js",
     "src": "src/routes/trails/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-7f52b8a8.js",
-      "_Nav-fbf9f809.js",
+      "_vendor-7717ecd8.js",
+      "_Nav-dc8ee0c5.js",
       "_paths-28a87002.js"
     ]
   },
   "src/routes/trails/index.svelte": {
-    "file": "pages/trails/index.svelte-7080c608.js",
+    "file": "pages/trails/index.svelte-fd478955.js",
     "src": "src/routes/trails/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_preload-helper-b1093eef.js",
-      "_vendor-7f52b8a8.js",
+      "_preload-helper-ec9aa979.js",
+      "_vendor-7717ecd8.js",
       "_paths-28a87002.js",
       "_navigation-51f4a605.js",
       "_singletons-12a22614.js"
     ],
     "dynamicImports": [
+      "src/routes/trails/oral-history.md",
+      "src/routes/trails/primary-documents.md",
       "src/routes/trails/your-first-story.md"
     ],
     "css": [
       "assets/pages/trails/index.svelte-ecbc8621.css"
     ]
   },
+  "src/routes/trails/primary-documents.md": {
+    "file": "pages/trails/primary-documents.md-3d2a8d9d.js",
+    "src": "src/routes/trails/primary-documents.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-7717ecd8.js",
+      "_Trail-6cc2787f.js",
+      "_paths-28a87002.js",
+      "_components-7107bac2.js",
+      "_preload-helper-ec9aa979.js"
+    ],
+    "css": [
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
+    ]
+  },
   "src/routes/trails/your-first-story.md": {
-    "file": "pages/trails/your-first-story.md-c0e84246.js",
+    "file": "pages/trails/your-first-story.md-efc9ff0d.js",
     "src": "src/routes/trails/your-first-story.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-7f52b8a8.js",
-      "_preload-helper-b1093eef.js"
-    ],
-    "dynamicImports": [
-      "src/routes/locations/branching-paths.md",
-      "src/routes/locations/create-passage.md",
-      "src/routes/locations/link-passages.md",
-      "src/routes/locations/start-a-story.md",
-      "src/routes/locations/story-with-multiple-endings.md"
+      "_vendor-7717ecd8.js",
+      "_Trail-6cc2787f.js",
+      "_paths-28a87002.js",
+      "_components-7107bac2.js",
+      "_preload-helper-ec9aa979.js"
     ],
     "css": [
-      "assets/pages/trails/your-first-story.md-3fadfa43.css"
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
+    ]
+  },
+  "src/routes/trails/oral-history.md": {
+    "file": "pages/trails/oral-history.md-4bcb5e50.js",
+    "src": "src/routes/trails/oral-history.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-7717ecd8.js",
+      "_Trail-6cc2787f.js",
+      "_components-7107bac2.js",
+      "_preload-helper-ec9aa979.js",
+      "_paths-28a87002.js"
+    ],
+    "css": [
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
     ]
   },
   "src/routes/about.md": {
-    "file": "pages/about.md-c8491366.js",
+    "file": "pages/about.md-151ed956.js",
     "src": "src/routes/about.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-7f52b8a8.js",
-      "_Nav-fbf9f809.js",
+      "_vendor-7717ecd8.js",
+      "_Nav-dc8ee0c5.js",
       "_paths-28a87002.js"
     ]
   },
-  "_vendor-7f52b8a8.js": {
-    "file": "chunks/vendor-7f52b8a8.js",
+  "_vendor-7717ecd8.js": {
+    "file": "chunks/vendor-7717ecd8.js",
     "css": [
       "assets/vendor-ec9510ad.css"
     ]
@@ -233,13 +437,13 @@
   "_paths-28a87002.js": {
     "file": "chunks/paths-28a87002.js"
   },
-  "_preload-helper-b1093eef.js": {
-    "file": "chunks/preload-helper-b1093eef.js"
+  "_preload-helper-ec9aa979.js": {
+    "file": "chunks/preload-helper-ec9aa979.js"
   },
-  "_Nav-fbf9f809.js": {
-    "file": "chunks/Nav-fbf9f809.js",
+  "_Nav-dc8ee0c5.js": {
+    "file": "chunks/Nav-dc8ee0c5.js",
     "imports": [
-      "_vendor-7f52b8a8.js",
+      "_vendor-7717ecd8.js",
       "_paths-28a87002.js"
     ],
     "assets": [
@@ -253,14 +457,52 @@
       "_singletons-12a22614.js"
     ]
   },
-  "_Standalone-9fd73395.js": {
-    "file": "chunks/Standalone-9fd73395.js",
+  "_Standalone-3bb057b2.js": {
+    "file": "chunks/Standalone-3bb057b2.js",
     "imports": [
-      "_vendor-7f52b8a8.js",
+      "_vendor-7717ecd8.js",
       "_paths-28a87002.js"
     ],
     "css": [
-      "assets/Standalone-f63679d0.css"
+      "assets/Standalone-ec789132.css",
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
+    ]
+  },
+  "_components-7107bac2.js": {
+    "file": "chunks/components-7107bac2.js",
+    "imports": [
+      "_vendor-7717ecd8.js",
+      "_paths-28a87002.js"
+    ],
+    "css": [
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
+    ]
+  },
+  "_Trail-6cc2787f.js": {
+    "file": "chunks/Trail-6cc2787f.js",
+    "imports": [
+      "_vendor-7717ecd8.js",
+      "_preload-helper-ec9aa979.js"
+    ],
+    "dynamicImports": [
+      "src/routes/locations/add-audio.md",
+      "src/routes/locations/adding-images.md",
+      "src/routes/locations/branching-paths.md",
+      "src/routes/locations/create-passage.md",
+      "src/routes/locations/delay-text.md",
+      "src/routes/locations/hosting-recordings.md",
+      "src/routes/locations/image-formatting.md",
+      "src/routes/locations/link-passages.md",
+      "src/routes/locations/making-recordings.md",
+      "src/routes/locations/oral-history-landmark.md",
+      "src/routes/locations/primary-documents-landmark.md",
+      "src/routes/locations/reveal-text.md",
+      "src/routes/locations/start-a-story.md",
+      "src/routes/locations/story-with-multiple-endings.md"
+    ],
+    "css": [
+      "assets/Trail-a9d0542f.css",
+      "assets/LocationNode.svelte_svelte&type=style&lang-74364a12.css"
     ]
   }
 }

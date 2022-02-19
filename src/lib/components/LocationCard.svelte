@@ -34,7 +34,7 @@
     </div>
 </article>
 
-<style lang="scss">
+<style>
   a {
     color: black;
   }

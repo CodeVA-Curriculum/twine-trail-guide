@@ -8,17 +8,24 @@
 
 <!-- // TODO: figure out why the images aren't being served from the right directory -->
 <!-- maybe downgrade sveltekit -->
-<img alt="{alt}" src="{base}/images{src}" />
+<div class='has-text-left'>
+    <figure class="image is-inline-block">
+        <img alt="{alt}" src="{base}/images{src}" />
+    </figure>
+</div>
 
-<style lang='scss'>
-    @import '../../app.scss';
+
+<!-- <style lang='scss'> -->
+<style>    
+    /* // @import '../../app.scss'; */
     img {
-        @extend .image;
+        /* // @extend .image; */
         border-radius: 12px;
         border-width: 3px;
         border-color: black;
         border-style: dashed;
         margin-bottom: 2rem;
+        max-width: 40rem;
     }
 </style>
 

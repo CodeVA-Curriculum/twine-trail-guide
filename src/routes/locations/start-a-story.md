@@ -19,7 +19,7 @@ layout: location
 
 ----
 
-## Then, Pick a Format
+## Then, Select the Chapbook Format
 
 Twine **formats** control the appearance and style of the stories you create using Twine's tools. We suggest using **Chapbook** (that's the one we will use in our examples in this trail guide).
 

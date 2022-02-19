@@ -14,20 +14,21 @@
     //     error: new Error(),
     //   };
     // }
-    const locations = import.meta.glob('./*.md')
+    const locs = import.meta.glob('./*.md')
 
     let body = []
     let slugs = []
+    // let locations = []
 
-    for (const path in locations) {
+    for (const path in locs) {
         slugs.push(path)
-        body.push(locations[path]().then(({metadata}) => metadata))
+        body.push(locs[path]().then(({metadata}) => metadata))
     }
     /**
         * @type {import('@sveltejs/kit').Load}
         */
-    export async function load({ page, fetch }) {
-        const locations = await Promise.all(body)
+    async function load({ page, fetch }) {
+        let locations = await Promise.all(body)
         for(let i=0; i<locations.length; i++) {
             if(locations[i]) {
                 let end = slugs[i].indexOf(".md");
@@ -40,6 +41,7 @@
             }
         };
     }
+    export {load}
 </script>
 
 <script>

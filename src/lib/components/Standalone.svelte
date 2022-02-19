@@ -6,21 +6,41 @@
 <script>
     import {onMount} from 'svelte'
     import {base} from '$app/paths'
+    import {locations, selected} from '$lib/util/stores.js'
 
-    export let title, type, description, author, layout, short
-    export let compact = false;
-    export let position = false;
+    export let title, type, description, author, layout, short, path
+    export let compact, scrollable = false;
+    export let position;
     export let video; // = "https://www.youtube.com/embed/AsURmcD_Z5g"
-</script>
 
+    let p, elem
+    $: p = position > 0 ? position : false
+
+    selected.subscribe(loc => {
+        if(loc == path && scrollable) {
+            scrollToMe()
+        }
+    })
+
+    // TODO: scroll into view
+    function scrollToMe() {
+        if(elem) {
+            elem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        
+    }
+
+</script>
 <div class='container'>
-    <section class='section'>
+    <section class='wrapper'>
         <div class='{ compact ? "" : "columns"}'>
             <div class='{ compact ? "" : "column"} mb-5'>
-                <h1 class='title'>{#if position}{position}. {/if}{title}</h1>
+                <h1 bind:this={elem} class='title'>{#if position && type == "tutorial"}{p}. {/if}{title}</h1>
                 <!-- TODO: add tags for trails -->
                 <p class='block'>{description}</p>
+                {#if video}
                 <p class='block'>Watch the video to see someone demonstrate the basics, or read on to work through it on your own. This concept is a part of several project <a href='{base}/trails'>Trails</a>; check them out!</p>
+                {/if}
                 <!-- <h2 class='heading'>Trails:</h2> -->
             </div>
             {#if video}
@@ -33,12 +53,12 @@
         </div>
         <hr>
     </section>
-    <section class='section content post'>
+    <section class='content post post-container'>
         <slot />
     </section>
 </div>
 
-<style lang='scss'>
+<style>
     .video {
         padding-top: 56.25%;
         position: relative;
@@ -53,6 +73,14 @@
         width: 100%;
         border-radius: 12px;
         /* min-width: 10rem; */
+    }
+    .wrapper {
+        margin-top: 4rem;
+    }
+    section {
+        position: relative;
+        /* // background-color: pink; */
+        margin-bottom: 4rem;
     }
 
 </style>

@@ -1,5 +1,5 @@
 <pre>
-    Hello
+    <!-- Hello -->
 </pre>
 
 <style>

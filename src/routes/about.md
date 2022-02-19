@@ -8,7 +8,9 @@
 
 # About the Guide
 
-This site is a guide intended to help people use (or teach others to use) [**Twine**](#). **Twine** is a tool for creating websites, but instead of the website being about a topic, or hosting a storefront, or containing blog posts, **Twine** websites tell **stories**.
+This site is a guide intended to help people use (or teach others to use) [**Twine**](https://twinery.org/). **Twine** is a tool for creating websites, but instead of the website being about a topic, or hosting a storefront, or containing blog posts, **Twine** websites tell **stories**.
+
+This guide is specifically for Twine stories written in the [Chapbook](https://klembot.github.io/chapbook/guide/) format. Many of the tutorials in here are based on the [Chapbook wiki](https://klembot.github.io/chapbook/guide/), which contains lots of great examples and additional information. Please read it if you want to learn more about Twine and using the Chapbook format.
 
 </div>
 <div class='section'>

@@ -15,10 +15,11 @@
 </div>
 
 
-<style lang='scss'>
-    @import '../../app.scss';
+<!-- <style lang='scss'> -->
+<style>    
+    /* // @import '../../app.scss'; */
     img {
-        @extend .image;
+        /* // @extend .image; */
         border-radius: 12px;
         border-width: 3px;
         border-color: black;

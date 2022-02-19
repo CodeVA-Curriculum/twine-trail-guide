@@ -18,7 +18,7 @@
 
     let body = []
     let slugs = []
-    let locations = []
+    // let locations = []
 
     for (const path in locs) {
         slugs.push(path)
@@ -28,7 +28,7 @@
         * @type {import('@sveltejs/kit').Load}
         */
     async function load({ page, fetch }) {
-        locations = await Promise.all(body)
+        let locations = await Promise.all(body)
         for(let i=0; i<locations.length; i++) {
             if(locations[i]) {
                 let end = slugs[i].indexOf(".md");

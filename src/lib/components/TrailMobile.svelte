@@ -61,7 +61,7 @@
     {/if}
 </section>
 
-<style lang='scss'>
+<style>
     .content-wrapper {
 		display: grid;
 		align-items: start;

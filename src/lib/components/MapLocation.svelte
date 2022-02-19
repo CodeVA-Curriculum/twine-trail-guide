@@ -68,7 +68,7 @@ import { fade, fly } from 'svelte/transition';
     {/if}
 </div>
 
-<style lang='scss'>
+<style>
     .el2 {
 		grid-area: 1/1/2/2;
 		border-radius: 1rem;

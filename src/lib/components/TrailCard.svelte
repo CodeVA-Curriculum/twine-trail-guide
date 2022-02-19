@@ -53,12 +53,12 @@
     </div>
 </article>
 
-<style lang="scss">
+<style>
   a {
     color: black;
   }
   .trail {
-    // max-width: 40rem;
+    /* // max-width: 40rem; */
   }
   .trail:hover {
     background-color: whitesmoke;

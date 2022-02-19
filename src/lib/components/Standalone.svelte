@@ -58,7 +58,7 @@
     </section>
 </div>
 
-<style lang='scss'>
+<style>
     .video {
         padding-top: 56.25%;
         position: relative;
@@ -79,7 +79,7 @@
     }
     section {
         position: relative;
-        // background-color: pink;
+        /* // background-color: pink; */
         margin-bottom: 4rem;
     }
 

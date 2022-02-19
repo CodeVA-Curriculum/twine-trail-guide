@@ -108,3 +108,10 @@ build/*
 build
 .svelte-kit*
 .svelte-kit/*
+build/trails/index.html
+build/locations/index.html
+build/index.html
+build/about/index.html
+.svelte-kit/output/server/app.js
+.svelte-kit/output/manifest.json
+.svelte-kit/build/app.js

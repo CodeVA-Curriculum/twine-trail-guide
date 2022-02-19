@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		
+
+		
+
+		<link rel="modulepreload" href="/_app/start-5cfcc8a2.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-990f095f.js">
+		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
+		<link rel="modulepreload" href="/_app/chunks/singletons-12a22614.js">
+		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-8c94bbb9.js">
+		<link rel="modulepreload" href="/_app/pages/locations/__layout.svelte-205c0807.js">
+		<link rel="modulepreload" href="/_app/chunks/Nav-a092c854.js">
+		<link rel="modulepreload" href="/_app/pages/locations/hosting-recordings.md-1fef1992.js">
+		<link rel="modulepreload" href="/_app/chunks/Standalone-f5378a1c.js">
+		<link rel="modulepreload" href="/_app/chunks/Standalone.svelte_svelte&type=style&lang-d82c9fda.js">
+		<link rel="modulepreload" href="/_app/chunks/components-feb42a3e.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/_app/assets/vendor-ec9510ad.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-3ae29d7b.css">
+		<link rel="stylesheet" href="/_app/assets/Standalone.svelte_svelte&type=style&lang-515e4cd1.css">
+
+		<script type="module">
+			import { start } from "/_app/start-5cfcc8a2.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-8c94bbb9.js"),
+						import("/_app/pages/locations/__layout.svelte-205c0807.js"),
+						import("/_app/pages/locations/hosting-recordings.md-1fef1992.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Flocations\u002Fhosting-recordings",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<nav class="navbar"><div class="navbar-brand logo"><a class="navbar-item" href="/"><img alt="The CodeVA Logo" src="/_app/assets/CodeVALogo-cdf06ed4.png" height="28">
+            <p class="mx-3 heading is-size-5">+</p>
+            <img alt="The Twine Logo" src="/_app/assets/twine-b352c7c6.svg" height="28">
+            <h1 class="heading is-size-5 ml-5 mt-1 is-hidden-mobile">Twine Trail Guide</h1></a>
+        <button role="button" class="navbar-burger " aria-label="menu" aria-expanded="false" data-target="nav-menu"><span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span></button></div>
+    <div id="nav-menu" class="navbar-menu "><div class="navbar-end"><a class="navbar-item" href="/">Home
+            </a>
+            <a class="navbar-item" href="/about">About the Guide
+            </a>
+            <a class="navbar-item" href="https://padlet.com/jonstapleton/wvs5vb5ct1s5kqts">Region Map
+            </a>
+            <a class="navbar-item" href="/trails">Trails
+            </a>
+            <a class="navbar-item" href="/locations">Locations
+            </a></div></div></nav>
+<div class="container"><section class="wrapper svelte-16we498"><div class="columns"><div class="column mb-5"><h1 class="title">Hosting Recordings</h1>
+                
+                <p class="block">Your Twine stories are websites, which means whoever is reading them needs to download the whole story (including all its images, video, and audio) when they want to read it. In order for them to get access to audio you want to include in the story, you&#39;ll need to host that audio on a web server. This tutorial shows you how.</p>
+                
+                </div>
+            </div>
+        <hr></section>
+    <section class="content post post-container svelte-16we498"><h2>What Is Hosting?</h2>
+<p>“Hosting” a webpage or a file means that you’ve made it accessible to other people connected to the internet by “hosting” the file on a server (a computer set up to send files to people over the internet). Any website you access with your computer is being hosted by a server somewhere in the world.</p>
+<p>Websites are made up of files, and when you visit a site online the server sends you the files you need. A lot of times, the server needs to send you <em>many</em> files for the webpage to load properly. There are HTML, CSS, and Javascript files which make up the webpage itself, but there are often also image, video, and audio files that you need to download in order to show the proper information on the webpage.</p>
+
+<p>When you make a website (like a Twine story) that includes audio recordings, you have two choices—either host your audio on its own server, or store the audio in the same location as your website. You can use either method with Twine; read the instructions below to learn how.</p>
+<hr>
+<h2>Host Locally</h2>
+<p>When you host your audio locally, you will create two files: an audio file (like a <code>.mp3</code> or <code>.wav</code> file) and a <code>.html</code> file that includes the code from your story. As long as these two files are together on your computer, you’ll be able to link the audio to your Twine story without any problems.</p>
+
+<p>Using local audio has a couple of advantages:</p>
+<ul><li>It makes editing the audio pretty easy—just edit the file, no publishing necessary!</li>
+<li>You don’t need to make your audio public online for anyone to listen to</li></ul>
+<p>To set up local hosting, follow the instructions below:</p>
+<ol><li>Find a spot on your computer where you’d like to store your Twine stories. I like to use the <code>Documents</code> folder.</li>
+<li>Then, create a new folder for the Twine story that will include audio.</li>
+<li>Put all your audio files into that new folder.</li>
+<li>When the time comes to test your Twine story, you’ll need to <code>Publish to File</code> and save the <code>.html</code> file produced by Twine to the new folder with your audio files.</li></ol>
+<p>Using local images has a couple of downsides:</p>
+<ul><li>You have to test your story differently—you can’t use the <code>Play</code> button like normal. You’ll need to <code>Publish to File</code> and then open your HTML file every time you want to test your audio.</li>
+<li>If you want to share your story with someone, it will be a little tricky. You’ll need to send them a folder with all of your files, not just the <code>.html</code> file from Twine.</li></ul>
+<hr>
+<h2>Host on SoundCloud</h2>
+<p><a href="https://soundcloud.com/" rel="nofollow">SoundCloud</a> is a music streaming service. When you host your audio on <a href="https://soundcloud.com/" rel="nofollow">SoundCloud</a>, you will upload your audio file (<code>.mp3</code> or <code>.wav</code>) to SoundCloud’s web servers. Then, you’ll use a link to the SoundCloud hosting location in your Twine story so that when a reader opens your story, the webpage will download the audio from SoundCloud automatically.</p>
+
+<p>Using <a href="https://soundcloud.com/" rel="nofollow">SoundCloud</a> to host your audio has a couple of advantages:</p>
+<ul><li>You don’t have to worry about local files, so you can use Twine (even the browser version) without any problems.</li>
+<li>You can make edits to your audio without changing your story, as long as the link is the same as before.</li></ul>
+<ol><li>Log into <a href="https://soundcloud.com/" rel="nofollow">SoundCloud</a> and click the <code>Upload</code> button in top-right corner of the window</li></ol>
+<p>
+
+<div class="has-text-left"><figure class="image is-inline-block"><img alt="A screenshot from SoundCloud.com showing the upload button" src="/images/soundcloud-upload.png" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<ol start="2"><li>Drag and drop the audio you want to host into the file upload area of the page. Set privacy to <code>Public</code>, otherwise you won’t be able to embed the audio in your Twine story.</li></ol>
+<p>
+
+<div class="has-text-left"><figure class="image is-inline-block"><img alt="A screenshot from SoundCloud.com showing the file upload dialog box" src="/images/soundcloud-file-select.png" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<ol start="3"><li>Open the edit page for your track, and enter all its information.</li>
+<li>Then, go to the <code>Permissions</code> tab and check the <code>Include in RSS Feed</code> option</li></ol>
+<p>
+
+<div class="has-text-left"><figure class="image is-inline-block"><img alt="The SoundCloud.com permissions page, showing how to check the include in RSS feed option" src="/images/soundcloud-rss.gif" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<ol start="5"><li>Click <code>Save changes</code>.</li>
+<li>To get the URL to your audio file, use your RSS feed link and replace <code>sounds.rss</code> with the name of your audio file.</li></ol>
+
+<p>Using SoundCloud to host your audio also has a couple of downsides, though:</p>
+<ul><li>Editing your audio is complicated, requiring you to make changes using your own software, and then upload your audio to SoundCloud before the changes appear in your story.</li>
+<li>Your audio will be public for anyone to listen to.</li></ul>
+<hr>
+<p>Whatever you choose, don’t be discouraged! Once you get it working once, it will get easier with practice.</p></section>
+</div>
+
+
+
+			
+		</div>
+	</body>
+</html>

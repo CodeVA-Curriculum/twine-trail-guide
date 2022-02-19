@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		
+
+		
+
+		<link rel="modulepreload" href="/_app/start-5cfcc8a2.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-990f095f.js">
+		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
+		<link rel="modulepreload" href="/_app/chunks/singletons-12a22614.js">
+		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-8c94bbb9.js">
+		<link rel="modulepreload" href="/_app/pages/locations/__layout.svelte-205c0807.js">
+		<link rel="modulepreload" href="/_app/chunks/Nav-a092c854.js">
+		<link rel="modulepreload" href="/_app/pages/locations/image-formatting.md-4a683497.js">
+		<link rel="modulepreload" href="/_app/chunks/Standalone-f5378a1c.js">
+		<link rel="modulepreload" href="/_app/chunks/Standalone.svelte_svelte&type=style&lang-d82c9fda.js">
+		<link rel="modulepreload" href="/_app/chunks/components-feb42a3e.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/_app/assets/vendor-ec9510ad.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-3ae29d7b.css">
+		<link rel="stylesheet" href="/_app/assets/Standalone.svelte_svelte&type=style&lang-515e4cd1.css">
+
+		<script type="module">
+			import { start } from "/_app/start-5cfcc8a2.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-8c94bbb9.js"),
+						import("/_app/pages/locations/__layout.svelte-205c0807.js"),
+						import("/_app/pages/locations/image-formatting.md-4a683497.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Flocations\u002Fimage-formatting",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<nav class="navbar"><div class="navbar-brand logo"><a class="navbar-item" href="/"><img alt="The CodeVA Logo" src="/_app/assets/CodeVALogo-cdf06ed4.png" height="28">
+            <p class="mx-3 heading is-size-5">+</p>
+            <img alt="The Twine Logo" src="/_app/assets/twine-b352c7c6.svg" height="28">
+            <h1 class="heading is-size-5 ml-5 mt-1 is-hidden-mobile">Twine Trail Guide</h1></a>
+        <button role="button" class="navbar-burger " aria-label="menu" aria-expanded="false" data-target="nav-menu"><span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span></button></div>
+    <div id="nav-menu" class="navbar-menu "><div class="navbar-end"><a class="navbar-item" href="/">Home
+            </a>
+            <a class="navbar-item" href="/about">About the Guide
+            </a>
+            <a class="navbar-item" href="https://padlet.com/jonstapleton/wvs5vb5ct1s5kqts">Region Map
+            </a>
+            <a class="navbar-item" href="/trails">Trails
+            </a>
+            <a class="navbar-item" href="/locations">Locations
+            </a></div></div></nav>
+<div class="container"><section class="wrapper svelte-16we498"><div class="columns"><div class="column mb-5"><h1 class="title">Image Formatting Using CSS</h1>
+                
+                <p class="block">Images are great, but sometimes they may not look exactly right. They may be too big, or too small, or take up the wrong amount of space. They may even make it difficult to read the passage because they push the text all over the place. This tutorial covers how to use CSS to make some changes to the way Twine displays images.</p>
+                
+                </div>
+            </div>
+        <hr></section>
+    <section class="content post post-container svelte-16we498"><h2>Adding CSS To Your Story</h2>
+<p><strong>CSS</strong> (stands for “cascading style sheet”) is a coding language that works with HTML to help with changing the look of a website. Because your Twine story is also a website, you can add CSS to it to change how it looks.</p>
+<p>To add CSS, go to the story editor and click on the “up” arrow near the name of the story in the bottom-left corner of your screen. Then, select <code>Edit Story Stylesheet</code>.</p>
+<p>
+
+<div class="has-text-left"><figure class="image is-inline-block"><img alt="The Twine story menu with an arrow pointing to the option to edit the stylesheet" src="/images/twine-edit-stylesheet.png" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<p>You can add as much CSS here as you want. For example, let’s turn all the text red:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">p &#123;
+    color: red;
+&#125;</code><!-- HTML_TAG_END --></pre>
+<p>
+
+<div class="has-text-left"><figure class="image is-inline-block"><img alt="A Twine story with all the text colored red" src="/images/twine-red-text-style.png" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<p>To see your changes start your story. To change it back, just delete your CSS from the stylesheet editor and restart your story.</p>
+<hr>
+<h2>Formatting Images</h2>
+<p>You can do all sorts of things with CSS, but this tutorial is specifically about formatting images. By default, Twine inserts your image such that it takes up a whole line in its passage, which may cause the passage to be difficult to read. You can do lots of things to improve the look of the passage by changing how the image and the text interact with one another.</p>
+<p>To get set up, start by writing this CSS code into your stylesheet editor:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">img &#123;
+
+&#125;</code><!-- HTML_TAG_END --></pre>
+<p>All of your CSS to control your images will go between the <code>{</code> and the <code>}</code>.</p>
+<h3>Change Image Size</h3>
+<p>Depending on how you’re writing your story, you might want to make your images a little smaller. You can set the width of your image based on a percentage of the width of the page.</p>
+<p>Here’s what it looks like with the image taking up 100% of the page width:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">img &#123;
+    width: 100%;
+&#125;</code><!-- HTML_TAG_END --></pre>
+<p>
+
+<div class="has-text-left"><figure class="image is-inline-block"><img alt="A Twine passage with an image taking up the whole page" src="/images/twine-image-full.png" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<p>… and here&#39;s what it looks like when the image only takes up 50%:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">img &#123;
+    width: 50%;
+&#125;</code><!-- HTML_TAG_END --></pre>
+<p>
+
+<div class="has-text-left"><figure class="image is-inline-block"><img alt="A Twine passage with an image taking up half of the page" src="/images/twine-image-half.png" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<h3>Columns</h3>
+<p>Sometimes, you may want to display your image <em>next to</em> your passage text, with the image on one side and the text on the other like this:</p>
+<p>
+
+<div class="has-text-left"><figure class="image is-inline-block"><img alt="A Twine passage with an image on the left side of the screen and the text on the right side" src="/images/twine-image-column.png" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<p>To make this happen, you need to do two things: make the image small enough to leave room for your text, and then make the image stay on the left side of the page. Here’s what the CSS looks like:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">img &#123;
+    float: left;
+    position: static;
+    width: 50%;
+    margin-right: 50px;
+&#125;</code><!-- HTML_TAG_END --></pre>
+<p>You can make the image bigger or smaller by changing the <code>width</code> value. To put the image on the right side of the screen instead of the left, change <code>float: left</code> to <code>float: right</code>. The <code>margin-right: 50px;</code> line is there to put space between the text and the image.</p>
+<hr>
+<p>Remember, these style apply to <em>all</em> of the images in your story. It’s a good idea to think carefully about what you want your story to look like as you work with the image styles.</p></section>
+</div>
+
+
+
+			
+		</div>
+	</body>
+</html>

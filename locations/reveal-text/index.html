@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		
+
+		
+
+		<link rel="modulepreload" href="/_app/start-5cfcc8a2.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-990f095f.js">
+		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
+		<link rel="modulepreload" href="/_app/chunks/singletons-12a22614.js">
+		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-8c94bbb9.js">
+		<link rel="modulepreload" href="/_app/pages/locations/__layout.svelte-205c0807.js">
+		<link rel="modulepreload" href="/_app/chunks/Nav-a092c854.js">
+		<link rel="modulepreload" href="/_app/pages/locations/reveal-text.md-0925ae82.js">
+		<link rel="modulepreload" href="/_app/chunks/Standalone-f5378a1c.js">
+		<link rel="modulepreload" href="/_app/chunks/Standalone.svelte_svelte&type=style&lang-d82c9fda.js">
+		<link rel="modulepreload" href="/_app/chunks/components-feb42a3e.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/_app/assets/vendor-ec9510ad.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-3ae29d7b.css">
+		<link rel="stylesheet" href="/_app/assets/Standalone.svelte_svelte&type=style&lang-515e4cd1.css">
+
+		<script type="module">
+			import { start } from "/_app/start-5cfcc8a2.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-8c94bbb9.js"),
+						import("/_app/pages/locations/__layout.svelte-205c0807.js"),
+						import("/_app/pages/locations/reveal-text.md-0925ae82.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Flocations\u002Freveal-text",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<nav class="navbar"><div class="navbar-brand logo"><a class="navbar-item" href="/"><img alt="The CodeVA Logo" src="/_app/assets/CodeVALogo-cdf06ed4.png" height="28">
+            <p class="mx-3 heading is-size-5">+</p>
+            <img alt="The Twine Logo" src="/_app/assets/twine-b352c7c6.svg" height="28">
+            <h1 class="heading is-size-5 ml-5 mt-1 is-hidden-mobile">Twine Trail Guide</h1></a>
+        <button role="button" class="navbar-burger " aria-label="menu" aria-expanded="false" data-target="nav-menu"><span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span></button></div>
+    <div id="nav-menu" class="navbar-menu "><div class="navbar-end"><a class="navbar-item" href="/">Home
+            </a>
+            <a class="navbar-item" href="/about">About the Guide
+            </a>
+            <a class="navbar-item" href="https://padlet.com/jonstapleton/wvs5vb5ct1s5kqts">Region Map
+            </a>
+            <a class="navbar-item" href="/trails">Trails
+            </a>
+            <a class="navbar-item" href="/locations">Locations
+            </a></div></div></nav>
+<div class="container"><section class="wrapper svelte-16we498"><div class="columns"><div class="column mb-5"><h1 class="title">Reveal Text</h1>
+                
+                <p class="block">Sometimes, you might want to use a link to reveal a new section of a passage instead of transitioning to a new part of your story. &quot;Reveal&quot; links do exactly that--they allow you to use a link to reveal more information to the reader in the current passage. This tutorial covers how to create &quot;reveal&quot; links and section in your Twine story.</p>
+                
+                </div>
+            </div>
+        <hr></section>
+    <section class="content post post-container svelte-16we498"><h2>Simple Reveal Links</h2>
+<p><strong>Reveal links</strong> are special kinds of links that you can use to show additional text in your story rather than moving to a whole new passage when the reader clicks the link. Try it out! Add the following line to a Twine passage:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">Ranier was walking home one night when they saw &#123;reveal link: &#39;something strange&#39;, text: &#39;an abandoned truck in the middle of the road, sitting alone under a streetlamp&#39;&#125;.</code><!-- HTML_TAG_END --></pre>
+<p>
+
+<div class="has-text-left"><figure class="image is-inline-block"><img alt="A screen recording showing a Chapbook reveal link in action" src="/images/twine-reveal-link.gif" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<p>Test out the passage—what do you notice about how the link works?</p>
+<h2>Why Use a Reveal Link?</h2>
+<p>“Reveal” links have the effect of making the reader feel like they are investigating something new. It also allows you to keep information on the screen for the reader to reference while still moving the story forward.</p>
+<p>You can see “reveal” links in action in <a href="https://stoneharborgame.com/" rel="nofollow">“Stone Harbor”</a> by Liza Daly.</p>
+<h2>Reveal a Passage</h2>
+<p>The simple “reveal” link above is good for small sections of text, but not as good for longer reveals. If you want to reveal a larger section of text, you might want to use the “reveal” link to show a <em>passage</em> instead of just some text.</p>
+<p>First, create a new passage. I’ve called mine <code>Abandoned Truck</code>, but you can name yours whatever you like. Here’s what my <code>Abandoned Truck</code> passage says:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">an abandoned truck in the middle of the road, sitting alone under a streetlamp.
+
+The truck was red and rusty. Ranier approached slowly, scanning the surroundings trying to see if the owner of the truck was in trouble or needed help.</code><!-- HTML_TAG_END --></pre>
+<p>Now, return to your first passage and change the link “reveal” link so it looks like this:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">Ranier was walking home one night when they saw &#123;reveal link: &#39;something strange&#39;, passage: &#39;Abandoned Truck&#39;&#125;.</code><!-- HTML_TAG_END --></pre>
+<p>At this point you’ll have two passages that aren’t connected, like this:</p>
+<p>
+
+<div class="has-text-left"><figure class="image is-inline-block"><img alt="The Twine story editor showing two disconnected passages, one called Introduction and one called Abandoned Truck" src="/images/two-passages-reveal.png" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<p>You’ll notice that I’ve changed <code>text</code> to say <code>passage</code> instead, and replaced the sentence describing the truck with the name of the new passage (<code>Abandoned Truck</code>). Test out your story!</p>
+<p>
+
+<div class="has-text-left"><figure class="image is-inline-block"><img alt="A gif showing a Twine story with a link that reveals a new passage" src="/images/twine-reveal-passage.gif" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<p>The “reveal” link, once clicked, inserts the text from the <code>Abandoned Truck</code> passage into the first passage. This is a little different than a normal link, because the text from the two passages appear <em>together</em> rather than separately.</p>
+<hr></section>
+</div>
+
+
+
+			
+		</div>
+	</body>
+</html>

@@ -74,7 +74,7 @@ img {
 
 Sometimes, you may want to display your image *next to* your passage text, with the image on one side and the text on the other like this:
 
-![A Twine passage with an image on the left side of the screen and the text on the right side](TODO:)
+![A Twine passage with an image on the left side of the screen and the text on the right side](/twine-image-column.png)
 
 To make this happen, you need to do two things: make the image small enough to leave room for your text, and then make the image stay on the left side of the page. Here's what the CSS looks like:
 

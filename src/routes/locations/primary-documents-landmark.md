@@ -9,15 +9,11 @@ type: project
 layout: location
 ---
 
-<script>
-    import {base} from '$app/paths' // TODO: create link logic
-</script>
-
 ## About the Project
 
 The goal of this project is to create an interactive story based on the materials in the [Library of Virginia's](https://edu.lva.virginia.gov/) collections. The [LoV](https://edu.lva.virginia.gov/) has a *ton* of amazing documents from Virginia history, and all of them tell a story about things that happened in the past--things that shape our present moment.
 
-For this project, you'll create a Twine project using information from the [LoV](https://edu.lva.virginia.gov/) archives. As the reader plays through your story, they should feel like they are investigating a mystery hidden in these documents. You should include pictures of the documents, as well as the people and places they document, in your Twine passages to help the reader understand the story. ["Reveal" links]({base}/locations/reveal-text) are a great way of helping the reader feel like they are uncovering information about an artifact.
+For this project, you'll create a Twine project using information from the [LoV](https://edu.lva.virginia.gov/) archives. As the reader plays through your story, they should feel like they are investigating a mystery hidden in these documents. You should include pictures of the documents, as well as the people and places they document, in your Twine passages to help the reader understand the story. ["Reveal" links](/locations/reveal-text) are a great way of helping the reader feel like they are uncovering information about an artifact.
 
 At the end of your story, the reader should have learned something new about a person, place, or event from the past.
 
@@ -52,8 +48,8 @@ You'll probably have to read the documents to get a good sense of how they fit t
 Here are some guidelines to help you design your Twine story around your chosen primary documents:
 
 1. Create one passage for each document you want the reader to explore. Include an image of the document in that passage.
-2. Use [reveal links]({base}/locations/reveal-text) to show information about the document as the reader clicks around. Have them uncover more details as they click through different links.
-3. When the reader reveals information that leads to another document, create a [link]({base}/locations/link-passages) to a new passage showing the next document.
+2. Use [reveal links](/locations/reveal-text) to show information about the document as the reader clicks around. Have them uncover more details as they click through different links.
+3. When the reader reveals information that leads to another document, create a [link](/locations/link-passages) to a new passage showing the next document.
 4. Be sure to build in links to at least two documents in each passage if you can!
 
 ----
@@ -74,6 +70,6 @@ Make sure you save your work!
 * **Link Name Typos:** Whenever you make a link, the name has to match another passage in your story. If it doesn't Twine will create a *new* passage with the name of your mispelled link. Double-check your spelling to avoid confusion
 * **Not Testing Often:** You should test your code as *often as possible*. Testing your story frequently will help you catch errors before they pile up and become difficult to fix
 * **Spaces and Capitalization:** Twine keeps track of spacing and capitalization, so make sure you pay attention to it as well (especially with passage names)
-* **Image Problems:** Be sure to put your image link url inside `''`, and don't forget to include alt text as well! Follow the examples in the ["Adding Images"]({base}/locations/adding-images) tutorial if you have trouble.
+* **Image Problems:** Be sure to put your image link url inside `''`, and don't forget to include alt text as well! Follow the examples in the ["Adding Images"](/locations/adding-images) tutorial if you have trouble.
 
 ---

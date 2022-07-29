@@ -9,10 +9,6 @@ type: project
 layout: location
 ---
 
-<script>
-    import {base} from '$app/paths' // TODO: create link logic
-</script>
-
 ## About the Project
 
 For this project, you'll interview someone about events from their past personal experiences. Then, you'll embed pieces of those recordings in a Twine story, allowing the reader to explore and investigate different parts of the interview subject's experiences. Each passage will feature a short snippet of audio, followed by a series of choices for the reader that lead to new audio snippets. The reader might choose what questions to ask next, or play the role of the "interviewer" as they read through your Twine story. [Storycorps](https://storycorps.org/stories/) has a couple of great examples of recorded conversations
@@ -33,11 +29,11 @@ Next, plan out the questions you'll ask during the interview. You can read some 
 Once you've planned out your interview, record your conversation with the subject. Then, start working on your story. You can follow the steps below to work on your project if you're having trouble knowing what to do next:
 
 1. Listen to your interview, and make note of important pieces of story or audio snippets you want the reader to listen to. These snippets will be your passages.
-2. Edit your audio so the different snippets for each passage are in their own file. Set up [hosting]({base}/locations/hosting-recordings) for your files as appropriate.
-3. Open the Twine story editor and [create a passage]({base}/locations/create-passage) for each snippet of audio.
-4. [Add the appropriate audio snippets]({base}/locations/add-audio) to each passage.
-5. Find connections between the audio snippets, and start creating [branching paths]({base}/locations/branching-paths) between them.
-6. Use [delay text]({base}/locations/delay-text) to show important information synced with the audio playing the background. Some readers may have trouble following the sound, and it's always a good idea to provide text in addition to sound whenever possible.
+2. Edit your audio so the different snippets for each passage are in their own file. Set up [hosting](/locations/hosting-recordings) for your files as appropriate.
+3. Open the Twine story editor and [create a passage](/locations/create-passage) for each snippet of audio.
+4. [Add the appropriate audio snippets](/locations/add-audio) to each passage.
+5. Find connections between the audio snippets, and start creating [branching paths](/locations/branching-paths) between them.
+6. Use [delay text](/locations/delay-text) to show important information synced with the audio playing the background. Some readers may have trouble following the sound, and it's always a good idea to provide text in addition to sound whenever possible.
 7. Add new passages to help the story flow better.
 
 ---

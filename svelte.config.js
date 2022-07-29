@@ -34,7 +34,7 @@ const config = {
 			  fallback: null
 		  }),
 	  paths: {
-		// base: '/twine-trail-guide', // uncomment this before deployment
+		base: '/twine-trail-guide', // uncomment this before deployment
 	  },
 	}
   };

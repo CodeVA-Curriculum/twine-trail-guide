@@ -19,7 +19,7 @@ In the Twine project you create, the reader will play the part of the interviewe
 ::location{path="add-audio"}
 
 :::location{path="delay-text"}
-Use delay text in your [oral history project]({base}/locations/oral-history-landmark) to reveal important information in sync with your audio recordings.
+Use delay text in your [oral history project](/locations/oral-history-landmark) to reveal important information in sync with your audio recordings.
 :::
 
 ::location{path="branching-paths"}

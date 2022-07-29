@@ -8,38 +8,35 @@ import remarkDirective from 'remark-directive'
 import remarkDirectiveRehype from 'remark-directive-rehype'
 import remarkFrontmatter from 'remark-frontmatter'
 
-
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  // Consult https://github.com/sveltejs/svelte-preprocess
-  // for more information about preprocessors
-  extensions: ['.svelte', '.md', '.svelte.md', '.svx'],
-  preprocess: [
-    mdsvex({
-      extensions: ['.svelte.md', '.md', '.svx'],
-      layout: {
-        _: './src/lib/components/MdLayout.svelte',
-        location: './src/lib/components/Standalone.svelte',
-        trail: './src/lib/components/Trail.svelte'
-      },
-      remarkPlugins: [remarkParse, remarkFrontmatter, remarkDirective, remarkDirectiveRehype]
-    }),
-    preprocess(),
-  ],
-
-  kit: {
-    adapter: adapter({
-			// default options are shown
-			pages: 'build',
-			assets: 'build',
-			fallback: null
-		}),
-    paths: {
-      // base: '/twine-trail-guide', // uncomment this before deployment
-    },
-    // hydrate the <div id="svelte"> element in src/app.html
-    target: "#svelte",
-  },
-};
-
-export default config;
+	// Consult https://github.com/sveltejs/svelte-preprocess
+	// for more information about preprocessors
+	extensions: ['.svelte', '.md', '.svelte.md', '.svx'],
+	preprocess: [
+	  mdsvex({
+		extensions: ['.svelte.md', '.md', '.svx'],
+		layout: {
+		  _: './src/lib/components/MdLayout.svelte',
+		  location: './src/lib/components/Standalone.svelte',
+		  trail: './src/lib/components/Trail.svelte'
+		},
+		remarkPlugins: [remarkParse, remarkFrontmatter, remarkDirective, remarkDirectiveRehype]
+	  }),
+	  preprocess(),
+	],
+  
+	kit: {
+	  adapter: adapter({
+			  // default options are shown
+			  pages: 'build',
+			  assets: 'build',
+			  fallback: null
+		  }),
+	  paths: {
+		// base: '/twine-trail-guide', // uncomment this before deployment
+	  },
+	}
+  };
+  
+  export default config;

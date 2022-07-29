@@ -26,7 +26,7 @@
     /**
         * @type {import('@sveltejs/kit').Load}
         */
-    export async function load({ page, fetch }) {
+    export async function load({ url, params, fetch }) {
         const trails = await Promise.all(body)
         for(let i=0; i<trails.length; i++) {
             if(trails[i]) {

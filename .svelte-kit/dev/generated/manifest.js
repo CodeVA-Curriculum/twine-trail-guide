@@ -21,6 +21,7 @@ const c = [
 	() => import("../../../src/routes/trails/__layout.svelte"),
 	() => import("../../../src/routes/trails/index.svelte"),
 	() => import("../../../src/routes/trails/primary-documents.md"),
+	() => import("../../../src/routes/trails/conversation-web.md"),
 	() => import("../../../src/routes/trails/your-first-story.md"),
 	() => import("../../../src/routes/trails/oral-history.md"),
 	() => import("../../../src/routes/about.md")
@@ -83,14 +84,17 @@ export const routes = [
 	// src/routes/trails/primary-documents.md
 	[/^\/trails\/primary-documents\/?$/, [c[0], c[19], c[21]], [c[1]]],
 
+	// src/routes/trails/conversation-web.md
+	[/^\/trails\/conversation-web\/?$/, [c[0], c[19], c[22]], [c[1]]],
+
 	// src/routes/trails/your-first-story.md
-	[/^\/trails\/your-first-story\/?$/, [c[0], c[19], c[22]], [c[1]]],
+	[/^\/trails\/your-first-story\/?$/, [c[0], c[19], c[23]], [c[1]]],
 
 	// src/routes/trails/oral-history.md
-	[/^\/trails\/oral-history\/?$/, [c[0], c[19], c[23]], [c[1]]],
+	[/^\/trails\/oral-history\/?$/, [c[0], c[19], c[24]], [c[1]]],
 
 	// src/routes/about.md
-	[/^\/about\/?$/, [c[0], c[24]], [c[1]]]
+	[/^\/about\/?$/, [c[0], c[25]], [c[1]]]
 ];
 
 // we import the root layout/error components eagerly, so that

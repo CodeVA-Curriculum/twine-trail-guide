@@ -1,40 +1,40 @@
 {
-  "name": "twine-trail-guide",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "svelte-kit dev --host",
-    "build": "rm -rf build && svelte-kit build && touch build/.nojekyll",
-    "preview": "svelte-kit preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "deploy": "yarn build && npx gh-pages -d build -t true"
-  },
-  "devDependencies": {
-    "@sveltejs/adapter-static": "^1.0.0-next.21",
-    "@sveltejs/kit": "next",
-    "@types/cookie": "^0.4.1",
-    "bulma": "^0.9.3",
-    "mdsvex": "^0.9.8",
-    "sass": "^1.43.4",
-    "svelte": "^3.34.0",
-    "svelte-check": "^2.2.6",
-    "svelte-preprocess": "^4.9.8",
-    "tslib": "^2.3.1",
-    "typescript": "^4.4.3",
-    "vite-imagetools": "^4.0.1"
-  },
-  "type": "module",
-  "dependencies": {
-    "@fontsource/fira-mono": "^4.5.0",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@lukeed/uuid": "^2.0.0",
-    "@sveltejs/svelte-scroller": "^2.0.7",
-    "bulma-timeline": "^3.0.4",
-    "p-map": "^5.3.0",
-    "remark-directive": "^2.0.1",
-    "remark-directive-rehype": "^0.4.0",
-    "remark-frontmatter": "^4.0.1",
-    "remark-parse": "^10.0.1",
-    "svelte-fa": "^2.3.3"
-  }
+	"name": "twine-trail-guide-v2",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"package": "svelte-kit package",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-static": "^1.0.0-next.21",
+		"@sveltejs/kit": "latest",
+		"@types/cookie": "^0.4.1",
+		"bulma": "^0.9.3",
+		"mdsvex": "^0.9.8",
+		"sass": "^1.43.4",
+		"svelte": "^3.44.0",
+		"svelte-check": "^2.2.6",
+		"svelte-preprocess": "^4.9.8",
+		"tslib": "^2.3.1",
+		"typescript": "^4.4.3",
+		"vite-imagetools": "^4.0.1",
+		"vite": "^3.0.0"
+	  },
+	  "dependencies": {
+		"@fontsource/fira-mono": "^4.5.0",
+		"@fortawesome/free-solid-svg-icons": "^5.15.4",
+		"@lukeed/uuid": "^2.0.0",
+		"@sveltejs/svelte-scroller": "^2.0.7",
+		"bulma-timeline": "^3.0.4",
+		"p-map": "^5.3.0",
+		"remark-directive": "^2.0.1",
+		"remark-directive-rehype": "^0.4.0",
+		"remark-frontmatter": "^4.0.1",
+		"remark-parse": "^10.0.1",
+		"svelte-fa": "^2.3.3"
+	  },
+	"type": "module"
 }

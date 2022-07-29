@@ -6,9 +6,9 @@
 	import Nav from '$lib/components/Nav.svelte';
 </script>
 
-<svelte:head>
+<sveltekit:head>
 	<title>Twine Trail Guide</title>
-</svelte:head>
+</sveltekit:head>
 
 <section class='hero is-fullheight-with-navbar homepage'>
 	<div class='hero-head'>

@@ -27,7 +27,7 @@
     /**
         * @type {import('@sveltejs/kit').Load}
         */
-    async function load({ page, fetch }) {
+    async function load({ url, params, fetch }) {
         let locations = await Promise.all(body)
         for(let i=0; i<locations.length; i++) {
             if(locations[i]) {

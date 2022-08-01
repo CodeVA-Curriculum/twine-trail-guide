@@ -36,6 +36,17 @@ const config = {
 	  paths: {
 		base: '/twine-trail-guide', // uncomment this before deployment
 	  },
+
+	  // This option contains the config to ignore `.draft.md` files from compilation
+	  routes: filepath => {
+		return ![
+		  // this is the regex that tells the compiler to ignore `.draft.md` files
+		  /\.draft\.md$/,
+  
+		  // this is regex from the original Sveltekit default config... not sure what it does
+		  /(?:(?:^_|\/_)|(?:^\.|\/\.)(?!well-known))/,
+		].some(regex => regex.test(filepath))
+	  },
 	}
   };
   

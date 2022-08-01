@@ -38,9 +38,9 @@
   a {
     color: black;
   }
-  .location {
+  /* .location {
     max-width: 40rem;
-  }
+  } */
   .location:hover {
     background-color: whitesmoke;
     cursor: pointer;

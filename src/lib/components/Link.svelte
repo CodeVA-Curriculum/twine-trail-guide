@@ -1,12 +1,18 @@
 <script>
     import {onMount} from 'svelte'
     import {base} from '$app/paths'
-    export let href, rel;
+    export let href = ''
+    export let rel = '';
 
-    $: filteredLink = href.indexOf('/') == 0 ? base+href : href
+    let filteredLink = ''
 
     onMount(()=> {
-        console.log(`link is live, going to ${filteredLink}`)
+        if(typeof(href) != typeof('str')) {
+            console.warn(`Link received 'href' prop that is not a string type: ${href}`)
+            filteredLink = ''
+        } else {
+            filteredLink = href.indexOf('/') == 0 ? base+href : href
+        }
     })
 </script>
 

@@ -79,6 +79,6 @@ I am {age} years old.
 ```
 :::
 
-You can direct the computer to read number variables the same way as strings. The big difference between strings and number variables is you can use number variables to have the computer solve mathematical expressions--you can read more about that in the *[Expressions With Variables](/locations/expressions-with-variables)* tutorial.
+You can direct the computer to read number variables the same way as strings. The big difference between strings and number variables is you can use number variables to have the computer solve mathematical expressions--you can read more about that in the *[Expressions With Variables](/locations/arithmetic-expressions)* tutorial.
 
 ---

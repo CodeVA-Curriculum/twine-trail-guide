@@ -32,13 +32,13 @@ const config = {
 			  // default options are shown
 			  pages: 'build',
 			  assets: 'build',
-			  fallback: true
+			  fallback: null
 		  }),
 	  paths: {
 		base: '/twine-trail-guide', // uncomment this before deployment
 	  },
 	  prerender: {
-		default: false
+		default: true
 	  }
 	}
   };

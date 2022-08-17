@@ -25,7 +25,7 @@ This tutorial covers how to create *cluster chains* where the reader has to visi
 
 First, it's helpful to imagine a "cluster chain" story to add the variable links to. Here's an example of a cluster-chain version of the story *Goldilocks & the Three Bears*. Check out the story flowchart below, or [play it here](/examples/goldilocks):
 
-![The story map of the Goldilocks story linked above](TODO:)
+![The story map of the Goldilocks story linked above](/goldilocks-map.png)
 
 The story has three clusters--the kitchen, the living room, and the bedroom (one for each location Goldilocks investigates while she is in the bears' home). The goal of the project is to make it so the reader has Golidlocks choose the "just right" option in each location before the plot moves forward--she has to try the small bowl of porridge in the kitchen, then sit in the small chair in the living room, and then sleep in the smallest bed in the bedroom. The story shouldn't let the reader move on to the next cluster until they complete the task for the preceding cluster.
 

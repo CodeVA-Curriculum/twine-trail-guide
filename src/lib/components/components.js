@@ -9,6 +9,7 @@ import timeline from './TrailTimeline.svelte';
 import Link from './Link.svelte'
 import Passage from './Passage.svelte'
 import Columns from './Columns.svelte'
+import Download from './Download.svelte'
 
 const img = Image;
 const pre = Pre;
@@ -18,5 +19,6 @@ const documentation = Doc;
 const a = Link;
 const passage = Passage;
 const foursquare = Columns
+const download = Download
 
-export { img, pre, p, aside, location, trailmap, timeline, a, passage, foursquare };
+export { img, pre, p, aside, location, trailmap, timeline, a, passage, foursquare, download };

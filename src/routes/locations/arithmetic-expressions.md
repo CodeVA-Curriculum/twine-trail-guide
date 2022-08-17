@@ -8,13 +8,17 @@ short: Modify number variables
 description: This tutorial shows you how to modify number variables using arithmetic expressions--lines of code that use mathematical operations to assign a variable a value. You'll learn how to write arithmetic expressions, increment variables, and use variables as operands in mathematical expressions.
 ---
 
+<script>
+    import Image from '$lib/components/Image.svelte'
+</script>
+
 ## Variables & Math
 
 Number-type variables have a special capability that `string` variables do not: you can use them to perform mathematical operations. There are lots of reasons to have the computer do math during your stories; you could have the computer keep track of a score (if the reader is playing a game), for example. There are also some ways for you to use `number` variables to hide or show different parts of the story, but I won't get into that in this tutorial. Instead, this page focuses on writing and tracing code that includes `number` variables and arithmetic expressions.
 
 You may have already learned how to create and modify variables in the *[Variable Basics](/locations/variable-basics)* tutorial; but if not, here's an example of a passage where I have the computer create a variable called `age` and store the number `15` in it:
 
-:::passage{src="TODO:"}
+:::passage{src="/var-simple.png"}
 ```
 age: 15
 --
@@ -25,7 +29,7 @@ I am {age} years old.
 
 If I wanted to, I could write out a mathematical expression instead of the number `15`, like so:
 
-:::passage{src="TODO:"}
+:::passage{src="/var-simple.png"}
 ```
 age: 10 + (2+3)
 --
@@ -51,7 +55,7 @@ The computer will "do" the math, and store the result in the variable! It doesn'
 
 Just writing mathematical expressions instead of numbers in your code isn't all that useful. However, because the computer will interpret `number`-type variables as number data, we can use variables as *operands* in mathematical expressions. This opens up a couple of interesting possibilties that are worth highlighting here. For example:
 
-:::passage{src="TODO:"}
+:::passage{src="/var-expression.png"}
 ```
 age: 15
 age_in_days: age * 365.25
@@ -67,7 +71,7 @@ In the passage above, I am using the variable called `age` in the equation that 
 
 You can also write expressions like this to **increment** a variable. "Increment" means to increase a variable's value by one. For example, imagine you wanted to create a `count` variable that could keep track of how many passages the reader has visited. First, you would make an `Intro` passage that sets the initial value of the variable called `count`:
 
-:::passage{title="Intro" src="TODO:"}
+:::passage{title="Intro" src="/count1.png"}
 ```
 count: 0
 --
@@ -80,7 +84,7 @@ You have visited {count} passages.
 
 Then, in each following passage, you would include something like this:
 
-:::passage{title="Passage1" src="TODO:"}
+:::passage{title="Passage1" src="/count2.png"}
 ```
 count: count + 1
 --
@@ -102,7 +106,7 @@ In step #2, the computer discards `count`'s old value (`0`), and replaces it wit
 
 I'll put something very similar into the `Passage2` passage:
 
-:::passage{title="Passage2" src="TODO:"}
+:::passage{title="Passage2" src="/count3.png"}
 ```
 count: count + 1
 --
@@ -115,8 +119,8 @@ This is Passage 2. You have visited {count} passage(s).
 
 The story map now looks like this, with a "loop" between `Passage1` and `Passage2`:
 
-![Composite image of the story map described above a GIF of its output](TODO:)
+![The Twine editor showing the story map for the passages described above](/var-map.png)
 
-When I play through this, you can see that the `count` variable keeps going up, even as I return to `Passage1`! There are lots of creative ways to use variables (making a counter is interesting, but perhaps not all that useful); try stuff out!
+You can play through the story by [clicking here](/examples/count). When you play through it, you can see that the `count` variable keeps going up, even as I return to `Passage1`! There are lots of creative ways to use variables (making a counter is interesting, but perhaps not all that useful); try it out!
 
 ---

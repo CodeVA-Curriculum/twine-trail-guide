@@ -12,9 +12,9 @@ description: In this tutorial, you'll learn all about variables. Variables are c
 
 A variable is a *container* inside your computer that contains data. Programmers use variables to make computers "remember" information for later. You can think of your computer like a big, mostly empty warehouse. When you write code that tells the computer to create a variable, the computer reserves a small amount of that empty space for a box. Then, the computer will put some kind of data in the box--usually a number or a message of some kind. Finally, the computer will label the box so it can find it later on. After the computer creates a variable, the programmer can write code that directs the computer to recall and use the value in the box somehow (i.e., read the variable) or modify the value in the box. 
 
-![Praxis comic panels](TODO:)
+<!-- ![Praxis comic panels](TODO:) -->
 
-The variable stays in the computer's warehouse (i.e., memory) until the program ends or the code directs the computer to discard the variable.
+The variable stays in the computer's "warehouse" (i.e., memory) until the program ends or the code directs the computer to discard the variable.
 
 ## Creating Variables with Chapbook
 
@@ -31,7 +31,7 @@ In the example above, I've created a variable called `a_cool_message`. Because I
 
 The area above the `--` is called the **"vars" section**. The code in the "vars" section follows different rules than the other parts of your passages. The area *below* the `--` is like a normal passage. Go ahead and add a passage like the one above to a story, and test it out. You should see something like this:
 
-![The code above](TODO:)
+![The code above](/var-null.png)
 
 You can see that the text in the "vars" section does not appear in the passage--that's because the code in the "vars" section is instruction for the computer to follow in the "background". The variable called `a_cool_message` is in the computer's memory warehouse, but the reader can't see that--variables are kind of secret that way; the reader will not be able to see their value unless you want them to.
 
@@ -39,7 +39,7 @@ You can see that the text in the "vars" section does not appear in the passage--
 
 To show the reader the value of a variable, you can include it in your passage like so:
 
-:::passage{src="TODO:"}
+:::passage{src="/var-insert.png"}
 ```
 a_cool_message: "Hello!"
 --
@@ -52,9 +52,8 @@ There are a couple of things to notice about this example. First, the `"`s aroun
 
 You can create and use as many variables as you like in your passages. You can even use one variable multiple times!
 
-:::passage{src="TODO:"}
+:::passage{src="/woodchuck.png"}
 ```
-affirmation: "Nice."
 creature: "woodchuck"
 material: "wood"
 --
@@ -72,9 +71,9 @@ There are two types of basic variables available to you when you use the Chapboo
 
 Number variables represent quantities or numerical values. When you create a number variable, you don't need to use `"` like you would with strings. Here's an example:
 
-:::passage{src="TODO:"}
+:::passage{src="/var-basic.png"}
 ```
-age: 25
+age: 15
 --
 
 I am {age} years old.

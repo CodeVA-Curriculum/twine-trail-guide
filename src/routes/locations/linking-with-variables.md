@@ -17,15 +17,15 @@ As you get more experienced with Twine, you might notice that your story structu
 * **Clusters:** Most passages lead to two or more passages, and sometimes the passages create loops (think of a level in a videogame, where you can visit rooms more than one time)
 * **Cluster Chains:** Similar to cluster, but the story is made up of *several* clusters rather than just one. Each cluster is connected to one other cluster linearly
 
-![Divided into four quadrants, diagrams showing the four story formats described above](TODO:)
+<!-- ![Divided into four quadrants, diagrams showing the four story formats described above](TODO:) -->
 
 This tutorial covers how to create *cluster chains* where the reader has to visit a particular passage before the story makes the next cluster available to them. This technique involves using variables in conjunction with links in a clever way.
 
 ## Setting the Stage
 
-First, it's helpful to imagine a "cluster chain" story to add the variable links to. Here's an example of a cluster-chain version of the story *Goldilocks & the Three Bears*. Check out the story flowchart below, or [play it here](TODO:):
+First, it's helpful to imagine a "cluster chain" story to add the variable links to. Here's an example of a cluster-chain version of the story *Goldilocks & the Three Bears*. Check out the story flowchart below, or [play it here](/examples/goldilocks):
 
-![Flowchart](TODO:)
+![The story map of the Goldilocks story linked above](TODO:)
 
 The story has three clusters--the kitchen, the living room, and the bedroom (one for each location Goldilocks investigates while she is in the bears' home). The goal of the project is to make it so the reader has Golidlocks choose the "just right" option in each location before the plot moves forward--she has to try the small bowl of porridge in the kitchen, then sit in the small chair in the living room, and then sleep in the smallest bed in the bedroom. The story shouldn't let the reader move on to the next cluster until they complete the task for the preceding cluster.
 
@@ -33,9 +33,12 @@ The first passage, which introduces the story and sets up all the variables, loo
 
 :::passage{title="Intro"}
 ```
-kitchen = "Look for food->Porridge"
-living_room = "Investigate->Chairs"
-bedroom = "Investigate->Beds"
+kitchen: 'Porridge'
+kitchen_choice: 'Look for food'
+living_room: "Chairs"
+living_room_choice: "Investigate"
+bedroom: "Beds"
+bedroom_choice: "Investigate"
 --
 
 One day, as Goldilocks was walking through the woods, she came upon a quaint cabin nestled in a copse of trees. After investigating the manicured yard and the verdant garden, she turned the doorknob and found it was unlocked!
@@ -44,7 +47,16 @@ One day, as Goldilocks was walking through the woods, she came upon a quaint cab
 ```
 :::
 
-I've created three variables in this passage: `kitchen`, `living_room`, and `bedroom`. They are all `string` variables, meaning they store text (as opposed to a number). They look sort of like links--that's intentional.
+I've created six variables in this passage: 
+
+* `kitchen`: A variable to store the name of the passage to send the reader to from the kitchen
+* `kitchen_choice`: The text that the reader should click to follow the `kitchen` link
+* `living_room`: A variable to store the name of the passage to send the reader to from the living room
+* `living_room_choice`: The text that the reader should click to follow the `living_room` link
+* `bedroom`: A variable to store the name of the passage to send the reader to from the bedroom
+* `bedroom_choice`: The text that the reader should click to follow the `bedroom` link
+
+They are all `string` variables, meaning they store text (as opposed to a number).
 
 ## Using Variables as Links
 
@@ -54,21 +66,20 @@ Each location in the story has a "home page" that the reader will return to afte
 ```
 Goldilocks looks around the kitchen.
 
-> [[{kitchen}]]
+> [[{kitchen_choice}->{kitchen}]]
 ```
 :::
 
-The passage above asks the computer to insert the value of the `kitchen` variable into the page, but in this particular situation the effect is sort of interesting--I have inserted the variable into the link! Here's what the link would look like if I had written it out without the variable:
+The passage above asks the computer to insert the value of the `kitchen_choice` and `kitchen` variables into the page, but in this particular situation the effect is sort of interesting--I have inserted the variables into a link! Here's what the link would look like if I had written it out without the variable:
 
 ```
 > [[Look for food->Porridge]]
 ```
 
-The value of the variable makes it so the link in `Kitchen` leads to the passage called `Porridge`; here it is:
+The values of the variables makes it so the link in `Kitchen` leads to the passage called `Porridge`! Here it is:
 
 :::passage{title="Porridge"}
 ```
-
 Goldilocks finds three bowls of porridge set out on the kitchen table: a big one, a medium one, and a small one.
 
 > [[Try the big one->Too Hot]]
@@ -81,7 +92,8 @@ The reader needs to choose one of these three options. The passages called `Too 
 
 :::passage{title="Just Right (Porridge)"}
 ```
-kitchen = "I wonder if there's a place to sit in the next room...->Living Room"
+kitchen: "Living Room"
+kitchen_choice: "I wonder if there's a place to sit in the next room..."
 --
 
 The porridge in the small bowl is just right! Goldilocks eats up all the porridge in the small bowl and sighs contentedly.
@@ -90,8 +102,8 @@ The porridge in the small bowl is just right! Goldilocks eats up all the porridg
 ```
 :::
 
-In the `Just Right (Porridge)` passage, I've directed the computer to *modify* the value of the variable called `kitchen`. That way, when the user clicks the link to return to the `Kitchen` passage, the value of the variable has changed! Now, the link `> [[{kitchen}]]` leads to a new passage!
+In the `Just Right (Porridge)` passage, I've directed the computer to *modify* the value of the variables called `kitchen_choice` and `kitchen`. That way, when the user clicks the link to return to the `Kitchen` passage, the value of the variables have changed! Now, the link `> [[{kitchen_choice}->{kitchen}]]` leads to a new passage!
 
-The rest of the story works just the same way; the "just right" option leads to a passage that modifies the link variable on the "home" page, unlocking the next passage and letting the reader move on to the next passage cluster. You can dig through the example Twine story to see how it works by downloading the story ([click here](TODO:)) and uploading it to Twine on your computer. Try it out!
+The rest of the story works just the same way; the "just right" option leads to a passage that modifies the link variable on the "home" page, unlocking the next passage and letting the reader move on to the next passage cluster. You can dig through the example Twine story to see how it works by downloading the story ([click here](/examples/goldilocks)) and uploading it to Twine on your computer. Try it out!
 
 ---

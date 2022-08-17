@@ -18,7 +18,7 @@ Just like all other text elements in a passage, you can use variables to replace
 
 Check out the story below: the `Bonfire` passage describes a bonfire. Using variables and embedded passages, I can make it so the bonfire "burns down" as the user spends time "away" from the `Bonfire` passage.
 
-![Story map](TODO:)
+![The Twine editor, showing the passages described below](/bonfire-map.png)
 
 First, I'll create the `Intro` passage that sets up the variables, and then the `Bonfire` passage with the bonfire and a link to another passage:
 
@@ -27,7 +27,7 @@ First, I'll create the `Intro` passage that sets up the variables, and then the 
 fire: 'Roaring'
 --
 
-> [[Start the Story -> Bonfire]]
+> [[Start the Story->Bonfire]]
 ```
 :::
 
@@ -35,7 +35,7 @@ fire: 'Roaring'
 ```
 You come across a campsite. In the center of the clearing, you see a place for a fire.
 
-{embed passage: {fire}}
+{embed passage: fire}
 
 > [[Search for Food]]
 ```
@@ -43,36 +43,40 @@ You come across a campsite. In the center of the clearing, you see a place for a
 
 You can see in the passages above that I've created a variable called `fire`. This variable will be the **name of a passage** containing a description of the fire. In future passages, I'll have the computer modify the variable to point to different passages, thereby replacing the embedded passage at different points in the story. Before I move any further, I'll create two different passages with descriptions of the bonfire: `Roaring` and `Dying`. Here's `Roaring` as an example:
 
+:::passage{title="Roaring"}
 ```
 The fire is roaring, licking the stones placed around the logs. You can feel the heat tickling your face and hands, even from across the clearing.
 ```
+:::
 
 `Dying` contains a similar description of a fire that is going out. I've also made a `Search for Food` passage, which looks like this:
 
+:::passage{title="Search for Food"}
 ```
 fire: 'Dying'
 --
 
 You spend some time picking through the underbrush. You find a raspberry briar, and collect some berries to eat by the fire.
 
-> [[Return to the Fire -> Bonfire]]
+> [[Return to the Fire->Bonfire]]
 ```
+:::
 
 The `Search for Food` passage *modifies* the variable called `fire`, changing its value to `Dying`. Now, when the reader returns to the fire, the `Bonfire` passage will host the passage called `Dying` rather than the passage called `Roaring`. This will emphasize the time the reader has "spent" collecting berries nearby. Here's the story map with all of the links in place:
 
-![Story map](TODO:)
+![The Twine editor, showing the passages described above](/bonfire-map.png)
 
-There are lots of other creative ways to control embedded passages with variables--feel free to experiment!
+Try out the story for yourself by clicking [here](/examples/bonfire). There are lots of other creative ways to control embedded passages with variables--feel free to experiment!
 
 ## Embedding & Variable Links
 
 If you've read the *[Embedding Passages](/locations/embedding-passages)* tutorial, you can start combining these concepts to create powerful systems that work together. For example, consider the story based on Edgar Allen Poe's *The Raven* from the embedding tutorial:
 
-![Story screenshot](TODO:)
+![A Twine story editor with three passages: Stanza1 is connected to Stanza2, and both stanzas are connected to a passage called Raven via dotted lines](/the-raven-map.png)
 
 In this story, I've embedded the passage named `Raven` into all of the `Stanza` passages. Each `Stanza` passage has a link to the next part of the poem, allowing the reader to progress through the poem step-by-step. Here's the `Stanza1` passage as an example:
 
-:::passage{title="Stanza1" src="TODO:"}
+:::passage{title="Stanza1" src="/new-raven-stanza1.png"}
 ```
 Then, methought, the air grew denser, perfumed from an unseen censer
 Swung by Seraphim whose foot-falls tinkled on the tufted floor.
@@ -105,7 +109,7 @@ Quaff, oh quaff this kind nepenthe and forget this lost Lenore!”
 ```
 :::
 
-You can see above that I've inserted the value of the `next` variable into the link, just like I did in the *Goldilocks* example in the *[Linking with Variables](/locations/linking-with-variables)* tutorial. Now, I can move the link into the `Raven` passage (remember: *all* passages have access to the variables):
+You can see above that I've inserted the value of the `next` variable into the link, just like I did in the *Goldilocks* example in the *[Linking with Variables](/locations/linking-with-variables)* tutorial. Now, I can move *remove* the link from `Stanza1` and add it to the `Raven` passage (remember: *all* passages have access to the variables):
 
 :::passage{title="Raven"}
 ```
@@ -117,7 +121,7 @@ Quoth the Raven "Nevermore".
 
 Because the `Raven` passage is responsible for the link, I can add all sorts of fancy features to make the embedded material more dramatic:
 
-:::passage{title="Raven (Fancy)" src="TODO:"}
+:::passage{title="Raven (Fancy)" src="/new-raven-map.png"}
 ```
 Quoth the Raven...
 
@@ -126,6 +130,6 @@ Quoth the Raven...
 ```
 :::
 
-You can try out the new version of *The Raven* by clicking [here](TODO:). If you'd like to download it and play around with it in the Twine editor, click [here](TODO:). There are lots of other creative ways to use variables and links--don't be afraid to experiment!
+You can try out the new version of *The Raven* by clicking [here](/examples/the-raven-new). If you'd like to download it and play around with it in the Twine editor, click [here](https://github.com/CodeVA-Curriculum/twine-trail-guide/examples/the-raven-new). There are lots of other creative ways to use variables and links--don't be afraid to experiment!
 
 ---

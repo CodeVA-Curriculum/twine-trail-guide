@@ -12,7 +12,7 @@ description: This tutorial shows you how to combine passages by embedding, which
 
 An **embedded passage** is a passage that you insert into another passage (I call it the "host passage", but Chapbook doesn't have an official name for it). When you view the host passage, the computer also displays the embedded passage along with it. Setting up an embedded passage is pretty easy, but understanding how and why the embed works might be a little tricky. Here's a story with two passages, one called `Stanza1` and one called `Raven`.
 
-![Story screenshot](TODO:)
+![A screenshot of the Twine story editor showing two disconnected passages: Stanza1, and Raven](/raven-start.png)
 
 :::passage{title="Stanza1"}
 ```
@@ -46,13 +46,13 @@ Quaff, oh quaff this kind nepenthe and forget this lost Lenore!”
 
 Now, when I test the story, the text from the `Raven` passage appears at the bottom of the `Stanza1` passage!
 
-![The output](TODO:)
+![The output of the passage above](/raven-embed.png)
 
 You might be asking yourself why use embedded passages at all--it's a sort of complicated feature, and in many cases it might make more sense to just write out the embedded part in the host passage in the first place. In some cases, avoiding unnecessary complexity is a good idea! However, the main benefit of embedding isn't to just host passages inside another one; it's to *re-use* passages across your story.
 
 For example, I can add a `Stanza2` passage with the following text:
 
-:::passage{title="Stanza2" src="TODO:"}
+:::passage{title="Stanza2" src="/raven-embed2.png"}
 ```
 “Prophet!” said I, “thing of evil!—prophet still, if bird or devil!—
 Whether Tempter sent, or whether tempest tossed thee here ashore,
@@ -66,7 +66,7 @@ Is there—is there balm in Gilead?—tell me—tell me, I implore!”
 
 Since each stanza in [the poem](https://www.poetryfoundation.org/poems/48860/the-raven) ends with the same text, I can re-use the `Raven` passage in each of my main `Stanza` passages. Now, whenever I make a change to `Raven`, that change will take effect in all of the host passages! Here's what the new story looks like:
 
-![GIF, two passage & raven](TODO:)
+![A Twine story editor with three passages: Stanza1 is connected to Stanza2, and both stanzas are connected to a passage called Raven via dotted lines](/the-raven-map.png)
 
 Even though I've embedded `Raven` twice, I only need one copy of it! This technique is very similar to using ["reveal" links with passages](/locations/reveal-text); if you understand that, you definitely can use this!
 

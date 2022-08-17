@@ -7,6 +7,7 @@ import remarkParse from 'remark-parse'
 import remarkDirective from 'remark-directive'
 import remarkDirectiveRehype from 'remark-directive-rehype'
 import remarkFrontmatter from 'remark-frontmatter'
+import remarkGfm from 'remark-gfm'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -21,7 +22,7 @@ const config = {
 		  location: './src/lib/components/Standalone.svelte',
 		  trail: './src/lib/components/Trail.svelte'
 		},
-		remarkPlugins: [remarkParse, remarkFrontmatter, remarkDirective, remarkDirectiveRehype]
+		remarkPlugins: [remarkParse, remarkFrontmatter, remarkGfm, remarkDirective, remarkDirectiveRehype]
 	  }),
 	  preprocess(),
 	],

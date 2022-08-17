@@ -17,7 +17,7 @@ As you get more experienced with Twine, you might notice that your story structu
 * **Clusters:** Most passages lead to two or more passages, and sometimes the passages create loops (think of a level in a videogame, where you can visit rooms more than one time)
 * **Cluster Chains:** Similar to cluster, but the story is made up of *several* clusters rather than just one. Each cluster is connected to one other cluster linearly
 
-::foursquare{src1={TODO:} src2={TODO:} src3={TODO:} src4={TODO:}}
+![Divided into four quadrants, diagrams showing the four story formats described above](TODO:)
 
 This tutorial covers how to create *cluster chains* where the reader has to visit a particular passage before the story makes the next cluster available to them. This technique involves using variables in conjunction with links in a clever way.
 

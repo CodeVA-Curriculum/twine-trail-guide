@@ -7,6 +7,8 @@ import trailmap from './TrailMap.svelte';
 import location from './MapLocation.svelte';
 import timeline from './TrailTimeline.svelte';
 import Link from './Link.svelte'
+import Passage from './Passage.svelte'
+import Columns from './Columns.svelte'
 
 const img = Image;
 const pre = Pre;
@@ -14,5 +16,7 @@ const p = Paragraph;
 // const blockquote = Aside;
 const documentation = Doc;
 const a = Link;
+const passage = Passage;
+const foursquare = Columns
 
-export { img, pre, p, aside, location, trailmap, timeline, a };
+export { img, pre, p, aside, location, trailmap, timeline, a, passage, foursquare };

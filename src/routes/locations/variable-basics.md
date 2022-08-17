@@ -39,8 +39,7 @@ You can see that the text in the "vars" section does not appear in the passage--
 
 To show the reader the value of a variable, you can include it in your passage like so:
 
-<!-- TODO: migrate from rath-python or one of the other ones -->
-:::code-and-example{src="TODO:"}
+:::passage{src="TODO:"}
 ```
 a_cool_message: "Hello!"
 --
@@ -53,14 +52,17 @@ There are a couple of things to notice about this example. First, the `"`s aroun
 
 You can create and use as many variables as you like in your passages. You can even use one variable multiple times!
 
-:::code-and-example{src="TODO:"}
+:::passage{src="TODO:"}
 ```
 affirmation: "Nice."
 creature: "woodchuck"
 material: "wood"
 --
 
-How much {material} could a {creature} chuck if a {creature} could chuck {material}?
+How much {material}
+could a {creature} chuck 
+if a {creature} could
+chuck {material}?
 ```
 :::
 
@@ -70,7 +72,7 @@ There are two types of basic variables available to you when you use the Chapboo
 
 Number variables represent quantities or numerical values. When you create a number variable, you don't need to use `"` like you would with strings. Here's an example:
 
-:::code-and-example{src="TODO:"}
+:::passage{src="TODO:"}
 ```
 age: 25
 --

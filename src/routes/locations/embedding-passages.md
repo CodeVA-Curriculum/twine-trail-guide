@@ -52,6 +52,7 @@ You might be asking yourself why use embedded passages at all--it's a sort of co
 
 For example, I can add a `Stanza2` passage with the following text:
 
+:::passage{title="Stanza2" src="TODO:"}
 ```
 “Prophet!” said I, “thing of evil!—prophet still, if bird or devil!—
 Whether Tempter sent, or whether tempest tossed thee here ashore,
@@ -61,10 +62,11 @@ Is there—is there balm in Gilead?—tell me—tell me, I implore!”
 
 {embed passage: 'Raven'}
 ```
+:::
 
 Since each stanza in [the poem](https://www.poetryfoundation.org/poems/48860/the-raven) ends with the same text, I can re-use the `Raven` passage in each of my main `Stanza` passages. Now, whenever I make a change to `Raven`, that change will take effect in all of the host passages! Here's what the new story looks like:
 
-![Screenshot, two passage & raven](TODO:)
+![GIF, two passage & raven](TODO:)
 
 Even though I've embedded `Raven` twice, I only need one copy of it! This technique is very similar to using ["reveal" links with passages](/locations/reveal-text); if you understand that, you definitely can use this!
 

@@ -15,8 +15,8 @@ Before working on this trail, you should be at least a little bit familiar with 
 
 ::timeline
 
-::location{path="variable-basics"} <!-- ✅ -->
-::location{path="modify-variables"} <!-- ✅ -->
-::location{path="linking-with-variables"} <!-- ✅ -->
-::location{path="arithmetic-expressions"} <!-- ✅ -->
-::location{path="story-with-counting-landmark"} <!-- ✅ -->
+::location{path="variable-basics"}
+::location{path="modify-variables"} 
+::location{path="linking-with-variables"} 
+::location{path="arithmetic-expressions"} 
+::location{path="story-with-counting-landmark"}

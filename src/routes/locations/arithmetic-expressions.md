@@ -14,7 +14,7 @@ Number-type variables have a special capability that `string` variables do not: 
 
 You may have already learned how to create and modify variables in the *[Variable Basics](/locations/variable-basics)* tutorial; but if not, here's an example of a passage where I have the computer create a variable called `age` and store the number `15` in it:
 
-:::code-and-example{src="TODO:"}
+:::passage{src="TODO:"}
 ```
 age: 15
 --
@@ -25,7 +25,7 @@ I am {age} years old.
 
 If I wanted to, I could write out a mathematical expression instead of the number `15`, like so:
 
-:::code-and-example{src="TODO:"}
+:::passage{src="TODO:"}
 ```
 age: 10 + (2+3)
 --
@@ -45,13 +45,13 @@ The computer will "do" the math, and store the result in the variable! It doesn'
 | `**` | Raise the first operand to the power of the second | `2 ** 2` |
 | `%` | Find the remainder after dividing the two operands | `12 % 8` |
 
-> *Note: The result of each example equation above is `4`*
+*Note: The result of each example equation above is `4`*
 
 ## Expression with Variables as Operands
 
 Just writing mathematical expressions instead of numbers in your code isn't all that useful. However, because the computer will interpret `number`-type variables as number data, we can use variables as *operands* in mathematical expressions. This opens up a couple of interesting possibilties that are worth highlighting here. For example:
 
-:::code-and-example{src="TODO:"}
+:::passage{src="TODO:"}
 ```
 age: 15
 age_in_days: age * 365.25
@@ -115,11 +115,7 @@ This is Passage 2. You have visited {count} passage(s).
 
 The story map now looks like this, with a "loop" between `Passage1` and `Passage2`:
 
-<!-- TODO: -->
-:::columns
-![Story Map](TODO:)
-![Gif of output](TODO:)
-:::
+![Composite image of the story map described above a GIF of its output](TODO:)
 
 When I play through this, you can see that the `count` variable keeps going up, even as I return to `Passage1`! There are lots of creative ways to use variables (making a counter is interesting, but perhaps not all that useful); try stuff out!
 

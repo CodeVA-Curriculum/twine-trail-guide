@@ -20,7 +20,7 @@ Check out the story below: the `Bonfire` passage describes a bonfire. Using vari
 
 ![Story map](TODO:)
 
-First, I'll creat the `Intro` passage that sets up the variables, and then the `Bonfire` passage with the bonfire and a link to another passage:
+First, I'll create the `Intro` passage that sets up the variables, and then the `Bonfire` passage with the bonfire and a link to another passage:
 
 :::passage{title="Intro"}
 ```
@@ -31,7 +31,7 @@ fire: 'Roaring'
 ```
 :::
 
-:::passage={title="Bonfire"}
+:::passage{title="Bonfire"}
 ```
 You come across a campsite. In the center of the clearing, you see a place for a fire.
 
@@ -72,7 +72,7 @@ If you've read the *[Embedding Passages](/locations/embedding-passages)* tutoria
 
 In this story, I've embedded the passage named `Raven` into all of the `Stanza` passages. Each `Stanza` passage has a link to the next part of the poem, allowing the reader to progress through the poem step-by-step. Here's the `Stanza1` passage as an example:
 
-:::passage{title="Stanza1"}
+:::passage{title="Stanza1" src="TODO:"}
 ```
 Then, methought, the air grew denser, perfumed from an unseen censer
 Swung by Seraphim whose foot-falls tinkled on the tufted floor.
@@ -88,6 +88,7 @@ Quaff, oh quaff this kind nepenthe and forget this lost Lenore!”
 
 Because the structure of the story is so consistent, I can change things up slightly and simplify the passages, moving the link into the `Raven` passage. The first step is to add a variable to each `Stanza` passage, whose value is the name of the passage the `Stanza` should link to:
 
+:::passage{title="Stanza1"}
 ```
 next: 'Stanza2'
 --
@@ -102,6 +103,7 @@ Quaff, oh quaff this kind nepenthe and forget this lost Lenore!”
 
 > [[Next -> {next}]]
 ```
+:::
 
 You can see above that I've inserted the value of the `next` variable into the link, just like I did in the *Goldilocks* example in the *[Linking with Variables](/locations/linking-with-variables)* tutorial. Now, I can move the link into the `Raven` passage (remember: *all* passages have access to the variables):
 
@@ -115,12 +117,14 @@ Quoth the Raven "Nevermore".
 
 Because the `Raven` passage is responsible for the link, I can add all sorts of fancy features to make the embedded material more dramatic:
 
+:::passage{title="Raven (Fancy)" src="TODO:"}
 ```
 Quoth the Raven...
 
 [after 15 seconds]
 [["Nevermore". -> {next}]]
 ```
+:::
 
 You can try out the new version of *The Raven* by clicking [here](TODO:). If you'd like to download it and play around with it in the Twine editor, click [here](TODO:). There are lots of other creative ways to use variables and links--don't be afraid to experiment!
 

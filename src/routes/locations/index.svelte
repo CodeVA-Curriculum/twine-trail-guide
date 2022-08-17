@@ -54,7 +54,7 @@
     let searchTerm ='';
 
     onMount(() => {
-        console.log(locations);
+        // console.log(locations);
         if(locations) {
             filteredList = locations;
         }

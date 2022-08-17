@@ -1,7 +1,7 @@
 <script context="module">
-    import { p, aside, trailmap, location, timeline, a } from './components.js';
+    import { p, aside, trailmap, location, timeline, a, passage, foursquare } from './components.js';
 
-    export { p, aside, trailmap, location, timeline, a };
+    export { p, aside, trailmap, location, timeline, a, passage, foursquare };
 </script>
 
 <script>

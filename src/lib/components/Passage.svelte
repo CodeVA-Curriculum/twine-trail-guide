@@ -1,0 +1,31 @@
+<script>
+    import Image from './Image.svelte'
+    export let title, src;
+    export let alt = "The output of the code above";
+</script>
+
+<article class='card my-5'>
+    {#if title}
+    <header class='card-header pl-5 pt-2 pb-0'>
+        <h4>{title}</h4>
+    </header>
+    {/if}
+    <div class='card-content'>
+        <div class='columns is-desktop'>
+            <div class='code column'>
+                <slot />
+            </div>
+            {#if src}
+            <div class='column'>
+                <Image src="{src}" alt="{alt}" />
+            </div>
+            {/if}
+        </div>
+    </div>
+</article>
+
+<style>
+    .code {
+        overflow-x: hidden;
+    }
+</style>

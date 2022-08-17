@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- <link rel="icon" href="/favicon.png" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<meta http-equiv="content-security-policy" content="">
+	<link href="/twine-trail-guide/_app/immutable/assets/+layout-cd1d0d9f.css" rel="stylesheet">
+	<link href="/twine-trail-guide/_app/immutable/assets/Standalone-fb8ba4ca.css" rel="stylesheet">
+	<link href="/twine-trail-guide/_app/immutable/assets/navigation-af927694.css" rel="stylesheet">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-c2765116.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-927503af.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-4f4c7fac.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/paths-6cd3a76e.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/preload-helper-e47c1953.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/singletons-e5e57fbd.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/_layout.svelte-da04ac60.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/_layout.svelte-6e5984a2.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Nav-91974b57.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/embedding-passages/_page.md-1e13a262.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone-1c8e52ed.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone.svelte_svelte_type_style_lang-2ca835dc.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/navigation-cea185d6.js">
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<nav class="navbar"><div class="navbar-brand logo"><a class="navbar-item" href="/twine-trail-guide/"><img alt="The CodeVA Logo" src="/twine-trail-guide/_app/immutable/assets/CodeVALogo-cdf06ed4.png" height="28">
+            <p class="mx-3 heading is-size-5">+</p>
+            <img alt="The Twine Logo" src="/twine-trail-guide/_app/immutable/assets/twine-b352c7c6.svg" height="28">
+            <h1 class="heading is-size-5 ml-5 mt-1 is-hidden-mobile">Twine Trail Guide</h1></a>
+        <button role="button" class="navbar-burger " aria-label="menu" aria-expanded="false" data-target="nav-menu"><span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span></button></div>
+    <div id="nav-menu" class="navbar-menu "><div class="navbar-end"><a class="navbar-item" href="/twine-trail-guide/">Home
+            </a>
+            <a class="navbar-item" href="/twine-trail-guide/about">About the Guide
+            </a>
+            <a class="navbar-item" href="https://padlet.com/jonstapleton/wvs5vb5ct1s5kqts">Region Map
+            </a>
+            <a class="navbar-item" href="/twine-trail-guide/trails">Trails
+            </a>
+            <a class="navbar-item" href="/twine-trail-guide/locations">Locations
+            </a></div></div></nav>
+<div class="container"><section class="wrapper svelte-16we498"><div class="columns"><div class="column mb-5"><h1 class="title">Embedding Passages</h1>
+                
+                <p class="block">This tutorial shows you how to combine passages by embedding, which allows you to insert the content of one passage into another one. Embedding is a great way of organizing passages, especially in stories with a lot of repetition.</p>
+                
+                </div>
+            </div>
+        <hr></section>
+    <section class="content post post-container svelte-16we498"><h2>Creating Embedded Passages</h2>
+<p>An <strong>embedded passage</strong> is a passage that you insert into another passage (I call it the “host passage”, but Chapbook doesn’t have an official name for it). When you view the host passage, the computer also displays the embedded passage along with it. Setting up an embedded passage is pretty easy, but understanding how and why the embed works might be a little tricky. Here’s a story with two passages, one called <code>Stanza1</code> and one called <code>Raven</code>.</p>
+<p>
+
+<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="A screenshot of the Twine story editor showing two disconnected passages: Stanza1, and Raven" src="/twine-trail-guide/images/raven-start.png" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<article class="card my-5"><header class="card-header pl-5 pt-2 pb-0"><h4>Stanza1</h4></header>
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-rhhsq4"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">Then, methought, the air grew denser, perfumed from an unseen censer
+Swung by Seraphim whose foot-falls tinkled on the tufted floor.
+“Wretch,” I cried, “thy God hath lent thee—by these angels he hath sent thee
+Respite—respite and nepenthe from thy memories of Lenore;
+Quaff, oh quaff this kind nepenthe and forget this lost Lenore!”</code><!-- HTML_TAG_END --></pre></div>
+            </div></div>
+</article>
+<article class="card my-5"><header class="card-header pl-5 pt-2 pb-0"><h4>Raven</h4></header>
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-rhhsq4"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">Quoth the Raven &quot;Nevermore.&quot;</code><!-- HTML_TAG_END --></pre></div>
+            </div></div>
+</article>
+<p>The way I’ve written these passages above, they are not connected—the story starts with <code>Stanza1</code>, and then ends without ever getting to <code>Raven</code>. In a normal situation, I might link these passages together so the reader can “visit” the <code>Raven</code> passage after reading <code>Stanza1</code>. However, in this case, I want to <strong>embed</strong> <code>Raven</code> <em>inside</em> <code>Stanza1</code>—the <code>Raven</code> passage will be the embedded passage, and <code>Stanza1</code> will be the host passage. To embed the <code>Raven</code> passage inside <code>Stanza1</code>, I need to add some code to <code>Stanza1</code>:</p>
+<article class="card my-5"><header class="card-header pl-5 pt-2 pb-0"><h4>Stanza1</h4></header>
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-rhhsq4"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">Then, methought, the air grew denser, perfumed from an unseen censer
+Swung by Seraphim whose foot-falls tinkled on the tufted floor.
+“Wretch,” I cried, “thy God hath lent thee—by these angels he hath sent thee
+Respite—respite and nepenthe from thy memories of Lenore;
+Quaff, oh quaff this kind nepenthe and forget this lost Lenore!”
+
+&#123;embed passage: &#39;Raven&#39;&#125;</code><!-- HTML_TAG_END --></pre></div>
+            </div></div>
+</article>
+<p>Now, when I test the story, the text from the <code>Raven</code> passage appears at the bottom of the <code>Stanza1</code> passage!</p>
+<p>
+
+<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the passage above" src="/twine-trail-guide/images/raven-embed.png" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<p>You might be asking yourself why use embedded passages at all—it’s a sort of complicated feature, and in many cases it might make more sense to just write out the embedded part in the host passage in the first place. In some cases, avoiding unnecessary complexity is a good idea! However, the main benefit of embedding isn’t to just host passages inside another one; it’s to <em>re-use</em> passages across your story.</p>
+<p>For example, I can add a <code>Stanza2</code> passage with the following text:</p>
+<article class="card my-5"><header class="card-header pl-5 pt-2 pb-0"><h4>Stanza2</h4></header>
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-rhhsq4"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">“Prophet!” said I, “thing of evil!—prophet still, if bird or devil!—
+Whether Tempter sent, or whether tempest tossed thee here ashore,
+Desolate yet all undaunted, on this desert land enchanted—
+On this home by Horror haunted—tell me truly, I implore—
+Is there—is there balm in Gilead?—tell me—tell me, I implore!”
+
+&#123;embed passage: &#39;Raven&#39;&#125;</code><!-- HTML_TAG_END --></pre></div>
+            <div class="column has-text-centered m-0">
+
+<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/raven-embed2.png" class="svelte-r75zci"></figure></div>
+
+
+</div></div></div>
+</article>
+<p>Since each stanza in <a href="" rel="nofollow">the poem</a> ends with the same text, I can re-use the <code>Raven</code> passage in each of my main <code>Stanza</code> passages. Now, whenever I make a change to <code>Raven</code>, that change will take effect in all of the host passages! Here’s what the new story looks like:</p>
+<p>
+
+<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="A Twine story editor with three passages: Stanza1 is connected to Stanza2, and both stanzas are connected to a passage called Raven via dotted lines" src="/twine-trail-guide/images/the-raven-map.png" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<p>Even though I’ve embedded <code>Raven</code> twice, I only need one copy of it! This technique is very similar to using <a href="" rel="">“reveal” links with passages</a>; if you understand that, you definitely can use this!</p>
+<h2>When To Embed?</h2>
+<p>This is a kind of silly example—the <code>Raven</code> passage is really short. However, you <em>could</em> decide to add a bunch of other interesting features to the <code>Raven</code> passage, and then those features would apply to all of the host passages that it is embedded within. For example, you could <a href="" rel="">add audio of a raven’s caw</a>, put the embedded passage into a <a href="" rel="">“reveal” link</a>, or have the <code>Raven</code> passage <a href="" rel="">fade in after a dramatic pause using a delay</a>.</p>
+<p>Generally, it’s a good idea to think about using embedded passages in the following situations:</p>
+<ol><li>Your story has a lot of repetition, where one passage appears in several places</li>
+<li>Some of your passages are very complex</li>
+<li>Some of your passages are very long, and it makes sense to break them up into pieces</li></ol>
+<hr></section>
+</div>
+
+
+		<script type="module" data-sveltekit-hydrate="5791xa">
+		import { set_public_env, start } from "/twine-trail-guide/_app/immutable/start-c2765116.js";
+
+		set_public_env({});
+
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="5791xa"]').parentNode,
+			paths: {"base":"/twine-trail-guide","assets":"/twine-trail-guide"},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				node_ids: [0, 2, 13],
+				params: {},
+				routeId: "locations/embedding-passages"
+			}
+		});
+	</script>
+	</div>
+	</body>
+</html>

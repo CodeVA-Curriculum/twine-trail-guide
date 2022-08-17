@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- <link rel="icon" href="/favicon.png" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<meta http-equiv="content-security-policy" content="">
+	<link href="/twine-trail-guide/_app/immutable/assets/+layout-cd1d0d9f.css" rel="stylesheet">
+	<link href="/twine-trail-guide/_app/immutable/assets/Standalone-fb8ba4ca.css" rel="stylesheet">
+	<link href="/twine-trail-guide/_app/immutable/assets/navigation-af927694.css" rel="stylesheet">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-c2765116.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-927503af.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-4f4c7fac.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/paths-6cd3a76e.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/preload-helper-e47c1953.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/singletons-e5e57fbd.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/_layout.svelte-da04ac60.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/_layout.svelte-6e5984a2.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Nav-91974b57.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/reveal-text/_page.md-22d65f05.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone-1c8e52ed.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone.svelte_svelte_type_style_lang-2ca835dc.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/navigation-cea185d6.js">
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<nav class="navbar"><div class="navbar-brand logo"><a class="navbar-item" href="/twine-trail-guide/"><img alt="The CodeVA Logo" src="/twine-trail-guide/_app/immutable/assets/CodeVALogo-cdf06ed4.png" height="28">
+            <p class="mx-3 heading is-size-5">+</p>
+            <img alt="The Twine Logo" src="/twine-trail-guide/_app/immutable/assets/twine-b352c7c6.svg" height="28">
+            <h1 class="heading is-size-5 ml-5 mt-1 is-hidden-mobile">Twine Trail Guide</h1></a>
+        <button role="button" class="navbar-burger " aria-label="menu" aria-expanded="false" data-target="nav-menu"><span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span></button></div>
+    <div id="nav-menu" class="navbar-menu "><div class="navbar-end"><a class="navbar-item" href="/twine-trail-guide/">Home
+            </a>
+            <a class="navbar-item" href="/twine-trail-guide/about">About the Guide
+            </a>
+            <a class="navbar-item" href="https://padlet.com/jonstapleton/wvs5vb5ct1s5kqts">Region Map
+            </a>
+            <a class="navbar-item" href="/twine-trail-guide/trails">Trails
+            </a>
+            <a class="navbar-item" href="/twine-trail-guide/locations">Locations
+            </a></div></div></nav>
+<div class="container"><section class="wrapper svelte-16we498"><div class="columns"><div class="column mb-5"><h1 class="title">Reveal Text</h1>
+                
+                <p class="block">Sometimes, you might want to use a link to reveal a new section of a passage instead of transitioning to a new part of your story. "Reveal" links do exactly that--they allow you to use a link to reveal more information to the reader in the current passage. This tutorial covers how to create "reveal" links and section in your Twine story.</p>
+                
+                </div>
+            </div>
+        <hr></section>
+    <section class="content post post-container svelte-16we498"><h2>Simple Reveal Links</h2>
+<p><strong>Reveal links</strong> are special kinds of links that you can use to show additional text in your story rather than moving to a whole new passage when the reader clicks the link. Try it out! Add the following line to a Twine passage:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">Ranier was walking home one night when they saw &#123;reveal link: &#39;something strange&#39;, text: &#39;an abandoned truck in the middle of the road, sitting alone under a streetlamp&#39;&#125;.</code><!-- HTML_TAG_END --></pre>
+<p>
+
+<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="A screen recording showing a Chapbook reveal link in action" src="/twine-trail-guide/images/twine-reveal-link.gif" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<p>Test out the passage—what do you notice about how the link works?</p>
+<h2>Why Use a Reveal Link?</h2>
+<p>“Reveal” links have the effect of making the reader feel like they are investigating something new. It also allows you to keep information on the screen for the reader to reference while still moving the story forward.</p>
+<p>You can see “reveal” links in action in <a href="" rel="nofollow">“Stone Harbor”</a> by Liza Daly.</p>
+<h2>Reveal a Passage</h2>
+<p>The simple “reveal” link above is good for small sections of text, but not as good for longer reveals. If you want to reveal a larger section of text, you might want to use the “reveal” link to show a <em>passage</em> instead of just some text.</p>
+<p>First, create a new passage. I’ve called mine <code>Abandoned Truck</code>, but you can name yours whatever you like. Here’s what my <code>Abandoned Truck</code> passage says:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">an abandoned truck in the middle of the road, sitting alone under a streetlamp.
+
+The truck was red and rusty. Ranier approached slowly, scanning the surroundings trying to see if the owner of the truck was in trouble or needed help.</code><!-- HTML_TAG_END --></pre>
+<p>Now, return to your first passage and change the link “reveal” link so it looks like this:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">Ranier was walking home one night when they saw &#123;reveal link: &#39;something strange&#39;, passage: &#39;Abandoned Truck&#39;&#125;.</code><!-- HTML_TAG_END --></pre>
+<p>At this point you’ll have two passages that aren’t connected, like this:</p>
+<p>
+
+<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The Twine story editor showing two disconnected passages, one called Introduction and one called Abandoned Truck" src="/twine-trail-guide/images/two-passages-reveal.png" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<p>You’ll notice that I’ve changed <code>text</code> to say <code>passage</code> instead, and replaced the sentence describing the truck with the name of the new passage (<code>Abandoned Truck</code>). Test out your story!</p>
+<p>
+
+<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="A gif showing a Twine story with a link that reveals a new passage" src="/twine-trail-guide/images/twine-reveal-passage.gif" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<p>The “reveal” link, once clicked, inserts the text from the <code>Abandoned Truck</code> passage into the first passage. This is a little different than a normal link, because the text from the two passages appear <em>together</em> rather than separately.</p>
+<hr></section>
+</div>
+
+
+		<script type="module" data-sveltekit-hydrate="l74xkf">
+		import { set_public_env, start } from "/twine-trail-guide/_app/immutable/start-c2765116.js";
+
+		set_public_env({});
+
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="l74xkf"]').parentNode,
+			paths: {"base":"/twine-trail-guide","assets":"/twine-trail-guide"},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				node_ids: [0, 2, 23],
+				params: {},
+				routeId: "locations/reveal-text"
+			}
+		});
+	</script>
+	</div>
+	</body>
+</html>

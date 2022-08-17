@@ -16,7 +16,7 @@
     "src": "src/lib/assets/twine.svg"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-16ff9077.js",
+    "file": "_app/immutable/start-c2765116.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -327,7 +327,7 @@
     ]
   },
   "src/routes/locations/linking-with-variables/+page.md": {
-    "file": "_app/immutable/components/pages/locations/linking-with-variables/_page.md-7c88ac6b.js",
+    "file": "_app/immutable/components/pages/locations/linking-with-variables/_page.md-1e850f99.js",
     "src": "src/routes/locations/linking-with-variables/+page.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -519,13 +519,13 @@
     ]
   },
   "src/routes/trails/conversation-web/+page.md": {
-    "file": "_app/immutable/components/pages/trails/conversation-web/_page.md-b1a3919f.js",
+    "file": "_app/immutable/components/pages/trails/conversation-web/_page.md-6b728f06.js",
     "src": "src/routes/trails/conversation-web/+page.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-927503af.js",
-      "_Trail-c63f783d.js",
+      "_Trail-2831e2f2.js",
       "_Standalone.svelte_svelte_type_style_lang-2ca835dc.js",
       "_Aside-6ec7d84a.js",
       "_preload-helper-e47c1953.js",
@@ -537,13 +537,13 @@
     ]
   },
   "src/routes/trails/counting-web/+page.md": {
-    "file": "_app/immutable/components/pages/trails/counting-web/_page.md-9941ea2b.js",
+    "file": "_app/immutable/components/pages/trails/counting-web/_page.md-10eb3280.js",
     "src": "src/routes/trails/counting-web/+page.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-927503af.js",
-      "_Trail-c63f783d.js",
+      "_Trail-2831e2f2.js",
       "_Standalone.svelte_svelte_type_style_lang-2ca835dc.js",
       "_Aside-6ec7d84a.js",
       "_preload-helper-e47c1953.js",
@@ -555,13 +555,13 @@
     ]
   },
   "src/routes/trails/oral-history/+page.md": {
-    "file": "_app/immutable/components/pages/trails/oral-history/_page.md-2e8afca1.js",
+    "file": "_app/immutable/components/pages/trails/oral-history/_page.md-d8a88d4f.js",
     "src": "src/routes/trails/oral-history/+page.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-927503af.js",
-      "_Trail-c63f783d.js",
+      "_Trail-2831e2f2.js",
       "_Standalone.svelte_svelte_type_style_lang-2ca835dc.js",
       "_preload-helper-e47c1953.js",
       "_navigation-cea185d6.js",
@@ -572,13 +572,13 @@
     ]
   },
   "src/routes/trails/primary-documents/+page.md": {
-    "file": "_app/immutable/components/pages/trails/primary-documents/_page.md-8cbf0416.js",
+    "file": "_app/immutable/components/pages/trails/primary-documents/_page.md-eac4606b.js",
     "src": "src/routes/trails/primary-documents/+page.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-927503af.js",
-      "_Trail-c63f783d.js",
+      "_Trail-2831e2f2.js",
       "_Standalone.svelte_svelte_type_style_lang-2ca835dc.js",
       "_Aside-6ec7d84a.js",
       "_preload-helper-e47c1953.js",
@@ -590,13 +590,13 @@
     ]
   },
   "src/routes/trails/your-first-story/+page.md": {
-    "file": "_app/immutable/components/pages/trails/your-first-story/_page.md-25b72950.js",
+    "file": "_app/immutable/components/pages/trails/your-first-story/_page.md-cded3ea1.js",
     "src": "src/routes/trails/your-first-story/+page.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-927503af.js",
-      "_Trail-c63f783d.js",
+      "_Trail-2831e2f2.js",
       "_Standalone.svelte_svelte_type_style_lang-2ca835dc.js",
       "_preload-helper-e47c1953.js",
       "_navigation-cea185d6.js",
@@ -607,21 +607,21 @@
     ]
   },
   "src/routes/locations/+page.js": {
-    "file": "_app/immutable/modules/pages/locations/_page.js-ed4814f1.js",
+    "file": "_app/immutable/modules/pages/locations/_page.js-23ddcdae.js",
     "src": "src/routes/locations/+page.js",
     "isEntry": true,
     "imports": [
       "_preload-helper-e47c1953.js",
-      "__page-5d0e8c6c.js"
+      "__page-d5418613.js"
     ]
   },
   "src/routes/trails/+page.js": {
-    "file": "_app/immutable/modules/pages/trails/_page.js-b25e1e05.js",
+    "file": "_app/immutable/modules/pages/trails/_page.js-9ab735b0.js",
     "src": "src/routes/trails/+page.js",
     "isEntry": true,
     "imports": [
       "_preload-helper-e47c1953.js",
-      "__page-2ed4ce91.js"
+      "__page-8decab62.js"
     ]
   },
   "_singletons-e5e57fbd.js": {
@@ -669,8 +669,8 @@
       "_app/immutable/assets/navigation-af927694.css"
     ]
   },
-  "__page-5d0e8c6c.js": {
-    "file": "_app/immutable/chunks/_page-5d0e8c6c.js",
+  "__page-d5418613.js": {
+    "file": "_app/immutable/chunks/_page-d5418613.js",
     "imports": [
       "_preload-helper-e47c1953.js"
     ],
@@ -730,8 +730,8 @@
       "_Standalone.svelte_svelte_type_style_lang-2ca835dc.js"
     ]
   },
-  "__page-2ed4ce91.js": {
-    "file": "_app/immutable/chunks/_page-2ed4ce91.js",
+  "__page-8decab62.js": {
+    "file": "_app/immutable/chunks/_page-8decab62.js",
     "imports": [
       "_preload-helper-e47c1953.js"
     ],
@@ -743,8 +743,8 @@
       "src/routes/trails/your-first-story/+page.md"
     ]
   },
-  "_Trail-c63f783d.js": {
-    "file": "_app/immutable/chunks/Trail-c63f783d.js",
+  "_Trail-2831e2f2.js": {
+    "file": "_app/immutable/chunks/Trail-2831e2f2.js",
     "imports": [
       "_index-927503af.js",
       "_preload-helper-e47c1953.js",
@@ -844,11 +844,11 @@
     ]
   },
   ".svelte-kit/generated/nodes/6.js": {
-    "file": "_app/immutable/chunks/6-a3151e08.js",
+    "file": "_app/immutable/chunks/6-b6667d92.js",
     "src": ".svelte-kit/generated/nodes/6.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-5d0e8c6c.js",
+      "__page-d5418613.js",
       "src/routes/locations/+page.svelte",
       "_preload-helper-e47c1953.js",
       "_index-927503af.js",
@@ -1037,7 +1037,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/18.js": {
-    "file": "_app/immutable/chunks/18-c16d3f14.js",
+    "file": "_app/immutable/chunks/18-02eb5dd6.js",
     "src": ".svelte-kit/generated/nodes/18.js",
     "isDynamicEntry": true,
     "imports": [
@@ -1215,11 +1215,11 @@
     ]
   },
   ".svelte-kit/generated/nodes/29.js": {
-    "file": "_app/immutable/chunks/29-aac8b693.js",
+    "file": "_app/immutable/chunks/29-ed583d23.js",
     "src": ".svelte-kit/generated/nodes/29.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-2ed4ce91.js",
+      "__page-8decab62.js",
       "src/routes/trails/+page.svelte",
       "_preload-helper-e47c1953.js",
       "_index-927503af.js",
@@ -1229,13 +1229,13 @@
     ]
   },
   ".svelte-kit/generated/nodes/30.js": {
-    "file": "_app/immutable/chunks/30-49a4ea8c.js",
+    "file": "_app/immutable/chunks/30-5e6aadcc.js",
     "src": ".svelte-kit/generated/nodes/30.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/trails/conversation-web/+page.md",
       "_index-927503af.js",
-      "_Trail-c63f783d.js",
+      "_Trail-2831e2f2.js",
       "_preload-helper-e47c1953.js",
       "_navigation-cea185d6.js",
       "_singletons-e5e57fbd.js",
@@ -1247,13 +1247,13 @@
     ]
   },
   ".svelte-kit/generated/nodes/31.js": {
-    "file": "_app/immutable/chunks/31-0b3a985d.js",
+    "file": "_app/immutable/chunks/31-7b37a2fc.js",
     "src": ".svelte-kit/generated/nodes/31.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/trails/counting-web/+page.md",
       "_index-927503af.js",
-      "_Trail-c63f783d.js",
+      "_Trail-2831e2f2.js",
       "_preload-helper-e47c1953.js",
       "_navigation-cea185d6.js",
       "_singletons-e5e57fbd.js",
@@ -1265,13 +1265,13 @@
     ]
   },
   ".svelte-kit/generated/nodes/32.js": {
-    "file": "_app/immutable/chunks/32-d3520c27.js",
+    "file": "_app/immutable/chunks/32-06b41cae.js",
     "src": ".svelte-kit/generated/nodes/32.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/trails/oral-history/+page.md",
       "_index-927503af.js",
-      "_Trail-c63f783d.js",
+      "_Trail-2831e2f2.js",
       "_preload-helper-e47c1953.js",
       "_navigation-cea185d6.js",
       "_singletons-e5e57fbd.js",
@@ -1282,13 +1282,13 @@
     ]
   },
   ".svelte-kit/generated/nodes/33.js": {
-    "file": "_app/immutable/chunks/33-a267e129.js",
+    "file": "_app/immutable/chunks/33-8b77bbe1.js",
     "src": ".svelte-kit/generated/nodes/33.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/trails/primary-documents/+page.md",
       "_index-927503af.js",
-      "_Trail-c63f783d.js",
+      "_Trail-2831e2f2.js",
       "_preload-helper-e47c1953.js",
       "_navigation-cea185d6.js",
       "_singletons-e5e57fbd.js",
@@ -1300,13 +1300,13 @@
     ]
   },
   ".svelte-kit/generated/nodes/34.js": {
-    "file": "_app/immutable/chunks/34-a644de1f.js",
+    "file": "_app/immutable/chunks/34-9f63dd18.js",
     "src": ".svelte-kit/generated/nodes/34.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/trails/your-first-story/+page.md",
       "_index-927503af.js",
-      "_Trail-c63f783d.js",
+      "_Trail-2831e2f2.js",
       "_preload-helper-e47c1953.js",
       "_navigation-cea185d6.js",
       "_singletons-e5e57fbd.js",
@@ -1320,17 +1320,9 @@
     "file": "_app/immutable/assets/+page-009a848b.css",
     "src": "src/routes/+page.css"
   },
-  "navigation.css": {
-    "file": "_app/immutable/assets/navigation-af927694.css",
-    "src": "navigation.css"
-  },
   "src/routes/locations/+page.css": {
     "file": "_app/immutable/assets/+page-3d2f8416.css",
     "src": "src/routes/locations/+page.css"
-  },
-  "Standalone.css": {
-    "file": "_app/immutable/assets/Standalone-fb8ba4ca.css",
-    "src": "Standalone.css"
   },
   "src/routes/trails/+page.css": {
     "file": "_app/immutable/assets/+page-d4cf607b.css",
@@ -1339,6 +1331,14 @@
   "Trail.css": {
     "file": "_app/immutable/assets/Trail-1bdd3f19.css",
     "src": "Trail.css"
+  },
+  "Standalone.css": {
+    "file": "_app/immutable/assets/Standalone-fb8ba4ca.css",
+    "src": "Standalone.css"
+  },
+  "navigation.css": {
+    "file": "_app/immutable/assets/navigation-af927694.css",
+    "src": "navigation.css"
   },
   "src/routes/+layout.css": {
     "file": "_app/immutable/assets/+layout-cd1d0d9f.css",

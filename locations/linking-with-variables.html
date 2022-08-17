@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- <link rel="icon" href="/favicon.png" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<meta http-equiv="content-security-policy" content="">
+	<link href="/twine-trail-guide/_app/immutable/assets/+layout-cd1d0d9f.css" rel="stylesheet">
+	<link href="/twine-trail-guide/_app/immutable/assets/Standalone-fb8ba4ca.css" rel="stylesheet">
+	<link href="/twine-trail-guide/_app/immutable/assets/navigation-af927694.css" rel="stylesheet">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-c2765116.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-927503af.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-4f4c7fac.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/paths-6cd3a76e.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/preload-helper-e47c1953.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/singletons-e5e57fbd.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/_layout.svelte-da04ac60.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/_layout.svelte-6e5984a2.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Nav-91974b57.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/linking-with-variables/_page.md-1e850f99.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone-1c8e52ed.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone.svelte_svelte_type_style_lang-2ca835dc.js">
+	<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/navigation-cea185d6.js">
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<nav class="navbar"><div class="navbar-brand logo"><a class="navbar-item" href="/twine-trail-guide/"><img alt="The CodeVA Logo" src="/twine-trail-guide/_app/immutable/assets/CodeVALogo-cdf06ed4.png" height="28">
+            <p class="mx-3 heading is-size-5">+</p>
+            <img alt="The Twine Logo" src="/twine-trail-guide/_app/immutable/assets/twine-b352c7c6.svg" height="28">
+            <h1 class="heading is-size-5 ml-5 mt-1 is-hidden-mobile">Twine Trail Guide</h1></a>
+        <button role="button" class="navbar-burger " aria-label="menu" aria-expanded="false" data-target="nav-menu"><span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span></button></div>
+    <div id="nav-menu" class="navbar-menu "><div class="navbar-end"><a class="navbar-item" href="/twine-trail-guide/">Home
+            </a>
+            <a class="navbar-item" href="/twine-trail-guide/about">About the Guide
+            </a>
+            <a class="navbar-item" href="https://padlet.com/jonstapleton/wvs5vb5ct1s5kqts">Region Map
+            </a>
+            <a class="navbar-item" href="/twine-trail-guide/trails">Trails
+            </a>
+            <a class="navbar-item" href="/twine-trail-guide/locations">Locations
+            </a></div></div></nav>
+<div class="container"><section class="wrapper svelte-16we498"><div class="columns"><div class="column mb-5"><h1 class="title">Linking With Variables</h1>
+                
+                <p class="block">In this tutorial, learn how to use variables within links to make your passages more flexible, able to lead the reader to many different locations rather than one pre-determined one. Links allow you to create passage "clusters" that readers can explore; once they reach a certain passage, you can use a variable to "unlock" a link to a new cluster, moving the story forward to a new place or scenario.</p>
+                
+                </div>
+            </div>
+        <hr></section>
+    <section class="content post post-container svelte-16we498"><h2>Story Clusters</h2>
+<p>As you get more experienced with Twine, you might notice that your story structures follow some common patterns. Here are some examples:</p>
+<ul><li><strong>Lines:</strong> Each passage has one link that leads the reader to the next scene (think of a typical, non-interactive narrative)</li>
+<li><strong>Branches:</strong> Most passages lead to two or more passages, creating a “tree” leading to one of many possible endings for the story (think of a “choose your own adventure” book)</li>
+<li><strong>Clusters:</strong> Most passages lead to two or more passages, and sometimes the passages create loops (think of a level in a videogame, where you can visit rooms more than one time)</li>
+<li><strong>Cluster Chains:</strong> Similar to cluster, but the story is made up of <em>several</em> clusters rather than just one. Each cluster is connected to one other cluster linearly</li></ul>
+
+<p>This tutorial covers how to create <em>cluster chains</em> where the reader has to visit a particular passage before the story makes the next cluster available to them. This technique involves using variables in conjunction with links in a clever way.</p>
+<h2>Setting the Stage</h2>
+<p>First, it’s helpful to imagine a “cluster chain” story to add the variable links to. Here’s an example of a cluster-chain version of the story <em>Goldilocks &amp; the Three Bears</em>. Check out the story flowchart below, or <a href="" rel="">play it here</a>:</p>
+<p>
+
+<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The story map of the Goldilocks story linked above" src="/twine-trail-guide/images/goldilocks-map.png" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<p>The story has three clusters—the kitchen, the living room, and the bedroom (one for each location Goldilocks investigates while she is in the bears’ home). The goal of the project is to make it so the reader has Golidlocks choose the “just right” option in each location before the plot moves forward—she has to try the small bowl of porridge in the kitchen, then sit in the small chair in the living room, and then sleep in the smallest bed in the bedroom. The story shouldn’t let the reader move on to the next cluster until they complete the task for the preceding cluster.</p>
+<p>The first passage, which introduces the story and sets up all the variables, looks like this:</p>
+<article class="card my-5"><header class="card-header pl-5 pt-2 pb-0"><h4>Intro</h4></header>
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-rhhsq4"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">kitchen: &#39;Porridge&#39;
+kitchen_choice: &#39;Look for food&#39;
+living_room: &quot;Chairs&quot;
+living_room_choice: &quot;Investigate&quot;
+bedroom: &quot;Beds&quot;
+bedroom_choice: &quot;Investigate&quot;
+--
+
+One day, as Goldilocks was walking through the woods, she came upon a quaint cabin nestled in a copse of trees. After investigating the manicured yard and the verdant garden, she turned the doorknob and found it was unlocked!
+
+&gt; [[Go Inside-&gt;Kitchen]]</code><!-- HTML_TAG_END --></pre></div>
+            </div></div>
+</article>
+<p>I’ve created six variables in this passage:</p>
+<ul><li><code>kitchen</code>: A variable to store the name of the passage to send the reader to from the kitchen</li>
+<li><code>kitchen_choice</code>: The text that the reader should click to follow the <code>kitchen</code> link</li>
+<li><code>living_room</code>: A variable to store the name of the passage to send the reader to from the living room</li>
+<li><code>living_room_choice</code>: The text that the reader should click to follow the <code>living_room</code> link</li>
+<li><code>bedroom</code>: A variable to store the name of the passage to send the reader to from the bedroom</li>
+<li><code>bedroom_choice</code>: The text that the reader should click to follow the <code>bedroom</code> link</li></ul>
+<p>They are all <code>string</code> variables, meaning they store text (as opposed to a number).</p>
+<h2>Using Variables as Links</h2>
+<p>Each location in the story has a “home page” that the reader will return to after they make choices for Goldilocks. Here’s the home page for the kitchen:</p>
+<article class="card my-5"><header class="card-header pl-5 pt-2 pb-0"><h4>Kitchen</h4></header>
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-rhhsq4"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">Goldilocks looks around the kitchen.
+
+&gt; [[&#123;kitchen_choice&#125;-&gt;&#123;kitchen&#125;]]</code><!-- HTML_TAG_END --></pre></div>
+            </div></div>
+</article>
+<p>The passage above asks the computer to insert the value of the <code>kitchen_choice</code> and <code>kitchen</code> variables into the page, but in this particular situation the effect is sort of interesting—I have inserted the variables into a link! Here’s what the link would look like if I had written it out without the variable:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">&gt; [[Look for food-&gt;Porridge]]</code><!-- HTML_TAG_END --></pre>
+<p>The values of the variables makes it so the link in <code>Kitchen</code> leads to the passage called <code>Porridge</code>! Here it is:</p>
+<article class="card my-5"><header class="card-header pl-5 pt-2 pb-0"><h4>Porridge</h4></header>
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-rhhsq4"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">Goldilocks finds three bowls of porridge set out on the kitchen table: a big one, a medium one, and a small one.
+
+&gt; [[Try the big one-&gt;Too Hot]]
+&gt; [[Try the medium one-&gt;Too cold]]
+&gt; [[Try the small one-&gt;Just Right (Porridge)]]</code><!-- HTML_TAG_END --></pre></div>
+            </div></div>
+</article>
+<p>The reader needs to choose one of these three options. The passages called <code>Too Hot</code> and <code>Too Cold</code> lead back to the <code>Kitchen</code> passage, but the <code>Just Right (Porridge)</code> passage is special:</p>
+<article class="card my-5"><header class="card-header pl-5 pt-2 pb-0"><h4>Just Right (Porridge)</h4></header>
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-rhhsq4"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">kitchen: &quot;Living Room&quot;
+kitchen_choice: &quot;I wonder if there&#39;s a place to sit in the next room...&quot;
+--
+
+The porridge in the small bowl is just right! Goldilocks eats up all the porridge in the small bowl and sighs contentedly.
+
+&gt; [[I wonder what else they have around here-&gt;Kitchen]]</code><!-- HTML_TAG_END --></pre></div>
+            </div></div>
+</article>
+<p>In the <code>Just Right (Porridge)</code> passage, I’ve directed the computer to <em>modify</em> the value of the variables called <code>kitchen_choice</code> and <code>kitchen</code>. That way, when the user clicks the link to return to the <code>Kitchen</code> passage, the value of the variables have changed! Now, the link <code>&gt; [[{kitchen_choice}-&gt;{kitchen}]]</code> leads to a new passage!</p>
+<p>The rest of the story works just the same way; the “just right” option leads to a passage that modifies the link variable on the “home” page, unlocking the next passage and letting the reader move on to the next passage cluster. You can dig through the example Twine story to see how it works by downloading the story (<a href="" rel="">click here</a>) and uploading it to Twine on your computer. Try it out!</p>
+<hr></section>
+</div>
+
+
+		<script type="module" data-sveltekit-hydrate="zrzd1h">
+		import { set_public_env, start } from "/twine-trail-guide/_app/immutable/start-c2765116.js";
+
+		set_public_env({});
+
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="zrzd1h"]').parentNode,
+			paths: {"base":"/twine-trail-guide","assets":"/twine-trail-guide"},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				node_ids: [0, 2, 18],
+				params: {},
+				routeId: "locations/linking-with-variables"
+			}
+		});
+	</script>
+	</div>
+	</body>
+</html>

@@ -1,5 +1,5 @@
 <script context="module">
-  throw new Error("@migration task: Check code was safely removed (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292722)");
+//   throw new Error("@migration task: Check code was safely removed (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292722)");
 
   //   // export const prerender = true;
   //   // import {base} from '$app/paths'
@@ -45,14 +45,16 @@
 </script>
 
 <script>
-    throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+    // throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
 
     import TrailCard from '$lib/components/TrailCard.svelte';
     import Fa from 'svelte-fa';
     import {faChevronDown} from '@fortawesome/free-solid-svg-icons'
     import { onMount } from 'svelte';
     let trailList;
-    export let trails;
+    let trails;
+
+    export let data;
 
     let filteredList = [];
     let searchTerm ='';
@@ -60,6 +62,7 @@
     onMount(() => {
         // sort by "sparkle"
         // trails.sort(function (a,b) { return a.difficulty - b.difficulty})
+        trails = data.trails;
         if(trails) {
             filteredList = trails;
         }

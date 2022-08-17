@@ -1,5 +1,5 @@
 <script context="module">
-    throw new Error("@migration task: Check code was safely removed (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292722)");
+    // throw new Error("@migration task: Check code was safely removed (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292722)");
 
     // // import {base} from '$app/paths'
     // // export const prerender = true;
@@ -47,18 +47,20 @@
 </script>
 
 <script>
-    throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+    // throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
 
     import {onMount} from 'svelte'
     import LocationCard from "$lib/components/LocationCard.svelte";
     import {base} from '$app/paths'
-    export let locations
+    export let data;
+    let locations;
     
     let filteredList = [];
     let searchTerm ='';
 
     onMount(() => {
         // console.log(locations);
+        locations = data.locations
         if(locations) {
             filteredList = locations;
         }

@@ -71,7 +71,7 @@ There are two types of basic variables available to you when you use the Chapboo
 
 Number variables represent quantities or numerical values. When you create a number variable, you don't need to use `"` like you would with strings. Here's an example:
 
-:::passage{src="/var-basic.png"}
+:::passage{src="/var-simple.png"}
 ```
 age: 15
 --

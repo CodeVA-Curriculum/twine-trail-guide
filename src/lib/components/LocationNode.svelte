@@ -15,7 +15,7 @@
 
     onMount(async () => {
         if(slug) {
-            data = (await import(`../../routes/locations/${slug}.md`)).metadata;
+            data = (await import(`../../routes/locations/${slug}/+page.md`)).metadata;
         }
     })
 

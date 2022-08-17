@@ -3,13 +3,15 @@
     import Fa from 'svelte-fa'
     import {faHammer} from '@fortawesome/free-solid-svg-icons'
 
-    export let name, desc, path, type;
+    export let name, desc, type;
+    export let path = ''
     export let video; // = 'https://www.youtube.com/embed/AsURmcD_Z5g'
     let icon = '';
 
     import { goto } from '$app/navigation';
 
   function routeToPage() {
+    console.log(path)
     const replaceState = false;
     goto(`${base}/locations${path}`, { replaceState: false, noscroll: false }) 
   }

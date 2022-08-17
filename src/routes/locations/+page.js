@@ -13,7 +13,7 @@
 //     error: new Error(),
 //   };
 // }
-const locs = import.meta.glob('./*.md')
+const locs = import.meta.glob('./*/*.md')
 
 let body = []
 let slugs = []
@@ -23,14 +23,11 @@ for (const path in locs) {
     slugs.push(path)
     body.push(locs[path]().then(({metadata}) => metadata))
 }
-/**
-    * @type {import('@sveltejs/kit').PageLoad}
-    */
 async function load({ url, params, fetch }) {
     let locations = await Promise.all(body)
     for(let i=0; i<locations.length; i++) {
         if(locations[i]) {
-            let end = slugs[i].indexOf(".md");
+            let end = slugs[i].indexOf("/+page.md");
             locations[i].slug = slugs[i].substring(1, end);
         }
     }

@@ -12,11 +12,11 @@
     {/if}
     <div class='card-content'>
         <div class='columns is-tablet'>
-            <div class='code column'>
+            <div class='code column m-0'>
                 <slot />
             </div>
             {#if src}
-            <div class='column has-text-centered'>
+            <div class='column has-text-centered m-0'>
                 <Image src="{src}" alt="{alt}" />
             </div>
             {/if}

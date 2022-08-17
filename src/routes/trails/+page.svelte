@@ -52,7 +52,7 @@
     import {faChevronDown} from '@fortawesome/free-solid-svg-icons'
     import { onMount } from 'svelte';
     let trailList;
-    let trails;
+    let trails = [];
 
     export let data;
 
@@ -62,6 +62,7 @@
     onMount(() => {
         // sort by "sparkle"
         // trails.sort(function (a,b) { return a.difficulty - b.difficulty})
+        console.log(data.trails)
         trails = data.trails;
         if(trails) {
             filteredList = trails;

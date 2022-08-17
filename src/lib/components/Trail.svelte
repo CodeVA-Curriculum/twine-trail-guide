@@ -18,7 +18,7 @@
     // figure out where to put it in the array
     async function loadLocationContent(path, content) {
         const index = loadedPaths.indexOf(path);
-        const element = (await import(`../../routes/locations/${path}.md`));
+        const element = (await import(`../../routes/locations/${path}/+page.md`));
         content.splice(index, 0, element)
         return content;
     }

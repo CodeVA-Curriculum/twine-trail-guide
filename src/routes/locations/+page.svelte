@@ -53,7 +53,7 @@
     import LocationCard from "$lib/components/LocationCard.svelte";
     import {base} from '$app/paths'
     export let data;
-    let locations;
+    let locations = [];
     
     let filteredList = [];
     let searchTerm ='';

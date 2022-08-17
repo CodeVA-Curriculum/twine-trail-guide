@@ -13,7 +13,7 @@
   //       };
   //     }
 
-  const posts = import.meta.glob('./*.md')
+  const posts = import.meta.glob('./*/*.md')
 
   let body = []
   let paths = []
@@ -22,18 +22,16 @@
       paths.push(path);
       body.push(posts[path]().then(({metadata}) => metadata))
   }
-  /**
-      * @type {import('@sveltejs/kit').PageLoad}
-      */
+  console.log(body)
   export async function load({ url, params, fetch }) {
-      const trails = await Promise.all(body)
-      for(let i=0; i<trails.length; i++) {
-          if(trails[i]) {
-              let end = paths[i].indexOf(".md");
-              trails[i].slug = paths[i].substring(1, end);
-          }
-      }
-      return {
-    trails
-};
+        const trails = await Promise.all(body)
+        for(let i=0; i<trails.length; i++) {
+            if(trails[i]) {
+                let end = paths[i].indexOf("/+page.md");
+                trails[i].slug = paths[i].substring(1, end);
+            }
+        }
+        return {
+            trails
+        };
   }

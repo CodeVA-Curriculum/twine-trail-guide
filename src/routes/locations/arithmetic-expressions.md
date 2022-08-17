@@ -78,7 +78,7 @@ count: 0
 
 You have visited {count} passages.
 
-> [[Next passage -> Passage1]]
+> [[Next passage->Passage1]]
 ```
 :::
 

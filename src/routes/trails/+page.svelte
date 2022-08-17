@@ -1,48 +1,52 @@
 <script context="module">
-    // export const prerender = true;
-    // import {base} from '$app/paths'
-    //     export async function load({ fetch, page }) {
-    //         const { trail } = page.params;
-    //         const res = await fetch(`${base}/api/trails.json`);
-    //         if (res.ok) {
-    //             const obj = await res.json();
-    //             return { props: { trails: obj.posts } };
-    //         };
-    //       return {
-    //         status: res.status,
-    //         error: new Error(),
-    //       };
-    //     }
+  throw new Error("@migration task: Check code was safely removed (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292722)");
 
-    const posts = import.meta.glob('./*.md')
+  //   // export const prerender = true;
+  //   // import {base} from '$app/paths'
+  //   //     export async function load({ fetch, page }) {
+  //   //         const { trail } = page.params;
+  //   //         const res = await fetch(`${base}/api/trails.json`);
+  //   //         if (res.ok) {
+  //   //             const obj = await res.json();
+  //   //             return { props: { trails: obj.posts } };
+  //   //         };
+  //   //       return {
+  //   //         status: res.status,
+  //   //         error: new Error(),
+  //   //       };
+  //   //     }
 
-    let body = []
-    let paths = []
-  
-    for (const path in posts) {
-        paths.push(path);
-        body.push(posts[path]().then(({metadata}) => metadata))
-    }
-    /**
-        * @type {import('@sveltejs/kit').Load}
-        */
-    export async function load({ url, params, fetch }) {
-        const trails = await Promise.all(body)
-        for(let i=0; i<trails.length; i++) {
-            if(trails[i]) {
-                let end = paths[i].indexOf(".md");
-                trails[i].slug = paths[i].substring(1, end);
-            }
-        }
-        return {
-        props: {
-            trails
-        }
-        };
-    }
+  //   const posts = import.meta.glob('./*.md')
+
+  //   let body = []
+  //   let paths = []
+  // 
+  //   for (const path in posts) {
+  //       paths.push(path);
+  //       body.push(posts[path]().then(({metadata}) => metadata))
+  //   }
+  //   /**
+  //       * @type {import('@sveltejs/kit').Load}
+  //       */
+  //   export async function load({ url, params, fetch }) {
+  //       const trails = await Promise.all(body)
+  //       for(let i=0; i<trails.length; i++) {
+  //           if(trails[i]) {
+  //               let end = paths[i].indexOf(".md");
+  //               trails[i].slug = paths[i].substring(1, end);
+  //           }
+  //       }
+  //       return {
+  //       props: {
+  //           trails
+  //       }
+  //       };
+  //   }
 </script>
 
 <script>
+    throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+
     import TrailCard from '$lib/components/TrailCard.svelte';
     import Fa from 'svelte-fa';
     import {faChevronDown} from '@fortawesome/free-solid-svg-icons'

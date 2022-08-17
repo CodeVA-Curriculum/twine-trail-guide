@@ -91,7 +91,7 @@ count: count + 1
 
 This is Passage 1. You have visited {count} passage(s).
 
-> [[Next passage -> Passage2]]
+> [[Next passage->Passage2]]
 ```
 :::
 
@@ -113,7 +113,7 @@ count: count + 1
 
 This is Passage 2. You have visited {count} passage(s).
 
-> [[Next passage -> Passage1]]
+> [[Next passage->Passage1]]
 ```
 :::
 

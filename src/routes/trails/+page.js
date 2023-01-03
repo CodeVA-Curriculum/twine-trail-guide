@@ -22,7 +22,7 @@
       paths.push(path);
       body.push(posts[path]().then(({metadata}) => metadata))
   }
-  console.log(body)
+//   console.log(body)
   export async function load({ url, params, fetch }) {
         const trails = await Promise.all(body)
         for(let i=0; i<trails.length; i++) {
@@ -31,6 +31,20 @@
                 trails[i].slug = paths[i].substring(1, end);
             }
         }
+
+        // sort the trails into the correct order
+        trails.sort((a,b) => {
+            // we always want the "Your First Story" trail to be first in the list
+            if(a.title == "Your First Story") {
+                return -1
+            }
+            // otherwise, sort by difficulty
+            if(a.difficulty > b.difficulty) {
+                return 1
+            } else {
+                return -1
+            }
+        })
         return {
             trails
         };

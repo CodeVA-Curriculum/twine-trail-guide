@@ -48,7 +48,8 @@
 
 <script>
     // throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
-
+    import Fa from 'svelte-fa'
+    import { faFilter, faCaretDown } from '@fortawesome/free-solid-svg-icons'
     import {onMount} from 'svelte'
     import LocationCard from "$lib/components/LocationCard.svelte";
     import {base} from '$app/paths'
@@ -57,6 +58,7 @@
     
     let filteredList = [];
     let searchTerm ='';
+    let dropClass = '';
 
     onMount(() => {
         // console.log(locations);
@@ -80,6 +82,10 @@
         }
     }
 
+    let dropToggle = () => {
+        dropClass = dropClass == 'is-active' ? '' : 'is-active'
+    }
+
     $: filteredList = filter(searchTerm);
 </script>
 
@@ -89,9 +95,80 @@
         <p class='block'>This is a big list of all the locations in this guide. You can use this page to search for videos or tutorials that you think might be useful, or just browse around to find something interesting. You can also browse the Locations in this guide by exploring the <a href="https://padlet.com/jonstapleton/wvs5vb5ct1s5kqts">Region Map</a>.</p>
         <p class='block'>Each location includes a short video and a text explanation of a particular concept, storytelling strategy, or feature of Twine. You can also explore Locations by following <a href="{base}/trails">Trails</a>, which are collections of Locations organized around particular features or projects you can create with Twine. Check them out!</p>
         
-        <div class="field search">
-            <div class="control">
+        <!-- input field -->
+        <div class="field has-addons">
+            <div class="control is-expanded">
                 <input bind:value="{searchTerm}" class="input" type="text" placeholder="Search in Location titles...">
+            </div>
+            <div class="control">
+                <a class="button">
+                    <Fa icon={faFilter} />
+                </a>
+            </div>
+        </div>
+
+        <!-- filters card -->
+        <div class='card'>
+            <div class='card-content'>
+                <div class='content'>
+                    <div class='columns'>
+                        <div class='column'>
+                            <!-- tags dropdown -->
+                            <div class="dropdown {dropClass}">
+                                <div class="dropdown-trigger level">
+                                    <div class='level-item'>
+                                        <p class=label>Tags:</p>
+                                    </div>
+                                    <div class='level-item mx-3'>
+                                        <button on:click={dropToggle} class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                                            <span>Select tags...</span>
+                                            <span class="icon is-small">
+                                              <Fa icon={faCaretDown} aria-hidden='true' />
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                  <div class="dropdown-content">
+                                    <a href="#" class="dropdown-item">
+                                      Dropdown item
+                                    </a>
+                                    <a class="dropdown-item">
+                                      Other dropdown item
+                                    </a>
+                                    <a href="#" class="dropdown-item is-active">
+                                      Active dropdown item
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                      Other dropdown item
+                                    </a>
+                                    <hr class="dropdown-divider">
+                                    <a href="#" class="dropdown-item">
+                                      With a divider
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class='column'>
+                            <div class='field is-grouped mt-1'>
+                                <label class="label mx-5">Location Type:</label>
+                                <div class='control'>
+                                    <label class='checkbox'>
+                                        <input type='checkbox'>
+                                        Tutorial
+                                    </label>
+                                </div>
+                                <div class='control'>
+                                    <label class='checkbox'>
+                                        <input type='checkbox'>
+                                        Project
+                                    </label>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <hr>

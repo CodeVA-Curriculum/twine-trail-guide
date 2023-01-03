@@ -31,6 +31,7 @@ async function load({ url, params, fetch }) {
             locations[i].slug = slugs[i].substring(1, end);
         }
     }
+    // console.log(locations[0])
     return {
     locations
 };

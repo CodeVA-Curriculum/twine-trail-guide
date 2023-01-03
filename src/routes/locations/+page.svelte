@@ -48,7 +48,8 @@
 
 <script>
     // throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
-
+    import Fa from 'svelte-fa'
+    import {faHammer} from '@fortawesome/free-solid-svg-icons'
     import {onMount} from 'svelte'
     import LocationCard from "$lib/components/LocationCard.svelte";
     import {base} from '$app/paths'
@@ -58,6 +59,8 @@
     let filteredList = [];
     let searchTerm ='';
 
+    let types = ['tutorial', 'project']
+
     onMount(() => {
         // console.log(locations);
         locations = data.locations
@@ -66,21 +69,31 @@
         }
     })
 
-    let filter = (searchTerm) => {
+    let filter = (searchTerm, types) => {
+        
+
+        // generate filtered list
         let tempList = [];
         for(let i=0; i<locations.length;i++) {
-            if(locations[i].title.toLowerCase().includes(searchTerm.toLowerCase())) {
+            if(locations[i].title.toLowerCase().includes(searchTerm.toLowerCase()) || searchTerm.length <= 0) {
                 tempList.push(locations[i]);
             }
         }
-        if(searchTerm.length > 0) {
-            return tempList;
-        } else {
-            return locations;
-        }
+        tempList = categoryFilter(tempList, types)
+        return tempList
     }
 
-    $: filteredList = filter(searchTerm);
+    let categoryFilter = (arr, types) => {
+        let tempList = []
+        for(let i=0; i<arr.length; i++) {
+            if (types.includes(arr[i].type)) {
+                tempList.push(arr[i])
+            }
+        }
+        return tempList;
+    }
+
+    $: filteredList = filter(searchTerm, types);
 </script>
 
 <section class='section'>
@@ -89,17 +102,35 @@
         <p class='block'>This is a big list of all the locations in this guide. You can use this page to search for videos or tutorials that you think might be useful, or just browse around to find something interesting. You can also browse the Locations in this guide by exploring the <a href="https://padlet.com/jonstapleton/wvs5vb5ct1s5kqts">Region Map</a>.</p>
         <p class='block'>Each location includes a short video and a text explanation of a particular concept, storytelling strategy, or feature of Twine. You can also explore Locations by following <a href="{base}/trails">Trails</a>, which are collections of Locations organized around particular features or projects you can create with Twine. Check them out!</p>
         
-        <div class="field search">
-            <div class="control">
-                <input bind:value="{searchTerm}" class="input" type="text" placeholder="Search in Location titles...">
+        <div class='columns'>
+            <div class='column'>
+                <div class="field is-grouped">
+                    <div class="control is-expanded">
+                        <input bind:value="{searchTerm}" class="input" type="text" placeholder="Search in Location titles...">
+                    </div>
+                </div>
+            </div>
+            <div class='column is-narrow'>
+                <div class="field is-grouped mt-1">
+                    <label class='label mr-3'>Type:</label>
+                    <div class="control">
+                        <label class="checkbox">
+                            <input type="checkbox" bind:group={types} name="types" value={"tutorial"}>
+                            Tutorial
+                        </label>
+                    </div>
+                    <div class="control">
+                        <label class="checkbox">
+                            <input type="checkbox" bind:group={types} name="types" value={"project"}>
+                            Project
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
         <hr>
     </div>
     
-</section>
-
-<section class='section'>
     <div class='container'>
         <!-- TODO: display list of Trails for each Location in the card -->
         {#each filteredList as location}
@@ -113,3 +144,16 @@
         {/each}
     </div>
 </section>
+    
+<style>
+    .check {
+        width: 2rem;
+    }
+    .icon {
+      border-radius: 2rem;
+      margin-left: 0.5rem;
+      height: 1.5rem;
+      width: 1.5rem;
+      background-color: hsl(48, 100%, 67%);
+    }
+</style>

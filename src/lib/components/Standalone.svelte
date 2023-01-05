@@ -35,27 +35,28 @@
 <div class='container'>
     <section class='wrapper'>
         <div class='{ compact ? "" : "columns"}'>
-            <div class='{ compact ? "" : "column"} mb-5'>
+            <div class='{ compact ? "" : "column"}'>
                 <h1 bind:this={elem} class='title'>{#if position && type == "tutorial"}{p}. {/if}{title}</h1>
                 <!-- TODO: add tags for trails -->
                 <Callout>
-                    <p class='block'>{description}</p>
+                    <p>{description}</p>
                 </Callout>
                 {#if video}
-                <p class='block'>Watch the video to see someone demonstrate the basics, or read on to work through it on your own. This concept is a part of several projects <a href='{base}/trails'>Trails</a>; check them out!</p>
+                <p class='block small'>Watch the video to see someone demonstrate the basics, or read on to work through it on your own. This concept is a part of several projects <a href='{base}/trails'>Trails</a>; check them out!</p>
                 {/if}
                 <!-- <h2 class='heading'>Trails:</h2> -->
             </div>
             {#if video}
-            <div class='{ compact ? "" : "column"}'>
+            <div class='{ compact ? "" : "column"} my-3'>
                 <div class='video'>
                     <iframe src="{video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             {/if}
         </div>
-        <hr>
+        
     </section>
+    <hr>
     <section class='content post post-container'>
         <slot />
     </section>
@@ -75,14 +76,22 @@
         top: 0;
         width: 100%;
         border-radius: 12px;
+        margin-top: 1rem;
         /* min-width: 10rem; */
     }
     .wrapper {
         margin-top: 4rem;
+        margin-bottom: 3rem;
     }
     section {
         position: relative;
-        /* // background-color: pink; */
+        /* background-color: pink; */
+        margin-bottom: 4rem;
+    }
+    .small {
+        font-size: small;
+    }
+    hr {
         margin-bottom: 4rem;
     }
 

@@ -36,9 +36,6 @@ const config = {
 		  }),
 	  paths: {
 		base: '/twine-trail-guide', // uncomment this before deployment
-	  },
-	  prerender: {
-		default: true
 	  }
 	}
   };

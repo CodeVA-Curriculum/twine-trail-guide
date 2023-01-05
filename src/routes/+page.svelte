@@ -34,7 +34,7 @@
 				<img alt="The CodeVA logo" src={CodeVA} style="height: 3.5rem;" />
 			</div>
 			<div class='column'>
-				<p class='is-tiny'>The “Reaching Across the Hallway” project is created by <a href="https://codevirginia.org">CodeVA</a> and is funded by the National Science Foundation under Grant Award #2010256. Learn more about licenses for this site's content and source code <a href='{base}/about'>here</a>.</p>
+				<p class='is-tiny'>The "CS for Social Studies" project is created by <a href="https://codevirginia.org">CodeVA</a> and is funded by the National Science Foundation under Grant Award #2010256. Learn more about licenses for this site's content and source code <a href='{base}/about'>here</a>.</p>
 			</div>
 		</div>
 	</div>

@@ -11,9 +11,7 @@ layout: location
 
 ## About the Project
 
-For this project, you'll interview someone about events from their past personal experiences. Then, you'll embed pieces of those recordings in a Twine story, allowing the reader to explore and investigate different parts of the interview subject's experiences. Each passage will feature a short snippet of audio, followed by a series of choices for the reader that lead to new audio snippets. The reader might choose what questions to ask next, or play the role of the "interviewer" as they read through your Twine story. [Storycorps](https://storycorps.org/stories/) has a couple of great examples of recorded conversations
-
----
+For this project, you'll interview someone about events from their past personal experiences. Then, you'll embed pieces of those recordings in a Twine story, allowing the reader to explore and investigate different parts of the interview subject's experiences. Each passage will feature a short snippet of audio, followed by a series of choices for the reader that lead to new audio snippets. The reader might choose what questions to ask next, or play the role of the "interviewer" as they read through your Twine story. [Storycorps](https://storycorps.org/stories/) has a couple of great examples of recorded conversations.
 
 ## How To
 

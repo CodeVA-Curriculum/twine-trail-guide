@@ -7,6 +7,7 @@
     import {onMount} from 'svelte'
     import {base} from '$app/paths'
     import {locations, selected} from '$lib/util/stores.js'
+    import Callout from './Callout.svelte'
 
     export let title, type, description, author, layout, short, path
     export let compact, scrollable = false;
@@ -37,9 +38,11 @@
             <div class='{ compact ? "" : "column"} mb-5'>
                 <h1 bind:this={elem} class='title'>{#if position && type == "tutorial"}{p}. {/if}{title}</h1>
                 <!-- TODO: add tags for trails -->
-                <p class='block'>{description}</p>
+                <Callout>
+                    <p class='block'>{description}</p>
+                </Callout>
                 {#if video}
-                <p class='block'>Watch the video to see someone demonstrate the basics, or read on to work through it on your own. This concept is a part of several project <a href='{base}/trails'>Trails</a>; check them out!</p>
+                <p class='block'>Watch the video to see someone demonstrate the basics, or read on to work through it on your own. This concept is a part of several projects <a href='{base}/trails'>Trails</a>; check them out!</p>
                 {/if}
                 <!-- <h2 class='heading'>Trails:</h2> -->
             </div>

@@ -8,6 +8,8 @@ type: tutorial
 layout: location
 ---
 
+## Types of Embedded Audio
+
 While the process of creating and hosting recordings can be challenging, adding them to your Twine story isn't actually all that hard. The important thing to know is that the **Chapbook** Twine format supports two kinds of audio: *ambient* sounds and *sound effects*.
 
 *Ambient* sounds are long audio clips that fade in and provide background ambiance to a passage. *Sound effects* are short sounds that play once. You can experiment with both options and see which one works best; if you choose *ambient*, you might want to add a couple of seconds of lead-in to any audio clips that include important information (like someone's voice).

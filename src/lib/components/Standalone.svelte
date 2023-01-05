@@ -38,7 +38,7 @@
             <div class='{ compact ? "" : "column"}'>
                 <h1 bind:this={elem} class='title'>{#if position && type == "tutorial"}{p}. {/if}{title}</h1>
                 <!-- TODO: add tags for trails -->
-                <Callout>
+                <Callout color="yellow">
                     <p>{description}</p>
                 </Callout>
                 {#if video}

@@ -1,4 +1,8 @@
-<div class='callout'>
+<script>
+    export let color = "yellow";
+</script>
+
+<div class='callout {color}'>
     <div class='border-container'>
         <!-- <h2 class='title'>${this.title}</h2> -->
         <slot />
@@ -10,10 +14,10 @@
     .callout {
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
-          background-color: $yellow;
           padding: 1rem;
           padding-left: 0;
           padding-right: 0;
+          box-shadow: 4px 4px 6px lightgray;
       }
       .title {
           text-align: center;
@@ -30,5 +34,16 @@
           border-right: double;
           border-image: url('$lib/assets/CalloutBorder.png') 100 50% 100 50% repeat;
           border-width: 9px;
+      }
+
+      // themes
+      .yellow {
+        background-color: $yellow;
+      }
+      .white {
+        background-color: $white;
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
       }
 </style>

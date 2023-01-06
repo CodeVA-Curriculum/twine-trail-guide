@@ -1,6 +1,6 @@
 <script context="module">
-    import { img, a, passage, aside } from './components.js';
-    export { img, a, passage, aside };
+    import { img, a, passage, aside, collapse } from './components.js';
+    export { img, a, passage, aside, collapse };
 </script>
 
 <script>

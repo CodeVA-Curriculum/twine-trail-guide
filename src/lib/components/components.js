@@ -10,6 +10,8 @@ import Link from './Link.svelte'
 import Passage from './Passage.svelte'
 import Columns from './Columns.svelte'
 import Download from './Download.svelte'
+import Collapse from './Collapse.svelte'
+// TODO: add collapse
 
 const img = Image;
 const pre = Pre;
@@ -20,5 +22,6 @@ const a = Link;
 const passage = Passage;
 const foursquare = Columns
 const download = Download
+const collapse = Collapse;
 
-export { img, pre, p, aside, location, trailmap, timeline, a, passage, foursquare, download };
+export { img, pre, p, aside, location, trailmap, timeline, a, passage, foursquare, download, collapse };

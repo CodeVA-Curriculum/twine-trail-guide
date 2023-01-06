@@ -12,6 +12,7 @@ $container-max-width: 1024px;
 @import './src/lib/styles/variables.scss';
 
 $primary: $blue;
+// $code: $dark-green;
 
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all";

@@ -1,9 +1,176 @@
 ---
 title: If & Unless Blocks
 author: Jon Stapleton
-short: Lorem
-description: Lorem ipsum dolor sit amet
+short: Learn the basics of "if" and "unless" blocks in the Chapbook format of Twine.
+description: The Chapbook format of Twine includes special commands you can use in your passages called "if" and "unless" blocks. These blocks allow you to "hide" or "reveal" lines of text based on the value of a variable. This powerful "selection" feature (where the computer, as it interprets your passage, "selects" lines of code to skip or include in the passage) is useful for creating all sorts of things in your Twine stories--puzzles, secrets, alternative paths and endings, and a lot more!
 # video: https://www.youtube.com/embed/VpGFJA5Fnyc
 type: tutorial
 layout: location
 ---
+
+## Simple "If" Blocks
+
+An "if" block directs the computer to *hide* or *reveal* a given line of text based on the value of a variable. To create an "if" block, copy the example below into a new passage:
+
+:::aside
+If you aren't sure what a "variable" is and the syntax in the passage examples above is confusing, you might want to check out the *[Variable Basics](/locations/variable-basics)* tutorial, which explains how to create and modify variables.
+:::
+
+:::passage{title="If Example" src="TODO:"}
+```
+exampleVar: false
+--
+
+Here's a passage...
+
+[if exampleVar]
+...and here's a hidden message
+```
+:::
+
+Test it out! Your results should match the image above--the last two lines don't appear in the passage! Here's how the computer interprets the passage above, step by step:
+
+1. Set the variable `exampleVar` to a value of `false`
+2. Display the text `Here's a passage...`
+3. An "if" block! First, check the value of the variable `exampleVar`. Then...
+    a. If it has a value of `true`, *display* the next line
+    b. If it has a value of `false`, *skip* the next line
+4. End of the passage--nothing else to do!
+
+In the example above, the variable called `exampleVar` has a value of `false`, causing the computer to *skip* the line after the "if" block. However, if you go back into the passage and modify it like so:
+
+:::passage{title="If Example" src="TODO:"}
+```
+exampleVar: true
+--
+
+Here's a passage...
+
+[if exampleVar]
+...and here's a hidden message
+```
+:::
+
+...now the hidden message is revealed! The only difference between the first example and the new example is the value of the `exampleVar` variable--I've set it to `true` this time instead of `false`. That's an "if" block!
+
+## "Unless" Blocks
+
+An "unless" block is sort of like the opposite of an "if" block--instead of directing the computer to *skip* the subsequent line when the variable is `false` and *display* the line when the variable is `true`, it does the reverse:
+
+* If the variable is `false`, *display* the following line
+* If the variable is `true`, *skip* the following line
+
+Here's an example:
+
+:::passage{title="Unless Example" src="TODO:"}
+```
+var: false
+--
+
+Here's another passage...
+
+[unless var]
+...and here's the secret message.
+```
+:::
+
+> **Practice:** What would you change about the example above to make the computer *skip* the line after the "unless" block instead of displaying it? Once you've made your guess, click the "Reveal Solution" button below to see a working example:
+
+:::collapse{title="Reveal Solution"}
+:::passage{title="Unless Example" src="TODO:"}
+```
+var: true
+--
+
+Here's another passage...
+
+[unless var]
+...and here's the secret message.
+```
+:::
+
+---
+
+## What's The Point?
+
+You might be asking yourself:
+
+> "Why would I use "if" or "unless" blocks? It seems needlessly fussy; if I want to omit text from a passage, I just won't type it!"
+
+This is absolutely the case, but remember--you can have the computer *modify the value of variables* as the reader visits passages in your story. The real power of conditional blocks like `[if ]` and `[unless ]` becomes more clear when your story *modifies* the variables, and directs the reader to revisit the passage. Here's an example with three passages--one that *sets* the initial value of a variable, one that *uses* the variable in an "if" block, and one that *modifies* the variable, unlocking a new option in the second passage!
+
+![A GIF demonstrating the output of the program below, which sets up a Twine story where the reader must find a key that unlocks a door](TODO:)
+
+:::passage{title="The Locked Door" src="TODO: graph editor view" tabs}
+```intro
+key: false
+--
+
+# The Locked Door
+
+A story demonstrating "if" blocks
+
+> [[Continue->door]]
+```
+
+```door
+You see a large, wooden door on heavy hinges with a big, iron padlock holding it shut.
+
+> [[Search the foyer->search]]
+
+[if key]
+> [[Try the key in the padlock->unlock]]
+```
+
+```search
+key: true
+--
+
+You comb the room, and as you step across the think, dusty carpet you feel something hard under your shoe. You pull back the carpet, and see a heavy wrought-iron key sitting on wood floor below.
+
+> [[Go check the door->door]]
+```
+
+```unlock
+The door swings slowly open, creaking on its rusty hinges...
+```
+:::
+
+## Longer "If" & "Unless" Blocks
+
+One thing to note about "if" and "unless" blocks is that you are **Limited to one line** after the `[if var]` command. If you add another line after the "if" block, the computer will not skip it--it will display it regardless of the state of the `[if ]` that precedes it:
+
+:::passage{title="If Example" src="TODO:"}
+```
+toReveal: false
+--
+A passage.
+
+[if toReveal]
+This is hidden...
+...but I want this to be hidden, too!
+```
+:::
+
+If you want to hide or reveal a larger amount of text, use an [embedded passage](/locations/embedding-passages):
+
+:::passage{title="If Block w/ Embedded Passage" src="TODO:" tabs}
+```main
+toReveal: false
+--
+A passage.
+
+[if toReveal]
+{embed passage: 'embedded'}
+```
+
+```embedded
+This is hidden...
+...and now this is hidden, too! 
+
+I can even include links:
+
+> [[A link]]
+> [[Another link]]
+```
+:::

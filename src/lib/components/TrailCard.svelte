@@ -27,7 +27,7 @@
   }
 </script>
 
-<article class='card my-5 trail'>
+<article on:click={routeToPage} class='card my-5 trail'>
     <div class='card-content'>
       <div class="media">
         <!-- TODO: integration images, either fallback icons or screenshots of the map -->
@@ -62,5 +62,8 @@
   .trail:hover {
     background-color: whitesmoke;
     cursor: pointer;
+  }
+  .trail:hover h2 {
+    text-decoration: underline;
   }
 </style>

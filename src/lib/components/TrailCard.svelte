@@ -9,8 +9,7 @@
     import { goto } from '$app/navigation';
 
   function routeToPage() {
-    const replaceState = false;
-    goto(base + "/trails" + path, { replaceState: false, noscroll: false }) 
+    goto(base + "/trails" + path, { replaceState: true, noScroll: false }) 
   }
 
   function getDifficulty() {
@@ -28,7 +27,7 @@
   }
 </script>
 
-<article on:click={routeToPage} class='card my-5 trail'>
+<article class='card my-5 trail'>
     <div class='card-content'>
       <div class="media">
         <!-- TODO: integration images, either fallback icons or screenshots of the map -->

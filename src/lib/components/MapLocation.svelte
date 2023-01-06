@@ -1,6 +1,6 @@
 <script>
     import { onDestroy, onMount } from 'svelte';
-    import { session } from '$app/stores';
+    // import { session } from '$app/stores';
     import { locationData, locations, selected } from '$lib/util/stores.js';
     import Standalone from '$lib/components/Standalone.svelte';
 import LocationNode from './LocationNode.svelte';
@@ -11,8 +11,10 @@ import { fade, fly } from 'svelte/transition';
     let locationContent;
     let p = 0;
     let visible = false;
+    let unsubLocations = () => { console.log("Default unsub") };
 
     function updateStore(locs, newLocation) {
+        // add self to $locations
         // console.log("called updateStore on " + newLocation)
         if(!locs.includes(newLocation)) {
             // p += locs.length
@@ -28,22 +30,29 @@ import { fade, fly } from 'svelte/transition';
 
     onMount(async () => {
         if(path) {
-            locations.update(locs => updateStore(locs, path));
             locationContent = (await import(`../../routes/locations/${path}/+page.md`));
             let meta = locationContent.metadata
             meta.path = path
+
+            console.log(`Sending ${path} to $locations`)
+            locations.update(locs => updateStore(locs, path));
             // locationData.update(obj => obj = [...obj, meta])
             // console.log("Added", meta, "to the store")
             // console.log("Added", locationContent);
-            locations.subscribe(locs => {
+
+            // update position in timeline
+            unsubLocations = locations.subscribe(locs => {
                 // console.log(locs, path);
-                for(let i=0;i<locs.length;i++) {
-                    if(locs[i] == path) {
-                        p = i + 1
-                        break
-                    }
-                }
+                p = locs.indexOf(path) + 1;
+                // for(let i=0;i<locs.length;i++) {
+                //     if(locs[i] == path) {
+                //         p = i + 1
+                //         break
+                //     }
+                // }
             })
+
+            // make the location page visible if the path matches the `selected` value in $util/store.js
             selected.subscribe(value => {
                 visible = value == path;
             })
@@ -52,6 +61,18 @@ import { fade, fly } from 'svelte/transition';
         // return () => {
         //     locations.set([]);
         // }
+    })
+
+    // remove self from $locations
+    onDestroy(() => {
+        // if(path) {
+        //     // find self in $locations & remove
+        //     let i = $locations.indexOf(path)
+        //     let newLocs = $locations.splice(i, 1)
+        //     locations.set(newLocs)
+        // }
+        
+        // unsubLocations();
     })
 </script>
 

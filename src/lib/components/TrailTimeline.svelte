@@ -4,9 +4,12 @@
     import { onMount } from 'svelte';
     import {locations, selected} from '$lib/util/stores.js'
     export let mobile = "false"
-    // onMount(() => {
-    //     selected.set($locations[0])
-    // })
+
+    onMount(() => {
+        return () => {
+            console.log("Unmounting timeline...")
+        }
+    })
 
 </script>
 

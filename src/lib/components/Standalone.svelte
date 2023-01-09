@@ -8,6 +8,8 @@
     import {base} from '$app/paths'
     import {locations, selected} from '$lib/util/stores.js'
     import Callout from './Callout.svelte'
+    import Fa from 'svelte-fa'
+    import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 
     export let title, type, description, author, layout, short, path
     export let compact, scrollable = false;
@@ -29,6 +31,13 @@
             elem.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
         
+    }
+
+    // Select next trail in the timeline
+    function next() {
+        // console.log($locations[p])
+        scrollToMe();
+        selected.set($locations[p]);
     }
 
 </script>
@@ -60,6 +69,16 @@
     <section class='content post post-container'>
         <slot />
     </section>
+    {#if p}
+    <div class='to-next has-text-right'>
+        <button on:click={next} class='button primary'>
+            <span>Next Trail</span>
+            <span class='icon'>
+                <Fa icon={faArrowRight} />
+            </span>
+        </button>
+    </div>
+    {/if}
 </div>
 
 <style>

@@ -6,6 +6,7 @@
 import LocationNode from './LocationNode.svelte';
 import { fade, fly } from 'svelte/transition';
     export let path;
+    export let optional = false;
     
     let index;
     let locationContent;

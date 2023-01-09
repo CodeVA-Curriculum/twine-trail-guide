@@ -67,9 +67,9 @@ chuck {material}?
 
 ## Types of Variables
 
-There are two types of basic variables available to you when you use the Chapbook format: **strings** and **numbers**. Strings are messages, *strings* of text characters. All of the examples above use strings for the variable values. All strings *must* have `"`s on either side of them to tell the computer where the string begins and ends. When the computer reads a string value, it discards the quotation marks and just uses the letters and such between them.
+There are three types of basic variables available to you when you use the Chapbook format: **strings**, **numbers**, and **Boolean**. Strings are messages, *strings* of text characters. All of the examples above use strings for the variable values. All strings *must* have `"`s on either side of them to tell the computer where the string begins and ends. When the computer reads a string value, it discards the quotation marks and just uses the letters and such between them.
 
-Number variables represent quantities or numerical values. When you create a number variable, you don't need to use `"` like you would with strings. Here's an example:
+**Number variables** represent quantities or numerical values. When you create a number variable, you don't need to use `"` like you would with strings. Here's an example:
 
 :::passage{src="/var-simple.png"}
 ```
@@ -81,5 +81,18 @@ I am {age} years old.
 :::
 
 You can direct the computer to read number variables the same way as strings. The big difference between strings and number variables is you can use number variables to have the computer solve mathematical expressions--you can read more about that in the *[Expressions With Variables](/locations/arithmetic-expressions)* tutorial.
+
+**Boolean variables** are a special kind of variable that can only have one of two possible values: `true` or `false`. You create a Boolean variable the same way as a number or string:
+
+:::passage{src="TODO:"}
+```
+hasKey: true
+--
+
+Do I have the key? {hasKey}
+```
+:::
+
+Notice that you do not have to use `"` symbols around Boolean variables--they aren't strings! Boolean variables are really important for writing **conditional control structures**; check out the *[If-Unless](/locations/if-unless)* tutorial for examples of how to use Boolean variables.
 
 ---

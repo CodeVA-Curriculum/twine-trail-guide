@@ -53,6 +53,8 @@ Here's a passage...
 
 ...now the hidden message is revealed! The only difference between the first example and the new example is the value of the `exampleVar` variable--I've set it to `true` this time instead of `false`. That's an "if" block!
 
+---
+
 ## "Unless" Blocks
 
 An "unless" block is sort of like the opposite of an "if" block--instead of directing the computer to *skip* the subsequent line when the variable is `false` and *display* the line when the variable is `true`, it does the reverse:
@@ -117,7 +119,6 @@ A story demonstrating "if" blocks
 You see a large, wooden door on heavy hinges with a big, iron padlock holding it shut.
 
 > [[Search the foyer->search]]
-
 [if key]
 > [[Try the key in the padlock->unlock]]
 ```
@@ -136,23 +137,28 @@ The door swings slowly open, creaking on its rusty hinges...
 ```
 :::
 
+---
+
+## "Continue" Blocks
+
+If you want to use an `[if ]` block *before* a line that should appear in every passage, you can use the `[continue]` block:
+
+```
+You see a large, wooden door on heavy hinges with a big, iron padlock holding it shut.
+
+[if key]
+The key seems to fit into the padlock...
+
+> [[Try the key in the padlock->unlock]]
+[continue]
+> [[Search the foyer->search]]
+```
+
+Using `[continue]` blocks allows you to sort of "insert" hidden sections of text *between* the sections of code that the computer will always display.
+
 ## Longer "If" & "Unless" Blocks
 
-One thing to note about "if" and "unless" blocks is that you are **Limited to one line** after the `[if var]` command. If you add another line after the "if" block, the computer will not skip it--it will display it regardless of the state of the `[if ]` that precedes it:
-
-:::passage{title="If Example" src="TODO:"}
-```
-toReveal: false
---
-A passage.
-
-[if toReveal]
-This is hidden...
-...but I want this to be hidden, too!
-```
-:::
-
-If you want to hide or reveal a larger amount of text, use an [embedded passage](/locations/embedding-passages):
+"If" and "unless" blocks are really powerful, but they can sometimes make your passages difficult to read. Part of using **conditional control structures** like "if", "unless", and "continue" blocks is being able to *trace* the passage and *predict* what the passage will cause the computer to show to the reader given the variables the conditional control structure relies on. If you want to hide or reveal a larger amount of text, it can be easier to read the passage if you use an [embedded passage](/locations/embedding-passages):
 
 :::passage{title="If Block w/ Embedded Passage" src="TODO:" tabs}
 ```main
@@ -162,6 +168,9 @@ A passage.
 
 [if toReveal]
 {embed passage: 'embedded'}
+
+[continue]
+There's a hidden message... change the variable to `true`!
 ```
 
 ```embedded

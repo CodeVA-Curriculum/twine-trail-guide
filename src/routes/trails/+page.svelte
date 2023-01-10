@@ -82,6 +82,7 @@
 
     let filter = (searchTerm, selectedDifficulties) => {
         let tempList = [];
+        const trails = data.trails
         for(let i=0; i<trails.length;i++) {
             if(trails[i].title.toLowerCase().includes(searchTerm.toLowerCase()) || searchTerm.length <= 0) {
                 tempList.push(trails[i]);
@@ -128,7 +129,7 @@
                         
                       </button>
                     </div>
-                    <!-- <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
                         <div class="dropdown-content">
                             {#each difficulties as diff, i}
                             <label class="dropdown-item checkbox">
@@ -137,7 +138,7 @@
                             </label>
                             {/each}
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -166,6 +167,8 @@
                 path={trail.slug}
         />
         {/each}
+        {:else}
+            <div class='disclaimer'><p><i>Some trails are hidden by your filters!</i></p></div>
         {/if}
     </div>
 </section>

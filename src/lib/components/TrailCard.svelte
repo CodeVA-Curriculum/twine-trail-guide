@@ -9,7 +9,7 @@
     import { goto } from '$app/navigation';
 
   function routeToPage() {
-    goto(base + "/trails" + path, { replaceState: true, noScroll: false }) 
+    goto(base + "/trails" + path, { replaceState: false, noScroll: false }) 
   }
 
   function getDifficulty() {

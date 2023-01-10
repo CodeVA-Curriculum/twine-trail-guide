@@ -34,7 +34,7 @@ import {locations, selected} from '$lib/util/stores.js'
     // })
 
     onMount(() => {
-        console.log("Mounting desktop view...")
+        // console.log("Mounting desktop view...")
         // locations.set([])
         locations.subscribe(async (locs) => {
             selected.set($locations[0].slug)
@@ -42,7 +42,7 @@ import {locations, selected} from '$lib/util/stores.js'
         // selected.set($locations[0])
         
         return () => {
-            console.log("Unmounting desktop view...")
+            // console.log("Unmounting desktop view...")
             // locations.set([])
         }
     })
@@ -98,6 +98,7 @@ import {locations, selected} from '$lib/util/stores.js'
   .back-to-top {
       position: sticky;
       bottom: 2rem;
+      margin-top: 3rem;
   }
   section {
       position: relative;

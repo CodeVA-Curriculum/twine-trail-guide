@@ -26,7 +26,7 @@
             }
         })
         return () => {
-            console.log("Unmounting timeline...")
+            // console.log("Unmounting timeline...")
             // clear timeline
             locations.set([])
         }

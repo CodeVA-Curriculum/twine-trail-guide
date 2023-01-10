@@ -31,7 +31,7 @@ import { fade, fly } from 'svelte/transition';
 
     onMount(async () => {
         if(path) {
-            console.log(`Sending ${path} to $locations`)
+            // console.log(`Sending ${path} to $locations`)
             locations.update(locs => updateStore(locs, {slug: path, optional: optional}));
 
             locationContent = (await import(`../../routes/locations/${path}/+page.md`));

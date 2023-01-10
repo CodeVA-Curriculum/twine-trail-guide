@@ -15,7 +15,7 @@
     }
 
     onMount(async () => {
-        console.log(optional)
+        // console.log(optional)
         if(slug) {
             data = (await import(`../../routes/locations/${slug}/+page.md`)).metadata;
         }

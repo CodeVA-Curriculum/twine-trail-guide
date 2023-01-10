@@ -37,7 +37,7 @@ import {locations, selected} from '$lib/util/stores.js'
         console.log("Mounting desktop view...")
         // locations.set([])
         locations.subscribe(async (locs) => {
-            selected.set($locations[0])
+            selected.set($locations[0].slug)
         })
         // selected.set($locations[0])
         

@@ -14,31 +14,27 @@ import { fade, fly } from 'svelte/transition';
     let visible = false;
     let unsubLocations = () => { console.log("Default unsub") };
 
-    function updateStore(locs, newLocation) {
+    function updateStore(locs, newObj) {
         // add self to $locations
         // console.log("called updateStore on " + newLocation)
-        if(!locs.includes(newLocation)) {
+        if(!locs.find(obj => obj.slug == newObj.slug)) {
             // p += locs.length
-            return [...locs, newLocation]
+            return [...locs, newObj]
         } else {
             return locs;
         }
     }
 
     function findPos(locs, path) {
-        return locs.indexOf(path) + 1;
+        return locs.findIndex(obj => obj.slug == path) + 1;
     }
 
     onMount(async () => {
         if(path) {
-            
-
             console.log(`Sending ${path} to $locations`)
-            locations.update(locs => updateStore(locs, path));
+            locations.update(locs => updateStore(locs, {slug: path, optional: optional}));
 
             locationContent = (await import(`../../routes/locations/${path}/+page.md`));
-            let meta = locationContent.metadata
-            meta.path = path
             // locationData.update(obj => obj = [...obj, meta])
             // console.log("Added", meta, "to the store")
             // console.log("Added", locationContent);
@@ -46,7 +42,7 @@ import { fade, fly } from 'svelte/transition';
             // update position in timeline
             unsubLocations = locations.subscribe(locs => {
                 // console.log(locs, path);
-                p = locs.indexOf(path) + 1;
+                p = locs.findIndex(obj => obj.slug == path) + 1;
                 // for(let i=0;i<locs.length;i++) {
                 //     if(locs[i] == path) {
                 //         p = i + 1

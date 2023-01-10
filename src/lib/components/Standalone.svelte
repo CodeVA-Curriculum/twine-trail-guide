@@ -13,11 +13,21 @@
 
     export let title, type, description, author, layout, short, path
     export let compact, scrollable = false;
-    export let position;
+    export let position, opt;
     export let video; // = "https://www.youtube.com/embed/AsURmcD_Z5g"
 
     let p, elem
-    $: p = position > 0 ? position : false
+    $: p = getPrefix(position, opt)
+
+    function getPrefix(position, optional) {
+        if(optional) {
+            return "Optional: "
+        } else if(position > 0) {
+            return `${position}.`
+        } else {
+            return false
+        }
+    }
 
     selected.subscribe(loc => {
         if(loc == path && scrollable) {
@@ -45,7 +55,7 @@
     <section class='wrapper'>
         <div class='{ compact ? "" : "columns"}'>
             <div class='{ compact ? "" : "column"}'>
-                <h1 bind:this={elem} class='title'>{#if position && type == "tutorial"}{p}. {/if}{title}</h1>
+                <h1 bind:this={elem} class='title'>{#if position && type == "tutorial"}{p} {/if}{title}</h1>
                 <!-- TODO: add tags for trails -->
                 <Callout color="yellow">
                     <p>{description}</p>

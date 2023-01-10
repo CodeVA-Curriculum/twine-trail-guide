@@ -47,7 +47,7 @@
                     <slot><p>{data.short}</p></slot>
             </div>
         {:else}
-            <div class='timeline-content'>Hey</div>
+            <div class='timeline-content optional {$selected == slug ? 'is-selected' : 'not-selected'}'><h3 class='heading is-small'>Optional: {data.title}</h3></div>
         {/if}
 
     {/if}
@@ -65,12 +65,20 @@
         background-color: whitesmoke;
         cursor: pointer;
     }
-    .is-selected {
+    .locationcontent.is-selected {
         border-color: $blue;
         border-width: 3px;
         border-style: solid;
         background-color: white;
         cursor: pointer;
+    }
+    .optional {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 0.75rem;
+    }
+    .optional.is-selected {
+        background-color: whitesmoke;
     }
     .location {
         max-width: 25rem;

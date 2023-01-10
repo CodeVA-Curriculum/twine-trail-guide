@@ -78,13 +78,13 @@ import { fade, fly } from 'svelte/transition';
 <div class='is-hidden-touch'>
     {#if locationContent && visible}
     <div transition:fly="{{ y: 50, duration: 250 }}" class='el2'>
-        <svelte:component this={locationContent.default} compact={true} position={p} scrollable={false} />
+        <svelte:component this={locationContent.default} compact={true} position={p} opt={optional} scrollable={false} />
     </div>
     {/if}
 </div>
 <div class='is-hidden-desktop'>
     {#if locationContent}
-    <svelte:component this={locationContent.default} compact={true} position={p} scrollable={true} />
+    <svelte:component this={locationContent.default} compact={true} position={p} opt={optional} scrollable={true} />
     {/if}
 </div>
 

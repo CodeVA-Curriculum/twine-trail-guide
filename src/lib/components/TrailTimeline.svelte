@@ -6,10 +6,14 @@
     export let mobile = "false"
 
     onMount(() => {
+        // locations.set([])
         return () => {
             console.log("Unmounting timeline...")
+            locations.set([])
         }
     })
+
+    $: console.log(`Timeline sees ${$locations.length} locations in the store.`)
 
 </script>
 

@@ -31,12 +31,14 @@ import { fade, fly } from 'svelte/transition';
 
     onMount(async () => {
         if(path) {
-            locationContent = (await import(`../../routes/locations/${path}/+page.md`));
-            let meta = locationContent.metadata
-            meta.path = path
+            
 
             console.log(`Sending ${path} to $locations`)
             locations.update(locs => updateStore(locs, path));
+
+            locationContent = (await import(`../../routes/locations/${path}/+page.md`));
+            let meta = locationContent.metadata
+            meta.path = path
             // locationData.update(obj => obj = [...obj, meta])
             // console.log("Added", meta, "to the store")
             // console.log("Added", locationContent);

@@ -57,9 +57,9 @@
             <div class='{ compact ? "" : "column"}'>
                 <h1 bind:this={elem} class='title'>{#if position && type == "tutorial"}{p} {/if}{title}</h1>
                 <!-- TODO: add tags for trails -->
-                <Callout color="yellow">
+                <!-- <Callout color="yellow">
                     <p>{description}</p>
-                </Callout>
+                </Callout> -->
                 {#if video}
                 <p class='block small'>Watch the video to see someone demonstrate the basics, or read on to work through it on your own. This concept is a part of several projects <a href='{base}/trails'>Trails</a>; check them out!</p>
                 {/if}

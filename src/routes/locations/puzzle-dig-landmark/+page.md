@@ -1,8 +1,8 @@
 ---
 title: Archeological Puzzle Project
 author: Jon Stapleton
-short: Lorem
-description: Lorem ipsum dolor sit amet
+short: A project using conditionals to profile a historical location
+description: Conditionals allow you to set up puzzles in your story for the reader to solve. These sorts of stories can feel more like games than narratives--they are interactive, and can be designed to produce surprising results for the reader to explore. In this project, you'll profile a historical location and have the reader solve a puzzle to uncover new information about the people and events of that place.
 # video: https://www.youtube.com/embed/VpGFJA5Fnyc
 type: project
 layout: location

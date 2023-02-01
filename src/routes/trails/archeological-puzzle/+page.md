@@ -16,6 +16,6 @@ Before working on this trail, you should be at least a little bit familiar with 
 ::location{path="variable-basics"}
 ::location{path="if-unless"}
 ::location{path="if-else" optional="true"}
-::location{path="boolean-expressions"}
+::location{path="relational-expressions"}
 ::location{path="conditions-variables" optional="true"}
 ::location{path="puzzle-dig-landmark"}

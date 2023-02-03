@@ -34,7 +34,7 @@ If only I had some flint and steel to light the brazier...
 
 In this example, if the variable `flint` has a value of `true`, the computer displays the link leading to the `lit` passage. Otherwise, it shows the two passages that will allow the reader to search for the items they need.
 
-The passage above doesn't work exactly as it should--I only want the computer to show the `"Light the torch"` option if *both* `flint` and `steel` are `true`. If one of them is still `false`, the reader still needs to search around the story to find them. To fix the passage so it works as intended, I'll use a **logic operator**:
+The passage above doesn't work exactly as it should--I only want the computer to show the `"Light the torch"` option if *both* `flint` and `steel` are `true`. If one of them is still `false`, the reader should need to search around the story to find them. To fix the passage so it works as intended, I'll use a **logic operator**:
 
 :::passage{title="Torch Room"}
 ```
@@ -55,6 +55,55 @@ If only I had some flint and steel to light the brazier...
 
 Check out the first line-I've added a *temporary* variable to the passage set to the value `flint && steel`. The `&&` symbol is a **logic operator** that compares two Boolean values; if both values are `true`, the **logical expression** produces a value of `true`. Otherwise, it produces a value of `false`. Logical expressions work exactly the same way as [arithmetic expressions](/locations/arithmetic-expressions) and [relational expressions](/locations/relational-expressions), except instead of comparing numbers or strings to one another or calculating new values, they compare two *Boolean* values to produce a new Boolean value based on them.
 
+Here's a more complete version of the story that uses a logical operation as demonstrated above; Try it out by [clicking here](/examples/unlit-brazier)!
+
+![GIF of a reader playing through the Unlit Brazier story below](TODO:)
+
+:::passage{title="The Unlit Brazier" src="/unlit-room.png" tabs}
+```intro
+flint: false
+steel: false
+--
+
+# The Unlit Room
+
+> [[Begin->torch-room]]
+```
+```torch-room
+_foundEverything: flint && steel
+--
+
+You see a dark room, with an unlit iron brazier in the center.
+
+[if _foundEverything]
+> [[Light the brazier->lit]]
+[else]
+If only I had some flint and steel to light the brazier...
+
+> [[Search the hallway->hallway]]
+> [[Search the stairs->stairs]]
+```
+```hallway
+flint: true
+--
+
+You pace around the room and find a narrow hall leading off into the house. You feel something underfoot as you ease forward into the pitch darkness... a piece of **flint**?
+
+> [[Return->torch-room]]
+```
+```stairs
+steel: true
+--
+
+You feel your shin smash against a wooden stair. On your hands and knees, you feel around the dusty floor and feel something cold... A **knife**.
+
+> [[Return->torch-room]]
+```
+```lit
+The brazier roars to life!
+```
+:::
+
 You can also use [relational expressions](/locations/relational-expressions) as operands in your logical expressions:
 
 ```
@@ -67,7 +116,7 @@ Your score is {score}! Nice job.
 Whoa! You got a great score *and* finished really quickly!
 ```
 
-There are a lot of ways to use logic operators--try combining them in different ways to see what happens!
+There are a lot of ways to use logic operators--try combining them in different ways to see what happens with your `[if/unless ]` blocks!
 
 ---
 

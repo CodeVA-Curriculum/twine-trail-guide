@@ -1,6 +1,5 @@
 ---
-title: Adding Images
-# TODO: incorporate author into location cards
+title: Adding Images to Passages
 author: Jon Stapleton
 short: Learn how to add images to your Twine passages.
 description: Images are a great way of adding new interest to your Twine passages. They can convey a mood, provide additional information for the reader, or even create something for the reader to investigate as they make choices to move the story forward. This tutorial demonstrates how to add images from the web to a Twine passage.
@@ -40,11 +39,13 @@ After getting the image link, go ahead and open up the Twine story editor.
 
 After you get the image link, open up a Twine passage and add some code like this:
 
+:::passage{title="Passage with Image Example"}
 ```
 {embed Unsplash image: 'https://unsplash.com/photos/Na0BbqKbfAo', alt: 'the moon'}
 
 You hear the howls of wolves in the distance.
 ```
+:::
 
 . . . but change a couple of things:
 
@@ -52,9 +53,9 @@ You hear the howls of wolves in the distance.
 * Change the words after `alt`. My picture is a picture of the moon, but yours probably isn't. Write a short sentence that describes your image.
 * If you got your image from somewhere other than [Unsplash](https://unsplash.com/), delete the word `Unsplash` from the line of code
 
-Click out of the passage editor and click "Play" on your passage:
+Click out of the passage editor, select the passage you added the image to, and click "Test From Here":
 
-![The passage context menu in Twine](/passage-hover.png)
+![The passage context menu in Twine](/test-from-here.png)
 
 You should see your image in your Twine story!
 

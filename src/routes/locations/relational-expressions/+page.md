@@ -10,7 +10,7 @@ layout: location
 
 ## Shortcomings of Boolean Variables
 
-If you've written passages with `[if ]`/`[continue]` conditional blocks, then you may already know how powerful having the computer choose to *display* or *hide* text based on a variable can be (read about [if/unless](/locations/if-unless) & [if/else](/locations/if-else) if you haven't). You can create all sorts of little puzzles for readers to engage with as they experience your story. Twine stories that use conditionals can feel more like games than narratives, and they can get really complex!
+If you've written passages with `[if ]`/`[continue]` conditional blocks, then you may already know how powerful having the computer choose to *display* or *hide* text based on a variable can be (read about [`if/unless`](/locations/if-unless) & [`if/else`](/locations/if-else) if you haven't). You can create all sorts of little puzzles for readers to engage with as they experience your story. Twine stories that use conditionals can feel more like games than narratives, and they can get really complex!
 
 But what if you wanted the computer to choose whether or not to display some text based on a non-Boolean variable? If you only use Boolean variables (variables that can only be either `true` or `false`), you can only write `[if ]` statements like these...
 
@@ -29,7 +29,7 @@ You can't unlock the door.
 
 The Chapbook format of Twine has a way for you to use number and string variables in your `[if ]` statements: **relational expressions**. Relational expressions are sort of like [arithmetic expressions](/locations/arithmetic-expressions), but instead of producing numbers like a math equation, they *compare* numbers or strings and produce *Boolean* values. Here's an example of a relational expression:
 
-:::passage{src="TODO:"}
+:::passage{title="Relational Expression Example" src="/simple-relational-expression.png"}
 ```
 var: 2 > 5
 --
@@ -56,11 +56,11 @@ You lost...
 
 The value of the Boolean variable `readerWins` *depends* on the value of the number variable called `score`; if `score` is greater than 5, then the variable called `readerWins` will be `true`. Otherwise, it will get a value of `false`. Then, when the computer reads the passage, it will display different messages based on the value of the `readerWins` variable!
 
-Here's a more complete example, which shows a simple "scavenger hunt" sort of story, where the reader has to find all of the coins before they can reach the end of the tale:
+Here's a more complete example, which shows a simple "scavenger hunt" sort of story, where the reader has to find all of the coins before they can reach the end of the tale. You can play the story yourself by [clicking here](/examples/great-coin-hunt).
 
-![TODO:](TODO:)
+![Story editor view of the story written below](/great-coin-hunt.png)
 
-:::passage{title="The Great Coin Hunt" src="TODO:" tabs}
+:::passage{title="The Great Coin Hunt" src="TODO:gifdemo" tabs}
 ```title
 score: 0
 --
@@ -109,6 +109,8 @@ score: score + 1
 --
 
 You see something shine from beneath the floorboards. You pry it up, and find a gold coin.
+
+> [[Return->quest]]
 ```
 ```end
 You follow the figure into the mist, to adventures unknown...

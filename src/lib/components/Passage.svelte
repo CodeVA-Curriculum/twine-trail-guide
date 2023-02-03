@@ -38,7 +38,7 @@
 
 </script>
 
-<article class='card my-5'>
+<article class='passage card my-5'>
     {#if title}
     <header class='card-header pl-5 pt-2 pb-0'>
         <h4>{title}</h4>
@@ -57,9 +57,11 @@
                     </ul>
                 </div>
                 {/if}
-                {#if codeBlocks.length > 0}
-                    {@html codeBlocks[selected]}
-                {/if}
+                <div class='passage-pre {tabs ? "has-tabs" : ""}'>
+                    {#if codeBlocks.length > 0}
+                        {@html codeBlocks[selected]}
+                    {/if}
+                </div>
             </div>
         
             {#if src}
@@ -76,9 +78,14 @@
 
 <style lang='scss'>
     @import "../styles/variables.scss";
-    .code {
-        overflow-x: hidden;
-    }
+//     .code > pre {
+//         background-color: red;
+//         white-space: pre-wrap;       /* css-3 */
+//  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+//  white-space: -pre-wrap;      /* Opera 4-6 */
+//  white-space: -o-pre-wrap;    /* Opera 7 */
+//  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+//     }
     .code > div > ul {
         padding-left: 0;
         margin-left: 0;

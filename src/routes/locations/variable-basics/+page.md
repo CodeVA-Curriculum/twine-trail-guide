@@ -12,7 +12,7 @@ description: In this tutorial, you'll learn all about variables. Variables are c
 
 A variable is a *container* inside your computer that contains data. Programmers use variables to make computers "remember" information for later. You can think of your computer like a big, mostly empty warehouse. When you write code that tells the computer to create a variable, the computer reserves a small amount of that empty space for a box. Then, the computer will put some kind of data in the box--usually a number or a message of some kind. Finally, the computer will label the box so it can find it later on. After the computer creates a variable, the programmer can write code that directs the computer to recall and use the value in the box somehow (i.e., read the variable) or modify the value in the box. 
 
-<!-- ![Praxis comic panels](TODO:) -->
+![A four-panel comic showing a computer character storing data in a container, and looking in that container to recall the data](/var-comic.png)
 
 The variable stays in the computer's "warehouse" (i.e., memory) until the program ends or the code directs the computer to discard the variable.
 
@@ -39,7 +39,7 @@ You can see that the text in the "vars" section does not appear in the passage--
 
 To show the reader the value of a variable, you can include it in your passage like so:
 
-:::passage{src="/var-insert.png"}
+:::passage{title="Variable Insert Example" src="/var-insert.png"}
 ```
 a_cool_message: "Hello!"
 --
@@ -52,7 +52,7 @@ There are a couple of things to notice about this example. First, the `"`s aroun
 
 You can create and use as many variables as you like in your passages. You can even use one variable multiple times!
 
-:::passage{src="/woodchuck.png"}
+:::passage{title="Reusing Variables" src="/woodchuck.png"}
 ```
 creature: "woodchuck"
 material: "wood"
@@ -71,7 +71,7 @@ There are three types of basic variables available to you when you use the Chapb
 
 **Number variables** represent quantities or numerical values. When you create a number variable, you don't need to use `"` like you would with strings. Here's an example:
 
-:::passage{src="/var-simple.png"}
+:::passage{title="Number Variables" src="/var-simple.png"}
 ```
 age: 15
 --
@@ -84,7 +84,7 @@ You can direct the computer to read number variables the same way as strings. Th
 
 **Boolean variables** are a special kind of variable that can only have one of two possible values: `true` or `false`. You create a Boolean variable the same way as a number or string:
 
-:::passage{src="TODO:"}
+:::passage{title="Boolean Variables" src="/var-boolean.png"}
 ```
 hasKey: true
 --

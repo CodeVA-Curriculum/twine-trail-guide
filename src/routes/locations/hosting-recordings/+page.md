@@ -14,6 +14,7 @@ layout: location
 
 Websites are made up of files, and when you visit a site online the server sends you the files you need. A lot of times, the server needs to send you *many* files for the webpage to load properly. There are HTML, CSS, and Javascript files which make up the webpage itself, but there are often also image, video, and audio files that you need to download in order to show the proper information on the webpage.
 
+<!-- TODO: -->
 <!-- ![Diagram of a webpage loading assets from different servers]() -->
 
 When you make a website (like a Twine story) that includes audio recordings, you have two choices--either host your audio on its own server, or store the audio in the same location as your website. You can use either method with Twine; read the instructions below to learn how.
@@ -24,6 +25,7 @@ When you make a website (like a Twine story) that includes audio recordings, you
 
 When you host your audio locally, you will create two files: an audio file (like a `.mp3` or `.wav` file) and a `.html` file that includes the code from your story. As long as these two files are together on your computer, you'll be able to link the audio to your Twine story without any problems.
 
+<!-- TODO: -->
 <!-- ![A cartoon showing a webpage asking where an audio file is, and the audio file responding that it is right there]() -->
 
 Using local audio has a couple of advantages:
@@ -42,6 +44,8 @@ Using local images has a couple of downsides:
 
 * You have to test your story differently--you can't use the `Play` button like normal. You'll need to `Publish to File` and then open your HTML file every time you want to test your audio.
 * If you want to share your story with someone, it will be a little tricky. You'll need to send them a folder with all of your files, not just the `.html` file from Twine.
+
+This option works well if you use the [downloadable version of the Twine editor](http://twinery.org/) rather than the browser-based editor.
 
 ---
 
@@ -71,7 +75,6 @@ Using [SoundCloud](https://soundcloud.com/) to host your audio has a couple of a
 
 5. Click `Save changes`.
 6. To get the URL to your audio file, use your RSS feed link and replace `sounds.rss` with the name of your audio file.
-<!-- TODO: test this out -->
 
 Using SoundCloud to host your audio also has a couple of downsides, though:
 

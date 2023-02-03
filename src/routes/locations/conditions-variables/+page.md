@@ -16,10 +16,15 @@ Conditional control structures like ["if", "unless",](/locations/if-unless) or [
 If you haven't learned about [creating](/locations/variable-basics) and [modifying](/locations/modify-variables) variables, ["if" blocks](/locations/if-unless), or [relational expressions](/locations/relational-expressions) yet, consider checking out the tutorials about those topics before continuing!
 :::
 
+## Creating Conditionally-Set Variables
+
 Consider the following passage, which provides options to the reader based on whether or not they've collected a light source over the course of the story:
 
-```
-lightSource: true
+![GIF demonstration of the story below played out](TODO:)
+
+:::passage{title="Starting Point" src="/conditions-variables-example1.png" tabs}
+```room
+lightSource: false
 --
 
 You find yourself in a dark room.
@@ -29,6 +34,15 @@ You find yourself in a dark room.
 [if lightSource]
 > [[Turn on your light->reveal]]
 ```
+```search
+lightSource: true
+--
+
+You found a flashlight!
+
+> [[Go back->room]]
+```
+:::
 
 This is a great way to have the reader "unlock" a new choice in the story; they'll need to find the part of the story that sets the variable called `lightSource` to `true` in order to proceed to the `reveal` passage. But what if you wanted the text to be more specific? For example, you might have an `item` variable that could be any number of light sources:
 
@@ -50,6 +64,7 @@ This is a great way to have the reader "unlock" a new choice in the story; they'
 
 That's a lot of `[if ]` blocks! Now imagine if you had even more options! It might get difficult to read the passage, and even harder to fix problems if the story doesn't work the way you expect it to! You might find using **conditionally-set variables** a little easier. Here's a new version of the passage above that uses these special variable assignment statements:
 
+:::passage{title="Conditionally-Set Variables"}
 ```
 lightText: false
 lightText (lightSource == "lantern"): "Light your lantern"
@@ -64,6 +79,7 @@ You find yourself in a dark room.
 [else]
 > [[Search the room->search]]
 ```
+:::
 
 In the passage above, the computer first sets the variable `lightText` to `false`. Then, it evaluates each of the variable assignment commands after it one at a time:
 
@@ -79,13 +95,14 @@ It's sort of like using `[if ]` blocks, but instead of *displaying* or *hiding* 
 
 There are lots of ways to use conditionally-modified variables in your passages. You can use the state of variables to set the text of choices in the passage, or to add additional information to a passage based on the state of variables which are invisible to the reader:
 
-```
+:::passage{title="Passage With Help Text" src="/TODO:.gif" tabs}
+```room
 lightChoice: false
 lightChoice (item == "flashlight"): "Turn on the flashlight"
 lightChoice (item == "lantern" && matches == true): "Light your lantern"
 
 helpText: ""
-helpText: (item == "lantern && matches == false): "If only I had some matches..."
+helpText: (item == "lantern" && matches == false): "If only I had some matches..."
 --
 
 You find yourself in a dark room. {helpText}
@@ -95,10 +112,33 @@ You find yourself in a dark room. {helpText}
 [if lightChoice]
 > [[{lightChoice}->reveal]]
 ```
+```search
+You find several things that might help...
+
+> [[Pick up the lantern->lantern]]
+> [[Pick up the flashlight->flashlight]]
+```
+```lantern
+item: "lantern"
+--
+
+You pick up the lantern and head back to check out the room.
+
+{embed passage: room}
+```
+```flashlight
+item: "flashlight"
+--
+
+You pick up the lantern and head back to check out the room.
+
+{embed passage: room}
+```
+:::
 
 You could even use these kinds of variable assignments to send the reader to different locations in the story based on combinations of variable values:
 
-:::passage{title="The Secret Trap" src="TODO: gif"}
+:::passage{title="The Secret Trap" src="TODO: gif" tabs}
 ```door
 destination: "secret_room"
 destination (key == false): "trap"
@@ -116,6 +156,12 @@ key: true
 You search the room and find a key hidden under a loose cobblestone
 
 > [[Approach the door->door]]
+```
+```trap
+You fell into a terrible trap!
+```
+```secret_room
+The lock opens and the door slowly creaks open...
 ```
 :::
 

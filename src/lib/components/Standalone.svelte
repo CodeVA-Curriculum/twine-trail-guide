@@ -54,14 +54,15 @@
 <div class='container'>
     <section class='wrapper'>
         <div class='{ compact ? "" : "columns"}'>
-            <div class='{ compact ? "" : "column"}'>
+            <div class='{ compact ? "" : "column"} content'>
                 <h1 bind:this={elem} class='title'>{#if position && type == "tutorial"}{p} {/if}{title}</h1>
                 <!-- TODO: add tags for trails -->
                 <!-- <Callout color="yellow">
                     <p>{description}</p>
                 </Callout> -->
                 {#if video}
-                <p class='block small'>Watch the video to see someone demonstrate the basics, or read on to work through it on your own. This concept is a part of several projects <a href='{base}/trails'>Trails</a>; check them out!</p>
+                <blockquote class='block {compact ? "is-hidden" : ""} is-italic'>{description}</blockquote>
+                <p class='block {compact ? "small" : ""}'>Watch the video to see someone demonstrate the basics, or read on to work through it on your own. This concept is a part of several projects <a href='{base}/trails'>Trails</a>; check them out!</p>
                 {/if}
                 <!-- <h2 class='heading'>Trails:</h2> -->
             </div>

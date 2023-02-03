@@ -24,3 +24,17 @@ $primary: $blue;
 @import "../node_modules/bulma/sass/helpers/_all";
 @import "../node_modules/bulma/sass/layout/_all";
 @import 'bulma-timeline/dist/css/bulma-timeline.sass';
+
+.content pre {
+    white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+ border-width: 1px;
+}
+.content .passage .has-tabs pre {
+    border-color: lightgray;
+    border-style: solid;
+    border-top-width: 0px;
+}

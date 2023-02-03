@@ -1,5 +1,5 @@
 ---
-title: Add Audio
+title: Adding Audio to Passages
 author: Jon Stapleton
 short: Learn how to add sound to your Twine passages.
 description: Adding sound is a great way of creating an immersive atmosphere in your story. Recording and figuring out how to host these recordings can be a hassle, but once you get to the point where you are ready to embed them in your story it isn't so bad. This tutorial shows you how to add audio to a Twine passage, and explains the difference between 'ambient' sounds and 'sound effects' in the Chapbook Twine format.
@@ -7,6 +7,10 @@ description: Adding sound is a great way of creating an immersive atmosphere in 
 type: tutorial
 layout: location
 ---
+
+:::aside
+In order to use audio in your story, you'll need to figure out a way to *host* it so the Twine webpage can access the sound data. You can read about different hosting options using either the downloadable Twine editor or the browser-based editor by checking out the *[Hosting Recordings](/locations/hosting-recordings)* tutorial.
+:::
 
 ## Types of Embedded Audio
 
@@ -16,8 +20,9 @@ While the process of creating and hosting recordings can be challenging, adding 
 
 ## Adding Ambient Sounds
 
-To add an ambient sound to your passage, you'll need to add some information about the sound--it's name and url--and then a line to activate the sound. Here's an example of a Twine passage that sets up an audio file called `rainfall.mp3`:
+To add an ambient sound to your passage, you'll need to add some information about the sound--it's name (if you're [hosting the file locally](/locations/hosting-recordings) and using the downloadable Twine editor) or URL (if you're using [SoundCloud for hosting](/locations/hosting-recordings))--and then a line to activate the sound. Here's an example of a Twine passage that sets up an audio file called `rainfall.mp3`:
 
+:::passage{title="Passage with Ambient Sound Example"}
 ```
 sound.ambient.rainfall.url: 'rainfall.mp3'
 sound.ambient.rainfall.description: 'the sound of falling rain'
@@ -25,6 +30,7 @@ sound.ambient.rainfall.description: 'the sound of falling rain'
 
 Here's some normal story text. Ambient sound is playing in the background.
 ```
+:::
 
 I've written the passage above in two sections: the section *above* the `--`, and the section *below* it. This separation is incredibly important.
 
@@ -36,6 +42,7 @@ The text *below* the `--` appears as normal. The rules for writing above the `--
 
 Right now, the example passage I've created doesn't make any sounds. It just loads the sound. To play it, I need to add another line:
 
+:::passage{title="Playing Rainfall Sounds"}
 ```
 sound.ambient.rainfall.url: 'rainfall.mp3'
 sound.ambient.rainfall.description: 'the sound of falling rain'
@@ -44,9 +51,11 @@ sound.ambient.rainfall.description: 'the sound of falling rain'
 
 Here's some normal story text. Ambient sound is playing in the background.
 ```
+:::
 
 The line that activates the sound is related to the code above the `--`: the *name* of the sound after the `:` in the activation line should match the word that comes after `sound.ambient` in the code section. So if I wanted to activate a sound called `'storm'`, my code would look like this:
 
+:::passage{title="Playing Storm Sounds"}
 ```
 sound.ambient.storm.url: 'storm-file.mp3'
 sound.ambient.storm.description: 'The sound of a storm'
@@ -56,6 +65,7 @@ sound.ambient.storm.description: 'The sound of a storm'
 
 You hear wind and rain rushing toward you.
 ```
+:::
 
 Your `url` should match the link or filename for your sound, and the `name` in your activation line `{ambient sound: 'name'}` should match the code above the `--`: `sound.ambient.name.url` and `sound.ambient.name.description`.
 
@@ -65,6 +75,7 @@ Your `url` should match the link or filename for your sound, and the `name` in y
 
 Adding sound effects is exactly the same as adding ambient sounds, except sound effects play only once and do not fade in and out. Here's an example:
 
+:::passage{title="Passage With Sound Effects"}
 ```
 sound.effect.boom.url: 'boom-audio.mp3'
 sound.effect.boom.description: 'a loud boom'
@@ -74,6 +85,7 @@ You hear something in the distance...
 
 {sound effect: 'boom'}
 ```
+:::
 
 Everything is basically the same as it is with ambient sounds, except you use `sound.effect` in your code instead of `sound.ambient`.
 

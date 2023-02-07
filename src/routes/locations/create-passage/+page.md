@@ -48,7 +48,7 @@ To edit a passage and add words to your story, click it, select the `Passage` ta
 
 You'll see a box pop up with a large empty text entry area, and some buttons (see the screenshot below). This is the **Passage Editor**. Type something into the box; this will be the first sentence of your story! You can just type something short for now and add to it later. You can also change the name of the passage by changing the text that says `Untitled Passage` at the top of the editor to something else, if you'd like
 
-![A GIF showing the process of editing a passage](TODO:gif)
+![A GIF showing the process of editing a passage](/edit-passage-demo.gif)
 
 Once you're done, click the `X` in the top-right corner of the Passage Editor to return to the story editor.
 

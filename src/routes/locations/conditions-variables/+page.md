@@ -20,13 +20,18 @@ If you haven't learned about [creating](/locations/variable-basics) and [modifyi
 
 Consider the following passage, which provides options to the reader based on whether or not they've collected a light source over the course of the story:
 
-![GIF demonstration of the story below played out](TODO:)
+![GIF demonstration of the story below played out](/starting-point-demo.gif)
 
 :::passage{title="Starting Point" src="/conditions-variables-example1.png" tabs}
-```room
+```intro
 lightSource: false
 --
 
+# A Dark Room
+
+> [[Begin->room]]
+```
+```room
 You find yourself in a dark room.
 
 > [[Search for something in the darkness->search]]
@@ -41,6 +46,9 @@ lightSource: true
 You found a flashlight!
 
 > [[Go back->room]]
+```
+```reveal
+The beam of your flashlight passes over the room...
 ```
 :::
 
@@ -66,7 +74,6 @@ That's a lot of `[if ]` blocks! Now imagine if you had even more options! It mig
 
 :::passage{title="Conditionally-Set Variables"}
 ```
-lightText: false
 lightText (lightSource == "lantern"): "Light your lantern"
 lightText (lightSource == "flashlight"): "Light your torch"
 lightText (lightSource == "torch"): "Turn on your flashlight"
@@ -95,14 +102,25 @@ It's sort of like using `[if ]` blocks, but instead of *displaying* or *hiding* 
 
 There are lots of ways to use conditionally-modified variables in your passages. You can use the state of variables to set the text of choices in the passage, or to add additional information to a passage based on the state of variables which are invisible to the reader:
 
-:::passage{title="Passage With Help Text" src="/TODO:.gif" tabs}
-```room
+![GIF demo of the story written out below](/help-text-demo.gif)
+
+:::passage{title="Passage With Help Text" src="/help-text-flowchart.png" tabs}
+```intro
 lightChoice: false
+item: ""
+matches: false
+--
+
+# A Dark Room
+
+> [[Begin->room]]
+```
+```room
 lightChoice (item == "flashlight"): "Turn on the flashlight"
 lightChoice (item == "lantern" && matches == true): "Light your lantern"
 
 helpText: ""
-helpText: (item == "lantern" && matches == false): "If only I had some matches..."
+helpText (item == "lantern" && matches == false): "If only you had some matches..."
 --
 
 You find yourself in a dark room. {helpText}
@@ -124,21 +142,32 @@ item: "lantern"
 
 You pick up the lantern and head back to check out the room.
 
-{embed passage: room}
+{embed passage: 'room'}
 ```
 ```flashlight
 item: "flashlight"
 --
 
-You pick up the lantern and head back to check out the room.
+You pick up the flashlight and head back to check out the room.
 
-{embed passage: room}
+{embed passage: 'room'}
+```
+```reveal
+The beam of your flashlight passes over the room...
 ```
 :::
 
 You could even use these kinds of variable assignments to send the reader to different locations in the story based on combinations of variable values:
 
-:::passage{title="The Secret Trap" src="TODO: gif" tabs}
+:::passage{title="The Secret Room" src="/the-secret-door-demo.gif" tabs}
+```intro
+key: false
+--
+
+# The Secret Room
+
+> [[Begin->door]]
+```
 ```door
 destination: "secret_room"
 destination (key == false): "trap"
@@ -159,6 +188,8 @@ You search the room and find a key hidden under a loose cobblestone
 ```
 ```trap
 You fell into a terrible trap!
+
+> [[Try again->intro]]
 ```
 ```secret_room
 The lock opens and the door slowly creaks open...

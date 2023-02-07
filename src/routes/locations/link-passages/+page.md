@@ -12,7 +12,7 @@ layout: location
 
 Most Twine stories are made up of little pages connected together by **links**--little buttons on the page that allow the reader to click through one page of the story to the next one. Here's an example:
 
-![GIF of the story of Jack and the beanstalk told in Twine passages](TODO:)
+![GIF of the story of Jack and the beanstalk told in Twine passages](/jack-beanstalk-demo.gif)
 
 In this tutorial, you'll learn how to create passages and link them together.
 
@@ -78,7 +78,7 @@ After adding the link, return to the main story editor. You'll see that your two
 
 Test your story by pressing the `Play` button. You'll notice that you can click the link at the end of your first passage, and the screen changes to show the next passage! A typical Twine story will have a lot of passages, and a *lot* of links connecting them. You can add as many passages and links as you like!
 
-:::passage{title="Linked Passages Example" src="/TODO:gif" tabs}
+:::passage{title="Linked Passages Example" src="/spider-clearing.gif" tabs}
 ```intro
 Once upon a time, a spider was looking for a place to spin thier web. They walked into the forest alone, looking for a good spot to make their new home. Over the hill, they spotted a peaceful clearing.
 
@@ -89,5 +89,30 @@ The spider explored the beautiful clearing, but all the trees were too far apart
 ```
 :::
 
-----
+## Named Links
+
+Sometimes, you might want to use a different name for the link in the story versus in the editor. For example, I might want something like this:
+
+:::passage{src="/named-link.png"}
+```
+# Jack & the Beanstalk
+
+> [[intro]]
+```
+:::
+
+The link in the passage above connects the reader to the passage called `intro`, but the button in the story says `Begin`--this lets the reader know what the purpose of the link is--it will begin the story. Using different names for links and passages is generally a good idea; it allows you (as the programmer) to use *expressive* passage names, and also lets you show the reader options that will make sense to them.
+
+To accomplish this, you can create *named links*:
+
+:::passage{src="/named-link.png"}
+```
+# Jack & the Beanstalk
+
+> [[Begin->intro]]
+```
+
+In the example above, the link `> [[Begin->intro]]` will send the reader to the `intro` passage, but the link will show the text `Begin`. Most of the examples in the Twine Trail Guide will use this "named link" format, so it's a good idea to get acquainted with it!
+
+---
 

@@ -57,7 +57,7 @@ Check out the first line-I've added a *temporary* variable to the passage set to
 
 Here's a more complete version of the story that uses a logical operation as demonstrated above; Try it out by [clicking here](/examples/unlit-brazier)!
 
-![GIF of a reader playing through the Unlit Brazier story below](TODO:)
+![GIF of a reader playing through the Unlit Brazier story below](/the-unlit-brazier-demo.gif)
 
 :::passage{title="The Unlit Brazier" src="/unlit-room.png" tabs}
 ```intro

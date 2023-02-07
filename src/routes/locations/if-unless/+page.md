@@ -101,9 +101,9 @@ You might be asking yourself:
 
 This is absolutely the case, but remember--you can have the computer *modify the value of variables* as the reader visits passages in your story. The real power of conditional blocks like `[if ]` and `[unless ]` becomes more clear when your story *modifies* the variables, and directs the reader to revisit the passage. Here's an example with three passages--one that *sets* the initial value of a variable, one that *uses* the variable in an "if" block, and one that *modifies* the variable, unlocking a new option in the second passage! You can play the story by [clicking here](/examples/the-locked-door) if you'd like.
 
-![A screenshot of the Twine story editor for the story below, which sets up a Twine story where the reader must find a key that unlocks a door](/the-locked-door.png)
+![A GIF of the Twine story below, which displays a Twine story where the reader must find a key that unlocks a door](/the-locked-door-demo.gif)
 
-:::passage{title="The Locked Door" src="TODO:gifdemo" tabs}
+:::passage{title="The Locked Door" src="/the-locked-door.png" tabs}
 ```intro
 key: false
 --
@@ -125,7 +125,7 @@ You see a large, wooden door on heavy hinges with a big, iron padlock holding it
 key: true
 --
 
-You comb the room, and as you step across the think, dusty carpet you feel something hard under your shoe. You pull back the carpet, and see a heavy wrought-iron key sitting on wood floor below.
+You comb the room, and as you step across the thick, dusty carpet you feel something hard under your shoe. You pull back the carpet, and see a heavy wrought-iron key sitting on wood floor below.
 
 > [[Go check the door->door]]
 ```

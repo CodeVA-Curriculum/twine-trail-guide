@@ -121,7 +121,7 @@ The story map now looks like this, with a "loop" between `Passage1` and `Passage
 
 ![The Twine editor showing the story map for the passages described above](/var-map.png)
 
-You can play through the story by [clicking here](/examples/count). When you play through it, you can see that the `count` variable keeps going up, even as I return to `Passage1`! There are lots of creative ways to use variables (making a counter is interesting, but perhaps not all that useful); try it out! You can view all the passages involved in the story below:
+You can play through the story by [clicking here](/examples/count). When you play through it, you can see that the `count` variable keeps going up, even as I return to `Passage1`! There are lots of creative ways to use variables (making a counter is interesting, but perhaps not all that useful); try it out! You can test out the story below by [clicking here](/examples/count):
 
 <!-- TODO: <iframe src="/examples/count" title="A Twine story demonstrating incrementing variables"></iframe> -->
 

@@ -60,7 +60,7 @@ Here's a more complete example, which shows a simple "scavenger hunt" sort of st
 
 ![Story editor view of the story written below](/great-coin-hunt.png)
 
-:::passage{title="The Great Coin Hunt" src="TODO:gifdemo" tabs}
+:::passage{title="The Great Coin Hunt" src="/the-coin-hunt-demo.gif" tabs}
 ```title
 score: 0
 --

@@ -115,7 +115,7 @@ Quaff, oh quaff this kind nepenthe and forget this lost Lenore!”
 
 {embed passage: 'raven'}
 
-> [[Next->Stanza2]]
+> [[Next->stanza2]]
 ```
 ```raven
 Quoth the Raven: "Nevermore".
@@ -137,7 +137,7 @@ Quaff, oh quaff this kind nepenthe and forget this lost Lenore!”
 
 {embed passage: 'raven'}
 
-> [[Next -> {next}]]
+> [[Next->{next}]]
 ```
 ```stanza2
 Nothing here, for now
@@ -153,7 +153,7 @@ You can see above that I've inserted the value of the `next` variable into the l
 ```raven
 Quoth the Raven "Nevermore".
 
-> [[Next -> {next}]]
+> [[Next->{next}]]
 ```
 ```stanza1
 next: 'stanza2'
@@ -179,11 +179,11 @@ Nothing here, for now
 
 Because the `raven` passage is responsible for the link, I can add all sorts of fancy features to make the embedded material more dramatic:
 
-:::passage{title="Raven (Fancy)" src="TODO: gif"}
+:::passage{title="Raven (Fancy)" src="/raven-delay-embed-demo.gif"}
 ```raven
 Quoth the Raven...
 
-[after 15 seconds]
+[after 5 seconds]
 [["Nevermore". -> {next}]]
 ```
 ```stanza1

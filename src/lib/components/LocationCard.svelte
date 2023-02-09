@@ -11,9 +11,9 @@
     import { goto } from '$app/navigation';
 
   function routeToPage() {
-    console.log(path)
+    // console.log(path)
     const replaceState = false;
-    goto(`${base}/locations${path}`, { replaceState: false, noscroll: false }) 
+    goto(`${base}/locations${path}`, { replaceState: false, noScroll: false }) 
   }
 </script>
 
@@ -47,7 +47,9 @@
     background-color: whitesmoke;
     cursor: pointer;
   }
-
+  .location:hover h2 {
+    text-decoration: underline;
+  }
   .video {
         overflow: hidden;
         /* 16:9 aspect ratio */

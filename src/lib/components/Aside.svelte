@@ -4,7 +4,7 @@
     import {faExclamationTriangle} from '@fortawesome/free-solid-svg-icons'
 </script>
 
-<aside class='card is- p-3'>
+<aside class='card my-3 p-3'>
     <div class='columns is-mobile is-vcentered'>
         <div class='column is-narrow'><span><Fa icon={faExclamationTriangle} size='1.75x' /></span></div>
         <div class='column'>

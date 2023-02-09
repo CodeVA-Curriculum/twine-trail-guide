@@ -6,6 +6,7 @@
     import { onMount } from 'svelte';
     import {selected} from '$lib/util/stores.js'
     export let slug, position
+    export let optional = false;
 
     let data;
     function routeToPage() {
@@ -14,12 +15,14 @@
     }
 
     onMount(async () => {
+        // console.log(optional)
         if(slug) {
             data = (await import(`../../routes/locations/${slug}/+page.md`)).metadata;
         }
     })
 
     function cl() {
+        // console.log(`Selecting ${slug}`)
         selected.set(slug);
     }
 </script>
@@ -35,29 +38,46 @@
     {:else}
         <div class="timeline-marker {selected ? '': ''}"></div>
     {/if}
-    <div class="timeline-content card location-content p-4 {selected ? 'not-selected' : 'not-selected'}">
-            <!-- <div class='video mb-3'>
-                <iframe src="https://www.youtube.com/embed/AsURmcD_Z5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div> -->
-            <h3 class="heading is-small">{#if data.type!='project'}{position}.{/if} {data.title}</h3>
-            <slot><p>{data.short}</p></slot>
-    </div>
+        {#if !optional}
+            <div class="timeline-content card location-content p-4 {$selected == slug ? 'is-selected' : 'not-selected'}">
+                    <!-- <div class='video mb-3'>
+                        <iframe src="https://www.youtube.com/embed/AsURmcD_Z5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div> -->
+                    <h3 class="heading is-small">{#if data.type!='project'}{position}.{/if} {data.title}</h3>
+                    <slot><p>{data.short}</p></slot>
+            </div>
+        {:else}
+            <div class='timeline-content optional {$selected == slug ? 'is-selected' : 'not-selected'}'><h3 class='heading is-small'>Optional: {data.title}</h3></div>
+        {/if}
+
     {/if}
 </article>
 
-<style>
+<style lang='scss'>
+    @import '../styles/variables.scss';
     .location > .location-content {
         margin-left: 3rem;
     }
-    .not-selected:hover {
+    .not-selected {
+        border-width: 0px;
+    }
+    .not-selected:hover, .is-selected:hover {
         background-color: whitesmoke;
         cursor: pointer;
     }
-    .is-selected {
+    .locationcontent.is-selected {
+        border-color: $blue;
+        border-width: 3px;
+        border-style: solid;
         background-color: white;
         cursor: pointer;
     }
-    .is-selected:hover {
+    .optional {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 0.75rem;
+    }
+    .optional.is-selected {
         background-color: whitesmoke;
     }
     .location {

@@ -72,15 +72,17 @@
         // sort by "sparkle"
         // trails.sort(function (a,b) { return a.difficulty - b.difficulty})
         // console.log(data.trails)
-        trails = data.trails;
-        if(trails) {
-            filteredList = trails;
-        }
+        // trails = data.trails;
+        // if(trails) {
+        //     filteredList = trails;
+        // }
+        filteredList = data.trails;
         // console.log(trails)
     })
 
     let filter = (searchTerm, selectedDifficulties) => {
         let tempList = [];
+        const trails = data.trails
         for(let i=0; i<trails.length;i++) {
             if(trails[i].title.toLowerCase().includes(searchTerm.toLowerCase()) || searchTerm.length <= 0) {
                 tempList.push(trails[i]);
@@ -128,16 +130,16 @@
                       </button>
                     </div>
                     <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                      <div class="dropdown-content">
-                        {#each difficulties as diff, i}
-                        <label class="dropdown-item checkbox">
-                          <input type='checkbox' bind:group={selectedDifficulties} name='selectedDifficulties' value={i}>
-                          {diff}
-                        </label>
-                        {/each}
-                      </div>
+                        <div class="dropdown-content">
+                            {#each difficulties as diff, i}
+                            <label class="dropdown-item checkbox">
+                                <input type='checkbox' bind:group={selectedDifficulties} name='selectedDifficulties' value={i}>
+                                {diff}
+                            </label>
+                            {/each}
+                        </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
@@ -156,15 +158,18 @@
 </div> -->
     <hr>
     <div class='container trail-list'>
-        
+        {#if filteredList.length > 0}
         {#each filteredList as trail}
         <TrailCard
                 name={trail.title}
                 desc={trail.description}
                 difficulty={trail.difficulty}
-                path='{trail.slug}'
+                path={trail.slug}
         />
         {/each}
+        {:else}
+            <div class='disclaimer'><p><i>Some trails are hidden by your filters!</i></p></div>
+        {/if}
     </div>
 </section>
 

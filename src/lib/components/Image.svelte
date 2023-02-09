@@ -8,7 +8,7 @@
 
 <!-- // TODO: figure out why the images aren't being served from the right directory -->
 <!-- maybe downgrade sveltekit -->
-<div style='margin-left: auto; margin-right: auto;'>
+<div class='has-text-centered' style='margin-left: auto; margin-right: auto;'>
     <figure class="image is-inline-block">
         <img alt="{alt}" src="{base}/images{src}" />
     </figure>

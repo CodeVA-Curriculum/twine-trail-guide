@@ -13,8 +13,6 @@ layout: location
 
 One of the great things about interactive narratives is the possibility for the story to respond to the choices the reader makes. One way to make your interactive narrative feel life-like is to use variables to change what different characters say based on what the reader does in the story. This project prompts you to create a story about a big event in history, and try to imagine what the people there would say to one another. As the reader discovers more information, the characters' scripts should change to reveal more information about their inner thoughts, their lives, and how they are making sense of the historical moment they are living in.
 
----
-
 ## How To
 
 First, decide on an event you'd like to chronicle in your story. You should consider choosing a topic that has a good number of primary accounts of the event, especially interviews and details about the people who were there. Here are some options you could consider:

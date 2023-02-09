@@ -12,28 +12,27 @@ description: This tutorial shows you how to combine passages by embedding, which
 
 An **embedded passage** is a passage that you insert into another passage (I call it the "host passage", but Chapbook doesn't have an official name for it). When you view the host passage, the computer also displays the embedded passage along with it. Setting up an embedded passage is pretty easy, but understanding how and why the embed works might be a little tricky. Here's a story with two passages, one called `Stanza1` and one called `Raven`.
 
-![A screenshot of the Twine story editor showing two disconnected passages: Stanza1, and Raven](/raven-start.png)
+<!-- ![A screenshot of the Twine story editor showing two disconnected passages: stanza1, and raven](/raven-start.png) -->
 
-:::passage{title="Stanza1"}
-```
+:::passage{title="Poem Story" src="/raven-start.png" tabs}
+```stanza1
 Then, methought, the air grew denser, perfumed from an unseen censer
 Swung by Seraphim whose foot-falls tinkled on the tufted floor.
 “Wretch,” I cried, “thy God hath lent thee—by these angels he hath sent thee
 Respite—respite and nepenthe from thy memories of Lenore;
 Quaff, oh quaff this kind nepenthe and forget this lost Lenore!”
 ```
-:::
-
-:::passage{title="Raven"}
-```
+```raven
 Quoth the Raven "Nevermore."
 ```
 :::
 
-The way I've written these passages above, they are not connected--the story starts with `Stanza1`, and then ends without ever getting to `Raven`. In a normal situation, I might link these passages together so the reader can "visit" the `Raven` passage after reading `Stanza1`. However, in this case, I want to **embed** `Raven` *inside* `Stanza1`--the `Raven` passage will be the embedded passage, and `Stanza1` will be the host passage. To embed the `Raven` passage inside `Stanza1`, I need to add some code to `Stanza1`:
+The way I've written these passages above, they are not connected--the story starts with `Stanza1`, and then ends without ever getting to `raven`. In a normal situation, I might link these passages together so the reader can "visit" the `Raven` passage after reading `stanza1`. However, in this case, I want to **embed** `raven` *inside* `stanza1`--the `raven` passage will be the embedded passage, and `stanza1` will be the host passage. 
 
-:::passage{title="Stanza1"}
-```
+To embed the `raven` passage inside `stanza1`, I need to add some code to `stanza1`. Then, when I test the story, the text from the `Raven` passage appears at the bottom of the `Stanza1` passage!
+
+:::passage{title="Poem With Embedded Passage" src="/raven-embed.png" tabs}
+```stanza1
 Then, methought, the air grew denser, perfumed from an unseen censer
 Swung by Seraphim whose foot-falls tinkled on the tufted floor.
 “Wretch,” I cried, “thy God hath lent thee—by these angels he hath sent thee
@@ -42,15 +41,15 @@ Quaff, oh quaff this kind nepenthe and forget this lost Lenore!”
 
 {embed passage: 'Raven'}
 ```
+```raven
+Quoth the Raven "Nevermore."
+```
 :::
-
-Now, when I test the story, the text from the `Raven` passage appears at the bottom of the `Stanza1` passage!
-
-![The output of the passage above](/raven-embed.png)
+<!-- ![The output of the passage above](/raven-embed.png) -->
 
 You might be asking yourself why use embedded passages at all--it's a sort of complicated feature, and in many cases it might make more sense to just write out the embedded part in the host passage in the first place. In some cases, avoiding unnecessary complexity is a good idea! However, the main benefit of embedding isn't to just host passages inside another one; it's to *re-use* passages across your story.
 
-For example, I can add a `Stanza2` passage with the following text:
+For example, I can add a `stanza2` passage with the following text:
 
 :::passage{title="Stanza2" src="/raven-embed2.png"}
 ```

@@ -3,10 +3,36 @@
     // import { locations } from '$lib/db/trails';
     import { onMount } from 'svelte';
     import {locations, selected} from '$lib/util/stores.js'
+    import { object_without_properties } from 'svelte/internal';
     export let mobile = "false"
-    // onMount(() => {
-    //     selected.set($locations[0])
-    // })
+
+    let locNodes = []
+    onMount(() => {
+        // locations.set([])
+        locations.subscribe(locs => {
+            locNodes = []
+            let count = 0
+            for(let i=0;i<locs.length;i++) {
+                let node = {}
+                if(!locs[i].optional) {
+                    count+=1;
+                }
+                node = {
+                    slug: locs[i].slug,
+                    optional: locs[i].optional,
+                    index: count
+                }
+                locNodes = [...locNodes, node]
+            }
+        })
+        return () => {
+            // console.log("Unmounting timeline...")
+            // clear timeline
+            locations.set([])
+        }
+    })
+
+    // $: console.log(`Timeline sees ${$locations.length} locations in the store.`)
 
 </script>
 
@@ -16,7 +42,7 @@
         <span class="tag is-medium is-primary">Start</span>
     </header>
     
-    {#each $locations as path, i}
+    {#each locNodes as obj, i}
     <!-- <LocationNode 
         cl={() => console.log("click!")}
         title={$locationData[path].title}
@@ -27,8 +53,9 @@
         selected={false}
     /> -->
     <LocationNode
-        position={i+1}
-        slug={path}
+        position={obj.index}
+        slug={obj.slug}
+        optional={obj.optional}
     />
     {/each}
     

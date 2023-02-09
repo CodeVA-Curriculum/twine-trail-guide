@@ -15,10 +15,6 @@ In the end, your reader should feel like they are investigating a mystery, porin
 Before working on this trail, you should be at least a little bit familiar with the basics of Twine--how to make passages, link them together, and create branching paths to make a story with multiple possible endings. If you aren't sure, feel free to review the "Your First Story" trail before you start with this one.
 :::
 
-<!-- TODO: finish consuming this markup convention -->
-<!-- Basically, these are the "inlined" location tutorials. The Trail is in charge of deciding which one to render based on the TrailTimeline UI -->
-<!-- ::::trailmap -->
-
 ---
 
 ::timeline

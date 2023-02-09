@@ -13,11 +13,11 @@ layout: location
 
 **CSS** (stands for "cascading style sheet") is a coding language that works with HTML to help with changing the look of a website. Because your Twine story is also a website, you can add CSS to it to change how it looks.
 
-To add CSS, go to the story editor and click on the "up" arrow near the name of the story in the bottom-left corner of your screen. Then, select `Edit Story Stylesheet`.
+To add CSS, go to the `Story` tab near the top-left of the editor and click `Stylesheet`.
 
 ![The Twine story menu with an arrow pointing to the option to edit the stylesheet](/twine-edit-stylesheet.png)
 
-You can add as much CSS here as you want. For example, let's turn all the text red:
+Then, you can edit the stylesheet by adding CSS rules to the `Stylesheet` text entry area. If you aren't sure how to write CSS, this is totally optional. You can check out some options for what to add [here](https://www.w3schools.com/w3css/defaulT.asp) if you'd like. You can add as much CSS here as you want. For example, let's turn all the text red:
 
 
 ```
@@ -28,7 +28,7 @@ p {
 
 ![A Twine story with all the text colored red](/twine-red-text-style.png)
 
-To see your changes start your story. To change it back, just delete your CSS from the stylesheet editor and restart your story.
+To see your changes, start your story in the usual way. To change it back, just delete your CSS from the stylesheet editor and restart your story.
 
 ---
 
@@ -52,23 +52,23 @@ Depending on how you're writing your story, you might want to make your images a
 
 Here's what it looks like with the image taking up 100% of the page width:
 
+:::passage{title="Full Width Image Example" src="/twine-image-full.png"}
 ```
 img {
     width: 100%;
 }
 ```
-
-![A Twine passage with an image taking up the whole page](/twine-image-full.png)
+:::
 
 . . . and here's what it looks like when the image only takes up 50%:
 
+:::passage{title="Half Width Image Example" src="/twine-image-half.png"}
 ```
 img {
     width: 50%;
 }
 ```
-
-![A Twine passage with an image taking up half of the page](/twine-image-half.png)
+:::
 
 ### Columns
 

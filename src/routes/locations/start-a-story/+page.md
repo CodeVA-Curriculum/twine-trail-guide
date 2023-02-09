@@ -21,33 +21,39 @@ layout: location
 
 ## Then, Select the Chapbook Format
 
-Twine **formats** control the appearance and style of the stories you create using Twine's tools. We suggest using **Chapbook** (that's the one we will use in our examples in this trail guide).
+Twine **formats** control the appearance and style of the stories you create using Twine's tools. We suggest using **Chapbook** (that's the one we will use in our examples in this trail guide). **The examples in this guide only work for Chapbook!**
 
-1. Click the `Formats` button in the area on the right side of the screen (see the screenshot below)
+1. Click `Twine` tab in the area near the top-left of the screen (see the screenshot below)
 
-![The Twine story editor, with the 'Formats' button circled in red.](/twine-format.png "Find the 'formats' button")
+![The Twine story editor, with the 'Twine' button circled in gold.](/twine-format.png "Find the 'formats' button")
 
-2. Choose **Chapbook**, and then click the "x" to return to the main page.
+2. Click the `Story Formats` button to open the story formats menu
+
+![The Twine story editor, with the 'Story Formats' button circled in gold](/twine-format-button.png)
+
+2. Click the **Chapbook** box to highlight it, and then click `Use as Default Format` near the top of the screen.
 
 ![The Twine 'formats' list, indicating that you should choose 'Chapbook' from the list](/twine-chapbook.png "Choose 'Chapbook' and return to the main page")
+
+Click the `Back` button near the top-left corner of the screen to return to the main page.
 
 ----
 
 ## Finally, Make Your Story
 
-1. Find the `+ Story` button in the area on the right side of the screen, and give it a click!
+1. From the main page, find the `+ New` button near the top-left of the screen, and give it a click!
 
 ![The Twine story editor, with the '+Story' button circled in red.](/twine-new-story.png "Click the 'New Story' button")
 
-2. Name your story whatever you'd like. If you can't think of a name, just name it `My First Story`. You can change it later if you'd like. Then, click `Add`.
+2. Name your story whatever you'd like. If you can't think of a name, just name it `My First Story`. You can change it later if you'd like. Then, click `Create`.
 
 ![The Twine 'new story' dialog box, with the '+Add' button circled in red.](/twine-add-story.png "Click the 'Add' button")
 
-3. Twine will automatically open the editor after it creates your story. To see how to add to your story, check out the [next tutorial](#). To return to the main page, click the `Home` button shaped like a house in the bottom-left corner of the screen.
+3. Twine will automatically open the editor after it creates your story. To see how to add to your story, check out the [tutorial on creating passages](/locations/create-passage). To return to the main page, click the `Back` button in the top-left corner of the screen.
 
-![The Twine editor, with a red arrow indicating the location of the 'Home' button](/twine-go-home.png "Return the main page by clicking the 'Home' button")
+![The Twine editor, with a red arrow indicating the location of the 'Back' button](/twine-go-home.png "Return the main page by clicking the 'Back' button")
 
-4. You can re-enter your story to make changes by clicking the story box from the main page.
+4. You can re-enter your story to make changes by selecting the story box from the main page and clicking the `Edit` button near the top-left side of the screen.
 
 ![The Twine story selection page, with a single story titled 'My First Story'.](/twine-select-story.png "Edit your story by clicking on it from the home page.")
 

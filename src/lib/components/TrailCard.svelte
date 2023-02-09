@@ -9,8 +9,7 @@
     import { goto } from '$app/navigation';
 
   function routeToPage() {
-    const replaceState = false;
-    goto(base + "/trails" + path, { replaceState: false, noscroll: false }) 
+    goto(base + "/trails" + path, { replaceState: false, noScroll: false }) 
   }
 
   function getDifficulty() {
@@ -63,5 +62,8 @@
   .trail:hover {
     background-color: whitesmoke;
     cursor: pointer;
+  }
+  .trail:hover h2 {
+    text-decoration: underline;
   }
 </style>

@@ -111,6 +111,7 @@ To accomplish this, you can create *named links*:
 
 > [[Begin->intro]]
 ```
+:::
 
 In the example above, the link `> [[Begin->intro]]` will send the reader to the `intro` passage, but the link will show the text `Begin`. Most of the examples in the Twine Trail Guide will use this "named link" format, so it's a good idea to get acquainted with it!
 

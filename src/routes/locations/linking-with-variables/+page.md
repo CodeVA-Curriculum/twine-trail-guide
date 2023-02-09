@@ -83,7 +83,7 @@ The values of the variables makes it so the link in `kitchen` leads to a passage
 
 ![Twine editor view of the story written out below](/porridge-cluster.png)
 
-:::passage{title="Goldilocks Version 3" src="goldilocks3-demo.gif" tabs}
+:::passage{title="Goldilocks Version 3" src="/goldilocks3-demo.gif" tabs}
 ```porridge
 Goldilocks finds three bowls of porridge set out on the kitchen table: a big one, a medium one, and a small one.
 
@@ -109,7 +109,7 @@ One day, as Goldilocks was walking through the woods, she came upon a quaint cab
 
 The reader needs to choose one of these three options. The passages called `too-hot` and `too-cold` lead back to the `kitchen` passage, but the `just-right-porridge` passage is special:
 
-:::passage{title="Goldilocks Version 4" src="goldilocks4-demo.gif" tabs}
+:::passage{title="Goldilocks Version 4" src="/goldilocks4-demo.gif" tabs}
 ```just-right-porridge
 kitchen: "living-room"
 kitchen_choice: "I wonder if there's a place to sit in the next room..."

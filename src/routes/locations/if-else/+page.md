@@ -76,7 +76,7 @@ There isn't a functional difference between using `[if ]` and `[unless ]` versus
 
 Here's an example of a story that uses the `if` and `else` code above--the first time the reader visits the `treasure` passage, the variable called `hasKey` is `false` which means the option to "unlock the chest" is hidden from them. They need to visit other passages until they discover the key hidden in the `desk` passage. You can play through the whole story by [clicking here](/examples/the-locked-chest).
 
-:::passage{title="The Locked Chest" src="the-locked-chest.png" tabs}
+:::passage{title="The Locked Chest" src="/the-locked-chest.png" tabs}
 ```intro
 hasKey: false
 --

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- <link rel="icon" href="/favicon.png" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<meta http-equiv="content-security-policy" content="">
+		<link href="/twine-trail-guide/_app/immutable/assets/_layout-c8c62745.css" rel="stylesheet">
+		<link href="/twine-trail-guide/_app/immutable/assets/Standalone-4970b9f1.css" rel="stylesheet">
+		<link href="/twine-trail-guide/_app/immutable/assets/navigation-af927694.css" rel="stylesheet">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-8d9d7d98.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-28147552.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/singletons-5295c163.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/paths-6cd3a76e.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/preload-helper-b21cceae.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/_layout.svelte-863e6220.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/modules/pages/_layout.js-7b9cbfbc.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/_layout-8d2a742b.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/_layout.svelte-4f3c0001.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Nav-e2baa9e8.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/logic-operators/_page.md-30442b9e.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone-e39bc1fe.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone.svelte_svelte_type_style_lang-17c44177.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/navigation-03af5729.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index.es-30099b97.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Aside-c5d6848f.js">
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<nav class="navbar"><div class="navbar-brand logo"><a class="navbar-item" href="/twine-trail-guide/"><img alt="The CodeVA Logo" src="/twine-trail-guide/_app/immutable/assets/CodeVALogo-cdf06ed4.png" height="28">
+            <p class="mx-3 heading is-size-5">+</p>
+            <img alt="The Twine Logo" src="/twine-trail-guide/_app/immutable/assets/twine-b352c7c6.svg" height="28">
+            <h1 class="heading is-size-5 ml-5 mt-1 is-hidden-mobile">Twine Trail Guide</h1></a>
+        <button role="button" class="navbar-burger " aria-label="menu" aria-expanded="false" data-target="nav-menu"><span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span></button></div>
+    <div id="nav-menu" class="navbar-menu "><div class="navbar-end"><a class="navbar-item" href="/twine-trail-guide/">Home
+            </a>
+            <a class="navbar-item" href="/twine-trail-guide/about">About the Guide
+            </a>
+            <a class="navbar-item" href="https://padlet.com/jonstapleton/wvs5vb5ct1s5kqts">Region Map
+            </a>
+            <a class="navbar-item" href="/twine-trail-guide/trails">Trails
+            </a>
+            <a class="navbar-item" href="/twine-trail-guide/locations">Locations
+            </a></div></div></nav>
+<div class="container"><section class="wrapper svelte-rs31xx"><div class="columns"><div class="column content"><h1 class="title">Logical Operations</h1>
+                
+                
+                
+                </div>
+            </div></section>
+    <hr class="svelte-rs31xx">
+    <section class="content post post-container svelte-rs31xx"><h2>Using Logical Operators</h2>
+<p>Logic operators allow you to write <a href="" rel="">conditional control structures</a> that include more than one Boolean value or relational expression (expressions that resolve to a Boolean value of either <code>true</code> or <code>false</code>, read more <a href="" rel="">here</a>). That’s a lot of jargon—here’s an example to help explain what I mean.</p>
+<aside class="card my-3 p-3 svelte-6gt5py"><div class="columns is-mobile is-vcentered"><div class="column is-narrow"><span><svg id="" class="fa svelte-1cj2gr0" style="height:1em;font-size:1.75em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 576 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(288 256)" transform-origin="144 0"><g transform="translate(0,0) scale(1,1)"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z" fill="currentColor" transform="translate(-288 -256)"></path></g></g></svg></span></div>
+        <div class="column"><p class="is-size-7"><p>If you haven’t learned about <a href="" rel="">“if/unless”</a> blocks, <a href="" rel="">“if/else” blocks</a>, or <a href="" rel="">relational expressions</a>, you might see some unfamiliar concepts in this tutorial.</p></p></div></div>
+</aside>
+<p>Imagine an interactive story where the reader needs to light a torch to illuminate a room. In order to do this, they need to find flint <em>and</em> steel so they can make sparks and create fire. You might create a passage like this as a start:</p>
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Torch Room</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre "></div></div>
+        
+            </div></div>
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">You see a dark room, with an unlit iron brazier in the center.
+
+[if flint]
+&gt; [[Light the brazier-&gt;lit]]
+[else]
+If only I had some flint and steel to light the brazier...
+
+&gt; [[Search the hallway-&gt;hallway]]
+&gt; [[Search the stairs-&gt;stairs]]</code><!-- HTML_TAG_END --></pre></span>
+</article>
+<p>In this example, if the variable <code>flint</code> has a value of <code>true</code>, the computer displays the link leading to the <code>lit</code> passage. Otherwise, it shows the two passages that will allow the reader to search for the items they need.</p>
+<p>The passage above doesn’t work exactly as it should—I only want the computer to show the <code>&quot;Light the torch&quot;</code> option if <em>both</em> <code>flint</code> and <code>steel</code> are <code>true</code>. If one of them is still <code>false</code>, the reader should need to search around the story to find them. To fix the passage so it works as intended, I’ll use a <strong>logic operator</strong>:</p>
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Torch Room</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre "></div></div>
+        
+            </div></div>
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">_foundEverything: flint &amp;&amp; steel
+--
+
+You see a dark room, with an unlit iron brazier in the center.
+
+[if _foundEverything]
+&gt; [[Light the brazier-&gt;lit]]
+[else]
+If only I had some flint and steel to light the brazier...
+
+&gt; [[Search the hallway-&gt;hallway]]
+&gt; [[Search the stairs-&gt;stairs]]</code><!-- HTML_TAG_END --></pre></span>
+</article>
+<p>Check out the first line-I’ve added a <em>temporary</em> variable to the passage set to the value <code>flint &amp;&amp; steel</code>. The <code>&amp;&amp;</code> symbol is a <strong>logic operator</strong> that compares two Boolean values; if both values are <code>true</code>, the <strong>logical expression</strong> produces a value of <code>true</code>. Otherwise, it produces a value of <code>false</code>. Logical expressions work exactly the same way as <a href="" rel="">arithmetic expressions</a> and <a href="" rel="">relational expressions</a>, except instead of comparing numbers or strings to one another or calculating new values, they compare two <em>Boolean</em> values to produce a new Boolean value based on them.</p>
+<p>Here’s a more complete version of the story that uses a logical operation as demonstrated above; Try it out by <a href="" rel="">clicking here</a>!</p>
+<p>
+
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="GIF of a reader playing through the Unlit Brazier story below" src="/twine-trail-guide/images/the-unlit-brazier-demo.gif" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">The Unlit Brazier</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre has-tabs"></div></div>
+        
+            <div class="column has-text-centered m-0">
+
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/unlit-room.png" class="svelte-r75zci"></figure></div>
+
+
+</div></div></div>
+    <span style="display: none;"><pre class="language-intro"><!-- HTML_TAG_START --><code class="language-intro">flint: false
+steel: false
+--
+
+# The Unlit Room
+
+&gt; [[Begin-&gt;torch-room]]</code><!-- HTML_TAG_END --></pre><pre class="language-torch-room"><!-- HTML_TAG_START --><code class="language-torch-room">_foundEverything: flint &amp;&amp; steel
+--
+
+You see a dark room, with an unlit iron brazier in the center.
+
+[if _foundEverything]
+&gt; [[Light the brazier-&gt;lit]]
+[else]
+If only I had some flint and steel to light the brazier...
+
+&gt; [[Search the hallway-&gt;hallway]]
+&gt; [[Search the stairs-&gt;stairs]]</code><!-- HTML_TAG_END --></pre><pre class="language-hallway"><!-- HTML_TAG_START --><code class="language-hallway">flint: true
+--
+
+You pace around the room and find a narrow hall leading off into the house. You feel something underfoot as you ease forward into the pitch darkness... a piece of **flint**?
+
+&gt; [[Return-&gt;torch-room]]</code><!-- HTML_TAG_END --></pre><pre class="language-stairs"><!-- HTML_TAG_START --><code class="language-stairs">steel: true
+--
+
+You feel your shin smash against a wooden stair. On your hands and knees, you feel around the dusty floor and feel something cold... A **knife**.
+
+&gt; [[Return-&gt;torch-room]]</code><!-- HTML_TAG_END --></pre><pre class="language-lit"><!-- HTML_TAG_START --><code class="language-lit">The brazier roars to life!</code><!-- HTML_TAG_END --></pre></span>
+</article>
+<p>You can also use <a href="" rel="">relational expressions</a> as operands in your logical expressions:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">_bonus: score &gt; 10 &amp;&amp; time &lt; 30
+--
+
+Your score is &#123;score&#125;! Nice job.
+
+[if _bonus]
+Whoa! You got a great score *and* finished really quickly!</code><!-- HTML_TAG_END --></pre>
+<p>There are a lot of ways to use logic operators—try combining them in different ways to see what happens with your <code>[if/unless ]</code> blocks!</p>
+<hr>
+<h2>Logical Operators</h2>
+<p>There are three logic operators available to you in Chapbook Twine passages:</p>
+<table><thead><tr><th>Operator</th>
+<th>Name</th>
+<th>Description</th>
+<th>Example Expression</th>
+<th>Value Produced</th></tr></thead>
+<tbody><tr><td><code>&amp;&amp;</code></td>
+<td>“and”</td>
+<td>Compare two Boolean values. If they are both <code>true</code>, produce <code>true</code>; Otherwise, produce <code>false</code>.</td>
+<td><code>true &amp;&amp; false</code></td>
+<td><code>false</code></td></tr>
+<tr><td>`</td>
+<td></td>
+<td>`</td>
+<td>“or”</td>
+<td>Compare two Boolean values. If at least one of them is <code>true</code>, produce <code>true</code>; otherwise, produce <code>false</code>.</td></tr>
+<tr><td><code>!</code></td>
+<td>“not”</td>
+<td>Produce the opposite of one Boolean value. If the value is <code>true</code>, produce false; if it’s <code>false</code>, produce <code>true</code></td>
+<td><code>!false</code></td>
+<td><code>true</code></td></tr></tbody></table>
+<p>Try them out in your variables, and use them in <code>[if ]</code> statements to create interactive passages that respond to user’s choices!</p></section>
+    
+</div>
+
+
+		<script type="module" data-sveltekit-hydrate="1u32jz2">
+			import { start } from "/twine-trail-guide/_app/immutable/start-8d9d7d98.js";
+
+			start({
+				env: {},
+				hydrate: {
+					status: 200,
+					error: null,
+					node_ids: [0, 2, 23],
+					params: {},
+					route: {"id":"/locations/logic-operators"},
+					data: [null,null,null],
+					form: null
+				},
+				paths: {"base":"/twine-trail-guide","assets":"/twine-trail-guide"},
+				target: document.querySelector('[data-sveltekit-hydrate="1u32jz2"]').parentNode,
+				version: "1675948488626"
+			});
+		</script>
+	</div>
+	</body>
+</html>

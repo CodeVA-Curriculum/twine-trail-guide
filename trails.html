@@ -6,25 +6,25 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<meta http-equiv="content-security-policy" content="">
-		<link href="/twine-trail-guide/_app/immutable/assets/_layout-9c41bba0.css" rel="stylesheet">
-		<link href="/twine-trail-guide/_app/immutable/assets/_page-d4cf607b.css" rel="stylesheet">
+		<link href="/twine-trail-guide/_app/immutable/assets/_layout-c8c62745.css" rel="stylesheet">
+		<link href="/twine-trail-guide/_app/immutable/assets/_page-6abfa454.css" rel="stylesheet">
 		<link href="/twine-trail-guide/_app/immutable/assets/navigation-af927694.css" rel="stylesheet">
-		<link href="/twine-trail-guide/_app/immutable/assets/Trail-1bdd3f19.css" rel="stylesheet">
-		<link href="/twine-trail-guide/_app/immutable/assets/Standalone-fb8ba4ca.css" rel="stylesheet">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-f4273e50.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-7d48f659.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/singletons-6542c9d1.js">
+		<link href="/twine-trail-guide/_app/immutable/assets/Trail-48a1de2b.css" rel="stylesheet">
+		<link href="/twine-trail-guide/_app/immutable/assets/Standalone-4970b9f1.css" rel="stylesheet">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-8d9d7d98.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-28147552.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/singletons-5295c163.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/paths-6cd3a76e.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/preload-helper-b21cceae.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/_layout.svelte-9adfaf16.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/_layout.svelte-863e6220.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/modules/pages/_layout.js-7b9cbfbc.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/_layout-8d2a742b.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/trails/_layout.svelte-495fcf73.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Nav-c1d45359.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/trails/_page.svelte-f9a8db8e.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/navigation-208b7d2c.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/modules/pages/trails/_page.js-f2abf819.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/_page-746c8cd9.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/trails/_layout.svelte-bdf643ac.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Nav-e2baa9e8.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/trails/_page.svelte-27a0fb0a.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/navigation-03af5729.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/modules/pages/trails/_page.js-a86a7946.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/_page-1c86579a.js">
 	</head>
 	<body>
 		<div id="svelte">
@@ -48,35 +48,89 @@
             <a class="navbar-item" href="/twine-trail-guide/locations">Locations
             </a></div></div></nav>
 
-<div class="section"><div class="container"><h1 class="title">Trail Guide</h1>
+<section class="section"><div class="container"><h1 class="title">Trail Guide</h1>
         <p class="block">Browse the list of trails below to explore different things to create with Twine. Each Trail is a set of short tutorials that will help you learn how to create a particular kind of story, or implement a feature into a story you&#39;ve already created.</p>
             
         <p class="block">Some Trails are short, and some are longer and take more time to complete. We&#39;ve marked the trails recommended for beginners with the ✨ icon. All the Trails in this guide have a &quot;difficulty&quot; rating that corresponds to how much time the Trail might take to complete (🔷 for Easy, 🔷🔷 for Moderate, 🔷🔷🔷 for Strenuous, and 🔷🔷🔷🔷 for Expert).</p>
-        </div></div>
+        
+        <div class="field has-addons"><div class="control is-expanded"><input class="input" type="text" placeholder="Search in Trail titles..." value=""></div>
+            <div class="control"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span>Filter by difficulty...</span>
+                        <span class="icon is-small svelte-10vunke"><p>4</p></span></button></div>
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu"><div class="dropdown-content"><label class="dropdown-item checkbox"><input type="checkbox" name="selectedDifficulties" value="0" checked>
+                                Easy 🔷
+                            </label><label class="dropdown-item checkbox"><input type="checkbox" name="selectedDifficulties" value="1" checked>
+                                Moderate 🔷🔷
+                            </label><label class="dropdown-item checkbox"><input type="checkbox" name="selectedDifficulties" value="2" checked>
+                                Strenuous 🔷🔷🔷
+                            </label><label class="dropdown-item checkbox"><input type="checkbox" name="selectedDifficulties" value="3" checked>
+                                Extreme 🔷🔷🔷🔷
+                            </label></div></div></div></div></div></div>
 
         
-
-<section class="section"><div class="container trail-list"></div>
+    <hr>
+    <div class="container trail-list"><article class="card my-5 trail svelte-1uwcdvl"><div class="card-content"><div class="media">
+        
+        <div><div class="columns is-mobile"><div class="column"><h2 class="title is-size-4 svelte-1uwcdvl"><a href="/twine-trail-guide/trails/your-first-story" class="svelte-1uwcdvl">Your First Story ✨</a></h2></div>
+            <div class="column is-narrow"><span class="heading is-size-5">🔷</span></div></div>
+          
+          <p class="block">This trail is intended to introduce beginners to Twine, and help them create a simple interactive story. Follow this trail to learn the basics! You'll learn about how to use the Twine interface, how to write and test the different parts of your story, how to link scenes together, and how to create a simple choose-your-own-adventure-style story that offers choices for the reader than affect the outcome.</p></div></div></div>
+</article><article class="card my-5 trail svelte-1uwcdvl"><div class="card-content"><div class="media">
+        
+        <div><div class="columns is-mobile"><div class="column"><h2 class="title is-size-4 svelte-1uwcdvl"><a href="/twine-trail-guide/trails/oral-history" class="svelte-1uwcdvl">Oral History </a></h2></div>
+            <div class="column is-narrow"><span class="heading is-size-5">🔷🔷</span></div></div>
+          
+          <p class="block">Pick a friend, family member, or community member and tell their story using audio recordings. Create a Twine story where the reader can explore the events and stories captured in your recordings.</p></div></div></div>
+</article><article class="card my-5 trail svelte-1uwcdvl"><div class="card-content"><div class="media">
+        
+        <div><div class="columns is-mobile"><div class="column"><h2 class="title is-size-4 svelte-1uwcdvl"><a href="/twine-trail-guide/trails/breakout-box" class="svelte-1uwcdvl">Breakout Box </a></h2></div>
+            <div class="column is-narrow"><span class="heading is-size-5">🔷🔷</span></div></div>
+          
+          <p class="block">In this trail, you'll learn how to write stories where the computer hides or displays sections of passages based on the value of variables, which are invisible to the reader. The **conditional control structures** which make this possible are very useful for creating stories where the reader needs to investigate something or solve a puzzle before having access to the next part of the narrative. At the end, you'll create a "puzzle box" game about a historical figure. The reader should use their knowledge of history and clues hidden in the story to advance through the puzzle, eventually "unlocking" the identity of the figure in question.</p></div></div></div>
+</article><article class="card my-5 trail svelte-1uwcdvl"><div class="card-content"><div class="media">
+        
+        <div><div class="columns is-mobile"><div class="column"><h2 class="title is-size-4 svelte-1uwcdvl"><a href="/twine-trail-guide/trails/primary-documents" class="svelte-1uwcdvl">Primary Documents </a></h2></div>
+            <div class="column is-narrow"><span class="heading is-size-5">🔷🔷🔷</span></div></div>
+          
+          <p class="block">Create a Twine story that uses primary documents--pieces of writing or recordings made by people who experienced a particular event from the past--to help the reader discover information about an event from the past. This project makes use of the Library of Virginia's collections as a source of primary documents that tell stories about people from Virginia. You'll connect those documents together to tell a story.</p></div></div></div>
+</article><article class="card my-5 trail svelte-1uwcdvl"><div class="card-content"><div class="media">
+        
+        <div><div class="columns is-mobile"><div class="column"><h2 class="title is-size-4 svelte-1uwcdvl"><a href="/twine-trail-guide/trails/counting-web" class="svelte-1uwcdvl">Counting Story </a></h2></div>
+            <div class="column is-narrow"><span class="heading is-size-5">🔷🔷🔷</span></div></div>
+          
+          <p class="block">In this trail, you'll create a story where the computer keeps track of a number value "behind the scenes"--a value that changes over time based on the events in the story. Using variables to store number values has several interesting applications; you can create a story that keeps track of a score, a story where the reader needs to collect things, or any number of other "game-like" reading experiences. In the project at the end of this trail, you'll create a story that explores an important moment in American history where people voted on an issue.</p></div></div></div>
+</article><article class="card my-5 trail svelte-1uwcdvl"><div class="card-content"><div class="media">
+        
+        <div><div class="columns is-mobile"><div class="column"><h2 class="title is-size-4 svelte-1uwcdvl"><a href="/twine-trail-guide/trails/conversation-web" class="svelte-1uwcdvl">Conversation Web </a></h2></div>
+            <div class="column is-narrow"><span class="heading is-size-5">🔷🔷🔷</span></div></div>
+          
+          <p class="block">In this trail, you'll learn to use variables to create a story where characters "remember" you, and react to your choices in the story. Creating stories that change based on what the user does is a great way to make your narrative seem more lifelike, making the user feel as though they are interacting with a real world populated by real people. Follow this trail to learn the basics of creating, using, and modifying the values of variables in your stories!</p></div></div></div>
+</article><article class="card my-5 trail svelte-1uwcdvl"><div class="card-content"><div class="media">
+        
+        <div><div class="columns is-mobile"><div class="column"><h2 class="title is-size-4 svelte-1uwcdvl"><a href="/twine-trail-guide/trails/archeological-puzzle" class="svelte-1uwcdvl">Archeological Puzzle </a></h2></div>
+            <div class="column is-narrow"><span class="heading is-size-5">🔷🔷🔷</span></div></div>
+          
+          <p class="block">In this trail, you'll learn how to write stories where the computer hides or displays sections of passages based on the value of variables, which are invisible to the reader. The **conditional control structures** which make this possible are very useful for creating stories where the reader needs to investigate something or solve a puzzle before having access to the next part of the narrative. At the end, you'll create a story that prompts the reader to solve a puzzle as they explore a historical location.</p></div></div></div>
+</article></div>
 </section>
 
 
-		<script type="module" data-sveltekit-hydrate="1b3gs08">
-			import { start } from "/twine-trail-guide/_app/immutable/start-f4273e50.js";
+		<script type="module" data-sveltekit-hydrate="1szrrg8">
+			import { start } from "/twine-trail-guide/_app/immutable/start-8d9d7d98.js";
 
 			start({
 				env: {},
 				hydrate: {
 					status: 200,
 					error: null,
-					node_ids: [0, 3, 29],
+					node_ids: [0, 3, 36],
 					params: {},
 					route: {"id":"/trails"},
 					data: [null,null,null],
 					form: null
 				},
 				paths: {"base":"/twine-trail-guide","assets":"/twine-trail-guide"},
-				target: document.querySelector('[data-sveltekit-hydrate="1b3gs08"]').parentNode,
-				version: "1669151237562"
+				target: document.querySelector('[data-sveltekit-hydrate="1szrrg8"]').parentNode,
+				version: "1675948488626"
 			});
 		</script>
 	</div>

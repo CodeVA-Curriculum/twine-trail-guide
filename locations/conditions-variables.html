@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- <link rel="icon" href="/favicon.png" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<meta http-equiv="content-security-policy" content="">
+		<link href="/twine-trail-guide/_app/immutable/assets/_layout-c8c62745.css" rel="stylesheet">
+		<link href="/twine-trail-guide/_app/immutable/assets/Standalone-4970b9f1.css" rel="stylesheet">
+		<link href="/twine-trail-guide/_app/immutable/assets/navigation-af927694.css" rel="stylesheet">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-8d9d7d98.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-28147552.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/singletons-5295c163.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/paths-6cd3a76e.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/preload-helper-b21cceae.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/_layout.svelte-863e6220.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/modules/pages/_layout.js-7b9cbfbc.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/_layout-8d2a742b.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/_layout.svelte-4f3c0001.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Nav-e2baa9e8.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/conditions-variables/_page.md-10558922.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone-e39bc1fe.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone.svelte_svelte_type_style_lang-17c44177.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/navigation-03af5729.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index.es-30099b97.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Aside-c5d6848f.js">
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<nav class="navbar"><div class="navbar-brand logo"><a class="navbar-item" href="/twine-trail-guide/"><img alt="The CodeVA Logo" src="/twine-trail-guide/_app/immutable/assets/CodeVALogo-cdf06ed4.png" height="28">
+            <p class="mx-3 heading is-size-5">+</p>
+            <img alt="The Twine Logo" src="/twine-trail-guide/_app/immutable/assets/twine-b352c7c6.svg" height="28">
+            <h1 class="heading is-size-5 ml-5 mt-1 is-hidden-mobile">Twine Trail Guide</h1></a>
+        <button role="button" class="navbar-burger " aria-label="menu" aria-expanded="false" data-target="nav-menu"><span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span></button></div>
+    <div id="nav-menu" class="navbar-menu "><div class="navbar-end"><a class="navbar-item" href="/twine-trail-guide/">Home
+            </a>
+            <a class="navbar-item" href="/twine-trail-guide/about">About the Guide
+            </a>
+            <a class="navbar-item" href="https://padlet.com/jonstapleton/wvs5vb5ct1s5kqts">Region Map
+            </a>
+            <a class="navbar-item" href="/twine-trail-guide/trails">Trails
+            </a>
+            <a class="navbar-item" href="/twine-trail-guide/locations">Locations
+            </a></div></div></nav>
+<div class="container"><section class="wrapper svelte-rs31xx"><div class="columns"><div class="column content"><h1 class="title">Conditions &amp; Variables</h1>
+                
+                
+                
+                </div>
+            </div></section>
+    <hr class="svelte-rs31xx">
+    <section class="content post post-container svelte-rs31xx"><h2>Modifying Variables Based on Conditions</h2>
+<p>Conditional control structures like <a href="" rel="">“if”, “unless”,</a> or <a href="" rel="">“if-else” blocks</a> are useful for displaying or hiding text based on the value of a variable. But what if you want to <a href="" rel="">modify a variable</a> based on the value of another variable? The Chapbook format of Twine includes a special variable assignment syntax for this exact task, allowing you to modify variables in your passages based on the results of a <a href="" rel="">relational</a> or <a href="" rel="">logical expression</a>.</p>
+<aside class="card my-3 p-3 svelte-6gt5py"><div class="columns is-mobile is-vcentered"><div class="column is-narrow"><span><svg id="" class="fa svelte-1cj2gr0" style="height:1em;font-size:1.75em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 576 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(288 256)" transform-origin="144 0"><g transform="translate(0,0) scale(1,1)"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z" fill="currentColor" transform="translate(-288 -256)"></path></g></g></svg></span></div>
+        <div class="column"><p class="is-size-7"><p>If you haven’t learned about <a href="" rel="">creating</a> and <a href="" rel="">modifying</a> variables, <a href="" rel="">“if” blocks</a>, or <a href="" rel="">relational expressions</a> yet, consider checking out the tutorials about those topics before continuing!</p></p></div></div>
+</aside>
+<h2>Creating Conditionally-Set Variables</h2>
+<p>Consider the following passage, which provides options to the reader based on whether or not they’ve collected a light source over the course of the story:</p>
+<p>
+
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="GIF demonstration of the story below played out" src="/twine-trail-guide/images/starting-point-demo.gif" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Starting Point</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre has-tabs"></div></div>
+        
+            <div class="column has-text-centered m-0">
+
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/conditions-variables-example1.png" class="svelte-r75zci"></figure></div>
+
+
+</div></div></div>
+    <span style="display: none;"><pre class="language-intro"><!-- HTML_TAG_START --><code class="language-intro">lightSource: false
+--
+
+# A Dark Room
+
+&gt; [[Begin-&gt;room]]</code><!-- HTML_TAG_END --></pre><pre class="language-room"><!-- HTML_TAG_START --><code class="language-room">You find yourself in a dark room.
+
+&gt; [[Search for something in the darkness-&gt;search]]
+
+[if lightSource]
+&gt; [[Turn on your light-&gt;reveal]]</code><!-- HTML_TAG_END --></pre><pre class="language-search"><!-- HTML_TAG_START --><code class="language-search">lightSource: true
+--
+
+You found a flashlight!
+
+&gt; [[Go back-&gt;room]]</code><!-- HTML_TAG_END --></pre><pre class="language-reveal"><!-- HTML_TAG_START --><code class="language-reveal">The beam of your flashlight passes over the room...</code><!-- HTML_TAG_END --></pre></span>
+</article>
+<p>This is a great way to have the reader “unlock” a new choice in the story; they’ll need to find the part of the story that sets the variable called <code>lightSource</code> to <code>true</code> in order to proceed to the <code>reveal</code> passage. But what if you wanted the text to be more specific? For example, you might have an <code>item</code> variable that could be any number of light sources:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">...
+
+[if lightSource == &quot;lantern&quot;]
+&gt; [[Light your lantern-&gt;reveal]]
+
+[if lightSource == &quot;flashlight&quot;]
+&gt; [[Turn on your flashlight-&gt;reveal]]
+
+[if lightSource == &quot;torch&quot;]
+&gt; [[Ignite your torch-&gt;reveal]]
+
+[unless lightSource]
+&gt; [[Search the room-&gt;search]]</code><!-- HTML_TAG_END --></pre>
+<p>That’s a lot of <code>[if ]</code> blocks! Now imagine if you had even more options! It might get difficult to read the passage, and even harder to fix problems if the story doesn’t work the way you expect it to! You might find using <strong>conditionally-set variables</strong> a little easier. Here’s a new version of the passage above that uses these special variable assignment statements:</p>
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Conditionally-Set Variables</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre "></div></div>
+        
+            </div></div>
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">lightText (lightSource == &quot;lantern&quot;): &quot;Light your lantern&quot;
+lightText (lightSource == &quot;flashlight&quot;): &quot;Light your torch&quot;
+lightText (lightSource == &quot;torch&quot;): &quot;Turn on your flashlight&quot;
+--
+
+You find yourself in a dark room.
+
+[if lightText]
+&gt; [[&#123;lightText&#125;-&gt;reveal]]
+[else]
+&gt; [[Search the room-&gt;search]]</code><!-- HTML_TAG_END --></pre></span>
+</article>
+<p>In the passage above, the computer first sets the variable <code>lightText</code> to <code>false</code>. Then, it evaluates each of the variable assignment commands after it one at a time:</p>
+<ul><li>If the <a href="" rel="">relational expression</a> after the variable and between the <code>(</code> and <code>)</code> is <code>true</code>, it sets the variable to value after the <code>:</code></li>
+<li>If the expression is <code>false</code>, it does nothing and moves on to the next variable assignment command.</li>
+<li>After evaluating each line above the <code>--</code>, it displays the passage (inserting any variables as necessary)</li></ul>
+<p>It’s sort of like using <code>[if ]</code> blocks, but instead of <em>displaying</em> or <em>hiding</em> text in the passage, the computer either <em>assigns</em> a value to a variable or <em>leaves it alone</em> based on the relational expression. You can read more about this topic in the Chapbook Wiki by <a href="" rel="nofollow">clicking here</a>.</p>
+<hr>
+<h2>Using Conditionally-Set Variables</h2>
+<p>There are lots of ways to use conditionally-modified variables in your passages. You can use the state of variables to set the text of choices in the passage, or to add additional information to a passage based on the state of variables which are invisible to the reader:</p>
+<p>
+
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="GIF demo of the story written out below" src="/twine-trail-guide/images/help-text-demo.gif" class="svelte-r75zci"></figure></div>
+
+
+</p>
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Passage With Help Text</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre has-tabs"></div></div>
+        
+            <div class="column has-text-centered m-0">
+
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/help-text-flowchart.png" class="svelte-r75zci"></figure></div>
+
+
+</div></div></div>
+    <span style="display: none;"><pre class="language-intro"><!-- HTML_TAG_START --><code class="language-intro">lightChoice: false
+item: &quot;&quot;
+matches: false
+--
+
+# A Dark Room
+
+&gt; [[Begin-&gt;room]]</code><!-- HTML_TAG_END --></pre><pre class="language-room"><!-- HTML_TAG_START --><code class="language-room">lightChoice (item == &quot;flashlight&quot;): &quot;Turn on the flashlight&quot;
+lightChoice (item == &quot;lantern&quot; &amp;&amp; matches == true): &quot;Light your lantern&quot;
+
+helpText: &quot;&quot;
+helpText (item == &quot;lantern&quot; &amp;&amp; matches == false): &quot;If only you had some matches...&quot;
+--
+
+You find yourself in a dark room. &#123;helpText&#125;
+
+&gt; [[Search for something in the darkness-&gt;search]]
+
+[if lightChoice]
+&gt; [[&#123;lightChoice&#125;-&gt;reveal]]</code><!-- HTML_TAG_END --></pre><pre class="language-search"><!-- HTML_TAG_START --><code class="language-search">You find several things that might help...
+
+&gt; [[Pick up the lantern-&gt;lantern]]
+&gt; [[Pick up the flashlight-&gt;flashlight]]</code><!-- HTML_TAG_END --></pre><pre class="language-lantern"><!-- HTML_TAG_START --><code class="language-lantern">item: &quot;lantern&quot;
+--
+
+You pick up the lantern and head back to check out the room.
+
+&#123;embed passage: &#39;room&#39;&#125;</code><!-- HTML_TAG_END --></pre><pre class="language-flashlight"><!-- HTML_TAG_START --><code class="language-flashlight">item: &quot;flashlight&quot;
+--
+
+You pick up the flashlight and head back to check out the room.
+
+&#123;embed passage: &#39;room&#39;&#125;</code><!-- HTML_TAG_END --></pre><pre class="language-reveal"><!-- HTML_TAG_START --><code class="language-reveal">The beam of your flashlight passes over the room...</code><!-- HTML_TAG_END --></pre></span>
+</article>
+<p>You could even use these kinds of variable assignments to send the reader to different locations in the story based on combinations of variable values:</p>
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">The Secret Room</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre has-tabs"></div></div>
+        
+            <div class="column has-text-centered m-0">
+
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/the-secret-door-demo.gif" class="svelte-r75zci"></figure></div>
+
+
+</div></div></div>
+    <span style="display: none;"><pre class="language-intro"><!-- HTML_TAG_START --><code class="language-intro">key: false
+--
+
+# The Secret Room
+
+&gt; [[Begin-&gt;door]]</code><!-- HTML_TAG_END --></pre><pre class="language-door"><!-- HTML_TAG_START --><code class="language-door">destination: &quot;secret_room&quot;
+destination (key == false): &quot;trap&quot;
+--
+
+You see a door secured by a rusty padlock.
+
+&gt; [[Search the room-&gt;search]]
+&gt; [[Try the door-&gt;&#123;destination&#125;]]</code><!-- HTML_TAG_END --></pre><pre class="language-search"><!-- HTML_TAG_START --><code class="language-search">key: true
+--
+
+You search the room and find a key hidden under a loose cobblestone
+
+&gt; [[Approach the door-&gt;door]]</code><!-- HTML_TAG_END --></pre><pre class="language-trap"><!-- HTML_TAG_START --><code class="language-trap">You fell into a terrible trap!
+
+&gt; [[Try again-&gt;intro]]</code><!-- HTML_TAG_END --></pre><pre class="language-secret_room"><!-- HTML_TAG_START --><code class="language-secret_room">The lock opens and the door slowly creaks open...</code><!-- HTML_TAG_END --></pre></span>
+</article>
+<p>There are even more clever ways of using conditionally-set variables in your stories—don’t be afraid to experiment!</p></section>
+    
+</div>
+
+
+		<script type="module" data-sveltekit-hydrate="19byml9">
+			import { start } from "/twine-trail-guide/_app/immutable/start-8d9d7d98.js";
+
+			start({
+				env: {},
+				hydrate: {
+					status: 200,
+					error: null,
+					node_ids: [0, 2, 12],
+					params: {},
+					route: {"id":"/locations/conditions-variables"},
+					data: [null,null,null],
+					form: null
+				},
+				paths: {"base":"/twine-trail-guide","assets":"/twine-trail-guide"},
+				target: document.querySelector('[data-sveltekit-hydrate="19byml9"]').parentNode,
+				version: "1675948488626"
+			});
+		</script>
+	</div>
+	</body>
+</html>

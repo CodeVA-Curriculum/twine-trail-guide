@@ -6,23 +6,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<meta http-equiv="content-security-policy" content="">
-		<link href="/twine-trail-guide/_app/immutable/assets/_layout-9c41bba0.css" rel="stylesheet">
-		<link href="/twine-trail-guide/_app/immutable/assets/Standalone-fb8ba4ca.css" rel="stylesheet">
+		<link href="/twine-trail-guide/_app/immutable/assets/_layout-c8c62745.css" rel="stylesheet">
+		<link href="/twine-trail-guide/_app/immutable/assets/Standalone-4970b9f1.css" rel="stylesheet">
 		<link href="/twine-trail-guide/_app/immutable/assets/navigation-af927694.css" rel="stylesheet">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-f4273e50.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-7d48f659.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/singletons-6542c9d1.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-8d9d7d98.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-28147552.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/singletons-5295c163.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/paths-6cd3a76e.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/preload-helper-b21cceae.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/_layout.svelte-9adfaf16.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/_layout.svelte-863e6220.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/modules/pages/_layout.js-7b9cbfbc.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/_layout-8d2a742b.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/_layout.svelte-8bdd78cc.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Nav-c1d45359.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/branching-paths/_page.md-02cd1d68.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone-fc81574c.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone.svelte_svelte_type_style_lang-a0abaa99.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/navigation-208b7d2c.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/_layout.svelte-4f3c0001.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Nav-e2baa9e8.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/branching-paths/_page.md-cee15c01.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone-e39bc1fe.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone.svelte_svelte_type_style_lang-17c44177.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/navigation-03af5729.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index.es-30099b97.js">
 	</head>
 	<body>
 		<div id="svelte">
@@ -45,28 +46,45 @@
             </a>
             <a class="navbar-item" href="/twine-trail-guide/locations">Locations
             </a></div></div></nav>
-<div class="container"><section class="wrapper svelte-16we498"><div class="columns"><div class="column mb-5"><h1 class="title">Branching Paths</h1>
+<div class="container"><section class="wrapper svelte-rs31xx"><div class="columns"><div class="column content"><h1 class="title">Branching Paths</h1>
                 
-                <p class="block">Twine stories are about choices. This tutorial covers how to add multiple links to a passage, allowing users to make choices that affect how the story ends.</p>
-                <p class="block">Watch the video to see someone demonstrate the basics, or read on to work through it on your own. This concept is a part of several project <a href="/twine-trail-guide/trails">Trails</a>; check them out!</p>
+                
+                <blockquote class="block  is-italic">Twine stories are about choices. This tutorial covers how to add multiple links to a passage, allowing users to make choices that affect how the story ends.</blockquote>
+                <p class="block  svelte-rs31xx">Watch the video to see someone demonstrate the basics, or read on to work through it on your own. This concept is a part of several projects <a href="/twine-trail-guide/trails">Trails</a>; check them out!</p>
                 </div>
-            <div class="column"><div class="video svelte-16we498"><iframe src="https://www.youtube.com/embed/_PK5kNc4LrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="svelte-16we498"></iframe></div></div></div>
-        <hr></section>
-    <section class="content post post-container svelte-16we498"><h2>Create a Choice</h2>
+            <div class="column my-3"><div class="video svelte-rs31xx"><iframe src="https://www.youtube.com/embed/_PK5kNc4LrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="svelte-rs31xx"></iframe></div></div></div></section>
+    <hr class="svelte-rs31xx">
+    <section class="content post post-container svelte-rs31xx"><h2>Create a Choice</h2>
 <p>Before you begin, make sure you’ve got a good idea of what your story might be about, and that you have at least one “starting” passage and one linked passage for the reader to follow.</p>
 <p>Twine stories are interactive, which means the author (that’s you) can create <strong>options</strong> for the reader to choose from, and connect each option to a different part of the story. Consider this starting passage:</p>
-<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">Once upon a time, a spider was looking for a place to spin their web. They walked into the forest alone, looking for a good spot to make their new home. Over the hill, they spotted a peaceful clearing.
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">One Path</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre "></div></div>
+        
+            </div></div>
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">Once upon a time, a spider was looking for a place to spin their web. They walked into the forest alone, looking for a good spot to make their new home. Over the hill, they spotted a peaceful clearing.
 
-&gt; [[The Clearing]]</code><!-- HTML_TAG_END --></pre>
+&gt; [[The Clearing]]</code><!-- HTML_TAG_END --></pre><pre class="language-the-clearing"><!-- HTML_TAG_START --><code class="language-the-clearing">The spider found themselves in a clearing in the forest. The dappled sun shone through the sumac branches and glittered over wild lilies, but the spider saw few places to make their home. They turned back, returning to the forest trail to continue their search.
+
+&gt; [[The Road]]</code><!-- HTML_TAG_END --></pre></span>
+</article>
 <p>In this scene, the reader only has one choice—they can go to <code>The Clearing</code>. But what if they had another choice?</p>
-<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">Once upon a time, a spider was looking for a place to spin thier web. They walked into the forest alone, looking for a good spot to make their new home. Over the hill, they spotted a peaceful clearing; to the right, they spotted a rotten old log.
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Two Paths</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre "></div></div>
+        
+            </div></div>
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">Once upon a time, a spider was looking for a place to spin their web. They walked into the forest alone, looking for a good spot to make their new home. Over the hill, they spotted a peaceful clearing; to the right, they spotted a rotten old log.
 
 &gt; [[The Clearing]]
-&gt; [[The Rotten Log]]</code><!-- HTML_TAG_END --></pre>
+&gt; [[The Rotten Log]]</code><!-- HTML_TAG_END --></pre></span>
+</article>
 <p>By adding a second link, you can create a <em>choice</em> for the reader. After adding a second link, return to the main story editor. You’ll notice that Twine automatically created a new passage with a name matching the one we created in the first passage: <code>The Rotten Log</code>. Nice!</p>
 <p>
 
-<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The Twine story editor showing three passages connected to one another." src="/twine-trail-guide/images/branching-path.png" class="svelte-r75zci"></figure></div>
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The Twine story editor showing three passages connected to one another." src="/twine-trail-guide/images/branching-path.png" class="svelte-r75zci"></figure></div>
 
 
 </p>
@@ -75,24 +93,40 @@
 <p>Twine created the <code>Rotten Log</code> passage for us, but we still need to go into it and add the story part. Here’s what I wrote:</p>
 <blockquote><p>The spider clambered up the soft wood, and was surprised to find a nest of ants milling around inside the log! The spider quietly stepped away, not wanting to disturb them. The spider carefully returned to the path, and noticed a pond glimmering in the distance near the clearing they noticed before.</p></blockquote>
 <p>My new passage needs some links! One of them will lead back to <code>The Clearing</code>, and the other will lead to a new passage that I will choose to name <code>The Pond</code>.</p>
-<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">&gt; [[The Clearing]]
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">&gt; [[The Road]]
 &gt; [[The Pond]]</code><!-- HTML_TAG_END --></pre>
-<p>Here’s what my story editor looks like after adding the the links to my <code>Rotten Log</code> passage:</p>
-<p>
+<p>Here’s what my story editor looks like after adding the the links to my <code>Rotten Log</code> passage. You can play through the story by <a href="" rel="">clicking here</a>, if you’d like.</p>
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Branching Paths Example</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre has-tabs"></div></div>
+        
+            <div class="column has-text-centered m-0">
 
-<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The Twine story editor, showing four passages connected together" src="/twine-trail-guide/images/new-branch.png" class="svelte-r75zci"></figure></div>
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/new-branch.png" class="svelte-r75zci"></figure></div>
 
 
-</p>
+</div></div></div>
+    <span style="display: none;"><pre class="language-the-road"><!-- HTML_TAG_START --><code class="language-the-road">Once upon a time, a spider was looking for a place to spin thier web. They walked into the forest alone, looking for a good spot to make their new home. Over the hill, they spotted a peaceful clearing; to the right, they spotted a rotten old log.
+
+&gt; [[The Clearing]]
+&gt; [[The Rotten Log]]</code><!-- HTML_TAG_END --></pre><pre class="language-the-clearing"><!-- HTML_TAG_START --><code class="language-the-clearing">The spider found themselves in a clearing in the forest. The dappled sun shone through the sumac branches and glittered over wild lilies, but the spider saw few places to make their home. They turned back, returning to the forest trail to continue their search.
+
+&gt; [[The Road]]</code><!-- HTML_TAG_END --></pre><pre class="language-the-rotten-log"><!-- HTML_TAG_START --><code class="language-the-rotten-log">The spider clambered up the soft wood, and was surprised to find a nest of ants milling around inside the log! The spider quietly stepped away, not wanting to disturb them. The spider carefully returned to the path, and noticed a pond glimmering in the distance near the clearing they noticed before.
+
+&gt; [[The Road]]
+&gt; [[The Clearing]]
+&gt; [[The Pond]]</code><!-- HTML_TAG_END --></pre><pre class="language-the-pond"><!-- HTML_TAG_START --><code class="language-the-pond">Nothing here yet!</code><!-- HTML_TAG_END --></pre></span>
+</article>
 <hr>
 <h2>Test the Story</h2>
-<p>After adding a few new passages and links, it’s a good idea to test out the story to make sure everything works the way you intended it to. Try adding some choices to your story, then press the <code>Play</code> button to test it out! You can refresh your story tab to return to the first passage if you want to test each of the choices in your story.</p>
-<hr></section>
+<p>After adding a few new passages and links, it’s a good idea to test out the story to make sure everything works the way you intended it to. Try adding some choices to your story, then press the <code>Play</code> button to test it out! You can refresh your story tab to return to the first passage if you want to test each of the choices in your story.</p></section>
+    
 </div>
 
 
-		<script type="module" data-sveltekit-hydrate="cgzbpv">
-			import { start } from "/twine-trail-guide/_app/immutable/start-f4273e50.js";
+		<script type="module" data-sveltekit-hydrate="oiiqm5">
+			import { start } from "/twine-trail-guide/_app/immutable/start-8d9d7d98.js";
 
 			start({
 				env: {},
@@ -106,8 +140,8 @@
 					form: null
 				},
 				paths: {"base":"/twine-trail-guide","assets":"/twine-trail-guide"},
-				target: document.querySelector('[data-sveltekit-hydrate="cgzbpv"]').parentNode,
-				version: "1669151237562"
+				target: document.querySelector('[data-sveltekit-hydrate="oiiqm5"]').parentNode,
+				version: "1675948488626"
 			});
 		</script>
 	</div>

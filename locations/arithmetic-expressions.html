@@ -6,23 +6,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<meta http-equiv="content-security-policy" content="">
-		<link href="/twine-trail-guide/_app/immutable/assets/_layout-9c41bba0.css" rel="stylesheet">
-		<link href="/twine-trail-guide/_app/immutable/assets/Standalone-fb8ba4ca.css" rel="stylesheet">
+		<link href="/twine-trail-guide/_app/immutable/assets/_layout-c8c62745.css" rel="stylesheet">
+		<link href="/twine-trail-guide/_app/immutable/assets/Standalone-4970b9f1.css" rel="stylesheet">
 		<link href="/twine-trail-guide/_app/immutable/assets/navigation-af927694.css" rel="stylesheet">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-f4273e50.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-7d48f659.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/singletons-6542c9d1.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-8d9d7d98.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-28147552.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/singletons-5295c163.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/paths-6cd3a76e.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/preload-helper-b21cceae.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/_layout.svelte-9adfaf16.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/_layout.svelte-863e6220.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/modules/pages/_layout.js-7b9cbfbc.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/_layout-8d2a742b.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/_layout.svelte-8bdd78cc.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Nav-c1d45359.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/arithmetic-expressions/_page.md-8113c269.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone-fc81574c.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone.svelte_svelte_type_style_lang-a0abaa99.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/navigation-208b7d2c.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/_layout.svelte-4f3c0001.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Nav-e2baa9e8.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/arithmetic-expressions/_page.md-5f7c2f11.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone-e39bc1fe.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone.svelte_svelte_type_style_lang-17c44177.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/navigation-03af5729.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index.es-30099b97.js">
 	</head>
 	<body>
 		<div id="svelte">
@@ -45,40 +46,48 @@
             </a>
             <a class="navbar-item" href="/twine-trail-guide/locations">Locations
             </a></div></div></nav>
-<div class="container"><section class="wrapper svelte-16we498"><div class="columns"><div class="column mb-5"><h1 class="title">Arithmetic Expressions</h1>
+<div class="container"><section class="wrapper svelte-rs31xx"><div class="columns"><div class="column content"><h1 class="title">Arithmetic Expressions</h1>
                 
-                <p class="block">This tutorial shows you how to modify number variables using arithmetic expressions--lines of code that use mathematical operations to assign a variable a value. You'll learn how to write arithmetic expressions, increment variables, and use variables as operands in mathematical expressions.</p>
+                
                 
                 </div>
-            </div>
-        <hr></section>
-    <section class="content post post-container svelte-16we498"><h2>Variables &amp; Math</h2>
+            </div></section>
+    <hr class="svelte-rs31xx">
+    <section class="content post post-container svelte-rs31xx"><h2>Variables &amp; Math</h2>
 <p>Number-type variables have a special capability that <code>string</code> variables do not: you can use them to perform mathematical operations. There are lots of reasons to have the computer do math during your stories; you could have the computer keep track of a score (if the reader is playing a game), for example. There are also some ways for you to use <code>number</code> variables to hide or show different parts of the story, but I won’t get into that in this tutorial. Instead, this page focuses on writing and tracing code that includes <code>number</code> variables and arithmetic expressions.</p>
 <p>You may have already learned how to create and modify variables in the <em><a href="" rel="">Variable Basics</a></em> tutorial; but if not, here’s an example of a passage where I have the computer create a variable called <code>age</code> and store the number <code>15</code> in it:</p>
-<article class="card my-5">
-    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-rhhsq4"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">age: 15
---
-
-I am &#123;age&#125; years old.</code><!-- HTML_TAG_END --></pre></div>
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Passage With a Variable</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre "></div></div>
+        
             <div class="column has-text-centered m-0">
 
-<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/var-simple.png" class="svelte-r75zci"></figure></div>
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/var-simple.png" class="svelte-r75zci"></figure></div>
 
 
 </div></div></div>
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">age: 15
+--
+
+I am &#123;age&#125; years old.</code><!-- HTML_TAG_END --></pre></span>
 </article>
 <p>If I wanted to, I could write out a mathematical expression instead of the number <code>15</code>, like so:</p>
-<article class="card my-5">
-    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-rhhsq4"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">age: 10 + (2+3)
---
-
-I am &#123;age&#125; years old.</code><!-- HTML_TAG_END --></pre></div>
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Passage With an Expression</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre "></div></div>
+        
             <div class="column has-text-centered m-0">
 
-<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/var-simple.png" class="svelte-r75zci"></figure></div>
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/var-simple.png" class="svelte-r75zci"></figure></div>
 
 
 </div></div></div>
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">age: 10 + (2+3)
+--
+
+I am &#123;age&#125; years old.</code><!-- HTML_TAG_END --></pre></span>
 </article>
 <p>The computer will “do” the math, and store the result in the variable! It doesn’t matter how complicated the mathematical equation is—the computer will resolve it pretty much instantly and store the result in the variable. You have a lot of mathematical operations to choose from, each with its own symbol:</p>
 <table><thead><tr><th>Operator</th>
@@ -103,52 +112,64 @@ I am &#123;age&#125; years old.</code><!-- HTML_TAG_END --></pre></div>
 <td>Find the remainder after dividing the two operands</td>
 <td><code>12 % 8</code></td></tr></tbody></table>
 <p><em>Note: The result of each example equation above is <code>4</code></em></p>
-<h2>Expression with Variables as Operands</h2>
+<h2>Expressions with Variables as Operands</h2>
 <p>Just writing mathematical expressions instead of numbers in your code isn’t all that useful. However, because the computer will interpret <code>number</code>-type variables as number data, we can use variables as <em>operands</em> in mathematical expressions. This opens up a couple of interesting possibilties that are worth highlighting here. For example:</p>
-<article class="card my-5">
-    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-rhhsq4"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">age: 15
-age_in_days: age * 365.25
---
-
-I am &#123;age&#125; years old, which means I am about &#123;age_in_days&#125; days old.</code><!-- HTML_TAG_END --></pre></div>
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Using Variables as Operands</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre "></div></div>
+        
             <div class="column has-text-centered m-0">
 
-<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/var-expression.png" class="svelte-r75zci"></figure></div>
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/var-expression.png" class="svelte-r75zci"></figure></div>
 
 
 </div></div></div>
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">age: 15
+age_in_days: age * 365.25
+--
+
+I am &#123;age&#125; years old, which means I am about &#123;age_in_days&#125; days old.</code><!-- HTML_TAG_END --></pre></span>
 </article>
 <p>In the passage above, I am using the variable called <code>age</code> in the equation that sets the value for the variable called <code>age_in_days</code>. When the computer tries to resolve the <code>age_in_days</code> equation, it will “look up” the current value of the <code>age</code> variable and use that value in its place in the equation <code>age * 365.25</code>.</p>
 <h2>Incrementing Variables</h2>
 <p>You can also write expressions like this to <strong>increment</strong> a variable. “Increment” means to increase a variable’s value by one. For example, imagine you wanted to create a <code>count</code> variable that could keep track of how many passages the reader has visited. First, you would make an <code>Intro</code> passage that sets the initial value of the variable called <code>count</code>:</p>
-<article class="card my-5"><header class="card-header pl-5 pt-2 pb-0"><h4>Intro</h4></header>
-    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-rhhsq4"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">count: 0
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">intro</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre "></div></div>
+        
+            <div class="column has-text-centered m-0">
+
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/count1.png" class="svelte-r75zci"></figure></div>
+
+
+</div></div></div>
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">count: 0
 --
 
 You have visited &#123;count&#125; passages.
 
-&gt; [[Next passage-&gt;Passage1]]</code><!-- HTML_TAG_END --></pre></div>
+&gt; [[Next passage-&gt;Passage1]]</code><!-- HTML_TAG_END --></pre></span>
+</article>
+<p>Then, in each following passage, you would include something like this:</p>
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">passage1</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre "></div></div>
+        
             <div class="column has-text-centered m-0">
 
-<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/count1.png" class="svelte-r75zci"></figure></div>
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/count2.png" class="svelte-r75zci"></figure></div>
 
 
 </div></div></div>
-</article>
-<p>Then, in each following passage, you would include something like this:</p>
-<article class="card my-5"><header class="card-header pl-5 pt-2 pb-0"><h4>Passage1</h4></header>
-    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-rhhsq4"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">count: count + 1
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">count: count + 1
 --
 
 This is Passage 1. You have visited &#123;count&#125; passage(s).
 
-&gt; [[Next passage-&gt;Passage2]]</code><!-- HTML_TAG_END --></pre></div>
-            <div class="column has-text-centered m-0">
-
-<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/count2.png" class="svelte-r75zci"></figure></div>
-
-
-</div></div></div>
+&gt; [[Next passage-&gt;Passage2]]</code><!-- HTML_TAG_END --></pre></span>
 </article>
 <p>The expression <code>count: count + 1</code> tells the computer to do the following:</p>
 <ol><li>Solve the equation <code>count + 1</code></li>
@@ -156,34 +177,68 @@ This is Passage 1. You have visited &#123;count&#125; passage(s).
 <p>To complete step #1, the computer needs to “look up” the value of <code>count</code>. In the <code>Intro</code> passage, the computer set the <code>count</code> variable to a value of <code>0</code>, meaning that in <code>Passage1</code> the solution to the equation <code>count + 1</code> is <code>0 + 1</code>, or simply <code>1</code>.</p>
 <p>In step #2, the computer discards <code>count</code>’s old value (<code>0</code>), and replaces it with the value it calculated in step #1 (<code>1</code>). Then, it stores the result (<code>1</code>) in the now-empty <code>count</code> variable. The effect of these two steps (as complicated as it is to explain it step-by-step) is to change <code>count</code>’s value from <code>0</code> to <code>1</code>.</p>
 <p>I’ll put something very similar into the <code>Passage2</code> passage:</p>
-<article class="card my-5"><header class="card-header pl-5 pt-2 pb-0"><h4>Passage2</h4></header>
-    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-rhhsq4"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">count: count + 1
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">passage2</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre "></div></div>
+        
+            <div class="column has-text-centered m-0">
+
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/count3.png" class="svelte-r75zci"></figure></div>
+
+
+</div></div></div>
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">count: count + 1
 --
 
 This is Passage 2. You have visited &#123;count&#125; passage(s).
 
-&gt; [[Next passage-&gt;Passage1]]</code><!-- HTML_TAG_END --></pre></div>
-            <div class="column has-text-centered m-0">
-
-<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/count3.png" class="svelte-r75zci"></figure></div>
-
-
-</div></div></div>
+&gt; [[Next passage-&gt;Passage1]]</code><!-- HTML_TAG_END --></pre></span>
 </article>
 <p>The story map now looks like this, with a “loop” between <code>Passage1</code> and <code>Passage2</code>:</p>
 <p>
 
-<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The Twine editor showing the story map for the passages described above" src="/twine-trail-guide/images/var-map.png" class="svelte-r75zci"></figure></div>
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The Twine editor showing the story map for the passages described above" src="/twine-trail-guide/images/var-map.png" class="svelte-r75zci"></figure></div>
 
 
 </p>
-<p>You can play through the story by <a href="" rel="">clicking here</a>. When you play through it, you can see that the <code>count</code> variable keeps going up, even as I return to <code>Passage1</code>! There are lots of creative ways to use variables (making a counter is interesting, but perhaps not all that useful); try it out!</p>
+<p>You can play through the story by <a href="" rel="">clicking here</a>. When you play through it, you can see that the <code>count</code> variable keeps going up, even as I return to <code>Passage1</code>! There are lots of creative ways to use variables (making a counter is interesting, but perhaps not all that useful); try it out! You can test out the story below by <a href="" rel="">clicking here</a>:</p>
+
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Incrementing Loop Example</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre has-tabs"></div></div>
+        
+            <div class="column has-text-centered m-0">
+
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/var-map.png" class="svelte-r75zci"></figure></div>
+
+
+</div></div></div>
+    <span style="display: none;"><pre class="language-intro"><!-- HTML_TAG_START --><code class="language-intro">count: 0
+--
+
+You have visited &#123;count&#125; passages.
+
+&gt; [[Next passage-&gt;Passage1]]</code><!-- HTML_TAG_END --></pre><pre class="language-passage1"><!-- HTML_TAG_START --><code class="language-passage1">count: count + 1
+--
+
+This is Passage 1. You have visited &#123;count&#125; passage(s).
+
+&gt; [[Next passage-&gt;Passage2]]</code><!-- HTML_TAG_END --></pre><pre class="language-passage2"><!-- HTML_TAG_START --><code class="language-passage2">count: count + 1
+--
+
+This is Passage 2. You have visited &#123;count&#125; passage(s).
+
+&gt; [[Next passage-&gt;Passage1]]</code><!-- HTML_TAG_END --></pre></span>
+</article>
 <hr></section>
+    
 </div>
 
 
-		<script type="module" data-sveltekit-hydrate="1rjw2n8">
-			import { start } from "/twine-trail-guide/_app/immutable/start-f4273e50.js";
+		<script type="module" data-sveltekit-hydrate="15gccwt">
+			import { start } from "/twine-trail-guide/_app/immutable/start-8d9d7d98.js";
 
 			start({
 				env: {},
@@ -197,8 +252,8 @@ This is Passage 2. You have visited &#123;count&#125; passage(s).
 					form: null
 				},
 				paths: {"base":"/twine-trail-guide","assets":"/twine-trail-guide"},
-				target: document.querySelector('[data-sveltekit-hydrate="1rjw2n8"]').parentNode,
-				version: "1669151237562"
+				target: document.querySelector('[data-sveltekit-hydrate="15gccwt"]').parentNode,
+				version: "1675948488626"
 			});
 		</script>
 	</div>

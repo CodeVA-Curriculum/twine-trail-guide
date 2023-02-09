@@ -6,23 +6,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<meta http-equiv="content-security-policy" content="">
-		<link href="/twine-trail-guide/_app/immutable/assets/_layout-9c41bba0.css" rel="stylesheet">
-		<link href="/twine-trail-guide/_app/immutable/assets/Standalone-fb8ba4ca.css" rel="stylesheet">
+		<link href="/twine-trail-guide/_app/immutable/assets/_layout-c8c62745.css" rel="stylesheet">
+		<link href="/twine-trail-guide/_app/immutable/assets/Standalone-4970b9f1.css" rel="stylesheet">
 		<link href="/twine-trail-guide/_app/immutable/assets/navigation-af927694.css" rel="stylesheet">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-f4273e50.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-7d48f659.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/singletons-6542c9d1.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-8d9d7d98.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-28147552.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/singletons-5295c163.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/paths-6cd3a76e.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/preload-helper-b21cceae.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/_layout.svelte-9adfaf16.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/_layout.svelte-863e6220.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/modules/pages/_layout.js-7b9cbfbc.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/_layout-8d2a742b.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/_layout.svelte-8bdd78cc.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Nav-c1d45359.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/variable-basics/_page.md-7e8a5c2e.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone-fc81574c.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone.svelte_svelte_type_style_lang-a0abaa99.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/navigation-208b7d2c.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/_layout.svelte-4f3c0001.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Nav-e2baa9e8.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/variable-basics/_page.md-0ee0f843.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone-e39bc1fe.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone.svelte_svelte_type_style_lang-17c44177.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/navigation-03af5729.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index.es-30099b97.js">
 	</head>
 	<body>
 		<div id="svelte">
@@ -45,16 +46,21 @@
             </a>
             <a class="navbar-item" href="/twine-trail-guide/locations">Locations
             </a></div></div></nav>
-<div class="container"><section class="wrapper svelte-16we498"><div class="columns"><div class="column mb-5"><h1 class="title">Variable Basics</h1>
+<div class="container"><section class="wrapper svelte-rs31xx"><div class="columns"><div class="column content"><h1 class="title">Variable Basics</h1>
                 
-                <p class="block">In this tutorial, you'll learn all about variables. Variables are containers that store information; they allow you to direct your story to "remember" information for later, and use that information across multiple passages. Using variables allows you to simplify stories with a lot of repetition, but they also open up lots of creative possibilities after you learn some other skills, like modifying variables across your story or using variables to embed passages.</p>
+                
                 
                 </div>
-            </div>
-        <hr></section>
-    <section class="content post post-container svelte-16we498"><h2>What Is a Variable?</h2>
+            </div></section>
+    <hr class="svelte-rs31xx">
+    <section class="content post post-container svelte-rs31xx"><h2>What Is a Variable?</h2>
 <p>A variable is a <em>container</em> inside your computer that contains data. Programmers use variables to make computers “remember” information for later. You can think of your computer like a big, mostly empty warehouse. When you write code that tells the computer to create a variable, the computer reserves a small amount of that empty space for a box. Then, the computer will put some kind of data in the box—usually a number or a message of some kind. Finally, the computer will label the box so it can find it later on. After the computer creates a variable, the programmer can write code that directs the computer to recall and use the value in the box somehow (i.e., read the variable) or modify the value in the box.</p>
+<p>
 
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="A four-panel comic showing a computer character storing data in a container, and looking in that container to recall the data" src="/twine-trail-guide/images/var-comic.png" class="svelte-r75zci"></figure></div>
+
+
+</p>
 <p>The variable stays in the computer’s “warehouse” (i.e., memory) until the program ends or the code directs the computer to discard the variable.</p>
 <h2>Creating Variables with Chapbook</h2>
 <p>To create variables to use in your passages, you need to add some code to a passage like so:</p>
@@ -66,80 +72,111 @@ This is an example passage.</code><!-- HTML_TAG_END --></pre>
 <p>The area above the <code>--</code> is called the <strong>“vars” section</strong>. The code in the “vars” section follows different rules than the other parts of your passages. The area <em>below</em> the <code>--</code> is like a normal passage. Go ahead and add a passage like the one above to a story, and test it out. You should see something like this:</p>
 <p>
 
-<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The code above" src="/twine-trail-guide/images/var-null.png" class="svelte-r75zci"></figure></div>
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The code above" src="/twine-trail-guide/images/var-null.png" class="svelte-r75zci"></figure></div>
 
 
 </p>
 <p>You can see that the text in the “vars” section does not appear in the passage—that’s because the code in the “vars” section is instruction for the computer to follow in the “background”. The variable called <code>a_cool_message</code> is in the computer’s memory warehouse, but the reader can’t see that—variables are kind of secret that way; the reader will not be able to see their value unless you want them to.</p>
 <h2>Using Variables</h2>
 <p>To show the reader the value of a variable, you can include it in your passage like so:</p>
-<article class="card my-5">
-    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-rhhsq4"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">a_cool_message: &quot;Hello!&quot;
---
-
-This is an example. The variable is &#123;a_cool_message&#125;.</code><!-- HTML_TAG_END --></pre></div>
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Variable Insert Example</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre "></div></div>
+        
             <div class="column has-text-centered m-0">
 
-<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/var-insert.png" class="svelte-r75zci"></figure></div>
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/var-insert.png" class="svelte-r75zci"></figure></div>
 
 
 </div></div></div>
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">a_cool_message: &quot;Hello!&quot;
+--
+
+This is an example. The variable is &#123;a_cool_message&#125;.</code><!-- HTML_TAG_END --></pre></span>
 </article>
 <p>There are a couple of things to notice about this example. First, the <code>&quot;</code>s around <code>&quot;Hello!&quot;</code> don’t show up in the passage—I will cover the reason for this in the following section. The second thing to note is that the computer has <em>automatically</em> replaced the text <code>{a_cool_message}</code> with the variable’s value: <code>Hello!</code>.</p>
 <p>You can create and use as many variables as you like in your passages. You can even use one variable multiple times!</p>
-<article class="card my-5">
-    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-rhhsq4"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">creature: &quot;woodchuck&quot;
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Reusing Variables</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre "></div></div>
+        
+            <div class="column has-text-centered m-0">
+
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/woodchuck.png" class="svelte-r75zci"></figure></div>
+
+
+</div></div></div>
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">creature: &quot;woodchuck&quot;
 material: &quot;wood&quot;
 --
 
 How much &#123;material&#125;
 could a &#123;creature&#125; chuck 
 if a &#123;creature&#125; could
-chuck &#123;material&#125;?</code><!-- HTML_TAG_END --></pre></div>
-            <div class="column has-text-centered m-0">
-
-<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/woodchuck.png" class="svelte-r75zci"></figure></div>
-
-
-</div></div></div>
+chuck &#123;material&#125;?</code><!-- HTML_TAG_END --></pre></span>
 </article>
 <h2>Types of Variables</h2>
-<p>There are two types of basic variables available to you when you use the Chapbook format: <strong>strings</strong> and <strong>numbers</strong>. Strings are messages, <em>strings</em> of text characters. All of the examples above use strings for the variable values. All strings <em>must</em> have <code>&quot;</code>s on either side of them to tell the computer where the string begins and ends. When the computer reads a string value, it discards the quotation marks and just uses the letters and such between them.</p>
-<p>Number variables represent quantities or numerical values. When you create a number variable, you don’t need to use <code>&quot;</code> like you would with strings. Here’s an example:</p>
-<article class="card my-5">
-    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-rhhsq4"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">age: 15
---
-
-I am &#123;age&#125; years old.</code><!-- HTML_TAG_END --></pre></div>
+<p>There are three types of basic variables available to you when you use the Chapbook format: <strong>strings</strong>, <strong>numbers</strong>, and <strong>Boolean</strong>. Strings are messages, <em>strings</em> of text characters. All of the examples above use strings for the variable values. All strings <em>must</em> have <code>&quot;</code>s on either side of them to tell the computer where the string begins and ends. When the computer reads a string value, it discards the quotation marks and just uses the letters and such between them.</p>
+<p><strong>Number variables</strong> represent quantities or numerical values. When you create a number variable, you don’t need to use <code>&quot;</code> like you would with strings. Here’s an example:</p>
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Number Variables</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre "></div></div>
+        
             <div class="column has-text-centered m-0">
 
-<div style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/var-simple.png" class="svelte-r75zci"></figure></div>
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/var-simple.png" class="svelte-r75zci"></figure></div>
 
 
 </div></div></div>
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">age: 15
+--
+
+I am &#123;age&#125; years old.</code><!-- HTML_TAG_END --></pre></span>
 </article>
 <p>You can direct the computer to read number variables the same way as strings. The big difference between strings and number variables is you can use number variables to have the computer solve mathematical expressions—you can read more about that in the <em><a href="" rel="">Expressions With Variables</a></em> tutorial.</p>
+<p><strong>Boolean variables</strong> are a special kind of variable that can only have one of two possible values: <code>true</code> or <code>false</code>. You create a Boolean variable the same way as a number or string:</p>
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Boolean Variables</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre "></div></div>
+        
+            <div class="column has-text-centered m-0">
+
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/var-boolean.png" class="svelte-r75zci"></figure></div>
+
+
+</div></div></div>
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">hasKey: true
+--
+
+Do I have the key? &#123;hasKey&#125;</code><!-- HTML_TAG_END --></pre></span>
+</article>
+<p>Notice that you do not have to use <code>&quot;</code> symbols around Boolean variables—they aren’t strings! Boolean variables are really important for writing <strong>conditional control structures</strong>; check out the <em><a href="" rel="">If-Unless</a></em> tutorial for examples of how to use Boolean variables.</p>
 <hr></section>
+    
 </div>
 
 
-		<script type="module" data-sveltekit-hydrate="1506nlo">
-			import { start } from "/twine-trail-guide/_app/immutable/start-f4273e50.js";
+		<script type="module" data-sveltekit-hydrate="zzkfmi">
+			import { start } from "/twine-trail-guide/_app/immutable/start-8d9d7d98.js";
 
 			start({
 				env: {},
 				hydrate: {
 					status: 200,
 					error: null,
-					node_ids: [0, 2, 28],
+					node_ids: [0, 2, 35],
 					params: {},
 					route: {"id":"/locations/variable-basics"},
 					data: [null,null,null],
 					form: null
 				},
 				paths: {"base":"/twine-trail-guide","assets":"/twine-trail-guide"},
-				target: document.querySelector('[data-sveltekit-hydrate="1506nlo"]').parentNode,
-				version: "1669151237562"
+				target: document.querySelector('[data-sveltekit-hydrate="zzkfmi"]').parentNode,
+				version: "1675948488626"
 			});
 		</script>
 	</div>

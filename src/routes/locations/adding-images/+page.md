@@ -39,7 +39,7 @@ After getting the image link, go ahead and open up the Twine story editor.
 
 After you get the image link, open up a Twine passage and add some code like this:
 
-:::passage{title="Passage with Image Example"}
+:::passage{title="Passage with Unsplash Image Example"}
 ```
 {embed Unsplash image: 'https://unsplash.com/photos/Na0BbqKbfAo', alt: 'the moon'}
 
@@ -51,7 +51,7 @@ You hear the howls of wolves in the distance.
 
 * Change the link (`https://unsplash.com/photos/Na0BbqKbfAo`) to your image link you found earlier. You can "paste" it by right-clicking the editor and selecting "paste", or you can press `Ctrl+V`.
 * Change the words after `alt`. My picture is a picture of the moon, but yours probably isn't. Write a short sentence that describes your image.
-* If you got your image from somewhere other than [Unsplash](https://unsplash.com/), delete the word `Unsplash` from the line of code
+* If you got your image from somewhere other than [Unsplash](https://unsplash.com/), delete the word `Unsplash` from the line of code and make sure the link ends in `.jpg`, `.png`, or another image format.
 
 Click out of the passage editor, select the passage you added the image to, and click "Test From Here":
 

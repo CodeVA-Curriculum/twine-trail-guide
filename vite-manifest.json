@@ -1,26 +1,26 @@
 {
-  "src/lib/assets/CodeVALogo.png": {
-    "file": "_app/immutable/assets/CodeVALogo-cdf06ed4.png",
-    "src": "src/lib/assets/CodeVALogo.png"
-  },
   "src/lib/assets/ConfusedCodie.png": {
     "file": "_app/immutable/assets/ConfusedCodie-cc6709da.png",
     "src": "src/lib/assets/ConfusedCodie.png"
   },
-  "src/lib/assets/NSFLogo.png": {
-    "file": "_app/immutable/assets/NSFLogo-bdc22bb6.png",
-    "src": "src/lib/assets/NSFLogo.png"
+  "src/lib/assets/CodeVALogo.png": {
+    "file": "_app/immutable/assets/CodeVALogo-cdf06ed4.png",
+    "src": "src/lib/assets/CodeVALogo.png"
   },
   "src/lib/assets/twine.svg": {
     "file": "_app/immutable/assets/twine-b352c7c6.svg",
     "src": "src/lib/assets/twine.svg"
+  },
+  "src/lib/assets/NSFLogo.png": {
+    "file": "_app/immutable/assets/NSFLogo-bdc22bb6.png",
+    "src": "src/lib/assets/NSFLogo.png"
   },
   "src/lib/assets/CalloutBorder.png": {
     "file": "_app/immutable/assets/CalloutBorder-14b372bc.png",
     "src": "src/lib/assets/CalloutBorder.png"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-31019195.js",
+    "file": "_app/immutable/start-e5372235.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -170,7 +170,7 @@
     ]
   },
   "src/routes/locations/adding-images/+page.md": {
-    "file": "_app/immutable/components/pages/locations/adding-images/_page.md-8fa7fd1a.js",
+    "file": "_app/immutable/components/pages/locations/adding-images/_page.md-1f223c5a.js",
     "src": "src/routes/locations/adding-images/+page.md",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -497,84 +497,84 @@
     ]
   },
   "src/routes/trails/archeological-puzzle/+page.md": {
-    "file": "_app/immutable/components/pages/trails/archeological-puzzle/_page.md-8da5141b.js",
+    "file": "_app/immutable/components/pages/trails/archeological-puzzle/_page.md-f1e6fb7c.js",
     "src": "src/routes/trails/archeological-puzzle/+page.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-28147552.js",
-      "_Trail-04358de6.js",
+      "_Trail-0ab51de5.js",
       "_Standalone.svelte_svelte_type_style_lang-17c44177.js",
       "_Aside-c5d6848f.js"
     ]
   },
   "src/routes/trails/breakout-box/+page.md": {
-    "file": "_app/immutable/components/pages/trails/breakout-box/_page.md-0301de1c.js",
+    "file": "_app/immutable/components/pages/trails/breakout-box/_page.md-5dfb30a0.js",
     "src": "src/routes/trails/breakout-box/+page.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-28147552.js",
-      "_Trail-04358de6.js",
+      "_Trail-0ab51de5.js",
       "_Standalone.svelte_svelte_type_style_lang-17c44177.js",
       "_Aside-c5d6848f.js"
     ]
   },
   "src/routes/trails/conversation-web/+page.md": {
-    "file": "_app/immutable/components/pages/trails/conversation-web/_page.md-b2d01a83.js",
+    "file": "_app/immutable/components/pages/trails/conversation-web/_page.md-58b78902.js",
     "src": "src/routes/trails/conversation-web/+page.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-28147552.js",
-      "_Trail-04358de6.js",
+      "_Trail-0ab51de5.js",
       "_Standalone.svelte_svelte_type_style_lang-17c44177.js",
       "_Aside-c5d6848f.js"
     ]
   },
   "src/routes/trails/counting-web/+page.md": {
-    "file": "_app/immutable/components/pages/trails/counting-web/_page.md-1b55a714.js",
+    "file": "_app/immutable/components/pages/trails/counting-web/_page.md-b55c5149.js",
     "src": "src/routes/trails/counting-web/+page.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-28147552.js",
-      "_Trail-04358de6.js",
+      "_Trail-0ab51de5.js",
       "_Standalone.svelte_svelte_type_style_lang-17c44177.js",
       "_Aside-c5d6848f.js"
     ]
   },
   "src/routes/trails/oral-history/+page.md": {
-    "file": "_app/immutable/components/pages/trails/oral-history/_page.md-f797f3f8.js",
+    "file": "_app/immutable/components/pages/trails/oral-history/_page.md-a5f460fc.js",
     "src": "src/routes/trails/oral-history/+page.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-28147552.js",
-      "_Trail-04358de6.js",
+      "_Trail-0ab51de5.js",
       "_Standalone.svelte_svelte_type_style_lang-17c44177.js"
     ]
   },
   "src/routes/trails/primary-documents/+page.md": {
-    "file": "_app/immutable/components/pages/trails/primary-documents/_page.md-7c9aa07a.js",
+    "file": "_app/immutable/components/pages/trails/primary-documents/_page.md-e1d85b05.js",
     "src": "src/routes/trails/primary-documents/+page.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-28147552.js",
-      "_Trail-04358de6.js",
+      "_Trail-0ab51de5.js",
       "_Standalone.svelte_svelte_type_style_lang-17c44177.js",
       "_Aside-c5d6848f.js"
     ]
   },
   "src/routes/trails/your-first-story/+page.md": {
-    "file": "_app/immutable/components/pages/trails/your-first-story/_page.md-0c6416e7.js",
+    "file": "_app/immutable/components/pages/trails/your-first-story/_page.md-e860f93d.js",
     "src": "src/routes/trails/your-first-story/+page.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-28147552.js",
-      "_Trail-04358de6.js",
+      "_Trail-0ab51de5.js",
       "_Standalone.svelte_svelte_type_style_lang-17c44177.js"
     ]
   },
@@ -587,21 +587,21 @@
     ]
   },
   "src/routes/locations/+page.js": {
-    "file": "_app/immutable/modules/pages/locations/_page.js-36df19ad.js",
+    "file": "_app/immutable/modules/pages/locations/_page.js-5a2d4ceb.js",
     "src": "src/routes/locations/+page.js",
     "isEntry": true,
     "imports": [
       "_preload-helper-b21cceae.js",
-      "__page-37fa4e16.js"
+      "__page-c6d43f3c.js"
     ]
   },
   "src/routes/trails/+page.js": {
-    "file": "_app/immutable/modules/pages/trails/_page.js-453d219f.js",
+    "file": "_app/immutable/modules/pages/trails/_page.js-9399e4da.js",
     "src": "src/routes/trails/+page.js",
     "isEntry": true,
     "imports": [
       "_preload-helper-b21cceae.js",
-      "__page-0b8a3e9f.js"
+      "__page-43277726.js"
     ]
   },
   "_singletons-5295c163.js": {
@@ -650,8 +650,8 @@
       "_navigation-03af5729.js"
     ]
   },
-  "__page-37fa4e16.js": {
-    "file": "_app/immutable/chunks/_page-37fa4e16.js",
+  "__page-c6d43f3c.js": {
+    "file": "_app/immutable/chunks/_page-c6d43f3c.js",
     "imports": [
       "_preload-helper-b21cceae.js"
     ],
@@ -722,8 +722,8 @@
       "_app/immutable/assets/CalloutBorder-14b372bc.png"
     ]
   },
-  "__page-0b8a3e9f.js": {
-    "file": "_app/immutable/chunks/_page-0b8a3e9f.js",
+  "__page-43277726.js": {
+    "file": "_app/immutable/chunks/_page-43277726.js",
     "imports": [
       "_preload-helper-b21cceae.js"
     ],
@@ -737,8 +737,8 @@
       "src/routes/trails/your-first-story/+page.md"
     ]
   },
-  "_Trail-04358de6.js": {
-    "file": "_app/immutable/chunks/Trail-04358de6.js",
+  "_Trail-0ab51de5.js": {
+    "file": "_app/immutable/chunks/Trail-0ab51de5.js",
     "imports": [
       "_index-28147552.js",
       "_preload-helper-b21cceae.js",
@@ -831,11 +831,11 @@
     ]
   },
   ".svelte-kit/generated/nodes/6.js": {
-    "file": "_app/immutable/chunks/6-2db31364.js",
+    "file": "_app/immutable/chunks/6-8f3af707.js",
     "src": ".svelte-kit/generated/nodes/6.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-37fa4e16.js",
+      "__page-c6d43f3c.js",
       "src/routes/locations/+page.svelte"
     ]
   },
@@ -848,7 +848,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/8.js": {
-    "file": "_app/immutable/chunks/8-7f9fcc75.js",
+    "file": "_app/immutable/chunks/8-80bb1153.js",
     "src": ".svelte-kit/generated/nodes/8.js",
     "isDynamicEntry": true,
     "imports": [
@@ -1072,16 +1072,16 @@
     ]
   },
   ".svelte-kit/generated/nodes/36.js": {
-    "file": "_app/immutable/chunks/36-16304e0c.js",
+    "file": "_app/immutable/chunks/36-10cf9ff2.js",
     "src": ".svelte-kit/generated/nodes/36.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-0b8a3e9f.js",
+      "__page-43277726.js",
       "src/routes/trails/+page.svelte"
     ]
   },
   ".svelte-kit/generated/nodes/37.js": {
-    "file": "_app/immutable/chunks/37-cefcfa0c.js",
+    "file": "_app/immutable/chunks/37-7f54b45c.js",
     "src": ".svelte-kit/generated/nodes/37.js",
     "isDynamicEntry": true,
     "imports": [
@@ -1089,7 +1089,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/38.js": {
-    "file": "_app/immutable/chunks/38-0d81962c.js",
+    "file": "_app/immutable/chunks/38-1f990714.js",
     "src": ".svelte-kit/generated/nodes/38.js",
     "isDynamicEntry": true,
     "imports": [
@@ -1097,7 +1097,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/39.js": {
-    "file": "_app/immutable/chunks/39-fe3996c1.js",
+    "file": "_app/immutable/chunks/39-6a342a87.js",
     "src": ".svelte-kit/generated/nodes/39.js",
     "isDynamicEntry": true,
     "imports": [
@@ -1105,7 +1105,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/40.js": {
-    "file": "_app/immutable/chunks/40-9b458592.js",
+    "file": "_app/immutable/chunks/40-0f4fd446.js",
     "src": ".svelte-kit/generated/nodes/40.js",
     "isDynamicEntry": true,
     "imports": [
@@ -1113,7 +1113,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/41.js": {
-    "file": "_app/immutable/chunks/41-98d52145.js",
+    "file": "_app/immutable/chunks/41-a472016e.js",
     "src": ".svelte-kit/generated/nodes/41.js",
     "isDynamicEntry": true,
     "imports": [
@@ -1121,7 +1121,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/42.js": {
-    "file": "_app/immutable/chunks/42-3279591d.js",
+    "file": "_app/immutable/chunks/42-7b01160c.js",
     "src": ".svelte-kit/generated/nodes/42.js",
     "isDynamicEntry": true,
     "imports": [
@@ -1129,36 +1129,36 @@
     ]
   },
   ".svelte-kit/generated/nodes/43.js": {
-    "file": "_app/immutable/chunks/43-340b9300.js",
+    "file": "_app/immutable/chunks/43-586eeac9.js",
     "src": ".svelte-kit/generated/nodes/43.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/trails/your-first-story/+page.md"
     ]
   },
+  "navigation.css": {
+    "file": "_app/immutable/assets/navigation-af927694.css",
+    "src": "navigation.css"
+  },
   "src/routes/locations/+page.css": {
     "file": "_app/immutable/assets/_page-e2a44f13.css",
     "src": "src/routes/locations/+page.css"
   },
-  "Trail.css": {
-    "file": "_app/immutable/assets/Trail-48a1de2b.css",
-    "src": "Trail.css"
-  },
-  "src/routes/+page.css": {
-    "file": "_app/immutable/assets/_page-009a848b.css",
-    "src": "src/routes/+page.css"
+  "src/routes/trails/+page.css": {
+    "file": "_app/immutable/assets/_page-6abfa454.css",
+    "src": "src/routes/trails/+page.css"
   },
   "Standalone.css": {
     "file": "_app/immutable/assets/Standalone-4970b9f1.css",
     "src": "Standalone.css"
   },
-  "navigation.css": {
-    "file": "_app/immutable/assets/navigation-af927694.css",
-    "src": "navigation.css"
+  "src/routes/+page.css": {
+    "file": "_app/immutable/assets/_page-009a848b.css",
+    "src": "src/routes/+page.css"
   },
-  "src/routes/trails/+page.css": {
-    "file": "_app/immutable/assets/_page-6abfa454.css",
-    "src": "src/routes/trails/+page.css"
+  "Trail.css": {
+    "file": "_app/immutable/assets/Trail-48a1de2b.css",
+    "src": "Trail.css"
   },
   "src/routes/+layout.css": {
     "file": "_app/immutable/assets/_layout-c8c62745.css",

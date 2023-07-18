@@ -1,11 +1,11 @@
 {
-  "src/lib/assets/ConfusedCodie.png": {
-    "file": "_app/immutable/assets/ConfusedCodie-cc6709da.png",
-    "src": "src/lib/assets/ConfusedCodie.png"
-  },
   "src/lib/assets/CodeVALogo.png": {
     "file": "_app/immutable/assets/CodeVALogo-cdf06ed4.png",
     "src": "src/lib/assets/CodeVALogo.png"
+  },
+  "src/lib/assets/ConfusedCodie.png": {
+    "file": "_app/immutable/assets/ConfusedCodie-cc6709da.png",
+    "src": "src/lib/assets/ConfusedCodie.png"
   },
   "src/lib/assets/NSFLogo.png": {
     "file": "_app/immutable/assets/NSFLogo-bdc22bb6.png",
@@ -1136,29 +1136,29 @@
       "src/routes/trails/your-first-story/+page.md"
     ]
   },
-  "src/routes/locations/+page.css": {
-    "file": "_app/immutable/assets/_page-e2a44f13.css",
-    "src": "src/routes/locations/+page.css"
-  },
   "src/routes/+page.css": {
     "file": "_app/immutable/assets/_page-009a848b.css",
     "src": "src/routes/+page.css"
   },
-  "navigation.css": {
-    "file": "_app/immutable/assets/navigation-af927694.css",
-    "src": "navigation.css"
+  "src/routes/trails/+page.css": {
+    "file": "_app/immutable/assets/_page-6abfa454.css",
+    "src": "src/routes/trails/+page.css"
   },
   "Standalone.css": {
     "file": "_app/immutable/assets/Standalone-4970b9f1.css",
     "src": "Standalone.css"
   },
+  "navigation.css": {
+    "file": "_app/immutable/assets/navigation-af927694.css",
+    "src": "navigation.css"
+  },
+  "src/routes/locations/+page.css": {
+    "file": "_app/immutable/assets/_page-e2a44f13.css",
+    "src": "src/routes/locations/+page.css"
+  },
   "Trail.css": {
     "file": "_app/immutable/assets/Trail-48a1de2b.css",
     "src": "Trail.css"
-  },
-  "src/routes/trails/+page.css": {
-    "file": "_app/immutable/assets/_page-6abfa454.css",
-    "src": "src/routes/trails/+page.css"
   },
   "src/routes/+layout.css": {
     "file": "_app/immutable/assets/_layout-c8c62745.css",

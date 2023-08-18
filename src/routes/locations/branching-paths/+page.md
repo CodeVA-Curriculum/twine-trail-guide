@@ -3,7 +3,7 @@ title: Branching Paths
 author: Jon Stapleton
 short: Learn how to give your reader choices in the story that each lead to different passages.
 description: Twine stories are about choices. This tutorial covers how to add multiple links to a passage, allowing users to make choices that affect how the story ends.
-video: https://www.youtube.com/embed/_PK5kNc4LrQ
+video: https://www.youtube.com/embed/TTIF3vf9VTg
 type: tutorial
 layout: location
 ---

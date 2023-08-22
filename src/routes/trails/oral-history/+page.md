@@ -15,7 +15,6 @@ In the Twine project you create, the reader will play the part of the interviewe
 ::timeline
 
 ::location{path="making-recordings"}
-::location{path="hosting-recordings"}
 ::location{path="add-audio"}
 
 :::location{path="delay-text"}

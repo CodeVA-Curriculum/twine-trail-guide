@@ -82,5 +82,3 @@ Here's what happens in the demo above in order from start to finish, including v
 8. Run the `shop` passage for a third time. When it reads the `greeting` variable, it gets the new value set in `rude`.
 
 If you're creative and tricky about when you modify variables, you can create interesting results that make your story feel more interactive!
-
----

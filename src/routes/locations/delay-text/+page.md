@@ -14,7 +14,7 @@ As a Twine author, you may find yourself in a situation where you want to increa
 
 :::passage{title="Delay Example" src="/delay-text-demo.gif"}
 ```
-You find yourself in a damp, dark cave. You hear water dripping from stalagtites hanging above you.
+You find yourself in a damp, dark cave. You hear water dripping from stalactites hanging above you.
 
 [after 1 second]
 In the distance... is that a light?
@@ -26,6 +26,20 @@ You can change the time to whatever you like. Here are some examples:
 * `[after 500ms]`: Delays for half a second, or 500 milliseconds
 * `[after 1 minute]`: Delays for a full minute (that's a really long time!)
 * `[after 3 seconds]`: Delays for 3 seconds (you can use whatever number you like)
+
+If you'd like to have the delay apply to a section of next in the middle of a passage, you can set that up using the `[continue]` block:
+
+:::passage{title="Delay with Continue", src="/delay-in-situ.gif"}
+```
+You find yourself in a damp, dark cave. You hear water dripping from stalactites hanging above you.
+
+[after 1 second]
+In the distance... is that a light?
+
+[continue]
+It's cold here...
+```
+:::
 
 ---
 

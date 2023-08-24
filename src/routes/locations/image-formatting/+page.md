@@ -4,7 +4,7 @@ title: Image Formatting Using CSS
 author: Jon Stapleton
 short: Learn how to manipulate your images to display them in different ways.
 description: Images are great, but sometimes they may not look exactly right. They may be too big, or too small, or take up the wrong amount of space. They may even make it difficult to read the passage because they push the text all over the place. This tutorial covers how to use CSS to make some changes to the way Twine displays images.
-# video: https://youtube.com/embed/p91bou3cJuA
+video: https://youtube.com/embed/MSqnueqV3Rw 
 type: tutorial
 layout: location
 ---

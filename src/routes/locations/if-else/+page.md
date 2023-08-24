@@ -3,7 +3,7 @@ title: If-Else Blocks
 author: Jon Stapleton
 short: Use "else" blocks to show or hide two lines of text.
 description: If statements allow you write passages where events unfold differently based on the value of variables, which are invisible to the reader. Sometimes you might want the passage to offer one of two mutually exclusive options--a message that says "the key turns in the lock", or a message that says "this is the wrong key...", for example. You can accomplish this with "if" and "unless" blocks, but the Chapbook format of Twine also offers "else" blocks, which accomplish something similar.
-# video: https://www.youtube.com/embed/VpGFJA5Fnyc
+video: https://www.youtube.com/embed/tY23AYcaA_Q
 type: tutorial
 layout: location
 ---

@@ -4,6 +4,7 @@ authors: Jon Stapleton
 date: 8/1/2022
 type: tutorial
 layout: location
+video: https://www.youtube.com/embed/kBbngnj2QLA
 short: Use variables as links
 description: In this tutorial, learn how to use variables within links to make your passages more flexible, able to lead the reader to many different locations rather than one pre-determined one. Links allow you to create passage "clusters" that readers can explore; once they reach a certain passage, you can use a variable to "unlock" a link to a new cluster, moving the story forward to a new place or scenario.
 ---

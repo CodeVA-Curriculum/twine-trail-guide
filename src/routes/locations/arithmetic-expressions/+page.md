@@ -4,6 +4,7 @@ authors: Jon Stapleton
 date: 8/16/2022
 type: tutorial
 layout: location
+video: https://www.youtube.com/embed/Kk_Xe0Dl30k
 short: Modify number variables
 description: This tutorial shows you how to modify number variables using arithmetic expressions--lines of code that use mathematical operations to assign a variable a value. You'll learn how to write arithmetic expressions, increment variables, and use variables as operands in mathematical expressions.
 ---

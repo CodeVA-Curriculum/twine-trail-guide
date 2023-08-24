@@ -3,7 +3,7 @@ title: Delay Text
 author: Jon Stapleton
 short: Learn how to set text to reveal itself in a passage after some time has passed.
 description: As a Twine author, you may find yourself in a situation where you want to increase dramatic tension in your story by revealing something after a delay instead of right away when the reader arrives at a passage. This tutorial shows you how to set up delays in your Chapbook Twine passages.
-# video: https://youtube.com/embed/33OQtxF7L8g
+video: https://youtube.com/embed/bSWW-QHAxpI
 type: tutorial
 layout: location
 ---
@@ -29,7 +29,7 @@ You can change the time to whatever you like. Here are some examples:
 
 If you'd like to have the delay apply to a section of next in the middle of a passage, you can set that up using the `[continue]` block:
 
-:::passage{title="Delay with Continue", src="/delay-in-situ.gif"}
+:::passage{title="Delay with Continue" src="/delay-in-situ.gif"}
 ```
 You find yourself in a damp, dark cave. You hear water dripping from stalactites hanging above you.
 

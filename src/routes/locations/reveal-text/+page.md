@@ -4,7 +4,7 @@ title: Reveal Text
 author: Jon Stapleton
 short: Learn how to create links that reveal new sections of text in your Twine passages.
 description: Sometimes, you might want to use a link to reveal a new section of a passage instead of transitioning to a new part of your story. "Reveal" links do exactly that--they allow you to use a link to reveal more information to the reader in the current passage. This tutorial covers how to create "reveal" links and section in your Twine story.
-# video: https://youtube.com/embed/p91bou3cJuA
+video: https://youtube.com/embed/EUhDExXTR_U
 type: tutorial
 layout: location
 ---

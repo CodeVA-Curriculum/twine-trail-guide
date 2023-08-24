@@ -3,7 +3,7 @@ title: Relational Expressions
 author: Jon Stapleton
 short: Learn how to write relational expressions
 description: Relational expressions (or "Boolean" expressions) are a way of having the computer compare two or more values and produce a value of "true" or "false" based on the comparison. Because "true" and "false" variable values are such an important part of "if" statements and other conditional control structures, you'll find lots of uses for relational expressions in your stories that use "if" and "unless" blocks.
-# video: https://www.youtube.com/embed/VpGFJA5Fnyc
+video: https://www.youtube.com/embed/BXuAa0zJRMM
 type: tutorial
 layout: location
 ---
@@ -134,6 +134,6 @@ There are several kinds of relational operators available to you in the Chapbook
 | `>`      | "Is greater than" | Compares two values. If the first value is greater than the second, produce `true`; otherwise, produce `false`. | `4 > 3` | `true` |
 | `!=`     | "Is not equal to" | Compares two values. If they are not equal, produce `true`; otherwise, produce `false` | `5 != 5` | `false` |
 | `<=`     | "Is less than or equal to" | Compares two values. If the first value is less than or equal to the second, produce `true`; otherwise produce `false` | `3 <= 3` | `true` |
-| `>=`     | "Is greater than or equal to" | Compares two values. If the first value is greater than or equal to the second, produce `true`; otherwise produce `false` | `2 >= 1` | `false` |
+| `>=`     | "Is greater than or equal to" | Compares two values. If the first value is greater than or equal to the second, produce `true`; otherwise produce `false` | `2 >= 1` | `true` |
 
 Try them out in your variables, and use them in `[if ]` statements to create interactive passages that respond to user's choices!

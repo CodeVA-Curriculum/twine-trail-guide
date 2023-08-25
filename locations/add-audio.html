@@ -9,7 +9,7 @@
 		<link href="/twine-trail-guide/_app/immutable/assets/_layout-c8c62745.css" rel="stylesheet">
 		<link href="/twine-trail-guide/_app/immutable/assets/Standalone-4970b9f1.css" rel="stylesheet">
 		<link href="/twine-trail-guide/_app/immutable/assets/navigation-af927694.css" rel="stylesheet">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-5fd4a7d8.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-7cf014b1.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-28147552.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/singletons-5295c163.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/paths-6cd3a76e.js">
@@ -17,14 +17,13 @@
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/_layout.svelte-863e6220.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/modules/pages/_layout.js-7b9cbfbc.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/_layout-8d2a742b.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/_layout.svelte-4f3c0001.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/_layout.svelte-af266223.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Nav-e2baa9e8.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/add-audio/_page.md-d54cbe66.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/add-audio/_page.md-32d705a5.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone-e39bc1fe.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone.svelte_svelte_type_style_lang-17c44177.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/navigation-03af5729.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index.es-30099b97.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Aside-c5d6848f.js">
 	</head>
 	<body>
 		<div id="svelte">
@@ -47,33 +46,38 @@
             </a>
             <a class="navbar-item" href="/twine-trail-guide/locations">Locations
             </a></div></div></nav>
-<div class="container"><section class="wrapper svelte-rs31xx"><div class="columns"><div class="column content"><h1 class="title">Adding Audio to Passages</h1>
+<div class="section"><div class="container"><div class="container"><section class="wrapper svelte-rs31xx"><div class="columns"><div class="column content"><h1 class="title">Adding Audio to Passages</h1>
                 
                 
-                
+                <blockquote class="block  is-italic">Adding sound is a great way of creating an immersive atmosphere in your story. Recording and figuring out how to host these recordings can be a hassle, but once you get to the point where you are ready to embed them in your story it isn't so bad. This tutorial shows you how to add audio to a Twine passage, and explains the difference between 'ambient' sounds and 'sound effects' in the Chapbook Twine format.</blockquote>
+                <p class="block  svelte-rs31xx">Watch the video to see someone demonstrate the basics, or read on to work through it on your own. This concept is a part of several projects <a href="/twine-trail-guide/trails">Trails</a>; check them out!</p>
                 </div>
-            </div></section>
+            <div class="column my-3"><div class="video svelte-rs31xx"><iframe src="https://youtube.com/embed/016T1snJ7MM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="svelte-rs31xx"></iframe></div></div></div></section>
     <hr class="svelte-rs31xx">
-    <section class="content post post-container svelte-rs31xx"><aside class="card my-3 p-3 svelte-6gt5py"><div class="columns is-mobile is-vcentered"><div class="column is-narrow"><span><svg id="" class="fa svelte-1cj2gr0" style="height:1em;font-size:1.75em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 576 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(288 256)" transform-origin="144 0"><g transform="translate(0,0) scale(1,1)"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z" fill="currentColor" transform="translate(-288 -256)"></path></g></g></svg></span></div>
-        <div class="column"><p class="is-size-7"><p>In order to use audio in your story, you’ll need to figure out a way to <em>host</em> it so the Twine webpage can access the sound data. You can read about different hosting options using either the downloadable Twine editor or the browser-based editor by checking out the <em><a href="" rel="">Hosting Recordings</a></em> tutorial.</p></p></div></div>
-</aside>
-<h2>Types of Embedded Audio</h2>
-<p>While the process of creating and hosting recordings can be challenging, adding them to your Twine story isn’t actually all that hard. The important thing to know is that the <strong>Chapbook</strong> Twine format supports two kinds of audio: <em>ambient</em> sounds and <em>sound effects</em>.</p>
+    <section class="content post post-container svelte-rs31xx">
+<p>While the process of <em>creating</em> recordings can be challenging, adding them to your Twine story isn’t actually all that hard. The important thing to know is that the <strong>Chapbook</strong> Twine format supports two kinds of audio: <em>ambient</em> sounds and <em>sound effects</em>.</p>
 <p><em>Ambient</em> sounds are long audio clips that fade in and provide background ambiance to a passage. <em>Sound effects</em> are short sounds that play once. You can experiment with both options and see which one works best; if you choose <em>ambient</em>, you might want to add a couple of seconds of lead-in to any audio clips that include important information (like someone’s voice).</p>
 <h2>Adding Ambient Sounds</h2>
-<p>To add an ambient sound to your passage, you’ll need to add some information about the sound—it’s name (if you’re <a href="" rel="">hosting the file locally</a> and using the downloadable Twine editor) or URL (if you’re using <a href="" rel="">SoundCloud for hosting</a>)—and then a line to activate the sound. Here’s an example of a Twine passage that sets up an audio file called <code>rainfall.mp3</code>:</p>
+<p>To add an ambient sound to your passage, you’ll need to add information about the sound—the file name (if you’re hosting the file locally and using the downloadable Twine editor) or URL (if you’re using <a href="" rel="nofollow">Google Drive</a> for hosting, see below)—and then a line to activate the sound. Here’s an example of a Twine passage that sets up an audio file at a Google Drive URL (but does not play it):</p>
 <article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Passage with Ambient Sound Example</h4></header>
     
     <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
                 <div class="passage-pre "></div></div>
         
             </div></div>
-    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">sound.ambient.rainfall.url: &#39;rainfall.mp3&#39;
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">sound.ambient.rainfall.url: &#39;https://drive.google.com/uc?id=1DabfUnYRfpF0ksy3rpVJNbGtOwERii0M&#39;
 sound.ambient.rainfall.description: &#39;the sound of falling rain&#39;
 --
 
-Here&#39;s some normal story text. Ambient sound is playing in the background.</code><!-- HTML_TAG_END --></pre></span>
+Here&#39;s some normal story text.</code><!-- HTML_TAG_END --></pre></span>
 </article>
+<p>The first step for adding sound to your Twine stories is to figure out how to <em>host</em> the audio so that Twine can use it. Twine uses audio the same way it uses <a href="" rel="">images</a>—you can use image file (if you’re using the offline Twine editor) or a URL to an online version of the file (like <a href="" rel="nofollow">Unsplash</a> or <a href="" rel="nofollow">Google Drive</a>). Here’s an example of what it looks like to add audio to a Twine passage:</p>
+<p>The easiest way to <em>host</em> audio files is to use Google Drive:</p>
+<ol><li>First, find an audio file that you’d like to use in your story. You can create your own audio, or find royalty-free audio files on sites like <a href="" rel="nofollow">Pixabay</a>.</li>
+<li>Then, upload the audio file you’d like to use to <a href="" rel="nofollow">Google Drive</a>. If you don’t already have a Google account, you’ll need to create one. Drag and drop the file onto the Google Drive window to upload it.</li>
+<li>Then, right-click the file in Google Drive, go to <code>Share</code> set the visibility to “anyone with the link can view” (be sure that the image doesn’t include any private or sensitive personal information before you do this). Then, click <code>Copy Link</code>.</li>
+<li>Now, you need to find the <em>Google Drive file ID</em>. It’s a string of seemingly random characters that appears in the link you copied between <code>https://drive.google.com/file/d/</code> and <code>/view</code>. For example, if a document has a link <code>https://drive.google.com/file/d/1DabfUnYRfpF0ksy3rpVJNbGtOwERii0M/view?usp=drive_link</code>, then the file ID for that link is <code>1DabfUnYRfpF0ksy3rpVJNbGtOwERii0M</code>.</li>
+<li>Finally, get ready to add the audio file to your Twine passage! Instead of adding the file name after <code>sound.ambient.rainfall.url:</code>, write <code>https://drive.google.com/uc?id=</code> and paste the Google Drive file ID you found earlier after the <code>=</code> (see above for an example).</li></ol>
 <p>I’ve written the passage above in two sections: the section <em>above</em> the <code>--</code>, and the section <em>below</em> it. This separation is incredibly important.</p>
 <p>The text <em>above</em> the <code>--</code> will not appear in the passage—when I test out the passage I’ve created above, it looks like this:</p>
 <p>
@@ -82,21 +86,22 @@ Here&#39;s some normal story text. Ambient sound is playing in the background.</
 
 
 </p>
-<p>The text <em>below</em> the <code>--</code> appears as normal. The rules for writing above the <code>--</code> are different than the rules for below; it’s very, very important to be precise in your spelling, your use of <code>&#39;</code>, and the <code>:</code> on each line. Follow the example closely, or Twine will not know how to interpret your code.</p>
-<p>Right now, the example passage I’ve created doesn’t make any sounds. It just loads the sound. To play it, I need to add another line:</p>
+<p>The text <em>below</em> the <code>--</code> appears as normal. The rules for writing above the <code>--</code> are different from the rules for below; it’s very, very important to be precise in your spelling, your use of <code>&#39;</code>, and the <code>:</code> on each line. Follow the example closely, or Twine will not know how to interpret your code.</p>
+<p>Right now, the example passage I’ve created doesn’t make any sounds. It just loads the sound file. To play it, I need to add another line:</p>
 <article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Playing Rainfall Sounds</h4></header>
     
     <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
                 <div class="passage-pre "></div></div>
         
             </div></div>
-    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">sound.ambient.rainfall.url: &#39;rainfall.mp3&#39;
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">sound.ambient.rainfall.url: &#39;https://drive.google.com/uc?id=1DabfUnYRfpF0ksy3rpVJNbGtOwERii0M&#39;
 sound.ambient.rainfall.description: &#39;the sound of falling rain&#39;
 --
 &#123;ambient sound: &#39;rainfall&#39;&#125;
 
 Here&#39;s some normal story text. Ambient sound is playing in the background.</code><!-- HTML_TAG_END --></pre></span>
 </article>
+<p>You can’t hear the result in the image above, but <a href="" rel="">click here to open the example</a> and hear what it sounds like.</p>
 <p>The line that activates the sound is related to the code above the <code>--</code>: the <em>name</em> of the sound after the <code>:</code> in the activation line should match the word that comes after <code>sound.ambient</code> in the code section. So if I wanted to activate a sound called <code>&#39;storm&#39;</code>, my code would look like this:</p>
 <article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Playing Storm Sounds</h4></header>
     
@@ -104,7 +109,7 @@ Here&#39;s some normal story text. Ambient sound is playing in the background.</
                 <div class="passage-pre "></div></div>
         
             </div></div>
-    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">sound.ambient.storm.url: &#39;storm-file.mp3&#39;
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">sound.ambient.storm.url: &#39;https://drive.google.com/uc?id=1XFNzcY26wvD-wbOnhuEOdM5OoiUrm2FD&#39;
 sound.ambient.storm.description: &#39;The sound of a storm&#39;
 --
 
@@ -112,7 +117,7 @@ sound.ambient.storm.description: &#39;The sound of a storm&#39;
 
 You hear wind and rain rushing toward you.</code><!-- HTML_TAG_END --></pre></span>
 </article>
-<p>Your <code>url</code> should match the link or filename for your sound, and the <code>name</code> in your activation line <code>{ambient sound: &#39;name&#39;}</code> should match the code above the <code>--</code>: <code>sound.ambient.name.url</code> and <code>sound.ambient.name.description</code>.</p>
+<p>Your <code>url</code> should match the link or filename for your sound, and the <code>name</code> in your activation line <code>{ambient sound: &#39;name&#39;}</code> should correspond to the code above the <code>--</code>: <code>sound.ambient.name.url</code> and <code>sound.ambient.name.description</code>.</p>
 <hr>
 <h2>Adding Sound Effects</h2>
 <p>Adding sound effects is exactly the same as adding ambient sounds, except sound effects play only once and do not fade in and out. Here’s an example:</p>
@@ -122,7 +127,7 @@ You hear wind and rain rushing toward you.</code><!-- HTML_TAG_END --></pre></sp
                 <div class="passage-pre "></div></div>
         
             </div></div>
-    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">sound.effect.boom.url: &#39;boom-audio.mp3&#39;
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">sound.effect.boom.url: &#39;https://drive.google.com/uc?id=16V5UnErgIX6yz-DOU7XEMK_9tbXEmsTQ&#39;
 sound.effect.boom.description: &#39;a loud boom&#39;
 --
 
@@ -130,14 +135,13 @@ You hear something in the distance...
 
 &#123;sound effect: &#39;boom&#39;&#125;</code><!-- HTML_TAG_END --></pre></span>
 </article>
-<p>Everything is basically the same as it is with ambient sounds, except you use <code>sound.effect</code> in your code instead of <code>sound.ambient</code>.</p>
-<hr></section>
+<p><a href="" rel="">Check out this example</a> to hear the sound effect.</p></section>
     
-</div>
+</div></div></div>
 
 
-		<script type="module" data-sveltekit-hydrate="15yr69o">
-			import { start } from "/twine-trail-guide/_app/immutable/start-5fd4a7d8.js";
+		<script type="module" data-sveltekit-hydrate="1crenj4">
+			import { start } from "/twine-trail-guide/_app/immutable/start-7cf014b1.js";
 
 			start({
 				env: {},
@@ -151,8 +155,8 @@ You hear something in the distance...
 					form: null
 				},
 				paths: {"base":"/twine-trail-guide","assets":"/twine-trail-guide"},
-				target: document.querySelector('[data-sveltekit-hydrate="15yr69o"]').parentNode,
-				version: "1692379119673"
+				target: document.querySelector('[data-sveltekit-hydrate="1crenj4"]').parentNode,
+				version: "1692978824799"
 			});
 		</script>
 	</div>

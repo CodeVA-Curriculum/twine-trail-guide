@@ -9,7 +9,7 @@
 		<link href="/twine-trail-guide/_app/immutable/assets/_layout-c8c62745.css" rel="stylesheet">
 		<link href="/twine-trail-guide/_app/immutable/assets/Standalone-4970b9f1.css" rel="stylesheet">
 		<link href="/twine-trail-guide/_app/immutable/assets/navigation-af927694.css" rel="stylesheet">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-5fd4a7d8.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-7cf014b1.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-28147552.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/singletons-5295c163.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/paths-6cd3a76e.js">
@@ -17,9 +17,9 @@
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/_layout.svelte-863e6220.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/modules/pages/_layout.js-7b9cbfbc.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/_layout-8d2a742b.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/_layout.svelte-4f3c0001.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/_layout.svelte-af266223.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Nav-e2baa9e8.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/modify-variables/_page.md-ebefa898.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/modify-variables/_page.md-27655de8.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone-e39bc1fe.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone.svelte_svelte_type_style_lang-17c44177.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/navigation-03af5729.js">
@@ -47,12 +47,13 @@
             </a>
             <a class="navbar-item" href="/twine-trail-guide/locations">Locations
             </a></div></div></nav>
-<div class="container"><section class="wrapper svelte-rs31xx"><div class="columns"><div class="column content"><h1 class="title">Modifying Variables</h1>
+<div class="section"><div class="container"><div class="container"><section class="wrapper svelte-rs31xx"><div class="columns"><div class="column content"><h1 class="title">Modifying Variables</h1>
                 
                 
-                
+                <blockquote class="block  is-italic">In this tutorial, you'll learn how to write code in your passage to modify the value of variables across your story. Variables are a very flexible tool for crafting your stories, but they can also be tricky. It's important to have a good mental model of how they work so you can use them creatively in your narratives. Once you know how to modify variables, you can have your story react to the choices the reader makes, and change how the story is being told "behind the scenes", making your narrative feel interactive and lifelike.</blockquote>
+                <p class="block  svelte-rs31xx">Watch the video to see someone demonstrate the basics, or read on to work through it on your own. This concept is a part of several projects <a href="/twine-trail-guide/trails">Trails</a>; check them out!</p>
                 </div>
-            </div></section>
+            <div class="column my-3"><div class="video svelte-rs31xx"><iframe src="https://www.youtube.com/embed/lzmWt97s9Ig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="svelte-rs31xx"></iframe></div></div></div></section>
     <hr class="svelte-rs31xx">
     <section class="content post post-container svelte-rs31xx"><p>Variables are somewhat useful on their own, but they are <em>extremely</em> useful and powerful when you write code to <em>modify</em> their values during your story. <a href="" rel="">Check out this story</a>, where a shopkeeper reacts differently to the reader’s second visit based on their behavior during their first visit.</p>
 <p>This tutorial will show you how to set this kind of story up by creating and modifying variables in your story.</p>
@@ -132,29 +133,28 @@ You step outside, and then think better of it. You turn around, and head back in
 <li>Click the <code>&quot;Walk away rudely&quot;</code> option to go to the <code>rude</code> passage</li>
 <li>Run the <code>rude</code> passage. It <em>modifies</em> the existing <code>greeting</code> variable, giving it a value of <code>&quot;You&#39;re sort of a strange person, to walk in without saying hello!&quot;</code> and discarding the old value</li>
 <li>Run the <code>shop</code> passage for a third time. When it reads the <code>greeting</code> variable, it gets the new value set in <code>rude</code>.</li></ol>
-<p>If you’re creative and tricky about when you modify variables, you can create interesting results that make your story feel more interactive!</p>
-<hr></section>
+<p>If you’re creative and tricky about when you modify variables, you can create interesting results that make your story feel more interactive!</p></section>
     
-</div>
+</div></div></div>
 
 
-		<script type="module" data-sveltekit-hydrate="1lj6i7l">
-			import { start } from "/twine-trail-guide/_app/immutable/start-5fd4a7d8.js";
+		<script type="module" data-sveltekit-hydrate="1c3vql3">
+			import { start } from "/twine-trail-guide/_app/immutable/start-7cf014b1.js";
 
 			start({
 				env: {},
 				hydrate: {
 					status: 200,
 					error: null,
-					node_ids: [0, 2, 25],
+					node_ids: [0, 2, 24],
 					params: {},
 					route: {"id":"/locations/modify-variables"},
 					data: [null,null,null],
 					form: null
 				},
 				paths: {"base":"/twine-trail-guide","assets":"/twine-trail-guide"},
-				target: document.querySelector('[data-sveltekit-hydrate="1lj6i7l"]').parentNode,
-				version: "1692379119673"
+				target: document.querySelector('[data-sveltekit-hydrate="1c3vql3"]').parentNode,
+				version: "1692978824799"
 			});
 		</script>
 	</div>

@@ -9,7 +9,7 @@
 		<link href="/twine-trail-guide/_app/immutable/assets/_layout-c8c62745.css" rel="stylesheet">
 		<link href="/twine-trail-guide/_app/immutable/assets/Standalone-4970b9f1.css" rel="stylesheet">
 		<link href="/twine-trail-guide/_app/immutable/assets/navigation-af927694.css" rel="stylesheet">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-5fd4a7d8.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-7cf014b1.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-28147552.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/singletons-5295c163.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/paths-6cd3a76e.js">
@@ -17,9 +17,9 @@
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/_layout.svelte-863e6220.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/modules/pages/_layout.js-7b9cbfbc.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/_layout-8d2a742b.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/_layout.svelte-4f3c0001.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/_layout.svelte-af266223.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Nav-e2baa9e8.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/adding-images/_page.md-1f223c5a.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/adding-images/_page.md-5585c09a.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone-e39bc1fe.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone.svelte_svelte_type_style_lang-17c44177.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/navigation-03af5729.js">
@@ -46,12 +46,13 @@
             </a>
             <a class="navbar-item" href="/twine-trail-guide/locations">Locations
             </a></div></div></nav>
-<div class="container"><section class="wrapper svelte-rs31xx"><div class="columns"><div class="column content"><h1 class="title">Adding Images to Passages</h1>
+<div class="section"><div class="container"><div class="container"><section class="wrapper svelte-rs31xx"><div class="columns"><div class="column content"><h1 class="title">Adding Images to Passages</h1>
                 
                 
-                
+                <blockquote class="block  is-italic">Images are a great way of adding new interest to your Twine passages. They can convey a mood, provide additional information for the reader, or even create something for the reader to investigate as they make choices to move the story forward. This tutorial demonstrates how to add images from the web to a Twine passage.</blockquote>
+                <p class="block  svelte-rs31xx">Watch the video to see someone demonstrate the basics, or read on to work through it on your own. This concept is a part of several projects <a href="/twine-trail-guide/trails">Trails</a>; check them out!</p>
                 </div>
-            </div></section>
+            <div class="column my-3"><div class="video svelte-rs31xx"><iframe src="https://youtube.com/embed/-s3nCDMkPKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="svelte-rs31xx"></iframe></div></div></div></section>
     <hr class="svelte-rs31xx">
     <section class="content post post-container svelte-rs31xx"><h2>Finding an Image</h2>
 <p>The first thing to do if you want to add an image to a Twine passage is to find a <em>link</em> to an image. All images on the web have a link to their location, and you can use that link to include the image in your story. Here are some options to check out:</p>
@@ -112,13 +113,40 @@ You hear the howls of wolves in the distance.</code><!-- HTML_TAG_END --></pre><
 
 
 </p>
-<hr></section>
+<hr>
+<h2>Adding Images from Google Drive</h2>
+<p>If you can find images you want to use in your story online or on Unsplash, that’s all you’ll need. However, lots of people like creating their own images for their stories. Adding original images to a Twine story is a little complicated; the easiest way is to upload it to <a href="" rel="nofollow">Google Drive</a> and then insert the link to the Google Drive-hosted copy of the image.</p>
+<ol><li>First, you’ll need to upload the image you’d like to use to <a href="" rel="nofollow">Google Drive</a>. If you don’t already have a Google account, you’ll need to create one. Drag and drop the image onto the Google Drive window to upload it.</li></ol>
+
+<ol start="2"><li>Then, right-click the file in Google Drive, go to <code>Share</code> set the visibility to “anyone with the link can view” (be sure that the image doesn’t include any private or sensitive personal information before you do this). Then, click <code>Copy Link</code>.</li></ol>
+
+<ol start="3"><li>Now, you need to find the <em>Google Drive file ID</em>. It’s a string of seemingly random characters that appears in the link you copied between <code>https://drive.google.com/file/d/</code> and <code>/view</code>. For example, if a document has a link <code>https://drive.google.com/uc?id=18m-b02xNTee9gLRwVASKYqtxmoiIq6T9</code>, then the file ID for that link is <code>18m-b02xNTee9gLRwVASKYqtxmoiIq6T9</code>.</li></ol>
+
+<ol start="4"><li>Finally, get ready to add the image to your Twine passage! Everything is the same as above <strong>except for the <code>image:</code> field</strong>. Instead of pasting the image URL after <code>image:</code>, write <code>https://drive.google.com/uc?id=</code> and paste the Google Drive file ID you found earlier after the <code>=</code>. Check out the passage below for an example:</li></ol>
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Google Drive Image Example</h4></header>
     
-</div>
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre "></div></div>
+        
+            <div class="column has-text-centered m-0">
+
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/drive-image-example.png" class="svelte-r75zci"></figure></div>
 
 
-		<script type="module" data-sveltekit-hydrate="ktrff9">
-			import { start } from "/twine-trail-guide/_app/immutable/start-5fd4a7d8.js";
+</div></div></div>
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">Here&#39;s an image from my Google Drive:
+
+&#123;embed image: &quot;https://drive.google.com/uc?id=18m-b02xNTee9gLRwVASKYqtxmoiIq6T9&quot;, alt: &quot;An image from my Google Drive&quot;&#125;
+
+Copy and paste this code into your own story to try it out!</code><!-- HTML_TAG_END --></pre></span>
+</article>
+<p>If you have trouble getting this working, check out the video above for a demonstration!</p></section>
+    
+</div></div></div>
+
+
+		<script type="module" data-sveltekit-hydrate="1c96ng3">
+			import { start } from "/twine-trail-guide/_app/immutable/start-7cf014b1.js";
 
 			start({
 				env: {},
@@ -132,8 +160,8 @@ You hear the howls of wolves in the distance.</code><!-- HTML_TAG_END --></pre><
 					form: null
 				},
 				paths: {"base":"/twine-trail-guide","assets":"/twine-trail-guide"},
-				target: document.querySelector('[data-sveltekit-hydrate="ktrff9"]').parentNode,
-				version: "1692379119673"
+				target: document.querySelector('[data-sveltekit-hydrate="1c96ng3"]').parentNode,
+				version: "1692978824799"
 			});
 		</script>
 	</div>

@@ -9,7 +9,7 @@
 		<link href="/twine-trail-guide/_app/immutable/assets/_layout-c8c62745.css" rel="stylesheet">
 		<link href="/twine-trail-guide/_app/immutable/assets/Standalone-4970b9f1.css" rel="stylesheet">
 		<link href="/twine-trail-guide/_app/immutable/assets/navigation-af927694.css" rel="stylesheet">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-5fd4a7d8.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/start-7cf014b1.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/index-28147552.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/singletons-5295c163.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/paths-6cd3a76e.js">
@@ -17,9 +17,9 @@
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/_layout.svelte-863e6220.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/modules/pages/_layout.js-7b9cbfbc.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/_layout-8d2a742b.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/_layout.svelte-4f3c0001.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/_layout.svelte-af266223.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Nav-e2baa9e8.js">
-		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/delay-text/_page.md-41363131.js">
+		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/components/pages/locations/delay-text/_page.md-d3640e1a.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone-e39bc1fe.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/Standalone.svelte_svelte_type_style_lang-17c44177.js">
 		<link rel="modulepreload" href="/twine-trail-guide/_app/immutable/chunks/navigation-03af5729.js">
@@ -47,12 +47,13 @@
             </a>
             <a class="navbar-item" href="/twine-trail-guide/locations">Locations
             </a></div></div></nav>
-<div class="container"><section class="wrapper svelte-rs31xx"><div class="columns"><div class="column content"><h1 class="title">Delay Text</h1>
+<div class="section"><div class="container"><div class="container"><section class="wrapper svelte-rs31xx"><div class="columns"><div class="column content"><h1 class="title">Delay Text</h1>
                 
                 
-                
+                <blockquote class="block  is-italic">As a Twine author, you may find yourself in a situation where you want to increase dramatic tension in your story by revealing something after a delay instead of right away when the reader arrives at a passage. This tutorial shows you how to set up delays in your Chapbook Twine passages.</blockquote>
+                <p class="block  svelte-rs31xx">Watch the video to see someone demonstrate the basics, or read on to work through it on your own. This concept is a part of several projects <a href="/twine-trail-guide/trails">Trails</a>; check them out!</p>
                 </div>
-            </div></section>
+            <div class="column my-3"><div class="video svelte-rs31xx"><iframe src="https://youtube.com/embed/bSWW-QHAxpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="svelte-rs31xx"></iframe></div></div></div></section>
     <hr class="svelte-rs31xx">
     <section class="content post post-container svelte-rs31xx"><h2>Creating Delay With the “After” Modifier</h2>
 <p>As a Twine author, you may find yourself in a situation where you want to increase dramatic tension in your story by revealing something after a delay instead of right away when the reader arrives at a passage. This tutorial shows you how to set up delays in your Chapbook Twine passages. Twine passages created using the <strong>Chapbook</strong> format have access to <em>modifiers</em>, special commands that cause the passage to behave differently than usual. You can use one of those modifiers, the <code>after</code> modifier, to reveal text after a delay.</p>
@@ -67,7 +68,7 @@
 
 
 </div></div></div>
-    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">You find yourself in a damp, dark cave. You hear water dripping from stalagtites hanging above you.
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">You find yourself in a damp, dark cave. You hear water dripping from stalactites hanging above you.
 
 [after 1 second]
 In the distance... is that a light?</code><!-- HTML_TAG_END --></pre></span>
@@ -76,6 +77,26 @@ In the distance... is that a light?</code><!-- HTML_TAG_END --></pre></span>
 <ul><li><code>[after 500ms]</code>: Delays for half a second, or 500 milliseconds</li>
 <li><code>[after 1 minute]</code>: Delays for a full minute (that’s a really long time!)</li>
 <li><code>[after 3 seconds]</code>: Delays for 3 seconds (you can use whatever number you like)</li></ul>
+<p>If you’d like to have the delay apply to a section of next in the middle of a passage, you can set that up using the <code>[continue]</code> block:</p>
+<article class="passage card my-5"><header class="card-header pl-5 pt-2 pb-0 svelte-1xrcq0x"><h4 class="svelte-1xrcq0x">Delay with Continue</h4></header>
+    
+    <div class="card-content"><div class="columns is-tablet"><div class="code column m-0 svelte-1xrcq0x">
+                <div class="passage-pre "></div></div>
+        
+            <div class="column has-text-centered m-0">
+
+<div class="has-text-centered" style="margin-left: auto; margin-right: auto;"><figure class="image is-inline-block"><img alt="The output of the code above" src="/twine-trail-guide/images/delay-in-situ.gif" class="svelte-r75zci"></figure></div>
+
+
+</div></div></div>
+    <span style="display: none;"><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">You find yourself in a damp, dark cave. You hear water dripping from stalactites hanging above you.
+
+[after 1 second]
+In the distance... is that a light?
+
+[continue]
+It&#39;s cold here...</code><!-- HTML_TAG_END --></pre></span>
+</article>
 <hr>
 <h2>Adding Delayed Text to a Paragraph</h2>
 <p>Sometimes, you may want to add delayed text to a paragraph rather than revealing the delayed portion on its own line. Something like this:</p>
@@ -107,11 +128,11 @@ In the distance... is that a light?</code><!-- HTML_TAG_END --></pre></span>
         <div class="column"><p class="is-size-7"><p>This tutorial is based on the <a href="" rel="nofollow">Chapbook delayed text documentation</a>. Visit the <a href="" rel="nofollow">wiki</a> to learn more about delayed text in Chapbook and other features included in the Chapbook format.</p></p></div></div>
 </aside></section>
     
-</div>
+</div></div></div>
 
 
-		<script type="module" data-sveltekit-hydrate="1azun80">
-			import { start } from "/twine-trail-guide/_app/immutable/start-5fd4a7d8.js";
+		<script type="module" data-sveltekit-hydrate="s9ylcq">
+			import { start } from "/twine-trail-guide/_app/immutable/start-7cf014b1.js";
 
 			start({
 				env: {},
@@ -125,8 +146,8 @@ In the distance... is that a light?</code><!-- HTML_TAG_END --></pre></span>
 					form: null
 				},
 				paths: {"base":"/twine-trail-guide","assets":"/twine-trail-guide"},
-				target: document.querySelector('[data-sveltekit-hydrate="1azun80"]').parentNode,
-				version: "1692379119673"
+				target: document.querySelector('[data-sveltekit-hydrate="s9ylcq"]').parentNode,
+				version: "1692978824799"
 			});
 		</script>
 	</div>

@@ -4,7 +4,7 @@ authors: Jon Stapleton
 date: 8/1/2022
 type: tutorial
 layout: location
-video: https://www.youtube.com/embed/VRrxxnmKIzY
+video: https://www.youtube.com/embed/5qOUXffVQwY
 short: A brief explaination of how to create and use variables.
 description: In this tutorial, you'll learn all about variables. Variables are containers that store information; they allow you to direct your story to "remember" information for later, and use that information across multiple passages. Using variables allows you to simplify stories with a lot of repetition, but they also open up lots of creative possibilities after you learn some other skills, like modifying variables across your story or using variables to embed passages.
 ---

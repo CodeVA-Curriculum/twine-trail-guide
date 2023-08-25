@@ -3,7 +3,7 @@ title: If & Unless Blocks
 author: Jon Stapleton
 short: Learn the basics of "if" and "unless" blocks in the Chapbook format of Twine.
 description: The Chapbook format of Twine includes special commands you can use in your passages called "if" and "unless" blocks. These blocks allow you to "hide" or "reveal" lines of text based on the value of a variable. This powerful "selection" feature (where the computer, as it interprets your passage, "selects" lines of code to skip or include in the passage) is useful for creating all sorts of things in your Twine stories--puzzles, secrets, alternative paths and endings, and a lot more!
-video: https://www.youtube.com/embed/yE60RiIWR-U
+video: https://www.youtube.com/embed/TZXFTwgYjuA
 type: tutorial
 layout: location
 ---

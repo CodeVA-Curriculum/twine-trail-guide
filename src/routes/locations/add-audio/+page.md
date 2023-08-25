@@ -3,7 +3,7 @@ title: Adding Audio to Passages
 author: Jon Stapleton
 short: Learn how to add sound to your Twine passages.
 description: Adding sound is a great way of creating an immersive atmosphere in your story. Recording and figuring out how to host these recordings can be a hassle, but once you get to the point where you are ready to embed them in your story it isn't so bad. This tutorial shows you how to add audio to a Twine passage, and explains the difference between 'ambient' sounds and 'sound effects' in the Chapbook Twine format.
-video: https://youtube.com/embed/PZwfxvkQ95Q
+video: https://youtube.com/embed/016T1snJ7MM
 type: tutorial
 layout: location
 ---

@@ -37,11 +37,19 @@
             >
                 About the Guide
             </a>
-            <a class="navbar-item"
-                href='https://padlet.com/jonstapleton/wvs5vb5ct1s5kqts' 
-            >
-                Region Map
-            </a>
+            <div class='navbar-item has-dropdown is-hoverable'>
+                <p class='navbar-link'>Twine Editor</p>
+                <div class='navbar-dropdown'>
+                    <a class="navbar-item"
+                        href='https://twinery.org' 
+                    >
+                        Twinery.org
+                    </a>
+                    <a class='navbar-item' href='{base}/editor'>
+                        CodeVA Twine Editor
+                    </a>
+                </div>
+            </div>
             <a class="navbar-item"
                 href='{base}/trails'
             >

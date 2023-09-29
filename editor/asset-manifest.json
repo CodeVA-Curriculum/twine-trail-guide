@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "./static/css/main.af6e25bb.css",
+    "main.js": "./static/js/main.a7fe7161.js",
+    "static/media/nunito-light.woff": "./static/media/nunito-light.84c6863cfabe5e020314.woff",
+    "static/media/nunito-light.woff2": "./static/media/nunito-light.26873debc4fc17efcf28.woff2",
+    "static/media/graph-paper-dark.svg": "./static/media/graph-paper-dark.c7428e8b14d00fe0d4bc.svg",
+    "static/media/graph-paper-light.svg": "./static/media/graph-paper-light.14914806c95b46a12d34.svg",
+    "index.html": "./index.html",
+    "static/media/getFetch.cjs": "./static/media/getFetch.ec9d976b83c54460de98.cjs",
+    "static/media/chevron-down.svg": "./static/media/chevron-down.637c1521a2c3ba9284fa.svg",
+    "main.af6e25bb.css.map": "./static/css/main.af6e25bb.css.map",
+    "main.a7fe7161.js.map": "./static/js/main.a7fe7161.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af6e25bb.css",
+    "static/js/main.a7fe7161.js"
+  ]
+}

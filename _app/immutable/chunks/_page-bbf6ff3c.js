@@ -1,0 +1,1 @@
+import{R as o}from"./control-ba37bfb4.js";import{b as t}from"./paths-6cd3a76e.js";function i(e,r){if(isNaN(e)||e<300||e>308)throw new Error("Invalid status code");return new o(e,r)}function n(){throw i(308,`${t}/editor/index.html`)}const l=Object.freeze(Object.defineProperty({__proto__:null,load:n},Symbol.toStringTag,{value:"Module"}));export{l as _,n as l};

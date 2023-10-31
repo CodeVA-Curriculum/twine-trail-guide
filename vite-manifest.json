@@ -1150,10 +1150,6 @@
     "file": "_app/immutable/assets/navigation-af927694.css",
     "src": "navigation.css"
   },
-  "src/routes/trails/+page.css": {
-    "file": "_app/immutable/assets/_page-6abfa454.css",
-    "src": "src/routes/trails/+page.css"
-  },
   "src/routes/locations/+page.css": {
     "file": "_app/immutable/assets/_page-e2a44f13.css",
     "src": "src/routes/locations/+page.css"
@@ -1161,6 +1157,10 @@
   "Trail.css": {
     "file": "_app/immutable/assets/Trail-48a1de2b.css",
     "src": "Trail.css"
+  },
+  "src/routes/trails/+page.css": {
+    "file": "_app/immutable/assets/_page-6abfa454.css",
+    "src": "src/routes/trails/+page.css"
   },
   "Standalone.css": {
     "file": "_app/immutable/assets/Standalone-4970b9f1.css",

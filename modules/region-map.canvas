@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"ea8d121583563a0f","x":-1560,"y":-400,"width":400,"height":400,"type":"file","file":"applications/start-a-story.md"},
+		{"id":"496b6125d8030ebd","x":-800,"y":-160,"width":400,"height":400,"type":"file","file":"concepts/create-passage.md"},
+		{"id":"f07858805d925579","x":40,"y":-400,"width":400,"height":400,"type":"file","file":"concepts/link-passages.md"},
+		{"id":"320c3aebe35e6e4d","x":1760,"y":-200,"width":400,"height":400,"type":"file","file":"applications/story-with-multiple-endings.md"},
+		{"id":"f115c0938c133577","x":840,"y":-40,"width":400,"height":400,"type":"file","file":"concepts/branching-paths.md"}
+	],
+	"edges":[
+		{"id":"b75202880f413435","fromNode":"ea8d121583563a0f","fromSide":"right","toNode":"496b6125d8030ebd","toSide":"left"},
+		{"id":"e9b5b149d4c4404f","fromNode":"496b6125d8030ebd","fromSide":"right","toNode":"f07858805d925579","toSide":"left"},
+		{"id":"7ca4c104f45409e3","fromNode":"f07858805d925579","fromSide":"right","toNode":"f115c0938c133577","toSide":"left"},
+		{"id":"064b65cf6ae6afa2","fromNode":"f115c0938c133577","fromSide":"right","toNode":"320c3aebe35e6e4d","toSide":"left"}
+	]
+}

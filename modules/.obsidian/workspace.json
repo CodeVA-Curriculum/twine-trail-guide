@@ -1,0 +1,179 @@
+{
+  "main": {
+    "id": "25818d0c177491d5",
+    "type": "split",
+    "children": [
+      {
+        "id": "687ddf65076ba99b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9824cc7a1fd1fc29",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "region-map.canvas",
+                "viewState": {
+                  "x": 479.71682979650234,
+                  "y": 255.8466591694455,
+                  "zoom": -2
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6eaeee8a1321059e",
+    "type": "split",
+    "children": [
+      {
+        "id": "5f6fbb3df1307a6d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "61a6addf66336697",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ea324844ab239e83",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "be919ca8a0fe5965",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "be048408c0d81e0b",
+    "type": "split",
+    "children": [
+      {
+        "id": "8f91c1a8f7feec16",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d0e118ca4912755c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "region-map.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c83e129ed8af8924",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "region-map.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1f80376311c16891",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a5f447576f4d8f4e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "region-map.canvas"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "9824cc7a1fd1fc29",
+  "lastOpenFiles": [
+    "projects/your-first-story.md",
+    "projects/story-with-counting-landmark.md",
+    "projects/story-with-conversations-landmark.md",
+    "projects/puzzle-dig-landmark.md",
+    "projects/primary-documents-landmark.md",
+    "projects/oral-history-landmark.md",
+    "projects/breakout-box-landmark.md",
+    "projects",
+    "trails/story-with-counting-landmark.md",
+    "trails/story-with-conversations-landmark.md",
+    "trails/puzzle-dig-landmark.md",
+    "trails/primary-documents-landmark.md",
+    "trails/oral-history-landmark.md",
+    "trails/breakout-box-landmark.md",
+    "applications/story-with-multiple-endings.md",
+    "applications/story-with-counting-landmark.md",
+    "applications/story-with-conversations-landmark.md",
+    "applications/puzzle-dig-landmark.md",
+    "applications/primary-documents-landmark.md",
+    "applications/oral-history-landmark.md",
+    "applications/breakout-box-landmark.md",
+    "trails/your-first-story.md",
+    "region-map.canvas",
+    "meta.md"
+  ]
+}

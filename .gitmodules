@@ -1,3 +1,6 @@
 [submodule "src/lib/twine-map"]
 	path = src/lib/twine-map
 	url = ../twine-map.git
+[submodule "trail-guide"]
+	path = trail-guide
+	url = https://github.com/CodeVA-Curriculum/trail-guide

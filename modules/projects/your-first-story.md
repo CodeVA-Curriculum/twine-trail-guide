@@ -2,7 +2,7 @@
 title: Your First Story
 difficulty: 0
 nodes:
-    - ./applications/stary-a-story.md
+    - ./applications/start-a-story.md
     - ./concepts/create-passage.md
     - ./concepts/link-passages.md
     - ./concepts/branching-paths.md

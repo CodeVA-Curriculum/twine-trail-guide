@@ -15,14 +15,27 @@
               "state": {
                 "file": "region-map.canvas",
                 "viewState": {
-                  "x": -216.0271537041234,
+                  "x": -1608.7525447868868,
                   "y": -675.7120590750355,
                   "zoom": -2
                 }
               }
             }
+          },
+          {
+            "id": "a3b8cb8a58503eb1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projects/your-first-story.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -88,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "region-map.canvas",
+                "file": "projects/your-first-story.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "region-map.canvas",
+                "file": "projects/your-first-story.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "region-map.canvas"
+                "file": "projects/your-first-story.md"
               }
             }
           }
@@ -149,8 +162,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9824cc7a1fd1fc29",
+  "active": "a3b8cb8a58503eb1",
   "lastOpenFiles": [
+    "region-map.canvas",
     "projects/primary-documents.md",
     "applications/primary-documents-landmark.md",
     "applications/story-with-counting-landmark.md",
@@ -176,8 +190,6 @@
     "trails/oral-history-landmark.md",
     "trails/breakout-box-landmark.md",
     "applications/story-with-multiple-endings.md",
-    "applications/breakout-box-landmark.md",
-    "trails/your-first-story.md",
-    "region-map.canvas"
+    "applications/breakout-box-landmark.md"
   ]
 }

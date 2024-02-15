@@ -4,7 +4,7 @@ author: Jon Stapleton
 short: Learn how to start the Twine editor in your browser and create a new story.
 description: Twine is a tool for creating interactive, web-based stories. This tutorial shows you how to open the Twine editor and start a new story using the Chapbook format (our recommended starting point).
 video: https://youtube.com/embed/K3zDCZ2LvsQ
-type: tutorial
+types: tutorial, trailhead
 layout: location
 ---
 

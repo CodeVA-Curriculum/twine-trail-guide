@@ -15,8 +15,8 @@
               "state": {
                 "file": "region-map.canvas",
                 "viewState": {
-                  "x": 479.71682979650234,
-                  "y": 255.8466591694455,
+                  "x": -216.0271537041234,
+                  "y": -675.7120590750355,
                   "zoom": -2
                 }
               }
@@ -151,6 +151,16 @@
   },
   "active": "9824cc7a1fd1fc29",
   "lastOpenFiles": [
+    "projects/primary-documents.md",
+    "applications/primary-documents-landmark.md",
+    "applications/story-with-counting-landmark.md",
+    "projects/counting-web.md",
+    "applications/story-with-conversations-landmark.md",
+    "projects/conversation-web.md",
+    "projects/archeological-puzzle.md",
+    "applications/puzzle-dig-landmark.md",
+    "projects/oral-history.md",
+    "applications/oral-history-landmark.md",
     "projects/your-first-story.md",
     "projects/story-with-counting-landmark.md",
     "projects/story-with-conversations-landmark.md",
@@ -166,14 +176,8 @@
     "trails/oral-history-landmark.md",
     "trails/breakout-box-landmark.md",
     "applications/story-with-multiple-endings.md",
-    "applications/story-with-counting-landmark.md",
-    "applications/story-with-conversations-landmark.md",
-    "applications/puzzle-dig-landmark.md",
-    "applications/primary-documents-landmark.md",
-    "applications/oral-history-landmark.md",
     "applications/breakout-box-landmark.md",
     "trails/your-first-story.md",
-    "region-map.canvas",
-    "meta.md"
+    "region-map.canvas"
   ]
 }

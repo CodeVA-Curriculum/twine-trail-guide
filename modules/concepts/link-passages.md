@@ -8,6 +8,12 @@ type: tutorial
 layout: location
 ---
 
+:::quick-take{src="/images/linked-passages.png"}
+1. Click on your Untitled Passage and edit the text.
+2. At the bottom of your text, add `[[title of next passage]]` *(replace "title of next passage" with what you want your title to be)*
+3. This creates the next passage, links it to the current passage, and titles it for you!
+:::
+
 ## What Are Links?
 
 Most Twine stories are made up of little pages connected together by **links**--little buttons on the page that allow the reader to click through one page of the story to the next one. Here's an example:
@@ -115,5 +121,9 @@ To accomplish this, you can create *named links*:
 
 In the example above, the link `> [[Begin->intro]]` will send the reader to the `intro` passage, but the link will show the text `Begin`. Most of the examples in the Twine Trail Guide will use this "named link" format, so it's a good idea to get acquainted with it!
 
----
+:::practice-question
+A practice multiple-choice question to illustrate how to write them.
 
+- [*] this is the correct answer
+- [ ] this is the incorrect answer
+:::

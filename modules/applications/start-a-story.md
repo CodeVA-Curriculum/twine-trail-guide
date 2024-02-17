@@ -56,5 +56,3 @@ Click the `Back` button near the top-left corner of the screen to return to the 
 4. You can re-enter your story to make changes by selecting the story box from the main page and clicking the `Edit` button near the top-left side of the screen.
 
 ![The Twine story selection page, with a single story titled 'My First Story'.](/twine-select-story.png "Edit your story by clicking on it from the home page.")
-
-----

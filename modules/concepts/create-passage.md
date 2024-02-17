@@ -8,6 +8,10 @@ type: tutorial
 layout: location
 ---
 
+:::quick-take
+Lorem ipsum dolor sit amet
+:::
+
 ## Open the Editor
 
 The story **editor** is where you can create and edit the passages that make up your story. To begin editing one of your Twine stories, click on it from the home screen and click the `Edit` button above:

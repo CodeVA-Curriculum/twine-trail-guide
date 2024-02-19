@@ -121,9 +121,19 @@ To accomplish this, you can create *named links*:
 
 In the example above, the link `> [[Begin->intro]]` will send the reader to the `intro` passage, but the link will show the text `Begin`. Most of the examples in the Twine Trail Guide will use this "named link" format, so it's a good idea to get acquainted with it!
 
-:::practice-question
-A practice multiple-choice question to illustrate how to write them.
+<!-- :::practice-question{title="An Example Question"}
+Here's some question text, posing a question for the reader to answer
 
-- [*] this is the correct answer
-- [ ] this is the incorrect answer
+- [x] this is the correct answer
+    - Feedback to be displayed when the reader selects this option
+- [ ] this is a distractor
+    - Feedback to display when the reader selects this option
+- [ ] this is a distractor
+::: -->
+
+:::practice-question{title="An Example Question"}
+A question
+
+- [x] This is the correct answer
+- [ ] This is an incorrect answer
 :::

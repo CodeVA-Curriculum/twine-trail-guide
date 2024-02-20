@@ -60,9 +60,9 @@ Once you're finished with your second passage, click the `X` to close the passag
 
 ## Create a Link
 
-Finally, it's time to add a *link* to the first passage that connects it to the new passage. Open the `intro` passage, and add the link by adding to the passage like so:
+Finally, it's time to add a *link* to the first passage that connects it to the new passage. Open the `intro` passage, and add the link by modifying the passage like so:
 
-:::passage{title="Intro"}
+:::code-and-image{name="Intro"}
 ```
 Once upon a time, a spider was looking for a place to spin thier web. They walked into the forest alone, looking for a good spot to make their new home. Over the hill, they spotted a peaceful clearing.
 
@@ -84,7 +84,7 @@ After adding the link, return to the main story editor. You'll see that your two
 
 Test your story by pressing the `Play` button. You'll notice that you can click the link at the end of your first passage, and the screen changes to show the next passage! A typical Twine story will have a lot of passages, and a *lot* of links connecting them. You can add as many passages and links as you like!
 
-:::passage{title="Linked Passages Example" src="/spider-clearing.gif" tabs}
+:::code-and-image{name="Linked Passages Example" src="/images/spider-clearing.gif" tabs}
 ```intro
 Once upon a time, a spider was looking for a place to spin thier web. They walked into the forest alone, looking for a good spot to make their new home. Over the hill, they spotted a peaceful clearing.
 
@@ -95,11 +95,13 @@ The spider explored the beautiful clearing, but all the trees were too far apart
 ```
 :::
 
+---
+
 ## Named Links
 
 Sometimes, you might want to use a different name for the link in the story versus in the editor. For example, I might want something like this:
 
-:::passage{src="/named-link.png"}
+:::code-and-image{name="Jack & the Beanstalk" src="/images/named-link.png"}
 ```
 # Jack & the Beanstalk
 
@@ -111,7 +113,7 @@ The link in the passage above connects the reader to the passage called `intro`,
 
 To accomplish this, you can create *named links*:
 
-:::passage{src="/named-link.png"}
+:::code-and-image{name="Jack & the Beanstalk" src="/images/named-link.png"}
 ```
 # Jack & the Beanstalk
 
@@ -121,17 +123,13 @@ To accomplish this, you can create *named links*:
 
 In the example above, the link `> [[Begin->intro]]` will send the reader to the `intro` passage, but the link will show the text `Begin`. Most of the examples in the Twine Trail Guide will use this "named link" format, so it's a good idea to get acquainted with it!
 
-<!-- :::practice-question{title="An Example Question"}
-Here's some question text, posing a question for the reader to answer
+---
 
-- [x] this is the correct answer
-    - Feedback to be displayed when the reader selects this option
-- [ ] this is a distractor
-    - Feedback to display when the reader selects this option
-- [ ] this is a distractor
-::: -->
+## Practice Questions
 
-:::practice-question{title="An Example Question"}
+Use these practice questions to assess your skills! If you have trouble getting them right, try reviewing some of the material above.
+
+:::practice-question{name="An Example Question"}
 A question
 
 - [x] This is the correct answer

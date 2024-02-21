@@ -14,7 +14,7 @@ Before you begin, make sure you've got a good idea of what your story might be a
 
 Twine stories are interactive, which means the author (that's you) can create **options** for the reader to choose from, and connect each option to a different part of the story. Consider this starting passage:
 
-:::passage{title="One Path"}
+:::code-and-image{name="One Path"}
 ```
 Once upon a time, a spider was looking for a place to spin their web. They walked into the forest alone, looking for a good spot to make their new home. Over the hill, they spotted a peaceful clearing.
 
@@ -29,7 +29,7 @@ The spider found themselves in a clearing in the forest. The dappled sun shone t
 
 In this scene, the reader only has one choice--they can go to `The Clearing`. But what if they had another choice?
 
-:::passage{title="Two Paths"}
+:::code-and-image{name="Two Paths"}
 ```
 Once upon a time, a spider was looking for a place to spin their web. They walked into the forest alone, looking for a good spot to make their new home. Over the hill, they spotted a peaceful clearing; to the right, they spotted a rotten old log.
 
@@ -59,7 +59,7 @@ My new passage needs some links! One of them will lead back to `The Clearing`, a
 
 Here's what my story editor looks like after adding the the links to my `Rotten Log` passage. You can play through the story by [clicking here](/examples/branching-paths), if you'd like.
 
-:::passage{title="Branching Paths Example" src="/new-branch.png" tabs}
+:::code-and-image{name="Branching Paths Example" src="/images/new-branch.png" tabs}
 ```the-road
 Once upon a time, a spider was looking for a place to spin thier web. They walked into the forest alone, looking for a good spot to make their new home. Over the hill, they spotted a peaceful clearing; to the right, they spotted a rotten old log.
 

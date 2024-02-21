@@ -12,7 +12,7 @@ layout: location
 
 As a Twine author, you may find yourself in a situation where you want to increase dramatic tension in your story by revealing something after a delay instead of right away when the reader arrives at a passage. This tutorial shows you how to set up delays in your Chapbook Twine passages. Twine passages created using the **Chapbook** format have access to *modifiers*, special commands that cause the passage to behave differently than usual. You can use one of those modifiers, the `after` modifier, to reveal text after a delay.
 
-:::passage{title="Delay Example" src="/delay-text-demo.gif"}
+:::code-and-image{name="Delay Example" src="/images/delay-text-demo.gif"}
 ```
 You find yourself in a damp, dark cave. You hear water dripping from stalactites hanging above you.
 
@@ -29,7 +29,7 @@ You can change the time to whatever you like. Here are some examples:
 
 If you'd like to have the delay apply to a section of next in the middle of a passage, you can set that up using the `[continue]` block:
 
-:::passage{title="Delay with Continue" src="/delay-in-situ.gif"}
+:::code-and-image{name="Delay with Continue" src="/images/delay-in-situ.gif"}
 ```
 You find yourself in a damp, dark cave. You hear water dripping from stalactites hanging above you.
 
@@ -51,7 +51,7 @@ Sometimes, you may want to add delayed text to a paragraph rather than revealing
 
 To add a delayed line to the previous paragraph, use the `append` modifier along with the `after` modifier:
 
-:::passage{title="Delay Append Example" src="/delay-append-demo.gif"}
+:::code-and-image{name="Delay Append Example" src="/images/delay-append-demo.gif"}
 ```
 You find yourself in a damp, dark cave. You hear water dripping from stalagtites hanging above you.
 

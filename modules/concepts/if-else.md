@@ -12,7 +12,7 @@ layout: location
 
 Consider the following passage, which uses `[if ]` and `[unless ]` to show one of two sections based on a variable:
 
-:::passage{title="If-Unless" src="/if-unless-starter.png" tabs}
+:::code-and-image{name="If-Unless" src="/images/if-unless-starter.png" tabs}
 ```treasure
 hasKey: true
 --
@@ -46,7 +46,7 @@ The way I've written this passage ensures that the computer *either* display the
 
 "Else" blocks are another way to accomplish this task in a way that might be easier to read:
 
-:::passage{title="If-Else" src="/if-unless-starter.png" tabs}
+:::code-and-image{name="If-Else" src="/images/if-unless-starter.png" tabs}
 ```treasure
 hasKey: true
 --
@@ -76,7 +76,7 @@ There isn't a functional difference between using `[if ]` and `[unless ]` versus
 
 Here's an example of a story that uses the `if` and `else` code above--the first time the reader visits the `treasure` passage, the variable called `hasKey` is `false` which means the option to "unlock the chest" is hidden from them. They need to visit other passages until they discover the key hidden in the `desk` passage. You can play through the whole story by [clicking here](/examples/the-locked-chest).
 
-:::passage{title="The Locked Chest" src="/the-locked-chest.png" tabs}
+:::code-and-image{name="The Locked Chest" src="/images/the-locked-chest.png" tabs}
 ```intro
 hasKey: false
 --

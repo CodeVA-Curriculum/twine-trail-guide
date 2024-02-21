@@ -13,7 +13,7 @@ layout: location
 
 **Reveal links** are special kinds of links that you can use to show additional text in your story rather than moving to a whole new passage when the reader clicks the link. Try it out! Add the following line to a Twine passage:
 
-:::passage{title="Reveal Text Example" src="/twine-reveal-link.gif"}
+:::code-and-image{name="Reveal Text Example" src="/images/twine-reveal-link.gif"}
 ```
 Ranier was walking home one night when they saw {reveal link: 'something strange', text: 'an abandoned truck in the middle of the road, sitting alone under a streetlamp'}.
 ```
@@ -51,7 +51,7 @@ At this point you'll have two passages that aren't connected, like this:
 
 You'll notice that I've changed `text` to say `passage` instead, and replaced the sentence describing the truck with the name of the new passage (`Abandoned Truck`). Test out your story!
 
-:::passage{title="Reveal Passage Example" src="/twine-reveal-passage.gif" tabs}
+:::code-and-image{name="Reveal Passage Example" src="/images/twine-reveal-passage.gif" tabs}
 ```intro
 Ranier was walking home one night when they saw {reveal link: 'something strange', passage: 'abandoned-truck'}.
 ```

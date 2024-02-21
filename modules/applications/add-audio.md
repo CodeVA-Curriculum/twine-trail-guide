@@ -20,7 +20,7 @@ While the process of *creating* recordings can be challenging, adding them to yo
 
 To add an ambient sound to your passage, you'll need to add information about the sound--the file name (if you're hosting the file locally and using the downloadable Twine editor) or URL (if you're using [Google Drive](https://drive.google.com) for hosting, see below)--and then a line to activate the sound. Here's an example of a Twine passage that sets up an audio file at a Google Drive URL (but does not play it):
 
-:::passage{title="Passage with Ambient Sound Example"}
+:::code-and-image{name="Passage with Ambient Sound Example"}
 ```
 sound.ambient.rainfall.url: 'https://drive.google.com/uc?id=1DabfUnYRfpF0ksy3rpVJNbGtOwERii0M'
 sound.ambient.rainfall.description: 'the sound of falling rain'
@@ -50,7 +50,7 @@ The text *below* the `--` appears as normal. The rules for writing above the `--
 
 Right now, the example passage I've created doesn't make any sounds. It just loads the sound file. To play it, I need to add another line:
 
-:::passage{title="Playing Rainfall Sounds"}
+:::code-and-image{name="Playing Rainfall Sounds"}
 ```
 sound.ambient.rainfall.url: 'https://drive.google.com/uc?id=1DabfUnYRfpF0ksy3rpVJNbGtOwERii0M'
 sound.ambient.rainfall.description: 'the sound of falling rain'
@@ -65,7 +65,7 @@ You can't hear the result in the image above, but [click here to open the exampl
 
 The line that activates the sound is related to the code above the `--`: the *name* of the sound after the `:` in the activation line should match the word that comes after `sound.ambient` in the code section. So if I wanted to activate a sound called `'storm'`, my code would look like this:
 
-:::passage{title="Playing Storm Sounds"}
+:::code-and-image{name="Playing Storm Sounds"}
 ```
 sound.ambient.storm.url: 'https://drive.google.com/uc?id=1XFNzcY26wvD-wbOnhuEOdM5OoiUrm2FD'
 sound.ambient.storm.description: 'The sound of a storm'
@@ -85,7 +85,7 @@ Your `url` should match the link or filename for your sound, and the `name` in y
 
 Adding sound effects is exactly the same as adding ambient sounds, except sound effects play only once and do not fade in and out. Here's an example:
 
-:::passage{title="Passage With Sound Effects"}
+:::code-and-image{name="Passage With Sound Effects"}
 ```
 sound.effect.boom.url: 'https://drive.google.com/uc?id=16V5UnErgIX6yz-DOU7XEMK_9tbXEmsTQ'
 sound.effect.boom.description: 'a loud boom'

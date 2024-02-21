@@ -17,12 +17,3 @@ In this trail, you'll learn how to write stories where the computer hides or dis
 :::aside
 Before working on this trail, you should be at least a little bit familiar with the basics of Twine--how to make passages, link them together, and create branching paths to make a story with multiple possible endings. You should also be familiar with creating and modifying variables. If you aren't familiar with these concepts, feel free to review the *[Your First Story](/trails/your-first-story)* before you start with this one.
 :::
-
-<!-- ::timeline
-
-::location{path="variable-basics"}
-::location{path="if-unless"}
-::location{path="if-else" optional="true"}
-::location{path="relational-expressions"}
-::location{path="conditions-variables" optional="true"}
-::location{path="puzzle-dig-landmark"} -->

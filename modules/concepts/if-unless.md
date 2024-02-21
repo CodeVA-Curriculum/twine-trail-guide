@@ -16,7 +16,7 @@ An "if" block directs the computer to *hide* or *reveal* a given line of text ba
 If you aren't sure what a "variable" is and the syntax in the passage examples above is confusing, you might want to check out the *[Variable Basics](/locations/variable-basics)* tutorial, which explains how to create and modify variables.
 :::
 
-:::passage{title="If Example" src="/simple-if-example.png"}
+:::code-and-image{name="If Example" src="/images/simple-if-example.png"}
 ```
 exampleVar: false
 --
@@ -39,7 +39,7 @@ Test it out! Your results should match the image above--**the last two lines don
 
 In the example above, the variable called `exampleVar` has a value of `false`, causing the computer to *skip* the line after the "if" block. However, if you go back into the passage and modify it like so:
 
-:::passage{title="If Example" src="/simple-if-true.png"}
+:::code-and-image{name="If Example" src="/images/simple-if-true.png"}
 ```
 exampleVar: true
 --
@@ -64,7 +64,7 @@ An "unless" block is sort of like the opposite of an "if" block--instead of dire
 
 Here's an example:
 
-:::passage{title="Unless Example" src="/simple-if-true.png"}
+:::code-and-image{name="Unless Example" src="/images/simple-if-true.png"}
 ```
 v: false
 --
@@ -79,7 +79,7 @@ Here's another passage...
 > **Practice:** What would you change about the example above to make the computer *skip* the line after the "unless" block instead of displaying it? Once you've made your guess, click the "Reveal Solution" button below to see a working example:
 
 :::collapse{title="Reveal Solution"}
-:::passage{title="Unless Example" src="/simple-if-example.png"}
+:::code-and-image{name="Unless Example" src="/images/simple-if-example.png"}
 ```
 var: true
 --
@@ -103,7 +103,7 @@ This is absolutely the case, but remember--you can have the computer *modify the
 
 ![A GIF of the Twine story below, which displays a Twine story where the reader must find a key that unlocks a door](/the-locked-door-demo.gif)
 
-:::passage{title="The Locked Door" src="/the-locked-door.png" tabs}
+:::code-and-image{name="The Locked Door" src="/images/the-locked-door.png" tabs}
 ```intro
 key: false
 --
@@ -140,7 +140,7 @@ The door swings slowly open, creaking on its rusty hinges...
 
 If you want to use an `[if ]` block *before* a line that should appear in every passage, you can use the `[continue]` block:
 
-:::passage{title="Continue Block Example" src="/continue-block-example.png"}
+:::code-and-image{name="Continue Block Example" src="/images/continue-block-example.png"}
 ```
 key: false
 --
@@ -162,7 +162,7 @@ Using `[continue]` blocks allows you to sort of "insert" hidden sections of text
 
 "If" and "unless" blocks are really powerful, but they can sometimes make your passages difficult to read. Part of using **conditional control structures** like "if", "unless", and "continue" blocks is being able to *trace* the passage and *predict* what the passage will cause the computer to show to the reader given the variables the conditional control structure relies on. If you want to hide or reveal a larger amount of text, it can be easier to read the passage if you use an [embedded passage](/locations/embedding-passages):
 
-:::passage{title="If Block w/ Embedded Passage" tabs}
+:::code-and-image{name="If Block w/ Embedded Passage" tabs}
 ```main
 toReveal: false
 --

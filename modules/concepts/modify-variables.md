@@ -25,7 +25,7 @@ Here's what that story looks like in the editor:
 
 ...and here are the first two passages, called `intro` and `shop`:
 
-:::passage{title="The Shop" src="/the-shop-intro-demo.gif" tabs}
+:::passage{name="The Shop" src="/images/the-shop-intro-demo.gif" tabs}
 ```intro
 greeting: "Hello! Welcome to my shop."
 --
@@ -48,7 +48,7 @@ The passage called `intro` sets up a variable called `greeting`, and then sends 
 
 Then, the passage provides the reader with a choice between two different passages--a "nice" option that leads to the passage called `nice`, and a "rude" option that leads to a passage called `rude`. Here's what the `nice` and `rude` passages look like:
 
-:::passage{title="The Shop" src="/the-shop-demo.gif" tabs}
+:::passage{name="The Shop" src="/images/the-shop-demo.gif" tabs}
 ```nice
 greeting: "It's nice to see you again! Need anything?"
 --

@@ -15,7 +15,7 @@ An **embedded passage** is a passage that you insert into another passage (I cal
 
 <!-- ![A screenshot of the Twine story editor showing two disconnected passages: stanza1, and raven](/raven-start.png) -->
 
-:::passage{title="Poem Story" src="/raven-start.png" tabs}
+:::code-and-image{name="Poem Story" src="/images/raven-start.png" tabs}
 ```stanza1
 Then, methought, the air grew denser, perfumed from an unseen censer
 Swung by Seraphim whose foot-falls tinkled on the tufted floor.
@@ -32,7 +32,7 @@ The way I've written these passages above, they are not connected--the story sta
 
 To embed the `raven` passage inside `stanza1`, I need to add some code to `stanza1`. Then, when I test the story, the text from the `Raven` passage appears at the bottom of the `Stanza1` passage!
 
-:::passage{title="Poem With Embedded Passage" src="/raven-embed.png" tabs}
+:::code-and-image{name="Poem With Embedded Passage" src="/images/raven-embed.png" tabs}
 ```stanza1
 Then, methought, the air grew denser, perfumed from an unseen censer
 Swung by Seraphim whose foot-falls tinkled on the tufted floor.
@@ -52,7 +52,7 @@ You might be asking yourself why use embedded passages at all--it's a sort of co
 
 For example, I can add a `stanza2` passage with the following text:
 
-:::passage{title="Stanza2" src="/raven-embed2.png"}
+:::code-and-image{name="Stanza2" src="/images/raven-embed2.png"}
 ```
 “Prophet!” said I, “thing of evil!—prophet still, if bird or devil!—
 Whether Tempter sent, or whether tempest tossed thee here ashore,

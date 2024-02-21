@@ -18,7 +18,7 @@ If you haven't learned about ["if/unless"](/locations/if-unless) blocks, ["if/el
 
 Imagine an interactive story where the reader needs to light a torch to illuminate a room. In order to do this, they need to find flint *and* steel so they can make sparks and create fire. You might create a passage like this as a start:
 
-:::passage{title="Torch Room"}
+:::code-and-image{name="Torch Room"}
 ```
 You see a dark room, with an unlit iron brazier in the center.
 
@@ -36,7 +36,7 @@ In this example, if the variable `flint` has a value of `true`, the computer dis
 
 The passage above doesn't work exactly as it should--I only want the computer to show the `"Light the torch"` option if *both* `flint` and `steel` are `true`. If one of them is still `false`, the reader should need to search around the story to find them. To fix the passage so it works as intended, I'll use a **logic operator**:
 
-:::passage{title="Torch Room"}
+:::code-and-image{name="Torch Room"}
 ```
 _foundEverything: flint && steel
 --
@@ -59,7 +59,7 @@ Here's a more complete version of the story that uses a logical operation as dem
 
 ![GIF of a reader playing through the Unlit Brazier story below](/the-unlit-brazier-demo.gif)
 
-:::passage{title="The Unlit Brazier" src="/unlit-room.png" tabs}
+:::code-and-image{name="The Unlit Brazier" src="/images/unlit-room.png" tabs}
 ```intro
 flint: false
 steel: false

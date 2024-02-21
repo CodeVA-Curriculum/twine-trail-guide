@@ -29,7 +29,7 @@ You can't unlock the door.
 
 The Chapbook format of Twine has a way for you to use number and string variables in your `[if ]` statements: **relational expressions**. Relational expressions are sort of like [arithmetic expressions](/locations/arithmetic-expressions), but instead of producing numbers like a math equation, they *compare* numbers or strings and produce *Boolean* values. Here's an example of a relational expression:
 
-:::passage{title="Relational Expression Example" src="/simple-relational-expression.png"}
+:::code-and-image{name="Relational Expression Example" src="/images/simple-relational-expression.png"}
 ```
 var: 2 > 5
 --
@@ -60,7 +60,7 @@ Here's a more complete example, which shows a simple "scavenger hunt" sort of st
 
 ![Story editor view of the story written below](/great-coin-hunt.png)
 
-:::passage{title="The Great Coin Hunt" src="/the-coin-hunt-demo.gif" tabs}
+:::code-and-image{name="The Great Coin Hunt" src="/images/the-coin-hunt-demo.gif" tabs}
 ```title
 score: 0
 --

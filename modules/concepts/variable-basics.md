@@ -40,7 +40,7 @@ You can see that the text in the "vars" section does not appear in the passage--
 
 To show the reader the value of a variable, you can include it in your passage like so:
 
-:::passage{title="Variable Insert Example" src="/var-insert.png"}
+:::code-and-image{name="Variable Insert Example" src="/images/var-insert.png"}
 ```
 a_cool_message: "Hello!"
 --
@@ -53,7 +53,7 @@ There are a couple of things to notice about this example. First, the `"`s aroun
 
 You can create and use as many variables as you like in your passages. You can even use one variable multiple times!
 
-:::passage{title="Reusing Variables" src="/woodchuck.png"}
+:::code-and-image{name="Reusing Variables" src="/images/woodchuck.png"}
 ```
 creature: "woodchuck"
 material: "wood"
@@ -72,7 +72,7 @@ There are three types of basic variables available to you when you use the Chapb
 
 **Number variables** represent quantities or numerical values. When you create a number variable, you don't need to use `"` like you would with strings. Here's an example:
 
-:::passage{title="Number Variables" src="/var-simple.png"}
+:::code-and-image{name="Number Variables" src="/images/var-simple.png"}
 ```
 age: 15
 --
@@ -85,7 +85,7 @@ You can direct the computer to read number variables the same way as strings. Th
 
 **Boolean variables** are a special kind of variable that can only have one of two possible values: `true` or `false`. You create a Boolean variable the same way as a number or string:
 
-:::passage{title="Boolean Variables" src="/var-boolean.png"}
+:::code-and-image{name="Boolean Variables" src="/images/var-boolean.png"}
 ```
 hasKey: true
 --

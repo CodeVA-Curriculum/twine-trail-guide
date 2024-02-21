@@ -34,7 +34,7 @@ The story has three clusters--the kitchen, the living room, and the bedroom (one
 
 **Here's how I set up each cluster in the story, step-by-step.** The first passage, which introduces the story and sets up all the variables, looks like this:
 
-:::passage{title="Goldilocks Version 1" src="/goldilocks-intro.png" tabs}
+:::code-and-image{name="Goldilocks Version 1" src="/images/goldilocks-intro.png" tabs}
 ```intro
 kitchen: 'porridge'
 kitchen_choice: 'Look for food'
@@ -57,7 +57,7 @@ They are both `string` variables, meaning they store text (as opposed to a numbe
 
 Each location in the story has a "home page" that the reader will return to after they make choices for Goldilocks. Here's the "home page" for the kitchen:
 
-:::passage{title="Goldilocks Version 2" src="/goldilocks2-demo.gif" tabs}
+:::code-and-image{name="Goldilocks Version 2" src="/images/goldilocks2-demo.gif" tabs}
 ```kitchen
 Goldilocks looks around the kitchen.
 
@@ -84,7 +84,7 @@ The values of the variables makes it so the link in `kitchen` leads to a passage
 
 ![Twine editor view of the story written out below](/porridge-cluster.png)
 
-:::passage{title="Goldilocks Version 3" src="/goldilocks3-demo.gif" tabs}
+:::code-and-image{name="Goldilocks Version 3" src="/images/goldilocks3-demo.gif" tabs}
 ```porridge
 Goldilocks finds three bowls of porridge set out on the kitchen table: a big one, a medium one, and a small one.
 
@@ -110,7 +110,7 @@ One day, as Goldilocks was walking through the woods, she came upon a quaint cab
 
 The reader needs to choose one of these three options. The passages called `too-hot` and `too-cold` lead back to the `kitchen` passage, but the `just-right-porridge` passage is special:
 
-:::passage{title="Goldilocks Version 4" src="/goldilocks4-demo.gif" tabs}
+:::code-and-image{name="Goldilocks Version 4" src="/images/goldilocks4-demo.gif" tabs}
 ```just-right-porridge
 kitchen: "living-room"
 kitchen_choice: "I wonder if there's a place to sit in the next room..."

@@ -52,7 +52,7 @@ Depending on how you're writing your story, you might want to make your images a
 
 Here's what it looks like with the image taking up 100% of the page width:
 
-:::passage{title="Full Width Image Example" src="/twine-image-full.png"}
+:::code-and-image{name="Full Width Image Example" src="/images/twine-image-full.png"}
 ```
 img {
     width: 100%;
@@ -62,7 +62,7 @@ img {
 
 . . . and here's what it looks like when the image only takes up 50%:
 
-:::passage{title="Half Width Image Example" src="/twine-image-half.png"}
+:::code-and-image{name="Half Width Image Example" src="/images/twine-image-half.png"}
 ```
 img {
     width: 50%;

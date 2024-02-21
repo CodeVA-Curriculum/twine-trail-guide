@@ -23,7 +23,7 @@ Check out the story below: the `bonfire` passage describes a bonfire. Using vari
 
 First, I'll create the `intro` passage that sets up the variables, and then the `bonfire` passage with the bonfire and a link to another passage. Click through the tabs below to see the content of each passage:
 
-:::passage{title="Bonfire Embedded Passage Example" src="/bonfire-map.png" tabs}
+:::code-and-image{name="Bonfire Embedded Passage Example" src="/images/bonfire-map.png" tabs}
 ```intro
 fire: 'Roaring'
 --
@@ -44,7 +44,7 @@ Nothing here yet!
 
 You can see in the passages above that I've created a variable called `fire`. This variable will be the **name of a passage** containing a description of the fire. In future passages, I'll have the computer modify the variable to point to different passages, thereby replacing the embedded passage at different points in the story. Before I move any further, I'll create two different passages with descriptions of the bonfire: `roaring` and `dying`. I'm also going to add content to the `search` passage from before. Click through the tabs to check out each passage:
 
-:::passage{title="Fire Descriptions" tabs}
+:::code-and-image{name="Fire Descriptions" tabs}
 ```search
 fire: 'Dying'
 --
@@ -64,7 +64,7 @@ The fire sputters, sending sparks and ash into the air. A trail of white smoke f
 The `search` passage now *modifies* the variable called `fire`, changing its value to `Dying`. Now, when the reader returns to the fire, the `bonfire` passage will reference the passage called `dying` rather than the passage called `roaring`. This will emphasize the time the reader has "spent" collecting berries nearby. Here's the story map with all of the links in place:
 
 ![The Twine editor, showing the passages described above](/bonfire-map.png)
-:::passage{title="The Bonfire" src="/bonfire-map.png" tabs}
+:::code-and-image{name="The Bonfire" src="/images/bonfire-map.png" tabs}
 ```intro
 fire: 'Roaring'
 --
@@ -106,7 +106,7 @@ If you've read the *[Embedding Passages](/locations/embedding-passages)* tutoria
 
 In this story, I've embedded the passage named `raven` into all of the `stanza` passages. Each `stanza` passage has a link to the next part of the poem, allowing the reader to progress through the poem step-by-step. Here's the `Stanza1` passage as an example:
 
-:::passage{title="The Poem" src="/new-raven-stanza1.png" tabs}
+:::code-and-image{name="The Poem" src="/images/new-raven-stanza1.png" tabs}
 ```stanza1
 Then, methought, the air grew denser, perfumed from an unseen censer
 Swung by Seraphim whose foot-falls tinkled on the tufted floor.
@@ -125,7 +125,7 @@ Quoth the Raven: "Nevermore".
 
 Because the structure of the story is so consistent, I can change things up slightly and simplify the passages, moving the link into the `raven` passage. The first step is to add a variable to each `Stanza` passage, whose value is the name of the passage the `Stanza` should link to:
 
-:::passage{title="The Poem With Variable Embeds"}
+:::code-and-image{name="The Poem With Variable Embeds"}
 ```stanza1
 next: 'stanza2'
 --
@@ -150,7 +150,7 @@ Quoth the Raven: "Nevermore".
 
 You can see above that I've inserted the value of the `next` variable into the link, just like I did in the *Goldilocks* example in the *[Linking with Variables](/locations/linking-with-variables)* tutorial. Now, I can move *remove* the link from `stanza1` and add it to the `raven` passage (remember: *all* passages have access to the variables):
 
-:::passage{title="The Poem, Decomposed"}
+:::code-and-image{name="The Poem, Decomposed"}
 ```raven
 Quoth the Raven "Nevermore".
 
@@ -180,7 +180,7 @@ Nothing here, for now
 
 Because the `raven` passage is responsible for the link, I can add all sorts of fancy features to make the embedded material more dramatic:
 
-:::passage{title="Raven (Fancy)" src="/raven-delay-embed-demo.gif"}
+:::code-and-image{name="Raven (Fancy)" src="/images/raven-delay-embed-demo.gif"}
 ```raven
 Quoth the Raven...
 

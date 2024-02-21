@@ -22,7 +22,7 @@ Consider the following passage, which provides options to the reader based on wh
 
 ![GIF demonstration of the story below played out](/starting-point-demo.gif)
 
-:::passage{title="Starting Point" src="/conditions-variables-example1.png" tabs}
+:::code-and-image{name="Starting Point" src="/images/conditions-variables-example1.png" tabs}
 ```intro
 lightSource: false
 --
@@ -72,7 +72,7 @@ This is a great way to have the reader "unlock" a new choice in the story; they'
 
 That's a lot of `[if ]` blocks! Now imagine if you had even more options! It might get difficult to read the passage, and even harder to fix problems if the story doesn't work the way you expect it to! You might find using **conditionally-set variables** a little easier. Here's a new version of the passage above that uses these special variable assignment statements:
 
-:::passage{title="Conditionally-Set Variables"}
+:::code-and-image{name="Conditionally-Set Variables"}
 ```
 lightText (lightSource == "lantern"): "Light your lantern"
 lightText (lightSource == "flashlight"): "Light your torch"
@@ -104,7 +104,7 @@ There are lots of ways to use conditionally-modified variables in your passages.
 
 ![GIF demo of the story written out below](/help-text-demo.gif)
 
-:::passage{title="Passage With Help Text" src="/help-text-flowchart.png" tabs}
+:::code-and-image{name="Passage With Help Text" src="/images/help-text-flowchart.png" tabs}
 ```intro
 lightChoice: false
 item: ""
@@ -159,7 +159,7 @@ The beam of your flashlight passes over the room...
 
 You could even use these kinds of variable assignments to send the reader to different locations in the story based on combinations of variable values:
 
-:::passage{title="The Secret Room" src="/the-secret-door-demo.gif" tabs}
+:::code-and-image{name="The Secret Room" src="/images/the-secret-door-demo.gif" tabs}
 ```intro
 key: false
 --

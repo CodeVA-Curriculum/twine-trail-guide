@@ -15,7 +15,7 @@ Before you begin, make sure you've got a good idea of what your story might be a
 Twine stories are interactive, which means the author (that's you) can create **options** for the reader to choose from, and connect each option to a different part of the story. Consider this starting passage:
 
 :::code-and-image{name="One Path"}
-```
+```intro
 Once upon a time, a spider was looking for a place to spin their web. They walked into the forest alone, looking for a good spot to make their new home. Over the hill, they spotted a peaceful clearing.
 
 > [[The Clearing]]

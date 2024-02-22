@@ -12,7 +12,7 @@ layout: location
 
 An "if" block directs the computer to *hide* or *reveal* a given line of text based on the value of a variable. To create an "if" block, copy the example below into a new passage:
 
-:::aside
+:::aside-box
 If you aren't sure what a "variable" is and the syntax in the passage examples above is confusing, you might want to check out the *[Variable Basics](/locations/variable-basics)* tutorial, which explains how to create and modify variables.
 :::
 
@@ -78,7 +78,7 @@ Here's another passage...
 
 > **Practice:** What would you change about the example above to make the computer *skip* the line after the "unless" block instead of displaying it? Once you've made your guess, click the "Reveal Solution" button below to see a working example:
 
-:::collapse{title="Reveal Solution"}
+:::collapse-section{title="Reveal Solution"}
 :::code-and-image{name="Unless Example" src="/images/simple-if-example.png"}
 ```
 var: true

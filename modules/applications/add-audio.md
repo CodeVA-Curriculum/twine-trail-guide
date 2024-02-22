@@ -8,7 +8,7 @@ type: tutorial
 layout: location
 ---
 
-<!-- :::aside
+<!-- :::aside-box
 In order to use audio in your story, you'll need to figure out a way to *host* it so the Twine webpage can access the sound data. You can read about different hosting options using either the downloadable Twine editor or the browser-based editor by checking out the *[Hosting Recordings](/locations/hosting-recordings)* tutorial.
 ::: -->
 

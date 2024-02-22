@@ -12,7 +12,7 @@ layout: location
 
 Logic operators allow you to write [conditional control structures](/locations/if-unless) that include more than one Boolean value or relational expression (expressions that resolve to a Boolean value of either `true` or `false`, read more [here](/locations/relational-expressions)). That's a lot of jargon--here's an example to help explain what I mean.
 
-:::aside
+:::aside-box
 If you haven't learned about ["if/unless"](/locations/if-unless) blocks, ["if/else" blocks](/locations/if-else), or [relational expressions](/locations/relational-expressions), you might see some unfamiliar concepts in this tutorial.
 :::
 

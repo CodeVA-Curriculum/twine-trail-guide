@@ -62,6 +62,6 @@ In the distance... is that a light?
 
 ---
 
-:::aside
+:::aside-box
 This tutorial is based on the [Chapbook delayed text documentation](https://klembot.github.io/chapbook/guide/modifiers-and-inserts/delayed-text.html). Visit the [wiki](https://klembot.github.io/chapbook/guide/modifiers-and-inserts/delayed-text.html) to learn more about delayed text in Chapbook and other features included in the Chapbook format.
 :::

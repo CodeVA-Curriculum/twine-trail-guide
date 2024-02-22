@@ -12,7 +12,7 @@ layout: location
 
 Conditional control structures like ["if", "unless",](/locations/if-unless) or ["if-else" blocks](/locations/if-else) are useful for displaying or hiding text based on the value of a variable. But what if you want to [modify a variable](/locations/modify-variables) based on the value of another variable? The Chapbook format of Twine includes a special variable assignment syntax for this exact task, allowing you to modify variables in your passages based on the results of a [relational](/locations/relational-expression) or [logical expression](/locations/logic-operators).
 
-:::aside
+:::aside-box
 If you haven't learned about [creating](/locations/variable-basics) and [modifying](/locations/modify-variables) variables, ["if" blocks](/locations/if-unless), or [relational expressions](/locations/relational-expressions) yet, consider checking out the tutorials about those topics before continuing!
 :::
 

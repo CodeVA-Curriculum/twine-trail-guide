@@ -11,7 +11,7 @@ description: This tutorial covers some techniques that involve using embedded pa
 
 This tutorial covers some techniques that involve using embedded passages in conjunction with variables to create story systems. Embedding & variables are powerful tools for organizing your stories, allowing you to group related features together into passages and re-use those passages across your story. This tutorial covers two techniques; using variable links in embedded passages, and using variables to control which passage the host passage embeds.
 
-:::aside
+:::aside-box
 This tutorial references concepts from the [Embedding Passages](/locations/embedding-passages), [Variable Basics](/locations/variable-basics), and [Modifying Variables](/locations/modify-variables) tutorials. Consider checking those out if you get stuck in the material below!
 :::
 

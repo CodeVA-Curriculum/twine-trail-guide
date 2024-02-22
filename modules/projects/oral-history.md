@@ -1,6 +1,6 @@
 ---
 title: Oral History
-difficulty: 1
+difficulty: 2
 description: Pick a friend, family member, or community member and tell their story using audio recordings. Create a Twine story where the reader can explore the events and stories captured in your recordings.
 layout: trail
 nodes:

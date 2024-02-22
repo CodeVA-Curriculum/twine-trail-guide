@@ -1,6 +1,6 @@
 ---
 title: Archeological Puzzle
-difficulty: 2
+difficulty: 3
 description: In this trail, you'll learn how to write stories where the computer hides or displays sections of passages based on the value of variables, which are invisible to the reader. The **conditional control structures** which make this possible are very useful for creating stories where the reader needs to investigate something or solve a puzzle before having access to the next part of the narrative. At the end, you'll create a story that prompts the reader to solve a puzzle as they explore a historical location.
 layout: trail
 nodes:

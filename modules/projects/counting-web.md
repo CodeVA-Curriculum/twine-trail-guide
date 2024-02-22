@@ -4,7 +4,7 @@ author: Jon Stapleton
 description: In this trail, you'll create a story where the computer keeps track of a number value "behind the scenes"--a value that changes over time based on the events in the story. Using variables to store number values has several interesting applications; you can create a story that keeps track of a score, a story where the reader needs to collect things, or any number of other "game-like" reading experiences. In the project at the end of this trail, you'll create a story that explores an important moment in American history where people voted on an issue.
 layout: trail
 date: 7/29/2022
-difficulty: 2
+difficulty: 3
 nodes:
     - ./concepts/variable-basics.md
     - ./concepts/modify-variables.md

@@ -1,6 +1,7 @@
 ---
 title: Your First Story
-difficulty: 0
+difficulty: 1
+recommended: true
 nodes:
     - ./applications/start-a-story.md
     - ./concepts/create-passage.md

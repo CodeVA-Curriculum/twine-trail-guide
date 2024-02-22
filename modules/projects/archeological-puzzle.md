@@ -6,9 +6,9 @@ layout: trail
 nodes:
     - ./concepts/variable-basics.md
     - ./concepts/if-unless.md
-    - ./concepts/if-else.md
+    - ./concepts/if-else.md {optional}
     - ./concepts/relational-expressions.md
-    - ./concepts/conditions-variables.md
+    - ./concepts/conditions-variables.md {optional}
     - ./applications/puzzle-dig-landmark.md
 ---
 

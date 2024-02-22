@@ -1,18 +1,13 @@
 {
 	"nodes":[
-		{"id":"55b46c6c4ea991de","type":"file","file":"applications/puzzle-dig-landmark.md","x":1680,"y":-3000,"width":400,"height":400},
 		{"id":"320c3aebe35e6e4d","type":"file","file":"applications/story-with-multiple-endings.md","x":1480,"y":-1080,"width":400,"height":400},
 		{"id":"86651aa223c91783","type":"file","file":"applications/oral-history-landmark.md","x":1480,"y":-360,"width":400,"height":400},
-		{"id":"5351e295e06e1d51","type":"file","file":"applications/breakout-box-landmark.md","x":1680,"y":-2200,"width":400,"height":400},
 		{"id":"418b026069e61aec","type":"file","file":"concepts/embedding-with-variables.md","x":-80,"y":-1760,"width":400,"height":400},
 		{"id":"ea8d121583563a0f","type":"file","file":"applications/start-a-story.md","x":-3000,"y":-1240,"width":400,"height":400},
-		{"id":"73b74f0bbc112e3f","type":"file","file":"concepts/if-else.md","x":-200,"y":-3120,"width":400,"height":400},
-		{"id":"3898880f9124e90c","x":-400,"y":-2520,"width":400,"height":400,"type":"file","file":"concepts/arithmetic-expressions.md"},
 		{"id":"97f81c125ba0c86a","type":"file","file":"concepts/linking-with-variables.md","x":-880,"y":-2000,"width":400,"height":400},
 		{"id":"ba4083466e1e3b09","type":"file","file":"concepts/relational-expressions.md","x":480,"y":-2920,"width":400,"height":400},
-		{"id":"bb172ffc02bf30c1","type":"file","file":"concepts/conditions-variables.md","x":1080,"y":-2600,"width":400,"height":400},
 		{"id":"23030dc2ec5ecbbf","type":"file","file":"applications/story-with-conversations-landmark.md","x":1000,"y":-1480,"width":400,"height":400},
-		{"id":"ca2e9806069c3f0c","x":680,"y":-2120,"width":400,"height":400,"type":"file","file":"applications/story-with-counting-landmark.md"},
+		{"id":"ca2e9806069c3f0c","type":"file","file":"applications/story-with-counting-landmark.md","x":680,"y":-2120,"width":400,"height":400},
 		{"id":"496b6125d8030ebd","type":"file","file":"concepts/create-passage.md","x":-2080,"y":-960,"width":400,"height":400},
 		{"id":"05ddd97147234358","type":"file","file":"concepts/variable-basics.md","x":-2080,"y":-2320,"width":400,"height":400},
 		{"id":"ea86cea80912deb2","type":"file","file":"concepts/if-unless.md","x":-1560,"y":-3120,"width":400,"height":400},
@@ -26,7 +21,12 @@
 		{"id":"516fa80711d3d21a","type":"file","file":"applications/add-audio.md","x":-2480,"y":40,"width":400,"height":400},
 		{"id":"e8fdc0ef22daf161","type":"file","file":"applications/delay-text.md","x":-1200,"y":-240,"width":400,"height":400},
 		{"id":"cd68dfeaab5cb1dc","type":"file","file":"applications/reveal-text.md","x":-800,"y":-760,"width":400,"height":400},
-		{"id":"4286c978431eb924","type":"file","file":"applications/primary-documents-landmark.md","x":80,"y":40,"width":400,"height":400}
+		{"id":"4286c978431eb924","type":"file","file":"applications/primary-documents-landmark.md","x":80,"y":40,"width":400,"height":400},
+		{"id":"3898880f9124e90c","type":"file","file":"concepts/arithmetic-expressions.md","x":-280,"y":-2520,"width":400,"height":400},
+		{"id":"73b74f0bbc112e3f","type":"file","file":"concepts/if-else.md","x":-400,"y":-3520,"width":400,"height":400},
+		{"id":"5351e295e06e1d51","type":"file","file":"applications/breakout-box-landmark.md","x":1400,"y":-3520,"width":400,"height":400},
+		{"id":"bb172ffc02bf30c1","type":"file","file":"concepts/conditions-variables.md","x":1400,"y":-2920,"width":400,"height":400},
+		{"id":"55b46c6c4ea991de","type":"file","file":"applications/puzzle-dig-landmark.md","x":1400,"y":-2320,"width":400,"height":400}
 	],
 	"edges":[
 		{"id":"b75202880f413435","fromNode":"ea8d121583563a0f","fromSide":"right","toNode":"496b6125d8030ebd","toSide":"left"},
@@ -37,8 +37,6 @@
 		{"id":"4da142c14219ec6e","fromNode":"ea86cea80912deb2","fromSide":"right","toNode":"73b74f0bbc112e3f","toSide":"left"},
 		{"id":"2b2508543a826d57","fromNode":"73b74f0bbc112e3f","fromSide":"right","toNode":"ba4083466e1e3b09","toSide":"left"},
 		{"id":"8e485be913085ee4","fromNode":"ba4083466e1e3b09","fromSide":"right","toNode":"bb172ffc02bf30c1","toSide":"left"},
-		{"id":"944f8b3e5ee3c295","fromNode":"bb172ffc02bf30c1","fromSide":"right","toNode":"5351e295e06e1d51","toSide":"left"},
-		{"id":"b520a7bdeddb76a3","fromNode":"bb172ffc02bf30c1","fromSide":"right","toNode":"55b46c6c4ea991de","toSide":"left"},
 		{"id":"e5f584fcc1f0a949","fromNode":"05ddd97147234358","fromSide":"right","toNode":"4654dac3dcaa7025","toSide":"left"},
 		{"id":"0a65b69a1ecdc318","fromNode":"4654dac3dcaa7025","fromSide":"right","toNode":"97f81c125ba0c86a","toSide":"left"},
 		{"id":"bc014824447f543a","fromNode":"d975568ee6f3005a","fromSide":"right","toNode":"418b026069e61aec","toSide":"left"},
@@ -60,6 +58,11 @@
 		{"id":"787c9d523b9bcfcf","fromNode":"496b6125d8030ebd","fromSide":"bottom","toNode":"516fa80711d3d21a","toSide":"top"},
 		{"id":"2ccfcbeac0eca5fa","fromNode":"622903d4fb1577c2","fromSide":"left","toNode":"516fa80711d3d21a","toSide":"bottom"},
 		{"id":"e7ae12924d32e931","fromNode":"e6100bcf3dc331ab","fromSide":"bottom","toNode":"41ad18ece14d129b","toSide":"left"},
-		{"id":"3476201c8387711b","fromNode":"41ad18ece14d129b","fromSide":"top","toNode":"cd68dfeaab5cb1dc","toSide":"bottom"}
+		{"id":"3476201c8387711b","fromNode":"41ad18ece14d129b","fromSide":"top","toNode":"cd68dfeaab5cb1dc","toSide":"bottom"},
+		{"id":"f73eb25530e75ede","fromNode":"ba4083466e1e3b09","fromSide":"right","toNode":"5351e295e06e1d51","toSide":"left"},
+		{"id":"bf38ef5f7a9e9ba0","fromNode":"ea86cea80912deb2","fromSide":"right","toNode":"ba4083466e1e3b09","toSide":"left"},
+		{"id":"5943d9e5a01bfe97","fromNode":"ba4083466e1e3b09","fromSide":"right","toNode":"55b46c6c4ea991de","toSide":"left"},
+		{"id":"090c7427ee6d406b","fromNode":"bb172ffc02bf30c1","fromSide":"bottom","toNode":"55b46c6c4ea991de","toSide":"top"},
+		{"id":"9bde032b18738048","fromNode":"bb172ffc02bf30c1","fromSide":"top","toNode":"5351e295e06e1d51","toSide":"bottom"}
 	]
 }

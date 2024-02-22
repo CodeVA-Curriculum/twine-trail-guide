@@ -26,16 +26,34 @@
             "id": "a3b8cb8a58503eb1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "projects/your-first-story.md",
-                "mode": "source",
-                "source": false
+                "file": "region-map.canvas",
+                "viewState": {
+                  "x": -440.92879256965944,
+                  "y": -1577.8328173374614,
+                  "zoom": -2.253324280888339
+                }
+              }
+            }
+          },
+          {
+            "id": "e7e8125426f58644",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "region-map.canvas",
+                "viewState": {
+                  "x": -420,
+                  "y": -1220,
+                  "zoom": -2.3845688141665913
+                }
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -101,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projects/your-first-story.md",
+                "file": "region-map.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projects/your-first-story.md",
+                "file": "region-map.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projects/your-first-story.md"
+                "file": "region-map.canvas"
               }
             }
           }
@@ -162,8 +180,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a3b8cb8a58503eb1",
+  "active": "e7e8125426f58644",
   "lastOpenFiles": [
+    "projects/your-first-story.md",
     "region-map.canvas",
     "projects/primary-documents.md",
     "applications/primary-documents-landmark.md",
@@ -175,7 +194,6 @@
     "applications/puzzle-dig-landmark.md",
     "projects/oral-history.md",
     "applications/oral-history-landmark.md",
-    "projects/your-first-story.md",
     "projects/story-with-counting-landmark.md",
     "projects/story-with-conversations-landmark.md",
     "projects/puzzle-dig-landmark.md",

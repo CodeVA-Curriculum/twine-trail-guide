@@ -6,6 +6,7 @@ description: Twine is a tool for creating interactive, web-based stories. This t
 video: https://youtube.com/embed/K3zDCZ2LvsQ
 types: tutorial, trailhead
 layout: location
+start: true
 ---
 
 ## First, Visit Twine in Your Web Browser

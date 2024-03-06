@@ -135,3 +135,25 @@ A question
 - [x] This is the correct answer
 - [ ] This is an incorrect answer
 :::
+
+:::practice-question{name="Another Example"}
+Another question
+
+- [x] This is another correct answer
+
+    ::feedback[hey]
+
+- [ ] This is another incorrect answer
+:::
+
+:::practice-question{name="Another Example"}
+Another question, different than the first.
+
+- [ ] This is the incorrect answer
+- [x] This is the correct answer
+
+    :::feedback
+    Some feedback, blocked so we can write markdown in it
+    :::
+    
+:::

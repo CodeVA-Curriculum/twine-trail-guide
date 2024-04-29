@@ -9,7 +9,7 @@ layout: location
 ---
 
 <!-- :::aside-box
-In order to use audio in your story, you'll need to figure out a way to *host* it so the Twine webpage can access the sound data. You can read about different hosting options using either the downloadable Twine editor or the browser-based editor by checking out the *[Hosting Recordings](/locations/hosting-recordings)* tutorial.
+In order to use audio in your story, you'll need to figure out a way to *host* it so the Twine webpage can access the sound data. You can read about different hosting options using either the downloadable Twine editor or the browser-based editor by checking out the *[Hosting Recordings](/tutorials/hosting-recordings)* tutorial.
 ::: -->
 
 While the process of *creating* recordings can be challenging, adding them to your Twine story isn't actually all that hard. The important thing to know is that the **Chapbook** Twine format supports two kinds of audio: *ambient* sounds and *sound effects*.
@@ -30,7 +30,7 @@ Here's some normal story text.
 ```
 :::
 
-The first step for adding sound to your Twine stories is to figure out how to *host* the audio so that Twine can use it. Twine uses audio the same way it uses [images](/locations/adding-images)--you can use image file (if you're using the offline Twine editor) or a URL to an online version of the file (like [Unsplash](https://unsplash.com) or [Google Drive](https://drive.google.com)). Here's an example of what it looks like to add audio to a Twine passage:
+The first step for adding sound to your Twine stories is to figure out how to *host* the audio so that Twine can use it. Twine uses audio the same way it uses [images](/tutorials/applications/adding-images)--you can use image file (if you're using the offline Twine editor) or a URL to an online version of the file (like [Unsplash](https://unsplash.com) or [Google Drive](https://drive.google.com)). Here's an example of what it looks like to add audio to a Twine passage:
 
 The easiest way to *host* audio files is to use Google Drive:
 

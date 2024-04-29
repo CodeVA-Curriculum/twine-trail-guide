@@ -2,7 +2,8 @@
   "name": "twine-trail-guide",
   "scripts": {
     "setup": "yarn --cwd ./trail-guide/",
-    "dev": "yarn --cwd ./trail-guide/ dev" 
+    "dev": "yarn --cwd ./trail-guide/ dev",
+    "build": "yarn --cwd ./trail-guide/ build"
   },
   "version": "1.0.0",
   "main": "index.js",

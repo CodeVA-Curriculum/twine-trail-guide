@@ -70,7 +70,7 @@ To create a new passage, click the green `+New` button in the top-left area of t
 
 ![The Twine story editor with an arrow pointing toward the '+New' button](/new-passage.png)
 
-You'll see a new "Untitled Passage" box. You can drag it around the editor and edit it following the process described above, but you won't see it in your story if you test it out. You'll learn how to [link this passage to your starting passage](/locations/link-passages) in another tutorial.
+You'll see a new "Untitled Passage" box. You can drag it around the editor and edit it following the process described above, but you won't see it in your story if you test it out. You'll learn how to [link this passage to your starting passage](/tutorials/concepts/link-passages) in another tutorial.
 
 ---
 

@@ -13,7 +13,7 @@ description: This tutorial shows you how to modify number variables using arithm
 
 Number-type variables have a special capability that `string` variables do not: you can use them to perform mathematical operations. There are lots of reasons to have the computer do math during your stories; you could have the computer keep track of a score (if the reader is playing a game), for example. There are also some ways for you to use `number` variables to hide or show different parts of the story, but I won't get into that in this tutorial. Instead, this page focuses on writing and tracing code that includes `number` variables and arithmetic expressions.
 
-You may have already learned how to create and modify variables in the *[Variable Basics](/locations/variable-basics)* tutorial; but if not, here's an example of a passage where I have the computer create a variable called `age` and store the number `15` in it:
+You may have already learned how to create and modify variables in the *[Variable Basics](/tutorials/concepts/variable-basics)* tutorial; but if not, here's an example of a passage where I have the computer create a variable called `age` and store the number `15` in it:
 
 :::code-and-image{name="Passage With a Variable" src="/images/var-simple.png"}
 ```

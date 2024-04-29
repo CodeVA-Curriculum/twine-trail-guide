@@ -10,7 +10,7 @@ layout: location
 
 ## Shortcomings of Boolean Variables
 
-If you've written passages with `[if ]`/`[continue]` conditional blocks, then you may already know how powerful having the computer choose to *display* or *hide* text based on a variable can be (read about [`if/unless`](/locations/if-unless) & [`if/else`](/locations/if-else) if you haven't). You can create all sorts of little puzzles for readers to engage with as they experience your story. Twine stories that use conditionals can feel more like games than narratives, and they can get really complex!
+If you've written passages with `[if ]`/`[continue]` conditional blocks, then you may already know how powerful having the computer choose to *display* or *hide* text based on a variable can be (read about [`if/unless`](/tutorials/concepts/if-unless) & [`if/else`](/tutorials/concepts/if-else) if you haven't). You can create all sorts of little puzzles for readers to engage with as they experience your story. Twine stories that use conditionals can feel more like games than narratives, and they can get really complex!
 
 But what if you wanted the computer to choose whether or not to display some text based on a non-Boolean variable? If you only use Boolean variables (variables that can only be either `true` or `false`), you can only write `[if ]` statements like these...
 
@@ -27,7 +27,7 @@ You can't unlock the door.
 
 ## Using Relational Expressions with Conditionals
 
-The Chapbook format of Twine has a way for you to use number and string variables in your `[if ]` statements: **relational expressions**. Relational expressions are sort of like [arithmetic expressions](/locations/arithmetic-expressions), but instead of producing numbers like a math equation, they *compare* numbers or strings and produce *Boolean* values. Here's an example of a relational expression:
+The Chapbook format of Twine has a way for you to use number and string variables in your `[if ]` statements: **relational expressions**. Relational expressions are sort of like [arithmetic expressions](/tutorials/concepts/arithmetic-expressions), but instead of producing numbers like a math equation, they *compare* numbers or strings and produce *Boolean* values. Here's an example of a relational expression:
 
 :::code-and-image{name="Relational Expression Example" src="/images/simple-relational-expression.png"}
 ```
@@ -40,7 +40,7 @@ The variable value is: {var}
 
 Check out the `var` variable--what value is the passage giving that variable? To find out, you need to *evaluate* the relational expression `2 > 5`. In this case, the relational expression is `false`--the number `2` is *not* greater than the number `5`. The passage above assigns the variable `var` a value of `false`!
 
-In the example above, I could accomplish the same thing by just writing `var: false`. But, just like with [arithmetic expressions](/locations/arithmetic-expressions), I can use variables in relational expressions. Here's an example:
+In the example above, I could accomplish the same thing by just writing `var: false`. But, just like with [arithmetic expressions](/tutorials/concepts/arithmetic-expressions), I can use variables in relational expressions. Here's an example:
 
 ```
 _readerWins: score > 5

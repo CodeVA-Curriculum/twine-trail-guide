@@ -14,7 +14,7 @@ Variables are somewhat useful on their own, but they are *extremely* useful and 
 This tutorial will show you how to set this kind of story up by creating and modifying variables in your story.
 
 :::aside-box
-This tutorial builds on the information from the *[Variable Basics](/locations/variable-basics)* tutorial--if you aren't sure what a variable is, consider checking that one out first!
+This tutorial builds on the information from the *[Variable Basics](/tutorials/concepts/variable-basics)* tutorial--if you aren't sure what a variable is, consider checking that one out first!
 :::
 
 ## Changing Dialogue

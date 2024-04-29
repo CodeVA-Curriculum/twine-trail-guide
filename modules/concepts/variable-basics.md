@@ -81,7 +81,7 @@ I am {age} years old.
 ```
 :::
 
-You can direct the computer to read number variables the same way as strings. The big difference between strings and number variables is you can use number variables to have the computer solve mathematical expressions--you can read more about that in the *[Expressions With Variables](/locations/arithmetic-expressions)* tutorial.
+You can direct the computer to read number variables the same way as strings. The big difference between strings and number variables is you can use number variables to have the computer solve mathematical expressions--you can read more about that in the *[Expressions With Variables](/tutorials/concepts/arithmetic-expressions)* tutorial.
 
 **Boolean variables** are a special kind of variable that can only have one of two possible values: `true` or `false`. You create a Boolean variable the same way as a number or string:
 
@@ -94,6 +94,6 @@ Do I have the key? {hasKey}
 ```
 :::
 
-Notice that you do not have to use `"` symbols around Boolean variables--they aren't strings! Boolean variables are really important for writing **conditional control structures**; check out the *[If-Unless](/locations/if-unless)* tutorial for examples of how to use Boolean variables.
+Notice that you do not have to use `"` symbols around Boolean variables--they aren't strings! Boolean variables are really important for writing **conditional control structures**; check out the *[If-Unless](/tutorials/concepts/if-unless)* tutorial for examples of how to use Boolean variables.
 
 ---

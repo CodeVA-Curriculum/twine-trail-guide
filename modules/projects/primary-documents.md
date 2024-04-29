@@ -12,7 +12,9 @@ nodes:
     - ./applications/primary-documents-landmark.md
 ---
 
-The goal of this trail is to create a Twine story that incorporates *primary documents*, telling a story about the past using materials from that history. In order to incorporate these primary documents, you'll need to learn how to [add images](/locations/adding-images) from the web to your stories. You'll also need to figure out some interesting ways of putting these images together by writing a story to go with them. 
+<!-- TODO: add images link -->
+
+The goal of this trail is to create a Twine story that incorporates *primary documents*, telling a story about the past using materials from that history. In order to incorporate these primary documents, you'll need to learn how to add images from the web to your stories. You'll also need to figure out some interesting ways of putting these images together by writing a story to go with them. 
 
 In the end, your reader should feel like they are investigating a mystery, poring over these documents and imagining what it was like to live during the moments they describe.
 

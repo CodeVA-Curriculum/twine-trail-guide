@@ -12,7 +12,7 @@ description: This tutorial covers some techniques that involve using embedded pa
 This tutorial covers some techniques that involve using embedded passages in conjunction with variables to create story systems. Embedding & variables are powerful tools for organizing your stories, allowing you to group related features together into passages and re-use those passages across your story. This tutorial covers two techniques; using variable links in embedded passages, and using variables to control which passage the host passage embeds.
 
 :::aside-box
-This tutorial references concepts from the [Embedding Passages](/locations/embedding-passages), [Variable Basics](/locations/variable-basics), and [Modifying Variables](/locations/modify-variables) tutorials. Consider checking those out if you get stuck in the material below!
+This tutorial references concepts from the [Embedding Passages](/tutorials/concepts/embedding-passages), [Variable Basics](/tutorials/concepts/variable-basics), and [Modifying Variables](/tutorials/concepts/modify-variables) tutorials. Consider checking those out if you get stuck in the material below!
 :::
 
 ## Embedded Passage Variables
@@ -100,7 +100,7 @@ Try out the story for yourself by clicking [here](/examples/bonfire). There are 
 
 ## Embedding & Variable Links
 
-If you've read the *[Embedding Passages](/locations/embedding-passages)* tutorial, you can start combining these concepts to create powerful systems that work together. For example, consider the story based on Edgar Allen Poe's *The Raven* from the embedding tutorial:
+If you've read the *[Embedding Passages](/tutorials/concepts/embedding-passages)* tutorial, you can start combining these concepts to create powerful systems that work together. For example, consider the story based on Edgar Allen Poe's *The Raven* from the embedding tutorial:
 
 ![A Twine story editor with three passages: stanza1 is connected to stanza2, and both stanzas are connected to a passage called raven via dotted lines](/the-raven-map.png)
 
@@ -148,7 +148,7 @@ Quoth the Raven: "Nevermore".
 ```
 :::
 
-You can see above that I've inserted the value of the `next` variable into the link, just like I did in the *Goldilocks* example in the *[Linking with Variables](/locations/linking-with-variables)* tutorial. Now, I can move *remove* the link from `stanza1` and add it to the `raven` passage (remember: *all* passages have access to the variables):
+You can see above that I've inserted the value of the `next` variable into the link, just like I did in the *Goldilocks* example in the *[Linking with Variables](/tutorials/concepts/linking-with-variables)* tutorial. Now, I can move *remove* the link from `stanza1` and add it to the `raven` passage (remember: *all* passages have access to the variables):
 
 :::code-and-image{name="The Poem, Decomposed"}
 ```raven

@@ -10,10 +10,10 @@ layout: location
 
 ## Using Logical Operators
 
-Logic operators allow you to write [conditional control structures](/locations/if-unless) that include more than one Boolean value or relational expression (expressions that resolve to a Boolean value of either `true` or `false`, read more [here](/locations/relational-expressions)). That's a lot of jargon--here's an example to help explain what I mean.
+Logic operators allow you to write [conditional control structures](/tutorials/concepts/if-unless) that include more than one Boolean value or relational expression (expressions that resolve to a Boolean value of either `true` or `false`, read more [here](/tutorials/concepts/relational-expressions)). That's a lot of jargon--here's an example to help explain what I mean.
 
 :::aside-box
-If you haven't learned about ["if/unless"](/locations/if-unless) blocks, ["if/else" blocks](/locations/if-else), or [relational expressions](/locations/relational-expressions), you might see some unfamiliar concepts in this tutorial.
+If you haven't learned about ["if/unless"](/tutorials/concepts/if-unless) blocks, ["if/else" blocks](/tutorials/concepts/if-else), or [relational expressions](/tutorials/concepts/relational-expressions), you might see some unfamiliar concepts in this tutorial.
 :::
 
 Imagine an interactive story where the reader needs to light a torch to illuminate a room. In order to do this, they need to find flint *and* steel so they can make sparks and create fire. You might create a passage like this as a start:
@@ -53,7 +53,7 @@ If only I had some flint and steel to light the brazier...
 ```
 :::
 
-Check out the first line-I've added a *temporary* variable to the passage set to the value `flint && steel`. The `&&` symbol is a **logic operator** that compares two Boolean values; if both values are `true`, the **logical expression** produces a value of `true`. Otherwise, it produces a value of `false`. Logical expressions work exactly the same way as [arithmetic expressions](/locations/arithmetic-expressions) and [relational expressions](/locations/relational-expressions), except instead of comparing numbers or strings to one another or calculating new values, they compare two *Boolean* values to produce a new Boolean value based on them.
+Check out the first line-I've added a *temporary* variable to the passage set to the value `flint && steel`. The `&&` symbol is a **logic operator** that compares two Boolean values; if both values are `true`, the **logical expression** produces a value of `true`. Otherwise, it produces a value of `false`. Logical expressions work exactly the same way as [arithmetic expressions](/tutorials/concepts/arithmetic-expressions) and [relational expressions](/tutorials/concepts/relational-expressions), except instead of comparing numbers or strings to one another or calculating new values, they compare two *Boolean* values to produce a new Boolean value based on them.
 
 Here's a more complete version of the story that uses a logical operation as demonstrated above; Try it out by [clicking here](/examples/unlit-brazier)!
 
@@ -104,7 +104,7 @@ The brazier roars to life!
 ```
 :::
 
-You can also use [relational expressions](/locations/relational-expressions) as operands in your logical expressions:
+You can also use [relational expressions](/tutorials/concepts/relational-expressions) as operands in your logical expressions:
 
 ```
 _bonus: score > 10 && time < 30

@@ -29,7 +29,7 @@ Next, design a story where the reader uncovers information about the historical 
 * A narrative that communicates information about the historical figure
 * A question at the end of the story where the reader must guess the name of the historical figure, followed by a passage that tells the reader if they guessed correctly or not
 
-Consider including images in your story to set the tone or provide clues! Check out the [tutorial on adding images](/locations/add-images) for info on how to accomplish this.
+Consider including images in your story to set the tone or provide clues! Check out the [tutorial on adding images](/tutorials/applications/adding-images) for info on how to accomplish this.
 
 ## Troubleshooting
 

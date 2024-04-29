@@ -10,10 +10,10 @@ layout: location
 
 ## Modifying Variables Based on Conditions
 
-Conditional control structures like ["if", "unless",](/locations/if-unless) or ["if-else" blocks](/locations/if-else) are useful for displaying or hiding text based on the value of a variable. But what if you want to [modify a variable](/locations/modify-variables) based on the value of another variable? The Chapbook format of Twine includes a special variable assignment syntax for this exact task, allowing you to modify variables in your passages based on the results of a [relational](/locations/relational-expression) or [logical expression](/locations/logic-operators).
+Conditional control structures like ["if", "unless",](/tutorials/concepts/if-unless) or ["if-else" blocks](/tutorials/concepts/if-else) are useful for displaying or hiding text based on the value of a variable. But what if you want to [modify a variable](/tutorials/concepts/modify-variables) based on the value of another variable? The Chapbook format of Twine includes a special variable assignment syntax for this exact task, allowing you to modify variables in your passages based on the results of a [relational](/tutorials/concepts/relational-expressions) or [logical expression](/tutorials/concepts/logic-operators).
 
 :::aside-box
-If you haven't learned about [creating](/locations/variable-basics) and [modifying](/locations/modify-variables) variables, ["if" blocks](/locations/if-unless), or [relational expressions](/locations/relational-expressions) yet, consider checking out the tutorials about those topics before continuing!
+If you haven't learned about [creating](/tutorials/concepts/variable-basics) and [modifying](/tutorials/concepts/modify-variables) variables, ["if" blocks](/tutorials/concepts/if-unless), or [relational expressions](/tutorials/concepts/relational-expressions) yet, consider checking out the tutorials about those topics before continuing!
 :::
 
 ## Creating Conditionally-Set Variables
@@ -90,7 +90,7 @@ You find yourself in a dark room.
 
 In the passage above, the computer first sets the variable `lightText` to `false`. Then, it evaluates each of the variable assignment commands after it one at a time:
 
-* If the [relational expression](/locations/relational-expressions) after the variable and between the `(` and `)` is `true`, it sets the variable to value after the `:`
+* If the [relational expression](/tutorials/concepts/relational-expressions) after the variable and between the `(` and `)` is `true`, it sets the variable to value after the `:`
 * If the expression is `false`, it does nothing and moves on to the next variable assignment command.
 * After evaluating each line above the `--`, it displays the passage (inserting any variables as necessary)
 

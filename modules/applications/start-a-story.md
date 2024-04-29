@@ -50,7 +50,7 @@ Click the `Back` button near the top-left corner of the screen to return to the 
 
 ![The Twine 'new story' dialog box, with the '+Add' button circled in red.](/twine-add-story.png "Click the 'Add' button")
 
-3. Twine will automatically open the editor after it creates your story. To see how to add to your story, check out the [tutorial on creating passages](/locations/create-passage). To return to the main page, click the `Back` button in the top-left corner of the screen.
+3. Twine will automatically open the editor after it creates your story. To see how to add to your story, check out the [tutorial on creating passages](/tutorials/concepts/create-passage). To return to the main page, click the `Back` button in the top-left corner of the screen.
 
 ![The Twine editor, with a red arrow indicating the location of the 'Back' button](/twine-go-home.png "Return the main page by clicking the 'Back' button")
 

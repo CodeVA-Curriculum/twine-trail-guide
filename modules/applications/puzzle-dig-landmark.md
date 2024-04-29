@@ -39,7 +39,7 @@ As you design your story, think about how you might use conditional statements t
 * Conditional statements that let the reader "unlock" new parts of the story as they make choices
 * A narrative that communicates information about the historical site, especially information about the people who lived there and events that transpired there
 
-Consider including images from the site in your story! Check out the [tutorial on adding images](/locations/add-images) for info on how to accomplish this.
+Consider including images from the site in your story! Check out the [tutorial on adding images](/tutorials/applications/adding-images) for info on how to accomplish this.
 
 ## Troubleshooting
 

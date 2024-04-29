@@ -13,7 +13,7 @@ layout: location
 An "if" block directs the computer to *hide* or *reveal* a given line of text based on the value of a variable. To create an "if" block, copy the example below into a new passage:
 
 :::aside-box
-If you aren't sure what a "variable" is and the syntax in the passage examples above is confusing, you might want to check out the *[Variable Basics](/locations/variable-basics)* tutorial, which explains how to create and modify variables.
+If you aren't sure what a "variable" is and the syntax in the passage examples above is confusing, you might want to check out the *[Variable Basics](/tutorials/concepts/variable-basics)* tutorial, which explains how to create and modify variables.
 :::
 
 :::code-and-image{name="If Example" src="/images/simple-if-example.png"}
@@ -160,7 +160,7 @@ Using `[continue]` blocks allows you to sort of "insert" hidden sections of text
 
 ## Longer "If" & "Unless" Blocks
 
-"If" and "unless" blocks are really powerful, but they can sometimes make your passages difficult to read. Part of using **conditional control structures** like "if", "unless", and "continue" blocks is being able to *trace* the passage and *predict* what the passage will cause the computer to show to the reader given the variables the conditional control structure relies on. If you want to hide or reveal a larger amount of text, it can be easier to read the passage if you use an [embedded passage](/locations/embedding-passages):
+"If" and "unless" blocks are really powerful, but they can sometimes make your passages difficult to read. Part of using **conditional control structures** like "if", "unless", and "continue" blocks is being able to *trace* the passage and *predict* what the passage will cause the computer to show to the reader given the variables the conditional control structure relies on. If you want to hide or reveal a larger amount of text, it can be easier to read the passage if you use an [embedded passage](/tutorials/concepts/embedding-passages):
 
 :::code-and-image{name="If Block w/ Embedded Passage" tabs}
 ```main

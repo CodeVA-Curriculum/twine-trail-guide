@@ -68,11 +68,11 @@ Since each stanza in [the poem](https://www.poetryfoundation.org/poems/48860/the
 
 ![A Twine story editor with three passages: Stanza1 is connected to Stanza2, and both stanzas are connected to a passage called Raven via dotted lines](/the-raven-map.png)
 
-Even though I've embedded `Raven` twice, I only need one copy of it! This technique is very similar to using ["reveal" links with passages](/locations/reveal-text); if you understand that, you definitely can use this!
+Even though I've embedded `Raven` twice, I only need one copy of it! This technique is very similar to using ["reveal" links with passages](/tutorials/applications/reveal-text); if you understand that, you definitely can use this!
 
 ## When To Embed?
 
-This is a kind of silly example--the `Raven` passage is really short. However, you *could* decide to add a bunch of other interesting features to the `Raven` passage, and then those features would apply to all of the host passages that it is embedded within. For example, you could [add audio of a raven's caw](/locations/add-audio), put the embedded passage into a ["reveal" link](/locations/reveal-text), or have the `Raven` passage [fade in after a dramatic pause using a delay](/locations/delay-text).
+This is a kind of silly example--the `Raven` passage is really short. However, you *could* decide to add a bunch of other interesting features to the `Raven` passage, and then those features would apply to all of the host passages that it is embedded within. For example, you could [add audio of a raven's caw](/tutorials/applications/add-audio), put the embedded passage into a ["reveal" link](/tutorials/applications/reveal-text), or have the `Raven` passage [fade in after a dramatic pause using a delay](/tutorials/applications/delay-text).
 
 Generally, it's a good idea to think about using embedded passages in the following situations:
 

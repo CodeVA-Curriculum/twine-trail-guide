@@ -27,11 +27,11 @@ Next, plan out the questions you'll ask during the interview. You can read some 
 Once you've planned out your interview, record your conversation with the subject. Then, start working on your story. You can follow the steps below to work on your project if you're having trouble knowing what to do next:
 
 1. Listen to your interview, and make note of important pieces of story or audio snippets you want the reader to listen to. These snippets will be your passages.
-2. Edit your audio so the different snippets for each passage are in their own file. Set up [hosting](/locations/hosting-recordings) for your files as appropriate.
-3. Open the Twine story editor and [create a passage](/locations/create-passage) for each snippet of audio.
-4. [Add the appropriate audio snippets](/locations/add-audio) to each passage.
-5. Find connections between the audio snippets, and start creating [branching paths](/locations/branching-paths) between them.
-6. Use [delay text](/locations/delay-text) to show important information synced with the audio playing the background. Some readers may have trouble following the sound, and it's always a good idea to provide text in addition to sound whenever possible.
+2. Edit your audio so the different snippets for each passage are in their own file. Set up hosting for your files if necessary.
+3. Open the Twine story editor and [create a passage](/tutorials/concepts/create-passage) for each snippet of audio.
+4. [Add the appropriate audio snippets](/tutorials/applications/add-audio) to each passage.
+5. Find connections between the audio snippets, and start creating [branching paths](/tutorials/concepts/branching-paths) between them.
+6. Use [delay text](/tutorials/applications/delay-text) to show important information synced with the audio playing the background. Some readers may have trouble following the sound, and it's always a good idea to provide text in addition to sound whenever possible.
 7. Add new passages to help the story flow better.
 
 ---

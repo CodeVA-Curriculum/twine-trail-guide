@@ -8,36 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9824cc7a1fd1fc29",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "region-map.canvas",
-                "viewState": {
-                  "x": -1608.7525447868868,
-                  "y": -675.7120590750355,
-                  "zoom": -2
-                }
-              }
-            }
-          },
-          {
-            "id": "a3b8cb8a58503eb1",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "region-map.canvas",
-                "viewState": {
-                  "x": -440.92879256965944,
-                  "y": -1577.8328173374614,
-                  "zoom": -2.253324280888339
-                }
-              }
-            }
-          },
-          {
             "id": "e7e8125426f58644",
             "type": "leaf",
             "state": {
@@ -45,15 +15,16 @@
               "state": {
                 "file": "region-map.canvas",
                 "viewState": {
-                  "x": -420,
-                  "y": -1220,
-                  "zoom": -2.3845688141665913
+                  "x": 2048.757419132915,
+                  "y": -1013.7030338001498,
+                  "zoom": -3.2
                 }
-              }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "region-map"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -72,8 +43,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -88,7 +62,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -96,7 +72,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -127,7 +105,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for region-map"
             }
           },
           {
@@ -139,7 +119,9 @@
                 "file": "region-map.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from region-map"
             }
           },
           {
@@ -149,8 +131,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -159,8 +145,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "region-map.canvas"
-              }
+                "file": "region-map.canvas",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of region-map"
             }
           }
         ]
@@ -182,6 +173,22 @@
   },
   "active": "e7e8125426f58644",
   "lastOpenFiles": [
+    "projects/your-first-story/index.md",
+    "projects/your-first-story",
+    "projects/_your-first-story/index.md",
+    "projects/_your-first-story",
+    "projects/_primary-documents/index.md",
+    "projects/_primary-documents",
+    "projects/_oral-history/index.md",
+    "projects/_oral-history",
+    "projects/_counting-web/index.md",
+    "projects/_counting-web",
+    "projects/_conversation-web/index.md",
+    "projects/_conversation-web",
+    "projects/_breakout-box/index.md",
+    "projects/_breakout-box",
+    "projects/_archeological-puzzle/index.md",
+    "projects/_archeological-puzzle",
     "projects/your-first-story.md",
     "region-map.canvas",
     "projects/primary-documents.md",
@@ -201,13 +208,6 @@
     "projects/oral-history-landmark.md",
     "projects/breakout-box-landmark.md",
     "projects",
-    "trails/story-with-counting-landmark.md",
-    "trails/story-with-conversations-landmark.md",
-    "trails/puzzle-dig-landmark.md",
-    "trails/primary-documents-landmark.md",
-    "trails/oral-history-landmark.md",
-    "trails/breakout-box-landmark.md",
-    "applications/story-with-multiple-endings.md",
-    "applications/breakout-box-landmark.md"
+    "trails/story-with-counting-landmark.md"
   ]
 }

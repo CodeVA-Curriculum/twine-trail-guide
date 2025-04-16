@@ -5,11 +5,11 @@ difficulty: 3
 description: Create a Twine story that uses primary documents--pieces of writing or recordings made by people who experienced a particular event from the past--to help the reader discover information about an event from the past. This project makes use of the Library of Virginia's collections as a source of primary documents that tell stories about people from Virginia. You'll connect those documents together to tell a story.
 layout: trail
 nodes:
-    - ./concepts/create-passage.md
-    - ./applications/adding-images.md
-    - ./applications/image-formatting.md
-    - ./applications/reveal-text.md
-    - ./applications/primary-documents-landmark.md
+    - concepts/create-passage.md
+    - applications/adding-images.md
+    - applications/image-formatting.md
+    - applications/reveal-text.md
+    - applications/primary-documents-landmark.md
 ---
 
 <!-- TODO: add images link -->

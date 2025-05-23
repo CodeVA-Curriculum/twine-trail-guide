@@ -14,7 +14,6 @@
 		{"id":"516fa80711d3d21a","type":"file","file":"applications/add-audio.md","x":-2800,"y":-280,"width":400,"height":400},
 		{"id":"e6100bcf3dc331ab","type":"file","file":"applications/adding-images.md","x":-2160,"y":40,"width":400,"height":400},
 		{"id":"622903d4fb1577c2","type":"file","file":"applications/making-recordings.md","x":-2560,"y":640,"width":400,"height":400},
-		{"id":"41ad18ece14d129b","type":"file","file":"applications/image-formatting.md","x":-880,"y":640,"width":400,"height":400},
 		{"id":"418b026069e61aec","type":"file","file":"concepts/embedding-with-variables.md","x":80,"y":-1640,"width":400,"height":400},
 		{"id":"454f5fdada9448ea","type":"file","file":"concepts/markdown.md","x":-1360,"y":-1440,"width":400,"height":400},
 		{"id":"05ddd97147234358","type":"file","file":"concepts/variable-basics.md","x":-2280,"y":-2400,"width":400,"height":400},
@@ -22,16 +21,17 @@
 		{"id":"3898880f9124e90c","type":"file","file":"concepts/arithmetic-expressions.md","x":-680,"y":-2800,"width":400,"height":400},
 		{"id":"97f81c125ba0c86a","type":"file","file":"concepts/linking-with-variables.md","x":-400,"y":-2120,"width":400,"height":400},
 		{"id":"d975568ee6f3005a","type":"file","file":"concepts/embedding-passages.md","x":-1480,"y":-2000,"width":400,"height":400},
-		{"id":"e8fdc0ef22daf161","type":"file","file":"applications/delay-text.md","x":-1560,"y":-360,"width":400,"height":400},
-		{"id":"f07858805d925579","type":"file","file":"concepts/link-passages.md","x":-680,"y":-1080,"width":400,"height":400},
-		{"id":"f115c0938c133577","type":"file","file":"concepts/branching-paths.md","x":80,"y":-680,"width":400,"height":400},
-		{"id":"b73cf58df3eb3275","type":"file","file":"projects/your-first-story/adapting-goldilocks.md","x":280,"y":-80,"width":400,"height":400},
-		{"id":"cd68dfeaab5cb1dc","type":"file","file":"applications/reveal-text.md","x":-680,"y":-80,"width":400,"height":400},
-		{"id":"86ee5b2abdc6829f","type":"file","file":"concepts/css.md","x":280,"y":440,"width":400,"height":400},
-		{"id":"4286c978431eb924","type":"file","file":"applications/primary-documents-landmark.md","x":-200,"y":840,"width":400,"height":400},
 		{"id":"86651aa223c91783","type":"file","file":"applications/oral-history-landmark.md","x":1080,"y":-760,"width":400,"height":400},
-		{"id":"320c3aebe35e6e4d","type":"file","file":"applications/story-with-multiple-endings.md","x":1200,"y":-80,"width":400,"height":400},
-		{"id":"e984f58ce15302e8","x":1200,"y":640,"width":400,"height":400,"type":"file","file":"projects/your-first-story/the-whale-writing.md"}
+		{"id":"f115c0938c133577","type":"file","file":"concepts/branching-paths.md","x":80,"y":-680,"width":400,"height":400},
+		{"id":"f07858805d925579","type":"file","file":"concepts/link-passages.md","x":-680,"y":-1040,"width":400,"height":400},
+		{"id":"e8fdc0ef22daf161","type":"file","file":"applications/delay-text.md","x":-1680,"y":-560,"width":400,"height":400},
+		{"id":"41ad18ece14d129b","type":"file","file":"applications/image-formatting.md","x":-1360,"y":520,"width":400,"height":400},
+		{"id":"cd68dfeaab5cb1dc","type":"file","file":"applications/reveal-text.md","x":-960,"y":-280,"width":400,"height":400},
+		{"id":"b73cf58df3eb3275","type":"file","file":"projects/your-first-story/adapting-goldilocks.md","x":-80,"y":-80,"width":400,"height":400},
+		{"id":"4286c978431eb924","type":"file","file":"applications/primary-documents-landmark.md","x":-760,"y":840,"width":400,"height":400},
+		{"id":"86ee5b2abdc6829f","type":"file","file":"concepts/css.md","x":-80,"y":520,"width":400,"height":400},
+		{"id":"320c3aebe35e6e4d","type":"file","file":"applications/story-with-multiple-endings.md","x":1000,"y":40,"width":400,"height":400},
+		{"id":"e984f58ce15302e8","x":1000,"y":720,"width":400,"height":400,"type":"file","file":"projects/your-first-story/the-whale-writing.md"}
 	],
 	"edges":[
 		{"id":"b75202880f413435","fromNode":"ea8d121583563a0f","fromSide":"right","toNode":"496b6125d8030ebd","toSide":"left"},
@@ -75,10 +75,10 @@
 		{"id":"66ccde29f9086bcf","fromNode":"496b6125d8030ebd","fromSide":"right","toNode":"cd68dfeaab5cb1dc","toSide":"top"},
 		{"id":"3c53396d5a8a7a99","fromNode":"b73cf58df3eb3275","fromSide":"left","toNode":"cd68dfeaab5cb1dc","toSide":"right","color":"5"},
 		{"id":"b34cc27b9354c341","fromNode":"f115c0938c133577","fromSide":"bottom","toNode":"b73cf58df3eb3275","toSide":"top"},
-		{"id":"6e42e06f4e4744c6","fromNode":"cd68dfeaab5cb1dc","fromSide":"right","toNode":"4286c978431eb924","toSide":"top"},
 		{"id":"2e0319215074f575","fromNode":"cd68dfeaab5cb1dc","fromSide":"bottom","toNode":"86ee5b2abdc6829f","toSide":"left","color":"5"},
 		{"id":"896f2140bcf1bc82","fromNode":"86ee5b2abdc6829f","fromSide":"right","toNode":"320c3aebe35e6e4d","toSide":"left"},
 		{"id":"eca965cd530e402f","fromNode":"b73cf58df3eb3275","fromSide":"right","toNode":"320c3aebe35e6e4d","toSide":"left"},
-		{"id":"dd3be89ce41a6ae5","fromNode":"320c3aebe35e6e4d","fromSide":"bottom","toNode":"e984f58ce15302e8","toSide":"top"}
+		{"id":"dd3be89ce41a6ae5","fromNode":"320c3aebe35e6e4d","fromSide":"bottom","toNode":"e984f58ce15302e8","toSide":"top"},
+		{"id":"7c1df3f0556c243d","fromNode":"cd68dfeaab5cb1dc","fromSide":"bottom","toNode":"4286c978431eb924","toSide":"top"}
 	]
 }

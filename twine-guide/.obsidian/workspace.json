@@ -11,17 +11,14 @@
             "id": "e7e8125426f58644",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "region-map.canvas",
-                "viewState": {
-                  "x": -666.629638140638,
-                  "y": -250.64149064117487,
-                  "zoom": -2.0070762135761613
-                }
+                "file": "projects/your-first-story/index.md",
+                "mode": "source",
+                "source": true
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "region-map"
+              "icon": "lucide-file",
+              "title": "index"
             }
           },
           {
@@ -187,14 +184,14 @@
   },
   "active": "e7e8125426f58644",
   "lastOpenFiles": [
-    "projects/your-first-story/index.md",
-    "region-map.canvas",
     "projects/your-first-story/the-whale-writing.md",
-    "projects/your-first-story/adapting-goldilocks.md",
-    "concepts/markdown.md",
-    "concepts/css.md",
     "projects/your-first-story/the-whale-outline.md",
     "projects/your-first-story/the-whale-design-menu.md",
+    "projects/your-first-story/adapting-goldilocks.md",
+    "projects/your-first-story/index.md",
+    "region-map.canvas",
+    "concepts/markdown.md",
+    "concepts/css.md",
     "projects/your-first-story",
     "projects/_your-first-story/index.md",
     "projects/_your-first-story",

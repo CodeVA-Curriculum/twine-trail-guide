@@ -11,17 +11,14 @@
             "id": "e7e8125426f58644",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "region-map.canvas",
-                "viewState": {
-                  "x": 2048.757419132915,
-                  "y": -1013.7030338001498,
-                  "zoom": -3.2
-                }
+                "file": "projects/your-first-story/the-whale-writing.md",
+                "mode": "source",
+                "source": true
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "region-map"
+              "icon": "lucide-file",
+              "title": "the-whale-writing"
             }
           }
         ]
@@ -173,7 +170,14 @@
   },
   "active": "e7e8125426f58644",
   "lastOpenFiles": [
+    "projects/your-first-story/adapting-goldilocks.md",
+    "projects/your-first-story/the-whale-writing.md",
     "projects/your-first-story/index.md",
+    "concepts/markdown.md",
+    "concepts/css.md",
+    "projects/your-first-story/the-whale-outline.md",
+    "projects/your-first-story/the-whale-design-menu.md",
+    "region-map.canvas",
     "projects/your-first-story",
     "projects/_your-first-story/index.md",
     "projects/_your-first-story",
@@ -190,7 +194,6 @@
     "projects/_archeological-puzzle/index.md",
     "projects/_archeological-puzzle",
     "projects/your-first-story.md",
-    "region-map.canvas",
     "projects/primary-documents.md",
     "applications/primary-documents-landmark.md",
     "applications/story-with-counting-landmark.md",
@@ -202,12 +205,6 @@
     "projects/oral-history.md",
     "applications/oral-history-landmark.md",
     "projects/story-with-counting-landmark.md",
-    "projects/story-with-conversations-landmark.md",
-    "projects/puzzle-dig-landmark.md",
-    "projects/primary-documents-landmark.md",
-    "projects/oral-history-landmark.md",
-    "projects/breakout-box-landmark.md",
-    "projects",
-    "trails/story-with-counting-landmark.md"
+    "projects"
   ]
 }

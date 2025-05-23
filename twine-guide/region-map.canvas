@@ -1,6 +1,5 @@
 {
 	"nodes":[
-		{"id":"320c3aebe35e6e4d","type":"file","file":"applications/story-with-multiple-endings.md","x":1480,"y":-1080,"width":400,"height":400},
 		{"id":"86651aa223c91783","type":"file","file":"applications/oral-history-landmark.md","x":1480,"y":-360,"width":400,"height":400},
 		{"id":"418b026069e61aec","type":"file","file":"concepts/embedding-with-variables.md","x":-80,"y":-1760,"width":400,"height":400},
 		{"id":"ea8d121583563a0f","type":"file","file":"applications/start-a-story.md","x":-3000,"y":-1240,"width":400,"height":400},
@@ -13,20 +12,21 @@
 		{"id":"ea86cea80912deb2","type":"file","file":"concepts/if-unless.md","x":-1560,"y":-3120,"width":400,"height":400},
 		{"id":"4654dac3dcaa7025","type":"file","file":"concepts/modify-variables.md","x":-1360,"y":-2520,"width":400,"height":400},
 		{"id":"622903d4fb1577c2","type":"file","file":"applications/making-recordings.md","x":-1760,"y":680,"width":400,"height":400},
-		{"id":"f07858805d925579","type":"file","file":"concepts/link-passages.md","x":-480,"y":-1240,"width":400,"height":400},
 		{"id":"f115c0938c133577","type":"file","file":"concepts/branching-paths.md","x":200,"y":-640,"width":400,"height":400},
 		{"id":"d975568ee6f3005a","type":"file","file":"concepts/embedding-passages.md","x":-1480,"y":-1440,"width":400,"height":400},
 		{"id":"41ad18ece14d129b","type":"file","file":"applications/image-formatting.md","x":-880,"y":440,"width":400,"height":400},
 		{"id":"e6100bcf3dc331ab","type":"file","file":"applications/adding-images.md","x":-1880,"y":-360,"width":400,"height":400},
 		{"id":"516fa80711d3d21a","type":"file","file":"applications/add-audio.md","x":-2480,"y":40,"width":400,"height":400},
 		{"id":"e8fdc0ef22daf161","type":"file","file":"applications/delay-text.md","x":-1200,"y":-240,"width":400,"height":400},
-		{"id":"cd68dfeaab5cb1dc","type":"file","file":"applications/reveal-text.md","x":-800,"y":-760,"width":400,"height":400},
 		{"id":"4286c978431eb924","type":"file","file":"applications/primary-documents-landmark.md","x":80,"y":40,"width":400,"height":400},
 		{"id":"3898880f9124e90c","type":"file","file":"concepts/arithmetic-expressions.md","x":-280,"y":-2520,"width":400,"height":400},
 		{"id":"73b74f0bbc112e3f","type":"file","file":"concepts/if-else.md","x":-400,"y":-3520,"width":400,"height":400},
 		{"id":"5351e295e06e1d51","type":"file","file":"applications/breakout-box-landmark.md","x":1400,"y":-3520,"width":400,"height":400},
 		{"id":"bb172ffc02bf30c1","type":"file","file":"concepts/conditions-variables.md","x":1400,"y":-2920,"width":400,"height":400},
-		{"id":"55b46c6c4ea991de","type":"file","file":"applications/puzzle-dig-landmark.md","x":1400,"y":-2320,"width":400,"height":400}
+		{"id":"55b46c6c4ea991de","type":"file","file":"applications/puzzle-dig-landmark.md","x":1400,"y":-2320,"width":400,"height":400},
+		{"id":"cd68dfeaab5cb1dc","type":"file","file":"applications/reveal-text.md","x":-800,"y":-680,"width":400,"height":400},
+		{"id":"f07858805d925579","type":"file","file":"concepts/link-passages.md","x":-600,"y":-1240,"width":400,"height":400},
+		{"id":"320c3aebe35e6e4d","type":"file","file":"applications/story-with-multiple-endings.md","x":1280,"y":-960,"width":400,"height":400}
 	],
 	"edges":[
 		{"id":"b75202880f413435","fromNode":"ea8d121583563a0f","fromSide":"right","toNode":"496b6125d8030ebd","toSide":"left"},
@@ -63,6 +63,7 @@
 		{"id":"bf38ef5f7a9e9ba0","fromNode":"ea86cea80912deb2","fromSide":"right","toNode":"ba4083466e1e3b09","toSide":"left"},
 		{"id":"5943d9e5a01bfe97","fromNode":"ba4083466e1e3b09","fromSide":"right","toNode":"55b46c6c4ea991de","toSide":"left"},
 		{"id":"090c7427ee6d406b","fromNode":"bb172ffc02bf30c1","fromSide":"bottom","toNode":"55b46c6c4ea991de","toSide":"top"},
-		{"id":"9bde032b18738048","fromNode":"bb172ffc02bf30c1","fromSide":"top","toNode":"5351e295e06e1d51","toSide":"bottom"}
+		{"id":"9bde032b18738048","fromNode":"bb172ffc02bf30c1","fromSide":"top","toNode":"5351e295e06e1d51","toSide":"bottom"},
+		{"id":"3e7a247f58295973","fromNode":"cd68dfeaab5cb1dc","fromSide":"top","toNode":"f07858805d925579","toSide":"bottom"}
 	]
 }
